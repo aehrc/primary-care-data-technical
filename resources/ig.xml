@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="primary-care"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\vic034\git\primary-care-data-technical\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\vic034\git\primary-care-data-technical\examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\Users\vic034\git\primary-care-data-technical\pages"/>
+  </extension>
+  <url value="http://aehrc.com/fhir/ImplementationGuide/primary-care"/>
+  <version value="0.0.1"/>
+  <name value="AUPrimaryCareImplementationGuide"/>
+  <title value="AU Primary Care Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-01-18"/>
+  <publisher value="AEHRC"/>
+  <contact>
+    <name value="Primary Care Data Quality Technical Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://confluence.csiro.au/display/primarycaredata/Primary+Care+Data+Quality+Technical+Working+Group"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="aehrc.com.primarycare"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping id="p1">
+      <name value="primarycare"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareallergyintolerance"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+	  <title value="Primary Care Implementation Guide"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="JSON"/>
+    </parameter>
+  </definition>
+
+</ImplementationGuide>
