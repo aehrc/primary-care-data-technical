@@ -1,0 +1,74 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Eosinophilic Oesophagitis triggered by wheat and dairy<a name='mm'/></div>"
+  },
+  "id": "cf-1554873772436",
+  "patient": {
+    "reference": "Patient/cf-1554873707223"
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "type": "intolerance",
+  "category": [
+    "food"
+  ],
+  "criticality": "low",
+  "assertedDate": "2019-04-09T14:00:00.000Z",
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "code": "412071004",
+            "system": "http://snomed.info/sct",
+            "display": "Wheat"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "code": "235599003",
+              "system": "http://snomed.info/sct",
+              "display": "Eosinophilic oesophagitis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "code": "235599003",
+              "system": "http://snomed.info/sct",
+              "display": "Eosinophilic oesophagitis"
+            }
+          ]
+        }
+      ],
+      "substance": {
+        "coding": [
+          {
+            "code": "226760005",
+            "system": "http://snomed.info/sct",
+            "display": "Dairy foods"
+          }
+        ]
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "735455001",
+        "system": "http://snomed.info/sct",
+        "display": "Eosinophilic oesophagitis caused by food"
+      }
+    ]
+  }
+}
