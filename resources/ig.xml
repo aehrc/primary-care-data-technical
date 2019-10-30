@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="primary-care"/>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\vic034\git\primary-care-data-technical\resources"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\vic034\git\primary-care-data-technical\examples"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\vic034\git\primary-care-data-technical\pages"/>
-  </extension>
   <url value="http://aehrc.com/fhir/ImplementationGuide/primary-care"/>
   <version value="0.0.1"/>
   <name value="AUPrimaryCareImplementationGuide"/>
