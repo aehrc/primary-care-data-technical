@@ -31,11 +31,42 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="StructureDefinition/au-primarycarepatient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/au-primarycareallergyintolerance"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
+    <!--resource>
+      <name value="Mary Ficticious - JS"/>
+      <reference>
+        <reference value="Patient/cf-1552457299474"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <name value="Oridashi Patient 1"/>
+      <reference>
+        <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <name value="Oridashi Patient 2"/>
+      <reference>
+        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.20"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource-->
     <page>
       <nameUrl value="index.html"/>
 	  <title value="Primary Care Implementation Guide"/>
