@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "au-primarycareimmunisation",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation",
+  "version": "0.0.1",
+  "name": "AUPrimaryCareImmunisation",
+  "title": "AU Primary Care Immunisation",
+  "status": "draft",
+  "description": "This profile defines an immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "purpose": "This profile defines a immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Immunization",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-immunization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Immunization",
+        "path": "Immunization",
+        "short": "An immunisation statement in an Australian primary care practice-to-practice record transfer context."
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:amtVaccineCode",
+        "path": "Immunization.vaccineCode.coding",
+        "sliceName": "amtVaccineCode",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible"
+        }
+      },
+      {
+        "id": "Immunization.occurrence[x]",
+        "path": "Immunization.occurrence[x]",
+        "alias": [
+          "Date of immunisation",
+          "Performed date",
+          "Date given",
+          "Date of vaccination"
+        ],
+		"mustSupport": true
+      },
+      {
+        "id": "Immunization.note.text",
+        "path": "Immunization.note.text",
+        "mustSupport": true
+      }
+    ]
+  }
+}

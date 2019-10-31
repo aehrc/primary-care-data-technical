@@ -43,6 +43,42 @@
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareallergyintolerancelist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+	<!-- need condition in au base -->
+    <!--resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycarecondition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource-->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareimmunisation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaremedication"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareprocedure"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
     <!--resource>
       <name value="Mary Ficticious - JS"/>
       <reference>
