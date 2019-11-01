@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "course",
+  "url": "http://aehrc.com/valueset/course",
+  "version": "201905",
+  "name": "Course_ValueSet",
+  "title": "Course ValueSet",
+  "status": "active",
+  "experimental": false,
+  "publisher": "AeHRC",
+  "description": "Course ValueSet",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<<288524001 OR << 424124008"
+          }
+        ]
+      }
+    ]
+  }
+}
