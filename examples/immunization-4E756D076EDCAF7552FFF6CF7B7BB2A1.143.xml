@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="4E756D076EDCAF7552FFF6CF7B7BB2A1.143" />
+    <meta>
+        <versionId value="20130107045405" />
+        <lastUpdated value="2013-01-07T04:54:05+00:00" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>1999-06-11 HEPATITIS A (EE3F243E)</p>
+        </div>
+    </text>
+    <status value="completed" />
+    <notGiven value="false" />
+    <vaccineCode>
+        <text value="HEPATITIS A" />
+    </vaccineCode>
+    <patient>
+        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.36" />
+    </patient>
+    <date value="1999-06-11" />
+    <primarySource value="true" />
+    <lotNumber value="EE3F243E" />
+    <practitioner>
+        <role>
+            <coding>
+                <system value="http://hl7.org/fhir/v2/0443" />
+                <code value="AP" />
+                <display value="Administering Provider" />
+            </coding>
+        </role>
+        <actor>
+            <reference value="Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.2" />
+        </actor>
+    </practitioner>
+    <practitioner>
+        <role>
+            <coding>
+                <system value="http://hl7.org/fhir/v2/0443" />
+                <code value="OP" />
+                <display value="Ordering Provider" />
+            </coding>
+        </role>
+        <actor>
+            <reference value="Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.2" />
+        </actor>
+    </practitioner>
+    <note>
+        <text value="Off to China for 3 weeks." />
+    </note>
+</Immunization>

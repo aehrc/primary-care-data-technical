@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="4E756D076EDCAF7552FFF6CF7B7BB2A1.147" />
+    <meta>
+        <versionId value="20181112124505" />
+        <lastUpdated value="2018-11-12T12:45:05.383+00:00" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>2018-11-12 SIMVASTATIN 10mg Tablet 1 daily m.d.u. (30) 5 repeats (Reason: Hypertension)</p>
+        </div>
+    </text>
+    <contained>
+        <Medication>
+            <id value="ee7ddfcd-4f25-4702-9d14-575996b93acd" />
+            <!--meta>
+                <lastUpdated value="2019-01-30T12:42:48.727+11:00" />
+            </meta-->
+            <!--text>
+                <status value="generated" />
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                    <p>SIMVASTATIN 10mg Tablet</p>
+                </div>
+            </text-->
+            <!--extension url="http://oridashi.com.au/fhir/StructureDefinition/medication-generic-ingredient">
+                <valueString value="SIMVASTATIN" />
+            </extension>
+            <extension url="http://oridashi.com.au/fhir/StructureDefinition/medication-strength">
+                <valueString value="10mg" />
+            </extension>
+            <extension url="http://oridashi.com.au/fhir/StructureDefinition/medication-product-name">
+                <valueString value="SIMVASTATIN" />
+            </extension>
+            <extension url="http://oridashi.com.au/fhir/StructureDefinition/medication-tga-schedule">
+                <valueString value="4" />
+            </extension-->
+            <code>
+                <coding>
+                    <system value="http://oridashi.com.au/system/code/medicaldirectordrug" />
+                    <code value="22138" />
+                    <display value="SIMVASTATIN 10mg Tablet" />
+                </coding>
+                <coding>
+                    <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+                        <valueCoding>
+                            <system value="http://hl7.org.au/fhir/CodeSystem/medication-type" />
+                            <code value="UPG" />
+                            <display value="Unbranded package with no container" />
+                        </valueCoding>
+                    </extension>
+                    <system value="http://snomed.info/sct" />
+                    <code value="28211011000036108" />
+                    <display value="simvastatin 10 mg tablet, 30" />
+                </coding>
+                <coding>
+                    <system value="http://pbs.gov.au/code/item" />
+                    <code value="2011W" />
+                    <display value="Simvastatin" />
+                </coding>
+                <coding>
+                    <system value="http://oridashi.com.au/system/code/medicaldirectorgeneric" />
+                    <code value="HMG" />
+                    <display value="Simvastatin" />
+                </coding>
+                <coding>
+                    <system value="http://www.whocc.no/atc" />
+                    <code value="C10AA01" />
+                    <display value="Simvastatin" />
+                </coding>
+                <text value="SIMVASTATIN 10mg Tablet" />
+            </code>
+            <form>
+                <text value="Tablet" />
+            </form>
+        </Medication>
+    </contained>
+    <status value="active" />
+    <medicationReference>
+        <reference value="#ee7ddfcd-4f25-4702-9d14-575996b93acd" />
+        <display value="SIMVASTATIN 10mg Tablet" />
+    </medicationReference>
+    <effectivePeriod>
+        <start value="2018-11-12" />
+    </effectivePeriod>
+    <dateAsserted value="2018-11-12" />
+    <informationSource>
+        <reference value="Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.3" />
+    </informationSource>
+    <subject>
+        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.32" />
+    </subject>
+    <taken value="na" />
+    <reasonCode>
+        <coding>
+            <system value="http://oridashi.com.au/system/code/medicaldirectorterm" />
+            <code value="hypet" />
+            <display value="Hypertension" />
+        </coding>
+        <text value="Hypertension" />
+    </reasonCode>
+    <dosage>
+        <text value="1 daily m.d.u. (30) 5 repeats" />
+        <asNeededBoolean value="false" />
+        <route>
+            <coding>
+                <system value="http://oridashi.com.au/system/code/medicaldirectormedicationroute" />
+                <code value="PO" />
+                <display value="Oral - Swallowed" />
+            </coding>
+        </route>
+    </dosage>
+</MedicationStatement>

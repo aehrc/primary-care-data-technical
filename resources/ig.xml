@@ -50,6 +50,13 @@
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycarecomposition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
 	<!-- need condition in au base -->
     <!--resource>
       <reference>
@@ -60,7 +67,35 @@
     </resource-->
     <resource>
       <reference>
+        <reference value="StructureDefinition/au-primarycarefamilymemberhistory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycarefamilymemberhistorylist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/au-primarycareimmunisation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareimmunisationlist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaremedicalhistorylist"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -74,35 +109,206 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/au-primarycaremedicationstatement"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaremedicinelist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareproblemlist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/au-primarycareprocedure"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
-    <!--resource>
-      <name value="Mary Ficticious - JS"/>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareprocedurelist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaresocialhistorylist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
       <reference>
         <reference value="Patient/cf-1552457299474"/>
       </reference>
+      <name value="Mary Ficticious - JS"/>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
     </resource>
     <resource>
-      <name value="Oridashi Patient 1"/>
       <reference>
         <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35"/>
       </reference>
+      <name value="Oridashi Patient 1"/>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
     </resource>	
     <resource>
-      <name value="Oridashi Patient 2"/>
       <reference>
         <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.20"/>
       </reference>
+      <name value="Oridashi Patient 2"/>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
-    </resource-->
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/4E756D076EDCAF7552FFF6CF7B7BB2A1.147"/>
+      </reference>
+      <name value="Oridashi MedicationStatement 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10"/>
+      </reference>
+      <name value="Oridashi MedicationStatement 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="Immunization/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70"/>
+      </reference>
+      <name value="Oridashi Immunization 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="Immunization/4E756D076EDCAF7552FFF6CF7B7BB2A1.143"/>
+      </reference>
+      <name value="Oridashi Immunization 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="Procedure/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89"/>
+      </reference>
+      <name value="Oridashi Procedure 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="Procedure/4E756D076EDCAF7552FFF6CF7B7BB2A1.168"/>
+      </reference>
+      <name value="Oridashi Procedure 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <!-- problems to be resolved resource>
+      <reference>
+        <reference value="Condition/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.76"/>
+      </reference>
+      <name value="Oridashi Condition 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource-->	
+    <!-- problems to be resolved resource>
+      <reference>
+        <reference value="Condition/4E756D076EDCAF7552FFF6CF7B7BB2A1.163"/>
+      </reference>
+      <name value="Oridashi Condition 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource-->	
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"/>
+      </reference>
+      <name value="Oridashi Allergy Intolerance 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/4E756D076EDCAF7552FFF6CF7B7BB2A1.18"/>
+      </reference>
+      <name value="Oridashi Allergy Intolerance 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/cf-1554878062500"/>
+      </reference>
+      <name value="Sample Allergy Intolerance: Unconfirmed peanut allergy"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/cf-1554873772436"/>
+      </reference>
+      <name value="Sample Allergy Intolerance: eosinophilic oesphagitis triggered by wheat and dairy"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="List/cf-1554873603226"/>
+      </reference>
+      <name value="Sample Allergy Intolerance List"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="List/cf-1554878846011"/>
+      </reference>
+      <name value="Sample Allergy Intolerance List: Empty (nilknown)"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>	
+    <resource>
+      <reference>
+        <reference value="List/cf-1554879075420"/>
+      </reference>
+      <name value="Sample Allergy Intolerance List: Empty (unknown)"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <!-- problems to be resolved resource>
+      <reference>
+        <reference value="List/283f6969-6767-4d8f-8b73-2f8a5ab6a56a"/>
+      </reference>
+      <name value="Medication List"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource-->	
+    <resource>
+      <reference>
+        <reference value="Composition/example0"/>
+      </reference>
+      <name value="Sample Composition"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
 	  <title value="Primary Care Implementation Guide"/>

@@ -1,0 +1,55 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Peanut allergy<a name='mm'/></div>"
+  },
+  "id": "cf-1554878062500",
+  "patient": {
+    "reference": "Patient/cf-1554873707223"
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "unconfirmed",
+  "type": "allergy",
+  "category": [
+    "food"
+  ],
+  "criticality": "unable-to-assess",
+  "code": {
+    "coding": [
+      {
+        "code": "91935009",
+        "system": "http://snomed.info/sct",
+        "display": "Allergy to peanuts"
+      }
+    ]
+  },
+  "assertedDate": "2019-04-09T14:00:00.000Z",
+  "asserter": {
+    "reference": "Patient/cf-1554873707223"
+  },
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "code": "762952008",
+            "system": "http://snomed.info/sct",
+            "display": "Peanut"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "code": "126485001",
+              "system": "http://snomed.info/sct",
+              "display": "Urticaria"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

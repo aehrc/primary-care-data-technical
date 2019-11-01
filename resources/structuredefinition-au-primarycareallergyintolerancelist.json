@@ -1,0 +1,76 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "au-primarycareallergyintolerancelist",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList",
+  "version": "0.0.1",
+  "name": "AUPrimaryCareAllergyIntoleranceList",
+  "title": "AU Primary Care Allergy Intolerance List",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://confluence.csiro.au/display/primarycaredata/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "This profile defines an allergy intolerance list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "purpose": "This profile defines an allergy intolerance list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List",
+        "path": "List",
+        "short": "A list of allergies/intolerances in an Australian primary care practice-to-practice record transfer context.",
+        "definition": "A list of substances which, on administration or during exposure, may put the individual at risk of an adverse reaction.",
+        "comment": "Absence: A positive statement of absence of any adverse reaction information will be represented by the phrase \r\nExclusion: A positive statement excluding the presence of any adverse reactions will be represented  by the phrase ‘Nil known’.",
+        "alias": [
+          "Allergy list",
+          "Allergy/intolerance"
+        ]
+      },
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "fixedCode": "current"
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "List.entry",
+        "path": "List.entry",
+        "short": "Allergy/intolerance list entry",
+        "definition": "List of allergy/intolerance type entries"
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "List.emptyReason",
+        "path": "List.emptyReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

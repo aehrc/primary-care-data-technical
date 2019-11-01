@@ -1,0 +1,33 @@
+{
+  "resourceType": "List",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Empty Allergies List<a name='mm'/></div>"
+  },
+  "id": "cf-1554878846011",
+  "subject": {
+    "reference": "Patient/cf-1554873707223"
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "title": "Adverse Reactions List",
+  "code": {
+    "coding": [
+      {
+        "code": "48765-2",
+        "system": "http://loinc.org",
+        "display": "Allergies and adverse reactions Document"
+      }
+    ]
+  },
+  "date": "2019-04-09T14:00:00.000Z",
+  "emptyReason": {
+    "coding": [
+      {
+        "code": "nilknown",
+        "system": "http://hl7.org/fhir/list-empty-reason",
+        "display": "Nil Known"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70" />
+    <meta>
+        <versionId value="20040210130000" />
+        <lastUpdated value="2004-02-10T13:00:00+00:00" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>2004-06-25 INFANRIX (78946B)</p>
+        </div>
+    </text>
+    <status value="completed" />
+    <notGiven value="false" />
+    <vaccineCode>
+        <coding>
+            <system value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats" />
+            <code value="IFX" />
+        </coding>
+        <text value="INFANRIX" />
+    </vaccineCode>
+    <patient>
+        <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" />
+    </patient>
+    <date value="2004-06-25" />
+    <primarySource value="true" />
+    <lotNumber value="78946B" />
+    <site>
+        <text value="Left Deltoid" />
+    </site>
+    <route>
+        <text value="IMI" />
+    </route>
+    <practitioner>
+        <role>
+            <coding>
+                <system value="http://hl7.org/fhir/v2/0443" />
+                <code value="OP" />
+                <display value="Ordering Provider" />
+            </coding>
+        </role>
+        <actor>
+            <reference value="Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" />
+        </actor>
+    </practitioner>
+</Immunization>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+    <id value="B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89" />
+    <meta>
+        <versionId value="20181113034743" />
+        <lastUpdated value="2018-11-13T03:47:43+00:00" />
+        <security>
+            <system value="http://hl7.org/fhir/v3/Confidentiality" />
+            <code value="N" />
+            <display value="normal" />
+        </security>
+        <security>
+            <system value="http://oridashi.com.au/system/code/include-in-summary" />
+            <code value="SUMMARY" />
+            <display value="summary" />
+        </security>
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>2018-11-13 Stent, coronary artery</p>
+        </div>
+    </text>
+    <status value="completed" />
+    <code>
+        <coding>
+            <system value="http://oridashi.com.au/system/code/bestpracticeterm" />
+            <code value="3579" />
+            <display value="Stent, coronary artery" />
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="36969009" />
+            <display value="Stent, coronary artery" />
+        </coding>
+        <text value="Stent, coronary artery" />
+    </code>
+    <subject>
+        <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35" />
+    </subject>
+    <performedPeriod>
+        <start value="2018-11-13" />
+    </performedPeriod>
+</Procedure>

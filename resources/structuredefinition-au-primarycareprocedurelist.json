@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "au-primarycareprocedurelist",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList",
+  "version": "0.0.1",
+  "name": "AUPrimaryCareProcedureList",
+  "title": "AU Primary Care Procedure List",
+  "status": "draft",
+  "experimental": false,
+  "description": "This profile defines a procedure list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "purpose": "This profile defines a procedure list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List",
+        "path": "List",
+        "short": "A list procedures of Australian primary care practice-to-practice record transfer context.",
+        "definition": "A list of significant procedures for the subject of care.",
+        "comment": "To exchange information about significant procedures for the subject of care, including one of: an absence of information; an exclusion of any significant procedures; or a list of procedure items",
+        "alias": [
+          "Procedure History",
+          "Surgical History"
+        ]
+      },
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "fixedCode": "current"
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+			]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.emptyReason",
+        "path": "List.emptyReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

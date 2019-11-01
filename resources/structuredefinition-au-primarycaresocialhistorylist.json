@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "au-primarycaresocialhistorylist",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList",
+  "version": "0.0.1",
+  "name": "AUPrimaryCareSocialHistoryList",
+  "title": "AU Primary Care Social History List",
+  "status": "draft",
+  "experimental": false,
+  "description": "This profile defines a social history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "purpose": "This profile defines a social history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List",
+        "path": "List",
+        "short": "A list of social history observations in an Australian primary care practice-to-practice record transfer context.",
+        "definition": "A list of significant health and related issues in family members.",
+        "comment": "Absence: A positive statement of absence of any information about family history will be represented by the phrase ‘Not available’.\r\nExclusion: A positive statement excluding known administration of any vaccinations will be represented by the phrase ‘Nil known’.",
+        "alias": [
+          "Vaccination List"
+        ]
+      },
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "fixedCode": "current"
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"http://hl7.org/fhir/StructureDefinition/Observation"
+			]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.emptyReason",
+        "path": "List.emptyReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+     <id value="B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.76" />
+     <meta>
+         <versionId value="20181218231936" />
+         <lastUpdated value="2018-12-18T23:19:36+00:00" />
+         <security>
+             <system value="http://hl7.org/fhir/v3/Confidentiality" />
+             <code value="N" />
+             <display value="normal" />
+         </security>
+     </meta>
+     <text>
+         <status value="generated" />
+         <div xmlns="http://www.w3.org/1999/xhtml">
+             <p>2011-03-25 Throat pain (Provisional)</p>
+         </div>
+     </text>
+     <clinicalStatus value="active" />
+     <verificationStatus value="provisional" />
+     <category>
+         <coding>
+             <system value="http://snomed.info/sct" />
+             <code value="439401001" />
+             <display value="Diagnosis" />
+         </coding>
+     </category>
+     <code>
+         <coding>
+             <system value="http://oridashi.com.au/system/code/bestpracticeterm" />
+             <code value="4239" />
+             <display value="Throat pain" />
+         </coding>
+         <coding>
+             <system value="http://snomed.info/sct" />
+             <code value="162397003" />
+             <display value="Throat pain" />
+         </coding>
+         <coding>
+             <system value="http://oridashi.com.au/system/code/medicaldirectorterm" />
+             <code value="thro@pain" />
+             <display value="Throat pain" />
+         </coding>
+         <coding>
+             <system value="http://hl7.org/fhir/sid/icpc-2" />
+             <code value="R21004" />
+             <display value="Throat pain" />
+         </coding>
+         <text value="Throat pain (Provisional)" />
+     </code>
+     <subject>
+         <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.2" />
+     </subject>
+     <onsetDateTime value="2011-03-25" />
+     <abatementBoolean value="false" />
+     <asserter>
+         <reference value="Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" />
+     </asserter>
+ </Condition>

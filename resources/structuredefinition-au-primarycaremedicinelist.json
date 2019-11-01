@@ -1,0 +1,65 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "au-primarycaremedicinelist",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList",
+  "version": "0.0.1",
+  "name": "AUPrimaryCareMedicineList",
+  "title": "AU Primary Care Medicine List",
+  "status": "draft",
+  "description": "This profile defines a medicine list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "purpose": "This profile defines a medicine list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-medlist",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List",
+        "path": "List",
+        "short": "A list of medications in an Australian primary care practice-to-practice record transfer context."
+      },
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "fixedCode": "current"
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "List.date",
+        "path": "List.date",
+        "definition": "The date that the list was determined / last reviewed",
+        "mustSupport": true
+      },
+      {
+        "id": "List.entry",
+        "path": "List.entry",
+        "mustSupport": true
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+			]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.emptyReason",
+        "path": "List.emptyReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

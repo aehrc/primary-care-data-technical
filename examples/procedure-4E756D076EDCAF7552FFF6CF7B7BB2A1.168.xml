@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+    <id value="4E756D076EDCAF7552FFF6CF7B7BB2A1.168" />
+    <meta>
+        <versionId value="20170928004125" />
+        <lastUpdated value="2017-09-28T00:41:25.05+00:00" />
+        <security>
+            <system value="http://hl7.org/fhir/v3/Confidentiality" />
+            <code value="N" />
+            <display value="normal" />
+        </security>
+        <security>
+            <system value="http://oridashi.com.au/system/code/include-in-summary" />
+            <code value="SUMMARY" />
+            <display value="summary" />
+        </security>
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>2017-12-28 Plantar wart excision</p>
+        </div>
+    </text>
+    <status value="completed" />
+    <code>
+        <coding>
+            <system value="http://oridashi.com.au/system/code/medicaldirectorterm" />
+            <code value="surg.foot@planw" />
+            <display value="Plantar wart excision" />
+        </coding>
+        <text value="Plantar wart excision" />
+    </code>
+    <subject>
+        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17" />
+    </subject>
+    <performedPeriod>
+        <start value="2017-12-28" />
+    </performedPeriod>
+</Procedure>

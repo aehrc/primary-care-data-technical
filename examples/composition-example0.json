@@ -1,0 +1,80 @@
+{
+	"resourceType": "Composition",
+	"id": "example0",
+	"meta": {
+		"profile": ["https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns='http://www.w3.org/1999/xhtml'>Joe Pretend record<a name='mm'/><div><strong class='inset'>subject: </strong>Joe Pretend</div><div><strong class='inset'>author: </strong>Jim device</div></div>"
+	},
+	"author": [{
+		"reference": "urn:uuid:9ea537b4-be92-40b6-ba47-4726eaacf8b2"
+	}],
+	"subject": {
+		"reference": "urn:uuid:0d8e349b-e751-4ef7-9089-ffeb2d1aaff4"
+	},
+	"section": [{
+			"title": "Clinical Synopsis",
+			"entry": [],
+			"code": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "61150-9",
+					"display": "Subjective Narrative"
+				}]
+			},
+			"text": {
+				"status": "additional",
+				"div": "<div xmlns='http://www.w3.org/1999/xhtml'><p>Joe is in good health, but needs to monitor his asthma and allergies</p></div>"
+			}
+		},
+		{
+			"title": "Medical History",
+			"entry": [{
+				"reference": "urn:uuid:c20d008a-455e-4aee-8e04-24703ab8e1f5"
+			}]
+		},
+		{
+			"title": "Allergies and adverse reactions Document",
+			"entry": [{
+				"reference": "urn:uuid:1be74ce5-6198-49e9-bfe4-c5972f13ce0a"
+			}],
+			"code": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "48765-2",
+					"display": "Allergies and adverse reactions Document"
+				}]
+			}
+		},
+		{
+			"title": "Immunisations List",
+			"entry": [{
+				"reference": "urn:uuid:350a5673-5459-4b45-8eb6-039355107d1d"
+			}],
+			"code": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "11369-6",
+					"display": "History of Immunization Narrative"
+				}]
+			}
+		},
+		{
+			"title": "Current Medicines List",
+			"entry": [{
+				"reference": "urn:uuid:283f6969-6767-4d8f-8b73-2f8a5ab6a56a"
+			}]
+		}
+	],
+	"date": "2019-05-01T14:00:00.000Z",
+	"title": "Patient record for Joe Pretend",
+	"status": "final",
+	"type": {
+		"coding": [{
+			"code": "patient record",
+			"system": "https://csiro.au/CodeSystem/document-type"
+		}]
+	}
+}

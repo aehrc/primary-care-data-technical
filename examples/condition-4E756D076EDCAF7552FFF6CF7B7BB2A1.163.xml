@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+    <id value="4E756D076EDCAF7552FFF6CF7B7BB2A1.163" />
+    <meta>
+        <versionId value="20180827233645" />
+        <lastUpdated value="2018-08-27T23:36:45.363+00:00" />
+        <security>
+            <system value="http://hl7.org/fhir/v3/Confidentiality" />
+            <code value="R" />
+            <display value="restricted" />
+        </security>
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>1913-03-05 Polio</p>
+        </div>
+    </text>
+    <clinicalStatus value="active" />
+    <verificationStatus value="confirmed" />
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="439401001" />
+            <display value="Diagnosis" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://oridashi.com.au/system/code/medicaldirectorterm" />
+            <code value="infe&lt;poliv" />
+            <display value="Polio" />
+        </coding>
+        <text value="Polio" />
+    </code>
+    <subject>
+        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.32" />
+    </subject>
+    <onsetDateTime value="1913-03-05" />
+    <abatementBoolean value="false" />
+    <asserter>
+        <reference value="Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.3" />
+    </asserter>
+</Condition>

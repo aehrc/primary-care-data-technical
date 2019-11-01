@@ -1,0 +1,44 @@
+{
+  "resourceType": "List",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Allergy Intolerance List<a name='mm'/></div>"
+  },
+  "id": "cf-1554873603226",
+  "subject": {
+    "reference": "Patient/cf-1554873707223"
+  },
+  "status": "current",
+  "mode": "working",
+  "code": {
+    "coding": [
+      {
+        "code": "48765-2",
+        "system": "http://loinc.org",
+        "display": "Allergies and adverse reactions Document"
+      }
+    ]
+  },
+  "title": "Allergy Intolerance List",
+  "orderedBy": {
+    "coding": [
+      {
+        "code": "user",
+        "system": "http://hl7.org/fhir/list-order",
+        "display": "Sorted by User"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "AllergyIntolerance/cf-1554873772436"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/cf-1554878062500"
+      }
+    }
+  ]
+}

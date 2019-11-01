@@ -1,0 +1,479 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "au-primarycarecomposition",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition",
+  "version": "0.0.1",
+  "name": "AUPrimaryCareComposition",
+  "title": "AU Primary Care Composition",
+  "status": "draft",
+  "description": "This profile defines a composition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "purpose": "This profile defines a composition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition",
+        "path": "Composition",
+        "short": "Composition for the Australian primary care practice-to-practice record transfer context."
+      },
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            },
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.type.coding:loincMedicalRecords",
+        "path": "Composition.type.coding",
+        "sliceName": "loincMedicalRecords",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding:loincMedicalRecords.system",
+        "path": "Composition.type.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.type.coding:loincMedicalRecords.version",
+        "path": "Composition.type.coding.version",
+        "fixedString": "2.65"
+      },
+      {
+        "id": "Composition.type.coding:loincMedicalRecords.code",
+        "path": "Composition.type.coding.code",
+        "fixedCode": "11503-0"
+      },
+      {
+        "id": "Composition.type.coding:loincMedicalRecords.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Composition.type.coding.display",
+        "fixedString": "Medical Records"
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+			]
+          }
+        ]
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "max": "0"
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "fixedString": "Practice to Practice Patient Summary"
+      },
+      {
+        "id": "Composition.section",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding.code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "medicalHistoryList",
+        "short": "Medical History List",
+        "definition": "A combined list of significant problems, diagnoses and procedures for the individual.",
+        "alias": [
+          "Problem list",
+          "Medical history",
+          "Procedure history",
+          "Surgical history"
+        ],
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.mode",
+        "path": "Composition.section.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList",
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList",
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProblemList"
+			]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:adverseReactionList",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "adverseReactionList",
+        "short": "Adverse Reaction List",
+        "definition": "A list of substances which, on administration or during exposure, may put the individual at risk of an adverse reaction.",
+        "alias": [
+          "Allergy list",
+          "Allergy/intolerance"
+        ],
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:adverseReactionList.mode",
+        "path": "Composition.section.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:adverseReactionList.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+			]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseReactionList.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:adverseReactionList.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vaccinationList",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "vaccinationList",
+        "short": "Vaccination List",
+        "definition": "A list of vaccines that have been administered to the individual.",
+        "alias": [
+          "Immunisation List"
+        ],
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:vaccinationList.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:vaccinationList.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "fixedString": "2.65"
+      },
+      {
+        "id": "Composition.section:vaccinationList.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "41291-6"
+      },
+      {
+        "id": "Composition.section:vaccinationList.code.coding.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Composition.section.code.coding.display",
+        "fixedString": "Immunization"
+      },
+      {
+        "id": "Composition.section:vaccinationList.mode",
+        "path": "Composition.section.mode",
+        "fixedCode": "snapsot"
+      },
+      {
+        "id": "Composition.section:vaccinationList.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
+			]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:vaccinationList.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vaccinationList.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medicineList",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "medicineList",
+        "short": "Active Medicines List",
+        "definition": "A list of medicines currently being used by the individual.",
+        "comment": "Refer to ASQHC On screen display of meds",
+        "alias": [
+          "Medicines List"
+        ],
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:medicineList.mode",
+        "path": "Composition.section.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:medicineList.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+			]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medicineList.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medicineList.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "clinicalSynopsis",
+        "short": "Clinical Synopsis",
+        "definition": "Narrative text that provides additional information or context about the individual that is NOT otherwise captured in the structured clinical content of the exchange but is considered relevant by the sending clinician as part of a comprehensive clinical handover of information.",
+        "alias": [
+          "Clinical summary"
+        ],
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "userSelected": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "fixedString": "2.65"
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "11329-0"
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.code.coding.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Composition.section.code.coding.display",
+        "fixedString": "History general"
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.text",
+        "path": "Composition.section.text",
+        "short": "Clinical Synopsis Text",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:familyHistory",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "familyHistory",
+        "short": "Family History List",
+        "definition": "A list of significant health and related issues in family members.",
+        "comment": "To exchange information about family history that may impact clinical decision-making about the subject of care.",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:familyHistory.mode",
+        "path": "Composition.section.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:familyHistory.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:familyHistory.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:familyHistory.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:socialHistory",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
+          }
+        ],
+        "path": "Composition.section",
+        "sliceName": "socialHistory",
+        "definition": "A list of social circumstances or experiences that may have impact on the health of the subject of care or clinical decision-making about their care.",
+        "comment": "To exchange relevant details about the social circumstances and life experiences that may impact on the health of the subject of care.",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:socialHistory.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+				"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
+			]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:socialHistory.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      }
+    ]
+  }
+}
