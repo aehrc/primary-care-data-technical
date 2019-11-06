@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="geneticfamilymember"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Genetic Family Member ValueSet</h2><tt>http://aehrc.com/valueset/geneticfamilymember</tt></div>
+  </text>
+  <url value="http://aehrc.com/valueset/geneticfamilymember"/>
+  <name value="Genetic_Family_Member_ValueSet"/>
+  <title value="Genetic Family Member ValueSet"/>
+  <status value="draft"/>
+  <date value="2019-11-06T10:56:59+10:00"/>
+  <publisher value="AEHRC"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="&lt; 444148008"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

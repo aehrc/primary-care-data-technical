@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "geneticfamilymember",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Genetic Family Member ValueSet</h2><tt>http://aehrc.com/valueset/geneticfamilymember</tt></div>"
+  },
+  "url": "http://aehrc.com/valueset/geneticfamilymember",
+  "name": "Genetic_Family_Member_ValueSet",
+  "title": "Genetic Family Member ValueSet",
+  "status": "draft",
+  "date": "2019-11-06T10:56:59+10:00",
+  "publisher": "AEHRC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "< 444148008"
+          }
+        ]
+      }
+    ]
+  }
+}

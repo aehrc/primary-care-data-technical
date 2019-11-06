@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="cf-1554873603226"/>
+  <text>
+    <status value="generated"/><div xmlns='http://www.w3.org/1999/xhtml'>Allergy Intolerance List<a name='mm'/></div>
+  </text>
+  <status value="current"/>
+  <mode value="working"/>
+  <title value="Allergy Intolerance List"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="48765-2"/>
+      <display value="Allergies and adverse reactions Document"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/cf-1554873707223"/>
+  </subject>
+  <orderedBy>
+    <coding>
+      <system value="http://hl7.org/fhir/list-order"/>
+      <code value="user"/>
+      <display value="Sorted by User"/>
+    </coding>
+  </orderedBy>
+  <entry>
+    <item>
+      <reference value="AllergyIntolerance/cf-1554873772436"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="AllergyIntolerance/cf-1554878062500"/>
+    </item>
+  </entry>
+</List>

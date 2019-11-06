@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/AllergyIntolerance/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6> a fhir:AllergyIntolerance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "20060222130000" ];
+     fhir:Meta.lastUpdated [ fhir:value "2006-02-22T13:00:00+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>Penicillin - Anaphylaxis (Severe)\n                <br/>\n            </p>\n        </div>"
+  ];
+  fhir:AllergyIntolerance.clinicalStatus [];
+  fhir:AllergyIntolerance.verificationStatus [];
+  fhir:AllergyIntolerance.category [
+     fhir:value "medication";
+     fhir:index 0
+  ];
+  fhir:AllergyIntolerance.criticality [ fhir:value "high"];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://oridashi.com.au/code/bp-drug-class" ];
+       fhir:Coding.code [ fhir:value "2" ];
+       fhir:Coding.display [ fhir:value "Penicillin" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Penicillin" ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1>;
+     fhir:Reference.reference [ fhir:value "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" ]
+  ];
+  fhir:AllergyIntolerance.recorder [
+     fhir:link <http://build.fhir.org/ig/aehrc/Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" ]
+  ];
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0;
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/bestpracticereaction" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "Anaphylaxis" ]
+       ], [
+         fhir:index 1;
+         a sct:39579001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "39579001" ];
+         fhir:Coding.display [ fhir:value "Anaphylaxis" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Anaphylaxis" ]
+     ];
+     fhir:AllergyIntolerance.reaction.severity [ fhir:value "severe" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/AllergyIntolerance/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

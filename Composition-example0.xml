@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="example0"/>
+  <meta>
+    <profile value="https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns='http://www.w3.org/1999/xhtml'>Joe Pretend record<a name='mm'/><div><strong class='inset'>subject: </strong>Joe Pretend</div><div><strong class='inset'>author: </strong>Jim device</div></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="https://csiro.au/CodeSystem/document-type"/>
+      <code value="patient record"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="urn:uuid:0d8e349b-e751-4ef7-9089-ffeb2d1aaff4"/>
+  </subject>
+  <date value="2019-05-01T14:00:00.000Z"/>
+  <author>
+    <reference value="urn:uuid:9ea537b4-be92-40b6-ba47-4726eaacf8b2"/>
+  </author>
+  <title value="Patient record for Joe Pretend"/>
+  <section>
+    <title value="Clinical Synopsis"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="61150-9"/>
+        <display value="Subjective Narrative"/>
+      </coding>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns='http://www.w3.org/1999/xhtml'><p>Joe is in good health, but needs to monitor his asthma and allergies</p></div>
+    </text>
+  </section>
+  <section>
+    <title value="Medical History"/>
+    <entry>
+      <reference value="urn:uuid:c20d008a-455e-4aee-8e04-24703ab8e1f5"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Allergies and adverse reactions Document"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48765-2"/>
+        <display value="Allergies and adverse reactions Document"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="urn:uuid:1be74ce5-6198-49e9-bfe4-c5972f13ce0a"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Immunisations List"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11369-6"/>
+        <display value="History of Immunization Narrative"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="urn:uuid:350a5673-5459-4b45-8eb6-039355107d1d"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Current Medicines List"/>
+    <entry>
+      <reference value="urn:uuid:283f6969-6767-4d8f-8b73-2f8a5ab6a56a"/>
+    </entry>
+  </section>
+</Composition>

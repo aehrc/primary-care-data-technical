@@ -1,0 +1,42 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "4E756D076EDCAF7552FFF6CF7B7BB2A1.18",
+  "meta": {
+    "versionId": "20180412005602",
+    "lastUpdated": "2018-04-12T00:56:02.153+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>ALPHA-ADRENERGIC BLOCKERS - rash</p>\n        </div>"
+  },
+  "category": [
+    "medication"
+  ],
+  "criticality": "low",
+  "code": {
+    "coding": [
+      {
+        "system": "http://oridashi.com.au/system/code/md-drug-class",
+        "code": "1AA89EE6CE4C79150C522899B2721609",
+        "display": "ALPHA-ADRENERGIC BLOCKERS"
+      }
+    ],
+    "text": "ALPHA-ADRENERGIC BLOCKERS"
+  },
+  "patient": {
+    "reference": "Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17"
+  },
+  "recorder": {
+    "reference": "Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.2"
+  },
+  "reaction": [
+    {
+      "manifestation": [
+        {
+          "text": "rash"
+        }
+      ],
+      "severity": "moderate"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/AllergyIntolerance/cf-1554873772436> a fhir:AllergyIntolerance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cf-1554873772436"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns='http://www.w3.org/1999/xhtml'>Eosinophilic Oesophagitis triggered by wheat and dairy<a name='mm'/></div>"
+  ];
+  fhir:AllergyIntolerance.type [ fhir:value "intolerance"];
+  fhir:AllergyIntolerance.category [
+     fhir:value "food";
+     fhir:index 0
+  ];
+  fhir:AllergyIntolerance.criticality [ fhir:value "low"];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:735455001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "735455001" ];
+       fhir:Coding.display [ fhir:value "Eosinophilic oesophagitis caused by food" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/cf-1554873707223>;
+     fhir:Reference.reference [ fhir:value "Patient/cf-1554873707223" ]
+  ];
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0;
+     fhir:AllergyIntolerance.reaction.substance [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:412071004;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "412071004" ];
+         fhir:Coding.display [ fhir:value "Wheat" ]
+       ]
+     ];
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:235599003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "235599003" ];
+         fhir:Coding.display [ fhir:value "Eosinophilic oesophagitis" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:AllergyIntolerance.reaction.substance [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:226760005;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "226760005" ];
+         fhir:Coding.display [ fhir:value "Dairy foods" ]
+       ]
+     ];
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:235599003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "235599003" ];
+         fhir:Coding.display [ fhir:value "Eosinophilic oesophagitis" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/AllergyIntolerance/cf-1554873772436.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

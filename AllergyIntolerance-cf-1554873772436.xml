@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="cf-1554873772436"/>
+  <text>
+    <status value="generated"/><div xmlns='http://www.w3.org/1999/xhtml'>Eosinophilic Oesophagitis triggered by wheat and dairy<a name='mm'/></div>
+  </text>
+  <type value="intolerance"/>
+  <category value="food"/>
+  <criticality value="low"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="735455001"/>
+      <display value="Eosinophilic oesophagitis caused by food"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/cf-1554873707223"/>
+  </patient>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="412071004"/>
+        <display value="Wheat"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="235599003"/>
+        <display value="Eosinophilic oesophagitis"/>
+      </coding>
+    </manifestation>
+  </reaction>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="226760005"/>
+        <display value="Dairy foods"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="235599003"/>
+        <display value="Eosinophilic oesophagitis"/>
+      </coding>
+    </manifestation>
+  </reaction>
+</AllergyIntolerance>

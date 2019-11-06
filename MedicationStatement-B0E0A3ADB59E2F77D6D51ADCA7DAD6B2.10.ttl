@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/MedicationStatement/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10> a fhir:MedicationStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "20040210130000" ];
+     fhir:Meta.lastUpdated [ fhir:value "2004-02-10T13:00:00+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2004-03-16 Betaloc 100mg Tablet 1 In the morning (60) 5 repeats</p>\n        </div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Medication;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "49b6dbdc-0fba-46b6-b1d3-3ac2e765c204" ];
+     fhir:Medication.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/medication-type" ];
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://hl7.org.au/fhir/CodeSystem/medication-type" ];
+             fhir:Coding.code [ fhir:value "BPG" ];
+             fhir:Coding.display [ fhir:value "Branded package with no container" ]
+           ]
+         ];
+         fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/bestpracticedrug" ];
+         fhir:Coding.code [ fhir:value "783-926" ];
+         fhir:Coding.display [ fhir:value "Betaloc 100mg Tablet (60)" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://pbs.gov.au/code/item" ];
+         fhir:Coding.code [ fhir:value "1325R" ];
+         fhir:Coding.display [ fhir:value "Metoprolol Tartrate" ]
+       ], [
+         fhir:index 2;
+         fhir:Coding.system [ fhir:value "http://www.mims.com.au/mims-codes" ];
+         fhir:Coding.code [ fhir:value "2120102" ];
+         fhir:Coding.display [ fhir:value "Betaloc 100mg Tablet (60)" ]
+       ], [
+         fhir:index 3;
+         fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+         fhir:Coding.code [ fhir:value "C07AB" ];
+         fhir:Coding.display [ fhir:value "Metoprolol Tartrate" ]
+       ], [
+         fhir:index 4;
+         a sct:27897011000036102;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/medication-type" ];
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://hl7.org.au/fhir/CodeSystem/medication-type" ];
+             fhir:Coding.code [ fhir:value "UPG" ];
+             fhir:Coding.display [ fhir:value "Unbranded package with no container" ]
+           ]
+         ];
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "27897011000036102" ];
+         fhir:Coding.display [ fhir:value "Metoprolol Tartrate 100mg Tablet (60)" ]
+       ], [
+         fhir:index 5;
+         a sct:11751011000036101;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/medication-type" ];
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://hl7.org.au/fhir/CodeSystem/medication-type" ];
+             fhir:Coding.code [ fhir:value "BPG" ];
+             fhir:Coding.display [ fhir:value "Branded package with no container" ]
+           ]
+         ];
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "11751011000036101" ];
+         fhir:Coding.display [ fhir:value "Betaloc 100mg Tablet (60)" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Betaloc 100mg Tablet (60)" ]
+     ];
+     fhir:Medication.manufacturer [
+       fhir:Reference.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "http://pbs.gov.au/identifier/manufacturer" ];
+         fhir:Identifier.value [ fhir:value "AP" ]
+       ];
+       fhir:Reference.display [ fhir:value "AstraZeneca Pty Ltd" ]
+     ];
+     fhir:Medication.form [
+       fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+     ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:Reference.reference [ fhir:value "#49b6dbdc-0fba-46b6-b1d3-3ac2e765c204" ];
+     fhir:Reference.display [ fhir:value "Betaloc 100mg Tablet" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2004-03-16"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2004-03-16"^^xsd:date ]
+  ];
+  fhir:MedicationStatement.dateAsserted [ fhir:value "2004-03-16"^^xsd:date];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6>;
+     fhir:Reference.reference [ fhir:value "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6" ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.text [ fhir:value "1 In the morning (60) 5 repeats" ];
+     fhir:Dosage.asNeededBoolean [ fhir:value "false"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/MedicationStatement/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

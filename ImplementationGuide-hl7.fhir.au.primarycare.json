@@ -1,0 +1,698 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.au.primarycare",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AUPrimaryCareImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://build.fhir.org/ig/aehrc/ImplementationGuide/hl7.fhir.au.primarycare</pre></div>"
+  },
+  "url": "http://build.fhir.org/ig/aehrc/ImplementationGuide/hl7.fhir.au.primarycare",
+  "version": "0.0.1",
+  "name": "AUPrimaryCareImplementationGuide",
+  "title": "AU Primary Care Implementation Guide",
+  "status": "draft",
+  "experimental": true,
+  "date": "2019-01-18T00:00:00+10:00",
+  "publisher": "AEHRC",
+  "contact": [
+    {
+      "name": "Primary Care Data Quality Technical Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://confluence.csiro.au/display/primarycaredata/Primary+Care+Data+Quality+Technical+Working+Group",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "AU"
+        }
+      ]
+    }
+  ],
+  "packageId": "aehrc.com.primarycare",
+  "license": "CC-BY-4.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "grouping": [
+      {
+        "id": "p1",
+        "name": "primarycare"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycarepatient.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycarepatient"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycareallergyintolerance.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycareallergyintolerance"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycareallergyintolerancelist.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycareallergyintolerancelist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycarecomposition.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycarecomposition"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycarefamilymemberhistory.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycarefamilymemberhistory"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycarefamilymemberhistorylist.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycarefamilymemberhistorylist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycareimmunisation.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycareimmunisation"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycareimmunisationlist.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycareimmunisationlist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycaremedicalhistorylist.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycaremedicalhistorylist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycaremedication.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycaremedication"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycaremedicationstatement.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycaremedicationstatement"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycaremedicinelist.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycaremedicinelist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycareproblemlist.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycareproblemlist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycareprocedure.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycareprocedure"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycareprocedurelist.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycareprocedurelist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-au-primarycaresocialhistorylist.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/au-primarycaresocialhistorylist"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/au-primarycare-clinical-indication-for-medication"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/au-primarycare-condition-course"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/au-primarycare-reaction-manifestation"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/au-primarycare-genetic-family-member"
+        },
+        "exampleBoolean": false,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-cf-1552457299474.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "name": "Mary Ficticious - JS",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35"
+        },
+        "name": "Oridashi Patient 1",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-4E756D076EDCAF7552FFF6CF7B7BB2A1.20.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.20"
+        },
+        "name": "Oridashi Patient 2",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MedicationStatement-4E756D076EDCAF7552FFF6CF7B7BB2A1.147.html"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/4E756D076EDCAF7552FFF6CF7B7BB2A1.147"
+        },
+        "name": "Oridashi MedicationStatement 1",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MedicationStatement-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10.html"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10"
+        },
+        "name": "Oridashi MedicationStatement 2",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Immunization-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70.html"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70"
+        },
+        "name": "Oridashi Immunization 1",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Immunization-4E756D076EDCAF7552FFF6CF7B7BB2A1.143.html"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/4E756D076EDCAF7552FFF6CF7B7BB2A1.143"
+        },
+        "name": "Oridashi Immunization 2",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Procedure-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89.html"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89"
+        },
+        "name": "Oridashi Procedure 1",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Procedure-4E756D076EDCAF7552FFF6CF7B7BB2A1.168.html"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/4E756D076EDCAF7552FFF6CF7B7BB2A1.168"
+        },
+        "name": "Oridashi Procedure 2",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"
+        },
+        "name": "Oridashi Allergy Intolerance 1",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-4E756D076EDCAF7552FFF6CF7B7BB2A1.18.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/4E756D076EDCAF7552FFF6CF7B7BB2A1.18"
+        },
+        "name": "Oridashi Allergy Intolerance 2",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-cf-1554878062500.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/cf-1554878062500"
+        },
+        "name": "Sample Allergy Intolerance: Unconfirmed peanut allergy",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-cf-1554873772436.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/cf-1554873772436"
+        },
+        "name": "Sample Allergy Intolerance: eosinophilic oesphagitis triggered by wheat and dairy",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "List-cf-1554873603226.html"
+          }
+        ],
+        "reference": {
+          "reference": "List/cf-1554873603226"
+        },
+        "name": "Sample Allergy Intolerance List",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "List-cf-1554878846011.html"
+          }
+        ],
+        "reference": {
+          "reference": "List/cf-1554878846011"
+        },
+        "name": "Sample Allergy Intolerance List: Empty (nilknown)",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "List-cf-1554879075420.html"
+          }
+        ],
+        "reference": {
+          "reference": "List/cf-1554879075420"
+        },
+        "name": "Sample Allergy Intolerance List: Empty (unknown)",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Composition-example0.html"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/example0"
+        },
+        "name": "Sample Composition",
+        "exampleBoolean": true,
+        "groupingId": "p1"
+      }
+    ],
+    "page": {
+      "nameUrl": "index.html",
+      "title": "Primary Care Implementation Guide",
+      "generation": "html"
+    },
+    "parameter": [
+      {
+        "code": "generate-xml",
+        "value": "xml"
+      },
+      {
+        "code": "generate-json",
+        "value": "JSON"
+      }
+    ]
+  }
+}

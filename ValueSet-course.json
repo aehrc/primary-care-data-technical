@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "course",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Course ValueSet</h2><div><p>Course ValueSet</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where constraint  =  &lt;&lt;288524001 OR &lt;&lt; 424124008</li></ul></div>"
+  },
+  "url": "http://aehrc.com/valueset/course",
+  "version": "201905",
+  "name": "Course_ValueSet",
+  "title": "Course ValueSet",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-11-06T10:56:59+10:00",
+  "publisher": "AeHRC",
+  "description": "Course ValueSet",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "<<288524001 OR << 424124008"
+          }
+        ]
+      }
+    ]
+  }
+}

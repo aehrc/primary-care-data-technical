@@ -1,0 +1,46 @@
+{
+  "resourceType": "Procedure",
+  "id": "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89",
+  "meta": {
+    "versionId": "20181113034743",
+    "lastUpdated": "2018-11-13T03:47:43+00:00",
+    "security": [
+      {
+        "system": "http://hl7.org/fhir/v3/Confidentiality",
+        "code": "N",
+        "display": "normal"
+      },
+      {
+        "system": "http://oridashi.com.au/system/code/include-in-summary",
+        "code": "SUMMARY",
+        "display": "summary"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2018-11-13 Stent, coronary artery</p>\n        </div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://oridashi.com.au/system/code/bestpracticeterm",
+        "code": "3579",
+        "display": "Stent, coronary artery"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "36969009",
+        "display": "Stent, coronary artery"
+      }
+    ],
+    "text": "Stent, coronary artery"
+  },
+  "subject": {
+    "reference": "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35"
+  },
+  "performedPeriod": {
+    "start": "2018-11-13"
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="clinical-indication-for-medication"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Clinical Indication For Medication ValueSet</h2><div><p>Clinical Indication For Medication ValueSet</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where constraint  =  (&lt;&lt; 182929008|Drug prophylaxis| OR 169443000|Preventive procedure| OR ^ 32570581000036105|Problem/Diagnosis reference set|)</li></ul></div>
+  </text>
+  <url value="http://aehrc.com/valueset/clinical-indication-for-medication"/>
+  <version value="201905"/>
+  <name value="Clinical_Indication_For_Medication_ValueSet"/>
+  <title value="Clinical Indication For Medication ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-11-06T10:56:59+10:00"/>
+  <publisher value="AeHRC"/>
+  <description value="Clinical Indication For Medication ValueSet"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="(&lt;&lt; 182929008|Drug prophylaxis| OR 169443000|Preventive procedure| OR ^ 32570581000036105|Problem/Diagnosis reference set|)"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

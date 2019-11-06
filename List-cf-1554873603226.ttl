@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/List/cf-1554873603226> a fhir:List;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cf-1554873603226"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns='http://www.w3.org/1999/xhtml'>Allergy Intolerance List<a name='mm'/></div>"
+  ];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.mode [ fhir:value "working"];
+  fhir:List.title [ fhir:value "Allergy Intolerance List"];
+  fhir:List.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:48765-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "48765-2" ];
+       fhir:Coding.display [ fhir:value "Allergies and adverse reactions Document" ]
+     ]
+  ];
+  fhir:List.subject [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/cf-1554873707223>;
+     fhir:Reference.reference [ fhir:value "Patient/cf-1554873707223" ]
+  ];
+  fhir:List.orderedBy [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/list-order" ];
+       fhir:Coding.code [ fhir:value "user" ];
+       fhir:Coding.display [ fhir:value "Sorted by User" ]
+     ]
+  ];
+  fhir:List.entry [
+     fhir:index 0;
+     fhir:List.entry.item [
+       fhir:link <http://build.fhir.org/ig/aehrc/AllergyIntolerance/cf-1554873772436>;
+       fhir:Reference.reference [ fhir:value "AllergyIntolerance/cf-1554873772436" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:List.entry.item [
+       fhir:link <http://build.fhir.org/ig/aehrc/AllergyIntolerance/cf-1554878062500>;
+       fhir:Reference.reference [ fhir:value "AllergyIntolerance/cf-1554878062500" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/List/cf-1554873603226.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

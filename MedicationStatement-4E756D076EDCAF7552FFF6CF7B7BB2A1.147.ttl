@@ -1,0 +1,114 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/MedicationStatement/4E756D076EDCAF7552FFF6CF7B7BB2A1.147> a fhir:MedicationStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "4E756D076EDCAF7552FFF6CF7B7BB2A1.147"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "20181112124505" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-11-12T12:45:05.383+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2018-11-12 SIMVASTATIN 10mg Tablet 1 daily m.d.u. (30) 5 repeats (Reason: Hypertension)</p>\n        </div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Medication;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "ee7ddfcd-4f25-4702-9d14-575996b93acd" ];
+     fhir:Medication.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/medicaldirectordrug" ];
+         fhir:Coding.code [ fhir:value "22138" ];
+         fhir:Coding.display [ fhir:value "SIMVASTATIN 10mg Tablet" ]
+       ], [
+         fhir:index 1;
+         a sct:28211011000036108;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/medication-type" ];
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://hl7.org.au/fhir/CodeSystem/medication-type" ];
+             fhir:Coding.code [ fhir:value "UPG" ];
+             fhir:Coding.display [ fhir:value "Unbranded package with no container" ]
+           ]
+         ];
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "28211011000036108" ];
+         fhir:Coding.display [ fhir:value "simvastatin 10 mg tablet, 30" ]
+       ], [
+         fhir:index 2;
+         fhir:Coding.system [ fhir:value "http://pbs.gov.au/code/item" ];
+         fhir:Coding.code [ fhir:value "2011W" ];
+         fhir:Coding.display [ fhir:value "Simvastatin" ]
+       ], [
+         fhir:index 3;
+         fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/medicaldirectorgeneric" ];
+         fhir:Coding.code [ fhir:value "HMG" ];
+         fhir:Coding.display [ fhir:value "Simvastatin" ]
+       ], [
+         fhir:index 4;
+         fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+         fhir:Coding.code [ fhir:value "C10AA01" ];
+         fhir:Coding.display [ fhir:value "Simvastatin" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "SIMVASTATIN 10mg Tablet" ]
+     ];
+     fhir:Medication.form [
+       fhir:CodeableConcept.text [ fhir:value "Tablet" ]
+     ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "active"];
+  fhir:MedicationStatement.medicationReference [
+     fhir:Reference.reference [ fhir:value "#ee7ddfcd-4f25-4702-9d14-575996b93acd" ];
+     fhir:Reference.display [ fhir:value "SIMVASTATIN 10mg Tablet" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2018-11-12"^^xsd:date ]
+  ];
+  fhir:MedicationStatement.dateAsserted [ fhir:value "2018-11-12"^^xsd:date];
+  fhir:MedicationStatement.informationSource [
+     fhir:link <http://build.fhir.org/ig/aehrc/Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.3>;
+     fhir:Reference.reference [ fhir:value "Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.3" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.32>;
+     fhir:Reference.reference [ fhir:value "Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.32" ]
+  ];
+  fhir:MedicationStatement.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/medicaldirectorterm" ];
+       fhir:Coding.code [ fhir:value "hypet" ];
+       fhir:Coding.display [ fhir:value "Hypertension" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Hypertension" ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.text [ fhir:value "1 daily m.d.u. (30) 5 repeats" ];
+     fhir:Dosage.asNeededBoolean [ fhir:value "false"^^xsd:boolean ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/medicaldirectormedicationroute" ];
+         fhir:Coding.code [ fhir:value "PO" ];
+         fhir:Coding.display [ fhir:value "Oral - Swallowed" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/MedicationStatement/4E756D076EDCAF7552FFF6CF7B7BB2A1.147.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

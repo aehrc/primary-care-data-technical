@@ -1,0 +1,192 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "20181024015658" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-10-24T01:56:58+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient";
+       fhir:index 0;
+       fhir:link <https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>Ahern, Rhonda (Female 80y)</p>\n        </div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/indigenous-status" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1" ];
+       fhir:Coding.code [ fhir:value "9" ];
+       fhir:Coding.display [ fhir:value "Not stated/inadequately described" ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v2/0203" ];
+         fhir:Coding.code [ fhir:value "MC" ];
+         fhir:Coding.display [ fhir:value "Patient's Medicare Number" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Medicare Number" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/medicare-number" ];
+     fhir:Identifier.value [ fhir:value "35001582842" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org.au/fhir/v2/0203" ];
+         fhir:Coding.code [ fhir:value "SEN" ];
+         fhir:Coding.display [ fhir:value "Commonwealth Seniors Health Card" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Commonwealth Seniors Health Card" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/centrelink-customer-reference-number" ];
+     fhir:Identifier.value [ fhir:value "RR945857FH" ]
+  ], [
+     fhir:index 2;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/ihi-status" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1" ];
+         fhir:Coding.code [ fhir:value "active" ];
+         fhir:Coding.display [ fhir:value "active" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/ihi-record-status" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1" ];
+         fhir:Coding.code [ fhir:value "verified" ];
+         fhir:Coding.display [ fhir:value "verified" ]
+       ]
+     ];
+     fhir:Identifier.use [ fhir:value "usual" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v2/0203" ];
+         fhir:Coding.code [ fhir:value "NI" ];
+         fhir:Coding.display [ fhir:value "National unique individual identifier" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "IHI" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hi/ihi/1.0" ];
+     fhir:Identifier.value [ fhir:value "8003608111345443" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.family [ fhir:value "Ahern" ];
+     fhir:HumanName.given [
+       fhir:value "Rhonda";
+       fhir:index 0
+     ], [
+       fhir:value "Joan";
+       fhir:index 1
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "Mrs.";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:HumanName.use [ fhir:value "nickname" ];
+     fhir:HumanName.text [ fhir:value "Rhonda" ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "0349788795" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1938-06-06"^^xsd:date];
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.line [
+       fhir:value "17 Seymour Ave";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Capital Hill" ];
+     fhir:Address.state [ fhir:value "ACT" ];
+     fhir:Address.postalCode [ fhir:value "2600" ]
+  ];
+  fhir:Patient.maritalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/NullFlavor" ];
+       fhir:Coding.code [ fhir:value "UNK" ];
+       fhir:Coding.display [ fhir:value "unknown" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Uknown" ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Patient.contact.relationship [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v2/0131" ];
+         fhir:Coding.code [ fhir:value "N" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/RoleCode" ];
+         fhir:Coding.code [ fhir:value "SIS" ]
+       ]
+     ];
+     fhir:Patient.contact.name [
+       fhir:HumanName.use [ fhir:value "usual" ];
+       fhir:HumanName.family [ fhir:value "Phillip" ];
+       fhir:HumanName.given [
+         fhir:value "Lorna";
+         fhir:index 0
+       ];
+       fhir:HumanName.prefix [
+         fhir:value "Mrs.";
+         fhir:index 0
+       ]
+     ];
+     fhir:Patient.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "786132161" ];
+       fhir:ContactPoint.use [ fhir:value "home" ]
+     ];
+     fhir:Patient.contact.address [
+       fhir:Address.line [
+         fhir:value "67 Fairweather Avenue";
+         fhir:index 0
+       ];
+       fhir:Address.city [ fhir:value "Prospect" ];
+       fhir:Address.postalCode [ fhir:value "2148" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,41 @@
+{
+  "resourceType": "Procedure",
+  "id": "4E756D076EDCAF7552FFF6CF7B7BB2A1.168",
+  "meta": {
+    "versionId": "20170928004125",
+    "lastUpdated": "2017-09-28T00:41:25.05+00:00",
+    "security": [
+      {
+        "system": "http://hl7.org/fhir/v3/Confidentiality",
+        "code": "N",
+        "display": "normal"
+      },
+      {
+        "system": "http://oridashi.com.au/system/code/include-in-summary",
+        "code": "SUMMARY",
+        "display": "summary"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2017-12-28 Plantar wart excision</p>\n        </div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://oridashi.com.au/system/code/medicaldirectorterm",
+        "code": "surg.foot@planw",
+        "display": "Plantar wart excision"
+      }
+    ],
+    "text": "Plantar wart excision"
+  },
+  "subject": {
+    "reference": "Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17"
+  },
+  "performedPeriod": {
+    "start": "2017-12-28"
+  }
+}

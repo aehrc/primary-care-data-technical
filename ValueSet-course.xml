@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="course"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Course ValueSet</h2><div><p>Course ValueSet</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where constraint  =  &lt;&lt;288524001 OR &lt;&lt; 424124008</li></ul></div>
+  </text>
+  <url value="http://aehrc.com/valueset/course"/>
+  <version value="201905"/>
+  <name value="Course_ValueSet"/>
+  <title value="Course ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-11-06T10:56:59+10:00"/>
+  <publisher value="AeHRC"/>
+  <description value="Course ValueSet"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="constraint"/>
+        <op value="="/>
+        <value value="&lt;&lt;288524001 OR &lt;&lt; 424124008"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

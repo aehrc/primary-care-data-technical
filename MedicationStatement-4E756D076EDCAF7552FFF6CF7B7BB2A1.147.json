@@ -1,0 +1,103 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "4E756D076EDCAF7552FFF6CF7B7BB2A1.147",
+  "meta": {
+    "versionId": "20181112124505",
+    "lastUpdated": "2018-11-12T12:45:05.383+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2018-11-12 SIMVASTATIN 10mg Tablet 1 daily m.d.u. (30) 5 repeats (Reason: Hypertension)</p>\n        </div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Medication",
+      "id": "ee7ddfcd-4f25-4702-9d14-575996b93acd",
+      "code": {
+        "coding": [
+          {
+            "system": "http://oridashi.com.au/system/code/medicaldirectordrug",
+            "code": "22138",
+            "display": "SIMVASTATIN 10mg Tablet"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                "valueCoding": {
+                  "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
+                  "code": "UPG",
+                  "display": "Unbranded package with no container"
+                }
+              }
+            ],
+            "system": "http://snomed.info/sct",
+            "code": "28211011000036108",
+            "display": "simvastatin 10 mg tablet, 30"
+          },
+          {
+            "system": "http://pbs.gov.au/code/item",
+            "code": "2011W",
+            "display": "Simvastatin"
+          },
+          {
+            "system": "http://oridashi.com.au/system/code/medicaldirectorgeneric",
+            "code": "HMG",
+            "display": "Simvastatin"
+          },
+          {
+            "system": "http://www.whocc.no/atc",
+            "code": "C10AA01",
+            "display": "Simvastatin"
+          }
+        ],
+        "text": "SIMVASTATIN 10mg Tablet"
+      },
+      "form": {
+        "text": "Tablet"
+      }
+    }
+  ],
+  "status": "active",
+  "medicationReference": {
+    "reference": "#ee7ddfcd-4f25-4702-9d14-575996b93acd",
+    "display": "SIMVASTATIN 10mg Tablet"
+  },
+  "effectivePeriod": {
+    "start": "2018-11-12"
+  },
+  "dateAsserted": "2018-11-12",
+  "informationSource": {
+    "reference": "Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.3"
+  },
+  "subject": {
+    "reference": "Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.32"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://oridashi.com.au/system/code/medicaldirectorterm",
+          "code": "hypet",
+          "display": "Hypertension"
+        }
+      ],
+      "text": "Hypertension"
+    }
+  ],
+  "dosage": [
+    {
+      "text": "1 daily m.d.u. (30) 5 repeats",
+      "asNeededBoolean": false,
+      "route": {
+        "coding": [
+          {
+            "system": "http://oridashi.com.au/system/code/medicaldirectormedicationroute",
+            "code": "PO",
+            "display": "Oral - Swallowed"
+          }
+        ]
+      }
+    }
+  ]
+}

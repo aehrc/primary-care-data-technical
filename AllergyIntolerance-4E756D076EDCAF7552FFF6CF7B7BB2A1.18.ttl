@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/AllergyIntolerance/4E756D076EDCAF7552FFF6CF7B7BB2A1.18> a fhir:AllergyIntolerance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "4E756D076EDCAF7552FFF6CF7B7BB2A1.18"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "20180412005602" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-04-12T00:56:02.153+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>ALPHA-ADRENERGIC BLOCKERS - rash</p>\n        </div>"
+  ];
+  fhir:AllergyIntolerance.clinicalStatus [];
+  fhir:AllergyIntolerance.verificationStatus [];
+  fhir:AllergyIntolerance.category [
+     fhir:value "medication";
+     fhir:index 0
+  ];
+  fhir:AllergyIntolerance.criticality [ fhir:value "low"];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/md-drug-class" ];
+       fhir:Coding.code [ fhir:value "1AA89EE6CE4C79150C522899B2721609" ];
+       fhir:Coding.display [ fhir:value "ALPHA-ADRENERGIC BLOCKERS" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "ALPHA-ADRENERGIC BLOCKERS" ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17>;
+     fhir:Reference.reference [ fhir:value "Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17" ]
+  ];
+  fhir:AllergyIntolerance.recorder [
+     fhir:link <http://build.fhir.org/ig/aehrc/Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.2>;
+     fhir:Reference.reference [ fhir:value "Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.2" ]
+  ];
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0;
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "rash" ]
+     ];
+     fhir:AllergyIntolerance.reaction.severity [ fhir:value "moderate" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/AllergyIntolerance/4E756D076EDCAF7552FFF6CF7B7BB2A1.18.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

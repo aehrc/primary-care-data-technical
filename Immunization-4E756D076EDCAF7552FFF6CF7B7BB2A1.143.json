@@ -1,0 +1,26 @@
+{
+  "resourceType": "Immunization",
+  "id": "4E756D076EDCAF7552FFF6CF7B7BB2A1.143",
+  "meta": {
+    "versionId": "20130107045405",
+    "lastUpdated": "2013-01-07T04:54:05+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>1999-06-11 HEPATITIS A (EE3F243E)</p>\n        </div>"
+  },
+  "status": "completed",
+  "vaccineCode": {
+    "text": "HEPATITIS A"
+  },
+  "patient": {
+    "reference": "Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.36"
+  },
+  "primarySource": true,
+  "lotNumber": "EE3F243E",
+  "note": [
+    {
+      "text": "Off to China for 3 weeks."
+    }
+  ]
+}

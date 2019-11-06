@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/Procedure/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89> a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "20181113034743" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-11-13T03:47:43+00:00"^^xsd:dateTime ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/Confidentiality" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "normal" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/include-in-summary" ];
+       fhir:Coding.code [ fhir:value "SUMMARY" ];
+       fhir:Coding.display [ fhir:value "summary" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2018-11-13 Stent, coronary artery</p>\n        </div>"
+  ];
+  fhir:Procedure.status [ fhir:value "completed"];
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/bestpracticeterm" ];
+       fhir:Coding.code [ fhir:value "3579" ];
+       fhir:Coding.display [ fhir:value "Stent, coronary artery" ]
+     ], [
+       fhir:index 1;
+       a sct:36969009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "36969009" ];
+       fhir:Coding.display [ fhir:value "Stent, coronary artery" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Stent, coronary artery" ]
+  ];
+  fhir:Procedure.subject [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35>;
+     fhir:Reference.reference [ fhir:value "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35" ]
+  ];
+  fhir:Procedure.performedPeriod [
+     fhir:Period.start [ fhir:value "2018-11-13"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/Procedure/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

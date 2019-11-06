@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/AllergyIntolerance/cf-1554878062500> a fhir:AllergyIntolerance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cf-1554878062500"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns='http://www.w3.org/1999/xhtml'>Peanut allergy<a name='mm'/></div>"
+  ];
+  fhir:AllergyIntolerance.type [ fhir:value "allergy"];
+  fhir:AllergyIntolerance.category [
+     fhir:value "food";
+     fhir:index 0
+  ];
+  fhir:AllergyIntolerance.criticality [ fhir:value "unable-to-assess"];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:91935009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "91935009" ];
+       fhir:Coding.display [ fhir:value "Allergy to peanuts" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/cf-1554873707223>;
+     fhir:Reference.reference [ fhir:value "Patient/cf-1554873707223" ]
+  ];
+  fhir:AllergyIntolerance.asserter [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/cf-1554873707223>;
+     fhir:Reference.reference [ fhir:value "Patient/cf-1554873707223" ]
+  ];
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0;
+     fhir:AllergyIntolerance.reaction.substance [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:762952008;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "762952008" ];
+         fhir:Coding.display [ fhir:value "Peanut" ]
+       ]
+     ];
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:126485001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "126485001" ];
+         fhir:Coding.display [ fhir:value "Urticaria" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/AllergyIntolerance/cf-1554878062500.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

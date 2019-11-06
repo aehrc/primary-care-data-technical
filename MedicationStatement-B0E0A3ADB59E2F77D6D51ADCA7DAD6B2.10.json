@@ -1,0 +1,113 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10",
+  "meta": {
+    "versionId": "20040210130000",
+    "lastUpdated": "2004-02-10T13:00:00+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2004-03-16 Betaloc 100mg Tablet 1 In the morning (60) 5 repeats</p>\n        </div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Medication",
+      "id": "49b6dbdc-0fba-46b6-b1d3-3ac2e765c204",
+      "code": {
+        "coding": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                "valueCoding": {
+                  "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
+                  "code": "BPG",
+                  "display": "Branded package with no container"
+                }
+              }
+            ],
+            "system": "http://oridashi.com.au/system/code/bestpracticedrug",
+            "code": "783-926",
+            "display": "Betaloc 100mg Tablet (60)"
+          },
+          {
+            "system": "http://pbs.gov.au/code/item",
+            "code": "1325R",
+            "display": "Metoprolol Tartrate"
+          },
+          {
+            "system": "http://www.mims.com.au/mims-codes",
+            "code": "2120102",
+            "display": "Betaloc 100mg Tablet (60)"
+          },
+          {
+            "system": "http://www.whocc.no/atc",
+            "code": "C07AB",
+            "display": "Metoprolol Tartrate"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                "valueCoding": {
+                  "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
+                  "code": "UPG",
+                  "display": "Unbranded package with no container"
+                }
+              }
+            ],
+            "system": "http://snomed.info/sct",
+            "code": "27897011000036102",
+            "display": "Metoprolol Tartrate 100mg Tablet (60)"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                "valueCoding": {
+                  "system": "http://hl7.org.au/fhir/CodeSystem/medication-type",
+                  "code": "BPG",
+                  "display": "Branded package with no container"
+                }
+              }
+            ],
+            "system": "http://snomed.info/sct",
+            "code": "11751011000036101",
+            "display": "Betaloc 100mg Tablet (60)"
+          }
+        ],
+        "text": "Betaloc 100mg Tablet (60)"
+      },
+      "manufacturer": {
+        "identifier": {
+          "use": "official",
+          "system": "http://pbs.gov.au/identifier/manufacturer",
+          "value": "AP"
+        },
+        "display": "AstraZeneca Pty Ltd"
+      },
+      "form": {
+        "text": "Tablet"
+      }
+    }
+  ],
+  "status": "active",
+  "medicationReference": {
+    "reference": "#49b6dbdc-0fba-46b6-b1d3-3ac2e765c204",
+    "display": "Betaloc 100mg Tablet"
+  },
+  "effectivePeriod": {
+    "start": "2004-03-16",
+    "end": "2004-03-16"
+  },
+  "dateAsserted": "2004-03-16",
+  "subject": {
+    "reference": "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"
+  },
+  "dosage": [
+    {
+      "text": "1 In the morning (60) 5 repeats",
+      "asNeededBoolean": false
+    }
+  ]
+}

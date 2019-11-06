@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10"/>
+  <meta>
+    <versionId value="20040210130000"/>
+    <lastUpdated value="2004-02-10T13:00:00+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+            <p>2004-03-16 Betaloc 100mg Tablet 1 In the morning (60) 5 repeats</p>
+        </div>
+  </text>
+  <contained>
+    <Medication>
+      <id value="49b6dbdc-0fba-46b6-b1d3-3ac2e765c204"/>
+    <!-- extension url="http://oridashi.com.au/fhir/StructureDefinition/medication-product-name">
+                <valueString value="Betaloc" />
+            </extension>
+            <extension url="http://oridashi.com.au/fhir/StructureDefinition/medication-generic-ingredient">
+                <valueString value="Metoprolol Tartrate" />
+            </extension>
+            <extension url="http://oridashi.com.au/fhir/StructureDefinition/medication-strength">
+                <valueString value="100mg" />
+            </extension>
+            <extension url="http://oridashi.com.au/fhir/StructureDefinition/medication-tga-schedule">
+                <valueString value="4" />
+            </extension -->
+      <code>
+        <coding>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+            <valueCoding>
+              <system value="http://hl7.org.au/fhir/CodeSystem/medication-type"/>
+              <code value="BPG"/>
+              <display value="Branded package with no container"/>
+            </valueCoding>
+          </extension>
+          <system value="http://oridashi.com.au/system/code/bestpracticedrug"/>
+          <code value="783-926"/>
+          <display value="Betaloc 100mg Tablet (60)"/>
+        </coding>
+        <coding>
+          <system value="http://pbs.gov.au/code/item"/>
+          <code value="1325R"/>
+          <display value="Metoprolol Tartrate"/>
+        </coding>
+        <coding>
+          <system value="http://www.mims.com.au/mims-codes"/>
+          <code value="2120102"/>
+          <display value="Betaloc 100mg Tablet (60)"/>
+        </coding>
+        <coding>
+          <system value="http://www.whocc.no/atc"/>
+          <code value="C07AB"/>
+          <display value="Metoprolol Tartrate"/>
+        </coding>
+        <coding>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+            <valueCoding>
+              <system value="http://hl7.org.au/fhir/CodeSystem/medication-type"/>
+              <code value="UPG"/>
+              <display value="Unbranded package with no container"/>
+            </valueCoding>
+          </extension>
+          <system value="http://snomed.info/sct"/>
+          <code value="27897011000036102"/>
+          <display value="Metoprolol Tartrate 100mg Tablet (60)"/>
+        </coding>
+        <coding>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+            <valueCoding>
+              <system value="http://hl7.org.au/fhir/CodeSystem/medication-type"/>
+              <code value="BPG"/>
+              <display value="Branded package with no container"/>
+            </valueCoding>
+          </extension>
+          <system value="http://snomed.info/sct"/>
+          <code value="11751011000036101"/>
+          <display value="Betaloc 100mg Tablet (60)"/>
+        </coding>
+        <text value="Betaloc 100mg Tablet (60)"/>
+      </code>
+      <manufacturer>
+        <identifier>
+          <use value="official"/>
+          <system value="http://pbs.gov.au/identifier/manufacturer"/>
+          <value value="AP"/>
+        </identifier>
+        <display value="AstraZeneca Pty Ltd"/>
+      </manufacturer>
+      <form>
+        <text value="Tablet"/>
+      </form>
+    </Medication>
+  </contained>
+  <status value="active"/>
+  <medicationReference>
+    <reference value="#49b6dbdc-0fba-46b6-b1d3-3ac2e765c204"/>
+    <display value="Betaloc 100mg Tablet"/>
+  </medicationReference>
+  <effectivePeriod>
+    <start value="2004-03-16"/>
+    <end value="2004-03-16"/>
+  </effectivePeriod>
+  <dateAsserted value="2004-03-16"/>
+  <subject>
+    <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"/>
+  </subject>
+  <dosage>
+    <text value="1 In the morning (60) 5 repeats"/>
+    <asNeededBoolean value="false"/>
+  </dosage>
+</MedicationStatement>

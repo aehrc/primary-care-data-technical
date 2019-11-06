@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.au.primarycare"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AUPrimaryCareImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://build.fhir.org/ig/aehrc/ImplementationGuide/hl7.fhir.au.primarycare</pre></div>
+  </text>
+  <url value="http://build.fhir.org/ig/aehrc/ImplementationGuide/hl7.fhir.au.primarycare"/>
+  <version value="0.0.1"/>
+  <name value="AUPrimaryCareImplementationGuide"/>
+  <title value="AU Primary Care Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-01-18T00:00:00+10:00"/>
+  <publisher value="AEHRC"/>
+  <contact>
+    <name value="Primary Care Data Quality Technical Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://confluence.csiro.au/display/primarycaredata/Primary+Care+Data+Quality+Technical+Working+Group"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="aehrc.com.primarycare"/>
+  <license value="CC-BY-4.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <grouping id="p1">
+      <name value="primarycare"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycarepatient.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycarepatient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycareallergyintolerance.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareallergyintolerance"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycareallergyintolerancelist.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareallergyintolerancelist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycarecomposition.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycarecomposition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycarefamilymemberhistory.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycarefamilymemberhistory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycarefamilymemberhistorylist.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycarefamilymemberhistorylist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycareimmunisation.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareimmunisation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycareimmunisationlist.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareimmunisationlist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycaremedicalhistorylist.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaremedicalhistorylist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycaremedication.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaremedication"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycaremedicationstatement.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaremedicationstatement"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycaremedicinelist.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaremedicinelist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycareproblemlist.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareproblemlist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycareprocedure.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareprocedure"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycareprocedurelist.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycareprocedurelist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-au-primarycaresocialhistorylist.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/au-primarycaresocialhistorylist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/au-primarycare-clinical-indication-for-medication"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/au-primarycare-condition-course"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/au-primarycare-reaction-manifestation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/au-primarycare-genetic-family-member"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-cf-1552457299474.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/cf-1552457299474"/>
+      </reference>
+      <name value="Mary Ficticious - JS"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.35"/>
+      </reference>
+      <name value="Oridashi Patient 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-4E756D076EDCAF7552FFF6CF7B7BB2A1.20.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.20"/>
+      </reference>
+      <name value="Oridashi Patient 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-4E756D076EDCAF7552FFF6CF7B7BB2A1.147.html"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/4E756D076EDCAF7552FFF6CF7B7BB2A1.147"/>
+      </reference>
+      <name value="Oridashi MedicationStatement 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10.html"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.10"/>
+      </reference>
+      <name value="Oridashi MedicationStatement 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Immunization-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70.html"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70"/>
+      </reference>
+      <name value="Oridashi Immunization 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Immunization-4E756D076EDCAF7552FFF6CF7B7BB2A1.143.html"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/4E756D076EDCAF7552FFF6CF7B7BB2A1.143"/>
+      </reference>
+      <name value="Oridashi Immunization 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Procedure-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89.html"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.89"/>
+      </reference>
+      <name value="Oridashi Procedure 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Procedure-4E756D076EDCAF7552FFF6CF7B7BB2A1.168.html"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/4E756D076EDCAF7552FFF6CF7B7BB2A1.168"/>
+      </reference>
+      <name value="Oridashi Procedure 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"/>
+      </reference>
+      <name value="Oridashi Allergy Intolerance 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-4E756D076EDCAF7552FFF6CF7B7BB2A1.18.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/4E756D076EDCAF7552FFF6CF7B7BB2A1.18"/>
+      </reference>
+      <name value="Oridashi Allergy Intolerance 2"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-cf-1554878062500.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/cf-1554878062500"/>
+      </reference>
+      <name value="Sample Allergy Intolerance: Unconfirmed peanut allergy"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-cf-1554873772436.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/cf-1554873772436"/>
+      </reference>
+      <name value="Sample Allergy Intolerance: eosinophilic oesphagitis triggered by wheat and dairy"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="List-cf-1554873603226.html"/>
+      </extension>
+      <reference>
+        <reference value="List/cf-1554873603226"/>
+      </reference>
+      <name value="Sample Allergy Intolerance List"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="List-cf-1554878846011.html"/>
+      </extension>
+      <reference>
+        <reference value="List/cf-1554878846011"/>
+      </reference>
+      <name value="Sample Allergy Intolerance List: Empty (nilknown)"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="List-cf-1554879075420.html"/>
+      </extension>
+      <reference>
+        <reference value="List/cf-1554879075420"/>
+      </reference>
+      <name value="Sample Allergy Intolerance List: Empty (unknown)"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Composition-example0.html"/>
+      </extension>
+      <reference>
+        <reference value="Composition/example0"/>
+      </reference>
+      <name value="Sample Composition"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Primary Care Implementation Guide"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="JSON"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

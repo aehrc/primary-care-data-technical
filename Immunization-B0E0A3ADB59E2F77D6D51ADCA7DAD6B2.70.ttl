@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/Immunization/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "20040210130000" ];
+     fhir:Meta.lastUpdated [ fhir:value "2004-02-10T13:00:00+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2004-06-25 INFANRIX (78946B)</p>\n        </div>"
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats" ];
+       fhir:Coding.code [ fhir:value "IFX" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "INFANRIX" ]
+  ];
+  fhir:Immunization.patient [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1>;
+     fhir:Reference.reference [ fhir:value "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" ]
+  ];
+  fhir:Immunization.primarySource [ fhir:value "true"^^xsd:boolean];
+  fhir:Immunization.lotNumber [ fhir:value "78946B"];
+  fhir:Immunization.site [
+     fhir:CodeableConcept.text [ fhir:value "Left Deltoid" ]
+  ];
+  fhir:Immunization.route [
+     fhir:CodeableConcept.text [ fhir:value "IMI" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/Immunization/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

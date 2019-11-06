@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/Procedure/4E756D076EDCAF7552FFF6CF7B7BB2A1.168> a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "4E756D076EDCAF7552FFF6CF7B7BB2A1.168"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "20170928004125" ];
+     fhir:Meta.lastUpdated [ fhir:value "2017-09-28T00:41:25.05+00:00"^^xsd:dateTime ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/Confidentiality" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "normal" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/include-in-summary" ];
+       fhir:Coding.code [ fhir:value "SUMMARY" ];
+       fhir:Coding.display [ fhir:value "summary" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2017-12-28 Plantar wart excision</p>\n        </div>"
+  ];
+  fhir:Procedure.status [ fhir:value "completed"];
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://oridashi.com.au/system/code/medicaldirectorterm" ];
+       fhir:Coding.code [ fhir:value "surg.foot@planw" ];
+       fhir:Coding.display [ fhir:value "Plantar wart excision" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Plantar wart excision" ]
+  ];
+  fhir:Procedure.subject [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17>;
+     fhir:Reference.reference [ fhir:value "Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17" ]
+  ];
+  fhir:Procedure.performedPeriod [
+     fhir:Period.start [ fhir:value "2017-12-28"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/Procedure/4E756D076EDCAF7552FFF6CF7B7BB2A1.168.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

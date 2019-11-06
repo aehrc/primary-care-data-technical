@@ -1,0 +1,33 @@
+{
+  "resourceType": "Immunization",
+  "id": "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.70",
+  "meta": {
+    "versionId": "20040210130000",
+    "lastUpdated": "2004-02-10T13:00:00+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>2004-06-25 INFANRIX (78946B)</p>\n        </div>"
+  },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats",
+        "code": "IFX"
+      }
+    ],
+    "text": "INFANRIX"
+  },
+  "patient": {
+    "reference": "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1"
+  },
+  "primarySource": true,
+  "lotNumber": "78946B",
+  "site": {
+    "text": "Left Deltoid"
+  },
+  "route": {
+    "text": "IMI"
+  }
+}

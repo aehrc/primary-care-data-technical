@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/List/cf-1554878846011> a fhir:List;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cf-1554878846011"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns='http://www.w3.org/1999/xhtml'>Empty Allergies List<a name='mm'/></div>"
+  ];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.mode [ fhir:value "snapshot"];
+  fhir:List.title [ fhir:value "Adverse Reactions List"];
+  fhir:List.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:48765-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "48765-2" ];
+       fhir:Coding.display [ fhir:value "Allergies and adverse reactions Document" ]
+     ]
+  ];
+  fhir:List.subject [
+     fhir:link <http://build.fhir.org/ig/aehrc/Patient/cf-1554873707223>;
+     fhir:Reference.reference [ fhir:value "Patient/cf-1554873707223" ]
+  ];
+  fhir:List.date [ fhir:value "2019-04-09T14:00:00.000Z"^^xsd:dateTime];
+  fhir:List.emptyReason [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/list-empty-reason" ];
+       fhir:Coding.code [ fhir:value "nilknown" ];
+       fhir:Coding.display [ fhir:value "Nil Known" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://build.fhir.org/ig/aehrc/List/cf-1554878846011.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

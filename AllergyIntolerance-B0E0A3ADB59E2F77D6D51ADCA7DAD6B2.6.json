@@ -1,0 +1,54 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6",
+  "meta": {
+    "versionId": "20060222130000",
+    "lastUpdated": "2006-02-22T13:00:00+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>Penicillin - Anaphylaxis (Severe)\n                <br/>\n            </p>\n        </div>"
+  },
+  "category": [
+    "medication"
+  ],
+  "criticality": "high",
+  "code": {
+    "coding": [
+      {
+        "system": "http://oridashi.com.au/code/bp-drug-class",
+        "code": "2",
+        "display": "Penicillin"
+      }
+    ],
+    "text": "Penicillin"
+  },
+  "patient": {
+    "reference": "Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1"
+  },
+  "recorder": {
+    "reference": "Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1"
+  },
+  "reaction": [
+    {
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://oridashi.com.au/system/code/bestpracticereaction",
+              "code": "1",
+              "display": "Anaphylaxis"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39579001",
+              "display": "Anaphylaxis"
+            }
+          ],
+          "text": "Anaphylaxis"
+        }
+      ],
+      "severity": "severe"
+    }
+  ]
+}

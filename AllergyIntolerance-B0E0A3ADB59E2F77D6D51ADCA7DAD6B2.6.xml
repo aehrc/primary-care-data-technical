@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"/>
+  <meta>
+    <versionId value="20060222130000"/>
+    <lastUpdated value="2006-02-22T13:00:00+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+            <p>Penicillin - Anaphylaxis (Severe)
+                <br/>
+            </p>
+        </div>
+  </text>
+  <clinicalStatus/>
+  <verificationStatus/>
+  <category value="medication"/>
+  <criticality value="high"/>
+  <code>
+    <coding>
+      <system value="http://oridashi.com.au/code/bp-drug-class"/>
+      <code value="2"/>
+      <display value="Penicillin"/>
+    </coding>
+    <text value="Penicillin"/>
+  </code>
+  <patient>
+    <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1"/>
+  </patient>
+  <recorder>
+    <reference value="Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1"/>
+  </recorder>
+  <reaction>
+  <!-- extension url="http://oridashi.com.au/fhir/StructureDefinition/allergyintolerance-severity">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://oridashi.com.au/system/code/bestpracticeseverity" />
+                    <code value="3" />
+                    <display value="Severe" />
+                </coding>
+                <text value="Severe" />
+            </valueCodeableConcept>
+        </extension -->
+    <manifestation>
+      <coding>
+        <system value="http://oridashi.com.au/system/code/bestpracticereaction"/>
+        <code value="1"/>
+        <display value="Anaphylaxis"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="39579001"/>
+        <display value="Anaphylaxis"/>
+      </coding>
+      <text value="Anaphylaxis"/>
+    </manifestation>
+    <severity value="severe"/>
+  </reaction>
+</AllergyIntolerance>
