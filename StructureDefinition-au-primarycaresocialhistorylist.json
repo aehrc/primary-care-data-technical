@@ -11,7 +11,7 @@
   "title": "AU Primary Care Social History List",
   "status": "draft",
   "experimental": false,
-  "date": "2019-11-06T10:56:59+10:00",
+  "date": "2019-11-06T14:07:15+10:00",
   "description": "This profile defines a social history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
   "purpose": "This profile defines a social history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
   "fhirVersion": "4.0.1",

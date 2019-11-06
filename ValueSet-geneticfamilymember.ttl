@@ -16,7 +16,7 @@
   fhir:ValueSet.name [ fhir:value "Genetic_Family_Member_ValueSet"];
   fhir:ValueSet.title [ fhir:value "Genetic Family Member ValueSet"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2019-11-06T10:56:59+10:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2019-11-06T14:07:15+10:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "AEHRC"];
   fhir:ValueSet.contact [
      fhir:index 0;

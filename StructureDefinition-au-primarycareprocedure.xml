@@ -19,7 +19,7 @@ A clinical activity carried out for screening, investigative, diagnostic, curati
   <title value="AU Primary Care Procedure"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-11-06T10:56:59+10:00"/>
+  <date value="2019-11-06T14:07:15+10:00"/>
   <description value="This profile defines a procedure structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."/>
   <purpose value="This profile defines a procedure structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."/>
   <fhirVersion value="4.0.1"/>
