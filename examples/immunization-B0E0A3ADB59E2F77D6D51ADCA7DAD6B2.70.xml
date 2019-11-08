@@ -13,7 +13,6 @@
         </div>
     </text>
     <status value="completed" />
-    <notGiven value="false" />
     <vaccineCode>
         <coding>
             <system value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats" />
@@ -22,9 +21,9 @@
         <text value="INFANRIX" />
     </vaccineCode>
     <patient>
-        <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" />
+        <reference value="Patient/cf-1552457299474" />
     </patient>
-    <date value="2004-06-25" />
+    <occurrenceString value="2004-06-25" />
     <primarySource value="true" />
     <lotNumber value="78946B" />
     <site>
@@ -33,16 +32,16 @@
     <route>
         <text value="IMI" />
     </route>
-    <practitioner>
-        <role>
+    <performer>
+        <function>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0443" />
+                <system value="	http://terminology.hl7.org/CodeSystem/v2-0443" />
                 <code value="OP" />
                 <display value="Ordering Provider" />
             </coding>
-        </role>
+        </function>
         <actor>
-            <reference value="Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" />
+            <reference value="Practitioner/cf-1573174872703" />
         </actor>
-    </practitioner>
+    </performer>
 </Immunization>

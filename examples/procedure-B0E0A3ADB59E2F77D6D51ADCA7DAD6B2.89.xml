@@ -6,7 +6,7 @@
         <versionId value="20181113034743" />
         <lastUpdated value="2018-11-13T03:47:43+00:00" />
         <security>
-            <system value="http://hl7.org/fhir/v3/Confidentiality" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
             <code value="N" />
             <display value="normal" />
         </security>
@@ -32,7 +32,7 @@
         <coding>
             <system value="http://snomed.info/sct" />
             <code value="36969009" />
-            <display value="Stent, coronary artery" />
+            <display value="Placement of stent in coronary artery" />
         </coding>
         <text value="Stent, coronary artery" />
     </code>

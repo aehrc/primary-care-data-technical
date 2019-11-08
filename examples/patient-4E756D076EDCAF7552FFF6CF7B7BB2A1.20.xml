@@ -30,7 +30,7 @@
             <display value="Neither Aboriginal nor Torres Strait Islander origin" />
         </valueCoding>
     </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/birthPlace">
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
 		<valueAddress>
 			<country value="NZ"/>
 		</valueAddress>
@@ -49,7 +49,7 @@
         <use value="usual" />
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203" />
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
                 <code value="MC" />
                 <display value="Patient's Medicare Number" />
             </coding>
@@ -64,11 +64,11 @@
     <identifier>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203" />
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
                 <code value="PEN" />
                 <display value="Pension Number" />
             </coding>
-            <text value="Pensioner Number" />
+            <text value="Pensioner Concession Card Number" />
         </type>
         <system value="http://ns.electronichealth.net.au/id/centrelink-customer-reference-number" />
         <value value="403123456H" />
@@ -91,7 +91,7 @@
         <use value="usual" />
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203" />
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
                 <code value="NI" />
                 <display value="National unique individual identifier" />
             </coding>
@@ -107,11 +107,11 @@
         <use value="usual" />
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203" />
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
                 <code value="MB" />
                 <display value="Member Number" />
             </coding>
-            <text value="Health Fund Number" />
+            <text value="Private Health Insurance Member Number" />
         </type>
         <value value="21342233J" />
         <assigner>
@@ -154,26 +154,44 @@
     </address>
     <maritalStatus>
         <coding>
-            <system value="http://hl7.org/fhir/v3/MaritalStatus" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
             <code value="U" />
             <display value="unmarried" />
         </coding>
         <text value="Single" />
     </maritalStatus>
+	<contact>
+		<relationship>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+				<code value="C"/>
+			</coding>
+		</relationship>
+        <name>
+            <use value="usual" />
+            <family value="Rubble" />
+            <given value="Wilma" />
+            <prefix value="Mrs" />
+        </name>
+		<telecom>
+			<system value="phone"/>
+			<value value="(555) 555 555"/>
+		</telecom>
+	</contact>
     <contact>
        <relationship>
 			<coding>
-				<system value="http://hl7.org/fhir/v2/0131"/>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
 				<code value="C"/>
 			</coding>
 		</relationship>
         <relationship>
 			<coding>
-				<system value="http://hl7.org/fhir/v2/0131"/>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
 				<code value="N"/>
 			</coding>
 			<coding>
-				<system value="http://hl7.org/fhir/v3/RoleCode" />
+				<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
 				<code value="CHILD" />
 			</coding>
 		</relationship>
@@ -188,5 +206,9 @@
             <value value="anderson.p@hcn.samplesdb.com.au" />
             <use value="home" />
         </telecom>
+		<telecom>
+			<system value="phone"/>
+			<value value="(666) 666 666"/>
+		</telecom>
     </contact>
 </Patient>

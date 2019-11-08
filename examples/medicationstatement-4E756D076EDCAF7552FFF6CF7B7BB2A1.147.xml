@@ -81,17 +81,16 @@
         <reference value="#ee7ddfcd-4f25-4702-9d14-575996b93acd" />
         <display value="SIMVASTATIN 10mg Tablet" />
     </medicationReference>
+    <subject>
+        <reference value="Patient/cf-1552457299474" />
+    </subject>
     <effectivePeriod>
         <start value="2018-11-12" />
     </effectivePeriod>
     <dateAsserted value="2018-11-12" />
     <informationSource>
-        <reference value="Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.3" />
+        <reference value="Practitioner/cf-1573174872703" />
     </informationSource>
-    <subject>
-        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.32" />
-    </subject>
-    <taken value="na" />
     <reasonCode>
         <coding>
             <system value="http://oridashi.com.au/system/code/medicaldirectorterm" />

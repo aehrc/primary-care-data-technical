@@ -52,7 +52,7 @@
                 </coding>
                 <coding>
                     <system value="http://www.whocc.no/atc" />
-                    <code value="C07AB" />
+                    <code value="C07AB02" />
                     <display value="Metoprolol Tartrate" />
                 </coding>
                 <coding>
@@ -99,15 +99,14 @@
         <reference value="#49b6dbdc-0fba-46b6-b1d3-3ac2e765c204" />
         <display value="Betaloc 100mg Tablet" />
     </medicationReference>
+    <subject>
+        <reference value="Patient/cf-1552457299474" />
+    </subject>
     <effectivePeriod>
         <start value="2004-03-16" />
         <end value="2004-03-16" />
     </effectivePeriod>
     <dateAsserted value="2004-03-16" />
-    <subject>
-        <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6" />
-    </subject>
-    <taken value="na" />
     <dosage>
         <text value="1 In the morning (60) 5 repeats" />
         <asNeededBoolean value="false" />
