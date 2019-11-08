@@ -37,7 +37,11 @@
     <performer>
         <function>
             <coding>
+<<<<<<< HEAD
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0443" />
+=======
+                <system value="	http://terminology.hl7.org/CodeSystem/v2-0443" />
+>>>>>>> 556165ac9026fdce9fade2339e490ae42e07187e
                 <code value="OP" />
                 <display value="Ordering Provider" />
             </coding>
