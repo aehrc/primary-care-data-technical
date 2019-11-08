@@ -6,7 +6,7 @@
   },
   "id": "cf-1554878846011",
   "subject": {
-    "reference": "Patient/cf-1554873707223"
+    "reference": "Patient/cf-1552457299474"
   },
   "status": "current",
   "mode": "snapshot",
@@ -25,7 +25,7 @@
     "coding": [
       {
         "code": "nilknown",
-        "system": "http://hl7.org/fhir/list-empty-reason",
+        "system": "http://terminology.hl7.org/CodeSystem/list-empty-reason",
         "display": "Nil Known"
       }
     ]

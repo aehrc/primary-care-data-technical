@@ -331,6 +331,14 @@
     </resource-->	
     <resource>
       <reference>
+        <reference value="Practitioner/cf-1573174872703"/>
+      </reference>
+      <name value="Practitioner example0"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Composition/example0"/>
       </reference>
       <name value="Sample Composition"/>

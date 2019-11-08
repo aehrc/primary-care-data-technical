@@ -1,0 +1,26 @@
+{
+  "resourceType": "Practitioner",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'><a name='mm'/></div>"
+  },
+  "id": "cf-1573174872703",
+  "name": [
+    {
+      "use": "official",
+      "prefix": [
+        "Mr"
+      ],
+      "given": [
+        "Fred"
+      ],
+      "family": "Rubble",
+      "text": "Fred Rubble"
+    }
+  ],
+  "identifier": [
+    {
+      "value": "example0"
+    }
+  ]
+}

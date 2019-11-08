@@ -6,7 +6,7 @@
          <versionId value="20181218231936" />
          <lastUpdated value="2018-12-18T23:19:36+00:00" />
          <security>
-             <system value="http://hl7.org/fhir/v3/Confidentiality" />
+             <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
              <code value="N" />
              <display value="normal" />
          </security>
@@ -55,6 +55,6 @@
      <onsetDateTime value="2011-03-25" />
      <abatementBoolean value="false" />
      <asserter>
-         <reference value="Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" />
+         <reference value="Practitioner/cf-1573174872703" />
      </asserter>
  </Condition>

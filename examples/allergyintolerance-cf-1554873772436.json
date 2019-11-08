@@ -6,16 +6,35 @@
   },
   "id": "cf-1554873772436",
   "patient": {
-    "reference": "Patient/cf-1554873707223"
+    "reference": "Patient/cf-1552457299474"
   },
-  "clinicalStatus": "active",
-  "verificationStatus": "confirmed",
+  "clinicalStatus": {		
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+				"code": "active",
+				"display": "Active"
+			}
+		],
+		"text": "active"
+	},
+  "verificationStatus": 
+	{
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+				"code": "confirmed",
+				"display": "Confirmed"
+			}
+		],
+		"text": "confirmed"
+	},
   "type": "intolerance",
   "category": [
     "food"
   ],
   "criticality": "low",
-  "assertedDate": "2019-04-09T14:00:00.000Z",
+  "recordedDate": "2019-04-09T14:00:00.000Z",
   "reaction": [
     {
       "substance": {
@@ -33,7 +52,7 @@
             {
               "code": "235599003",
               "system": "http://snomed.info/sct",
-              "display": "Eosinophilic oesophagitis"
+              "display": "Eosinophilic esophagitis"
             }
           ]
         }
@@ -46,7 +65,7 @@
             {
               "code": "235599003",
               "system": "http://snomed.info/sct",
-              "display": "Eosinophilic oesophagitis"
+              "display": "Eosinophilic esophagitis"
             }
           ]
         }
@@ -67,7 +86,7 @@
       {
         "code": "735455001",
         "system": "http://snomed.info/sct",
-        "display": "Eosinophilic oesophagitis caused by food"
+        "display": "Eosinophilic esophagitis caused by food"
       }
     ]
   }
