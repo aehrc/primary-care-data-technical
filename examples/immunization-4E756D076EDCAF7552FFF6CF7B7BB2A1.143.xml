@@ -37,7 +37,7 @@
     <performer>
         <function>
             <coding>
-                <system value="	http://terminology.hl7.org/CodeSystem/v2-0443" />
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0443" />
                 <code value="OP" />
                 <display value="Ordering Provider" />
             </coding>
