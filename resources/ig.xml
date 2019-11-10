@@ -57,14 +57,13 @@
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
-	<!-- need condition in au base -->
-    <!--resource>
+    <resource>
       <reference>
         <reference value="StructureDefinition/au-primarycarecondition"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
-    </resource-->
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/au-primarycarefamilymemberhistory"/>
