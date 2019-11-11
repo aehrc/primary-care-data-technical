@@ -13,40 +13,39 @@
         </div>
     </text>
     <status value="completed" />
-    <notGiven value="false" />
     <vaccineCode>
         <text value="HEPATITIS A" />
     </vaccineCode>
     <patient>
-        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.36" />
+        <reference value="Patient/cf-1552457299474" />
     </patient>
-    <date value="1999-06-11" />
+    <occurrenceString value="1999-06-11" />
     <primarySource value="true" />
     <lotNumber value="EE3F243E" />
-    <practitioner>
-        <role>
+    <performer>
+        <function>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0443" />
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0443" />
                 <code value="AP" />
                 <display value="Administering Provider" />
             </coding>
-        </role>
+        </function>
         <actor>
-            <reference value="Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.2" />
+            <reference value="Practitioner/cf-1573174872703" />
         </actor>
-    </practitioner>
-    <practitioner>
-        <role>
+    </performer>
+    <performer>
+        <function>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0443" />
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0443" />
                 <code value="OP" />
                 <display value="Ordering Provider" />
             </coding>
-        </role>
+        </function>
         <actor>
-            <reference value="Practitioner/4E756D076EDCAF7552FFF6CF7B7BB2A1.2" />
+            <reference value="Practitioner/cf-1573174872703" />
         </actor>
-    </practitioner>
+    </performer>
     <note>
         <text value="Off to China for 3 weeks." />
     </note>

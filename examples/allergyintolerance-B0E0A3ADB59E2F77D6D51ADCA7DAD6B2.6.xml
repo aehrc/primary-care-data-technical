@@ -14,8 +14,22 @@
             </p>
         </div>
     </text>
-    <clinicalStatus value="active" />
-    <verificationStatus value="confirmed" />
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
+            <code value="active" />
+            <display value="Active" />
+        </coding>
+        <text value="active" />
+	</clinicalStatus>
+    <verificationStatus>
+	    <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
+            <code value="confirmed" />
+            <display value="Confirmed" />
+        </coding>
+        <text value="confirmed" />
+	</verificationStatus>
     <category value="medication" />
     <criticality value="high" />
     <code>
@@ -27,11 +41,11 @@
         <text value="Penicillin" />
     </code>
     <patient>
-        <reference value="Patient/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" />
+        <reference value="Patient/cf-1552457299474" />
     </patient>
-    <assertedDate value="2006-02-23" />
+    <recordedDate value="2006-02-23" />
     <recorder>
-        <reference value="Practitioner/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.1" />
+        <reference value="Practitioner/cf-1573174872703" />
     </recorder>
     <reaction>
         <!--extension url="http://oridashi.com.au/fhir/StructureDefinition/allergyintolerance-severity">

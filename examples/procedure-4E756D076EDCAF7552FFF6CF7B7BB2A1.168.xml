@@ -6,7 +6,7 @@
         <versionId value="20170928004125" />
         <lastUpdated value="2017-09-28T00:41:25.05+00:00" />
         <security>
-            <system value="http://hl7.org/fhir/v3/Confidentiality" />
+            <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
             <code value="N" />
             <display value="normal" />
         </security>
@@ -32,7 +32,8 @@
         <text value="Plantar wart excision" />
     </code>
     <subject>
-        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17" />
+        <reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.20" />
+        <!--reference value="Patient/4E756D076EDCAF7552FFF6CF7B7BB2A1.17" /-->
     </subject>
     <performedPeriod>
         <start value="2017-12-28" />
