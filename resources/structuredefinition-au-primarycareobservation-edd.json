@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycareobservation-lnmp",
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP",
+  "id": "au-primarycareobservation-edd",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD",
   "version": "0.0.1",
-  "name": "LastNormalMenstrualPeriod",
+  "name": "EstimatedDateOfDelivery",
   "status": "draft",
   "fhirVersion": "4.0.0",
   "mapping": [
@@ -46,11 +46,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "fixedCode": "final"
-      },
-      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "slicing": {
@@ -61,46 +56,26 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.code.coding:lnmpSnomed",
-        "path": "Observation.code.coding",
-        "sliceName": "lnmpSnomed",
-        "min": 1,
-        "max": "1",
-        "fixedCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "248993009"
         }
       },
       {
-        "id": "Observation.code.coding:lnmpLoinc",
+        "id": "Observation.code.coding:sliceCoding",
         "path": "Observation.code.coding",
-        "sliceName": "lnmpLoinc",
+        "sliceName": "sliceCoding",
+        "min": 1,
         "max": "1",
         "fixedCoding": {
-          "system": "http://loinc.org",
-          "code": "8665-2"
+          "system": "http://snomed.info/sct"
+        },
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://snomed.info/sct?fhir_vs=isa/161714006"
         }
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "min": 1
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "short": "Last normal menstrual period",
-        "definition": "First day of bleeding in the latest typical cycle with normal menstrual bleeding, for this individual.",
-        "min": 1,
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
       }
     ]
   }

@@ -28,6 +28,7 @@
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation",
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList",
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP",
+		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD",
 		"http://aehrc.com/valueset/reaction-manifestation",
 		"http://aehrc.com/valueset/course",
 		"http://aehrc.com/valueset/clinical-indication-for-medication",
@@ -230,6 +231,10 @@
         "StructureDefinition/au-primarycareobservation-lnmp": {
             "base": "StructureDefinition-au-primarycareobservation-lnmp.html",
             "defns": "StructureDefinition-au-primarycareobservation-lnmp-definitions.html"
+        },
+        "StructureDefinition/au-primarycareobservation-edd": {
+            "base": "StructureDefinition-au-primarycareobservation-edd.html",
+            "defns": "StructureDefinition-au-primarycareobservation-edd-definitions.html"
         }
     }
 }
