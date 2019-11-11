@@ -27,6 +27,7 @@
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure",
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation",
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList",
+		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP",
 		"http://aehrc.com/valueset/reaction-manifestation",
 		"http://aehrc.com/valueset/course",
 		"http://aehrc.com/valueset/clinical-indication-for-medication",
@@ -225,6 +226,10 @@
         "ValueSet/au-primarycare-genetic-family-member": {
             "base": "valueset-au-primarycare-genetic-family-member.html",
             "defns": "ValueSet-au-primarycare-genetic-family-member.html"
+        },
+        "StructureDefinition/au-primarycareobservation-lnmp": {
+            "base": "StructureDefinition-au-primarycareobservation-lnmp.html",
+            "defns": "StructureDefinition-au-primarycareobservation-lnmp-definitions.html"
         }
     }
 }

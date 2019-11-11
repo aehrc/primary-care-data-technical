@@ -179,6 +179,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/au-primarycareobservation-lnmp"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/cf-1552457299474"/>
       </reference>
       <name value="Mary Ficticious - JS"/>
