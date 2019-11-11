@@ -137,7 +137,7 @@
         "qa": "qa",
         "specification": "http://hl7.org/fhir/R4"
     },
-    "npm-name": "hl7.fhir.au.primarycare",
+    "npm-name": "au.csiro.fhir.au-primarycare",
     "resources": {
         "StructureDefinition/au-primarycareallergyintolerance": {
             "base": "StructureDefinition-au-primarycareallergyintolerance.html",
