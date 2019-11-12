@@ -33,6 +33,7 @@
 		"http://aehrc.com/valueset/course",
 		"http://aehrc.com/valueset/clinical-indication-for-medication",
 		"http://aehrc.com/valueset/geneticfamilymember",
+                "http://aehrc.com/valueset/expecteddateofdeliverytypes",
 		"https://aehrc.com/fhir/StructureDefinition/condition-course",
                 "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1249.0",
                 "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1249.0/vs",
@@ -235,6 +236,10 @@
         "StructureDefinition/au-primarycareobservation-edd": {
             "base": "StructureDefinition-au-primarycareobservation-edd.html",
             "defns": "StructureDefinition-au-primarycareobservation-edd-definitions.html"
+        },
+        "ValueSet/estimateddateofdeliverytypes": {
+            "base": "ValueSet-au-primarycare-estimateddateofdeliverytypes.html",
+            "defns": "ValueSet-au-primarycare-estimateddateofdeliverytypes-definitions.html"
         }
     }
 }

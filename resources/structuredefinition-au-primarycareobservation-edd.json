@@ -3,7 +3,8 @@
   "id": "au-primarycareobservation-edd",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD",
   "version": "0.0.1",
-  "name": "EstimatedDateOfDelivery",
+  "name": "ExpectedDateOfDelivery",
+  "title": "Expected Date of Delivery",
   "status": "draft",
   "fhirVersion": "4.0.0",
   "mapping": [
@@ -69,7 +70,7 @@
         },
         "binding": {
           "strength": "required",
-          "valueSet": "http://snomed.info/sct?fhir_vs=isa/161714006"
+          "valueSet": "http://aehrc.com/valueset/expecteddateofdeliverytypes"
         }
       },
       {

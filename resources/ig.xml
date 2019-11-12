@@ -197,6 +197,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/au-primarycare-expecteddateofdeliverytypes"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/cf-1552457299474"/>
       </reference>
       <name value="Mary Ficticious - JS"/>
@@ -314,7 +321,7 @@
       <name value="Sample Allergy Intolerance: eosinophilic oesphagitis triggered by wheat and dairy"/>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
-    </resource>	
+   </resource>	
     <resource>
       <reference>
         <reference value="List/cf-1554873603226"/>
