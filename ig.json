@@ -29,6 +29,7 @@
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList",
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP",
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD",
+                "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric",
 		"http://aehrc.com/valueset/reaction-manifestation",
 		"http://aehrc.com/valueset/course",
 		"http://aehrc.com/valueset/clinical-indication-for-medication",
@@ -240,6 +241,10 @@
         "ValueSet/estimateddateofdeliverytypes": {
             "base": "ValueSet-au-primarycare-estimateddateofdeliverytypes.html",
             "defns": "ValueSet-au-primarycare-estimateddateofdeliverytypes-definitions.html"
+        },
+        "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric": {
+            "base": "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric.html",
+            "defns": "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric-definitions.html"
         }
     }
 }

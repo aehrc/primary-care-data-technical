@@ -38,5 +38,6 @@ These Profiles have been defined for this implementation guide.
 ## Pregnancy / Breastfeeding Profiles
 * [AU Primary Care Last Normal Menstrual Period](StructureDefinition-au-primarycareobservation-lnmp.html) - date of last normal menstrual period
 * [AU Primary Care Expected Date of Delivery](StructureDefinition-au-primarycareobservation-edd.html) - expected date of delivery calculated from either scan date or last normal menstrual period and cycle length
+* [AU Primary Care Ultrasound Scan Obstetric](StructureDefinition-au-primarycareprocedure-ultrasoundscanobstetric.html) - obstetric ultrasound scan, including date
 
 ## Follow Ups Profiles
