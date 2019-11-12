@@ -36,5 +36,7 @@ These Profiles have been defined for this implementation guide.
 * [AU Primary Care Social History List](StructureDefinition-au-primarycaresocialhistorylist.html) - social history list with local identifiers and attributes
 
 ## Pregnancy / Breastfeeding Profiles
+* [AU Primary Care Last Normal Menstrual Period](StructureDefinition-au-primarycareobservation-lnmp.html) - date of last normal menstrual period
+* [AU Primary Care Estimated Date of Delivery](StructureDefinition-au-primarycareobseration-edd.html) - estimated date of delivery calculated from either scan date or last normal menstrual period and cycle length
 
 ## Follow Ups Profiles
