@@ -47,6 +47,21 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation",
+        "alias": [
+          "EDD (cycle)",
+          "EDB",
+          "EDB by dates",
+          "Expected date of birth",
+          "EDC",
+          "Expected date of confinement",
+          "EDD (scan)",
+          "EDB by scan",
+          "EDC by scan"
+        ]
+      },
+      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "slicing": {

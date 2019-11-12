@@ -46,6 +46,15 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation",
+        "alias": [
+          "LNMP",
+          "Date of LMP",
+          "LMP"
+        ]
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "fixedCode": "final"
