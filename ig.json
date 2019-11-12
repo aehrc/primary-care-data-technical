@@ -30,6 +30,7 @@
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP",
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD",
                 "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric",
+                "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan",
 		"http://aehrc.com/valueset/reaction-manifestation",
 		"http://aehrc.com/valueset/course",
 		"http://aehrc.com/valueset/clinical-indication-for-medication",
@@ -244,6 +245,10 @@
         },
         "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric": {
             "base": "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric.html",
+            "defns": "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric-definitions.html"
+        },
+        "StructureDefinition/au-primarycareobservation-gestationonscan": {
+            "base": "StructureDefinition/au-primarycareobservation-gestationonscan.html",
             "defns": "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric-definitions.html"
         }
     }
