@@ -244,12 +244,12 @@
             "defns": "ValueSet-au-primarycare-estimateddateofdeliverytypes-definitions.html"
         },
         "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric": {
-            "base": "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric.html",
-            "defns": "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric-definitions.html"
+            "base": "StructureDefinition-au-primarycareprocedure-ultrasoundscanobstetric.html",
+            "defns": "StructureDefinition-au-primarycareprocedure-ultrasoundscanobstetric-definitions.html"
         },
         "StructureDefinition/au-primarycareobservation-gestationonscan": {
-            "base": "StructureDefinition/au-primarycareobservation-gestationonscan.html",
-            "defns": "StructureDefinition/au-primarycareprocedure-ultrasoundscanobstetric-definitions.html"
+            "base": "StructureDefinition-au-primarycareobservation-gestationonscan.html",
+            "defns": "StructureDefinition-au-primarycareobservation-gestationonscan-definitions.html"
         }
     }
 }

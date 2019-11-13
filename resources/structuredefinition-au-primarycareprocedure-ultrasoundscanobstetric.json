@@ -32,7 +32,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Procedure",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "baseDefinition": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure",
   "derivation": "constraint",
   "differential": {
     "element": [
