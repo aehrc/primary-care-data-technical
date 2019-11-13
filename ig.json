@@ -31,6 +31,7 @@
 		"https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD",
                 "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric",
                 "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan",
+                "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-gravidity",
 		"http://aehrc.com/valueset/reaction-manifestation",
 		"http://aehrc.com/valueset/course",
 		"http://aehrc.com/valueset/clinical-indication-for-medication",
@@ -250,6 +251,10 @@
         "StructureDefinition/au-primarycareobservation-gestationonscan": {
             "base": "StructureDefinition-au-primarycareobservation-gestationonscan.html",
             "defns": "StructureDefinition-au-primarycareobservation-gestationonscan-definitions.html"
+        },
+        "StructureDefinition/au-primarycareobservation-gravidity": {
+            "base": "StructureDefinition-au-primarycareobservation-gravidity.html",
+            "defns": "StructureDefinition-au-primarycareobservation-gravidity-definitions.html"
         }
     }
 }

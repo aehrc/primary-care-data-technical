@@ -40,5 +40,6 @@ These Profiles have been defined for this implementation guide.
 * [AU Primary Care Expected Date of Delivery](StructureDefinition-au-primarycareobservation-edd.html) - expected date of delivery calculated from either scan date or last normal menstrual period and cycle length
 * [AU Primary Care Ultrasound Scan Obstetric](StructureDefinition-au-primarycareprocedure-ultrasoundscanobstetric.html) - obstetric ultrasound scan, including date
 * [AU Primary Care Gestation On Scan](StructureDefinition-au-primarycareobservation-gestationonscan.html) - estimated gestation of the pregnancy, based on findings from the ultrasound scan
+* [AU Primary Care Gravidity](StructureDefinition-au-primarycareobservation-gravidity.html) - number of times a woman has been pregnant, including the current pregnancy
 
 ## Follow Ups Profiles
