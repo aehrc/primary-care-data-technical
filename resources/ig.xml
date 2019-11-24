@@ -85,6 +85,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/au-primarycarefollowup"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-primarycarefollowuplist"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/au-primarycareimmunisation"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -302,15 +316,15 @@
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
     </resource>	
-    <!-- problems to be resolved resource>
+    <!--resource>
       <reference>
         <reference value="Condition/B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.76"/>
       </reference>
       <name value="Oridashi Condition 1"/>
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
-    </resource-->	
-    <!-- problems to be resolved resource>
+    </resource>	
+    <resource>
       <reference>
         <reference value="Condition/4E756D076EDCAF7552FFF6CF7B7BB2A1.163"/>
       </reference>
