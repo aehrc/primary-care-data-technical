@@ -64,7 +64,8 @@
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "List.emptyReason",

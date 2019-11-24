@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "au-primarycarefollowuplist",
+  "url": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList",
+  "version": "0.0.1",
+  "name": "AUPrimaryCareFollowUpList",
+  "title": "AU Primary Care Follow Up List",
+  "status": "draft",
+  "description": "This profile defines a follow up list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "purpose": "This profile defines a follow up list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List",
+        "path": "List",
+        "short": "A list of follow ups",
+        "definition": "A list of clinical reminders or recalls for the individual",
+        "comment": "To exchange a list of clinical reminders or recalls and their due dates so that the receiving clinic can incorporate them into a list of future activities required for the individual.",
+        "alias": [
+          "Planned follow-up",
+          "Action"
+        ]
+      },
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "fixedCode": "current"
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "fixedCode": "snapshot"
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.emptyReason",
+        "path": "List.emptyReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

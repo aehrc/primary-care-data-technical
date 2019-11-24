@@ -44,3 +44,5 @@ These Profiles have been defined for this implementation guide.
 * [AU Primary Care Parity](StructureDefinition-au-primarycareobservation-parity.html) - number of times a woman has given birth
 
 ## Follow Ups Profiles
+* [AU Primary Care Follow Up List](StructureDefinition-au-primarycarefollowuplist.html) - follow ups list with local identifiers and attributes
+* [AU Primary Care Follow Up](StructureDefinition-au-primarycarefollowup.html) - follow ups with local identifiers and attributes
