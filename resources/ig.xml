@@ -412,6 +412,14 @@
       <exampleBoolean value="true"/>
       <groupingId value="p1"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/maryfictitious"/>
+      </reference>
+      <name value="Sample Bundle"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
 	  <title value="Primary Care Implementation Guide"/>

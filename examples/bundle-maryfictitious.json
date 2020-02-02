@@ -1,0 +1,716 @@
+{
+  "resourceType": "Bundle",
+  "id": "maryfictitious",
+  "meta": {
+  	"lastUpdated": "2020-02-01T14:00:00.000Z"
+  },
+  "type": "document",
+  "identifier": {
+  	"system": "http://my.clinic/record",
+  	"value": "111111111"
+  	},
+  "entry": [
+    {
+      "fullUrl": "urn:6ea8ec57-9bee-45c7-bf99-563bf1a5106f",
+      "resource": {
+        "resourceType": "Composition",
+        "status": "final",
+        "type": {
+        	"coding": [
+        		{
+        			"system": "http://loinc.org",
+        			"code": "11503-0",
+        			"display": "Medical Records"
+        		}
+        		]
+        },
+        "date": "2020-02-01",
+        "author": [{
+        	"reference": "Organization/12345"	
+        }],
+        "title": "Practice to Practice Patient Summary",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><a name='mm'/><div><strong class='inset'>subject: </strong>Mary Fictitious, Female, 49 years</div></div>"
+        },
+        "id": "cf-1580554790736",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "section": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Bipolar disorder<a name='mm'/></div>"
+        },
+        "id": "cf-1552458621161",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "13746004",
+              "system": "http://snomed.info/sct",
+              "display": "Bipolar disorder"
+            }
+          ]
+        },
+        "clinicalStatus": {
+        	"coding": [{"code": "active"}]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Hypertension<a name='mm'/></div>"
+        },
+        "id": "cf-1552458492631",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "38341003",
+              "system": "http://snomed.info/sct",
+              "display": "Hypertension"
+            }
+          ]
+        },
+        "clinicalStatus": {
+        	"coding": [{"code": "active"}]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Rheumatoid Arthritis<a name='mm'/></div>"
+        },
+        "id": "cf-1552458551546",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "69896004",
+              "system": "http://snomed.info/sct",
+              "display": "Rheumatoid arthritis"
+            }
+          ]
+        },
+        "clinicalStatus": {
+        	"coding": [{"code": "active"}]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>most recent visit. link provided to Australasian Menopause Society, discuss further next visit, possible menopausal HRT<a name='mm'/></div>"
+        },
+        "id": "cf-1552458671105",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "161541000119104",
+                "system": "http://snomed.info/sct",
+                "display": "Perimenopausal state"
+              }
+            ]
+          }
+        ],
+        "status": "finished",
+        "class": {
+        	"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        	"code": "AMB"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "FamilyMemberHistory",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>mother hyperthyroid<a name='mm'/></div>"
+        },
+        "id": "cf-1552459971640",
+        "patient": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "completed",
+        "relationship": {
+          "coding": [
+            {
+              "code": "MTH",
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "display": "mother"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "34486009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Hyperthyroidism"
+                }
+              ]
+            }
+          }
+        ],
+        "sex": {
+        	"coding": [{"code": "female"}]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "FamilyMemberHistory",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>sister hyperthyroid<a name='mm'/></div>"
+        },
+        "id": "cf-1552460059156",
+        "patient": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "health-unknown",
+        "relationship": {
+          "coding": [
+            {
+              "code": "SIS",
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "display": "sister"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "34486009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Hyperthyroidism"
+                }
+              ]
+            }
+          }
+        ],
+        "sex": {
+        	"coding": [{"code": "female"}]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Flag",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>pertussis booster due<a name='mm'/></div>"
+        },
+        "id": "cf-1552460485991",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "active",
+        "code": {
+          "coding": [
+            {
+              "code": "703337007",
+              "system": "http://snomed.info/sct",
+              "display": "Requires diphtheria, tetanus and pertussis vaccination"
+            }
+          ]
+        },
+        "period": {
+          "end": "2019-11-01T14:00:00.000Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Immunisations<a name='mm'/></div>"
+        },
+        "id": "cf-1552538300520",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Immunisations",
+        "code": {
+          "coding": [
+            {
+              "code": "immunisations",
+              "system": "https://aehrc.com/fhir/CodeSystem/au-list-types"
+            }
+          ]
+        },
+        "emptyReason": {
+          "coding": [
+            {
+              "code": "unavailable",
+              "system": "http://hl7.org/fhir/list-empty-reason",
+              "display": "Unavailable"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Medical History<a name='mm'/></div>"
+        },
+        "id": "cf-1552537369839",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Medical History",
+        "code": {
+          "coding": [
+            {
+              "code": "medical-history",
+              "system": "https://aehrc.com/fhir/CodeSystem/au-list-types"
+            }
+          ]
+        },
+        "orderedBy": {
+          "coding": [
+            {
+              "code": "event-date",
+              "system": "http://hl7.org/fhir/list-order",
+              "display": "Sorted by Event Date"
+            }
+          ]
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "Procedure/cf-1552459393258"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/cf-1552458551546"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/cf-1552458492631"
+            }
+          },
+          {
+            "item": {
+              "reference": "Condition/cf-1552458621161"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Allergies<a name='mm'/></div>"
+        },
+        "id": "cf-1552538211781",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+            {
+              "code": "adverserxns",
+              "system": "http://hl7.org/fhir/list-example-use-codes",
+              "display": "Adverse Reactions"
+            }
+          ]
+        },
+        "date": "2019-03-13T14:00:00.000Z",
+        "emptyReason": {
+          "coding": [
+            {
+              "code": "unavailable",
+              "system": "http://hl7.org/fhir/list-empty-reason",
+              "display": "Unavailable"
+            }
+          ]
+        },
+        "title": "Adverse Reactions"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "List",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Current Medicines<a name='mm'/></div>"
+        },
+        "id": "cf-1552538565598",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Current Medicines",
+        "code": {
+          "coding": [
+            {
+              "code": "medications",
+              "system": "http://hl7.org/fhir/list-example-use-codes",
+              "display": "Medication List"
+            }
+          ]
+        },
+        "date": "2019-03-13T14:00:00.000Z",
+        "entry": [
+          {
+            "item": {
+              "reference": "MedicationStatement/cf-1552460358917"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/cf-1552459216687"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/cf-1552460181123"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>sevikar HCT 40/10/25<a name='mm'/></div>"
+        },
+        "id": "cf-1552460181123",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "18531000168109",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cf-1552458492631"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Methotrexate<a name='mm'/></div>"
+        },
+        "id": "cf-1552459216687",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "387381009",
+              "system": "http://snomed.info/sct",
+              "display": "Methotrexate"
+            }
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cf-1552458551546"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>lithium carbonate<a name='mm'/></div>"
+        },
+        "id": "cf-1552460358917",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "21570011000036108",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cf-1552458621161"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>symptoms of perimenopause<a name='mm'/></div>"
+        },
+        "id": "cf-1552461080805",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "code": "11323-3",
+              "system": "http://loinc.org",
+              "display": "General health - Reported"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "161541000119104",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/cf-1552458671105"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>smoking status - stopped 5 years ago<a name='mm'/></div>"
+        },
+        "id": "cf-1552459566194",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "72166-2",
+              "system": "http://loinc.org",
+              "display": "Tobacco smoking status NHIS"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "LP114127-6",
+                  "system": "http://loinc.org",
+                  "display": "About how long has it been since you completely quit smoking cigarettes"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA14702-7",
+                  "system": "http://loinc.org",
+                  "display": "3-5 years ago"
+                }
+              ]
+            }
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "8517006",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>alcohol consumption - two standard drinks five days per week<a name='mm'/></div>"
+        },
+        "id": "cf-1552459752263",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "LP135509-0",
+              "system": "http://loinc.org",
+              "display": "How often do you have a drink containing alcohol"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA87-2",
+              "system": "http://loinc.org",
+              "display": "Indicator of this type exhibited up to five days a week"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "meta": {
+          "profile": [
+            "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Mary Fictitious, Female, 49 years<a name='mm'/></div>"
+        },
+        "id": "cf-1552457299474",
+        "extension": [
+          {
+            "url": "http://hl7.org.au/fhir/StructureDefinition/indigenous-status",
+            "valueCoding": {
+              "system": "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1",
+              "code": "9",
+              "display": "Not stated/inadequately described"
+            }
+          }
+        ],
+        "birthDate": "1970-01-01",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
+              "valueCoding": {
+                "system": "https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1",
+                "code": "UUA",
+                "display": "Day and month are unknown, year is accurate"
+              }
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MC",
+                  "display": "Patient's Medicare Number"
+                }
+              ],
+              "text": "Medicare Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/medicare-number",
+            "value": "35001582843"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "code": "W",
+              "system": "http://hl7.org/fhir/v3/MaritalStatus",
+              "display": "Widowed"
+            }
+          ]
+        },
+        "name": [
+          {
+            "use": "usual",
+            "given": [
+              "Mary"
+            ],
+            "family": "Fictitious",
+            "text": "Mary Fictitious"
+          }
+        ],
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>surgery for uterovaginal prolapse with mesh<a name='mm'/></div>"
+        },
+        "id": "cf-1552459393258",
+        "subject": {
+          "reference": "Patient/cf-1552457299474"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "code": "314487008",
+              "system": "http://snomed.info/sct",
+              "display": "Anterior mesh vaginal repair"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
