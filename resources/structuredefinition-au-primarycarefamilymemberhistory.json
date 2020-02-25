@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "au-primarycarefamilymemberhistory",
-  "url": "http://example.org/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory",
   "version": "0.0.1",
   "name": "AUPrimaryCareFamilyMemberHistory",
   "title": "AU Primary Care Family Member History",

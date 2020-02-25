@@ -263,7 +263,7 @@
       {
         "id": "Composition.section:vaccinationList.mode",
         "path": "Composition.section.mode",
-        "fixedCode": "snapsot"
+        "fixedCode": "snapshot"
       },
       {
         "id": "Composition.section:vaccinationList.entry",
