@@ -55,11 +55,6 @@
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Composition.type.coding:loincMedicalRecords.version",
-        "path": "Composition.type.coding.version",
-        "fixedString": "2.65"
-      },
-      {
         "id": "Composition.type.coding:loincMedicalRecords.code",
         "path": "Composition.type.coding.code",
         "fixedCode": "11503-0"
@@ -116,7 +111,7 @@
           "rules": "open"
         },
         "min": 1,
-        "max": "1"
+        "max": "*"
       },
       {
         "id": "Composition.section:medicalHistoryList",
@@ -138,6 +133,17 @@
         ],
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "11348-0",
+        "_comment": "CHECK THIS - taken from IPS History of Past Illness Section which is likely narrower in scope.  Maybe 11329-0 History general"
       },
       {
         "id": "Composition.section:medicalHistoryList.mode",
@@ -189,6 +195,16 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:adverseReactionList.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:adverseReactionList.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "48765-2"
+      },
+      {
         "id": "Composition.section:adverseReactionList.mode",
         "path": "Composition.section.mode",
         "fixedCode": "snapshot"
@@ -238,11 +254,6 @@
         "id": "Composition.section:vaccinationList.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Composition.section:vaccinationList.code.coding.version",
-        "path": "Composition.section.code.coding.version",
-        "fixedString": "2.65"
       },
       {
         "id": "Composition.section:vaccinationList.code.coding.code",
@@ -308,6 +319,16 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:medicineList.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:medicineList.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "10160-0"
+      },
+      {
         "id": "Composition.section:medicineList.mode",
         "path": "Composition.section.mode",
         "fixedCode": "snapshot"
@@ -369,11 +390,6 @@
         "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Composition.section:clinicalSynopsis.code.coding.version",
-        "path": "Composition.section.code.coding.version",
-        "fixedString": "2.65"
-      },
-      {
         "id": "Composition.section:clinicalSynopsis.code.coding.code",
         "path": "Composition.section.code.coding.code",
         "fixedCode": "11329-0"
@@ -414,6 +430,11 @@
         "definition": "A list of significant health and related issues in family members.",
         "comment": "To exchange information about family history that may impact clinical decision-making about the subject of care.",
         "max": "1"
+      },
+      {
+        "id": "Composition.section:familyHistory.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "fixedCode": "10157-6"
       },
       {
         "id": "Composition.section:familyHistory.mode",
