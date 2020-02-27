@@ -143,7 +143,7 @@
         "id": "Composition.section:medicalHistoryList.code.coding.code",
         "path": "Composition.section.code.coding.code",
         "fixedCode": "11348-0",
-        "_comment": "CHECK THIS - taken from IPS History of Past Illness Section which is likely narrower in scope.  Maybe 11329-0 History general"
+        "fhir_comments": "CHECK THIS - taken from IPS History of Past Illness Section which is likely narrower in scope.  Maybe 11329-0 History general"
       },
       {
         "id": "Composition.section:medicalHistoryList.mode",
