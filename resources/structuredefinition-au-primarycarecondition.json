@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycarecondition",
+  "id": "AUPrimaryCareCondition",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition",
   "version": "0.01",
   "name": "AUPrimaryCareCondition",

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycareimmunisation",
+  "id": "AUPrimaryCareImmunisation",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation",
   "version": "0.0.1",
   "name": "AUPrimaryCareImmunisation",

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycaremedicinelist",
+  "id": "AUPrimaryCareMedicineList",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList",
   "version": "0.0.1",
   "name": "AUPrimaryCareMedicineList",

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycareobservation-parity",
+  "id": "AUPrimaryCareObservation-parity",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-parity",
   "version": "0.0.1",
   "name": "AUPrimaryCareParity",

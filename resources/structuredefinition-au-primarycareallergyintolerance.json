@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycareallergyintolerance",
+  "id": "AUPrimaryCareAllergyIntolerance",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance",
   "version": "0.0.1",
   "name": "AUPrimaryCareAllergyIntolerance",

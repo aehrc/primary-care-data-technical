@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycarecomposition",
+  "id": "AUPrimaryCareComposition",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition",
   "version": "0.0.1",
   "name": "AUPrimaryCareComposition",

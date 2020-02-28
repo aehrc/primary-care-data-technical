@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycarefollowuplist",
+  "id": "AUPrimaryCareFollowUpList",
   "url": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList",
   "version": "0.0.1",
   "name": "AUPrimaryCareFollowUpList",

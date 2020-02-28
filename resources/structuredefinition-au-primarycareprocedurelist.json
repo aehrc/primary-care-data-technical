@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycareprocedurelist",
+  "id": "AUPrimaryCareProcedureList",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList",
   "version": "0.0.1",
   "name": "AUPrimaryCareProcedureList",

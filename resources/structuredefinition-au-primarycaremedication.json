@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycaremedication",
+  "id": "AUPrimaryCareMedication",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication",
   "version": "0.0.1",
   "name": "AUPrimaryCareMedication",

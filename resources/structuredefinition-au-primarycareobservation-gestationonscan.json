@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycareobservation-gestationonscan",
+  "id": "AUPrimaryCareObservation-GestationOnScan",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan",
   "version": "0.0.1",
   "name": "GestationOnScan",

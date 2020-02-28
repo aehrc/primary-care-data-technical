@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycareproblemlist",
+  "id": "AUPrimaryCareProblemList",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProblemList",
   "version": "0.0.1",
   "name": "AUPrimaryCareProblemList",

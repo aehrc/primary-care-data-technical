@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-primarycareprocedure-ultrasoundscanobstetric",
+  "id": "AUPrimaryCareProcedure-UltrasoundScanObstetric",
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric",
   "version": "0.0.1",
   "name": "UltrasoundScanObstetric",
