@@ -1,14 +1,13 @@
 {
- "name": "au.csiro.fhir.au-primarycare",
- "version" : "0.0.3",  
- "canonical" : "https://aehrc.com/fhir",
- "dependencies": {
+  "name": "au.csiro.fhir.au-primarycare",
+  "version": "0.0.3",
+  "canonical": "https://aehrc.com/fhir",
+  "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "hl7.fhir.au.base": "dev"
- },
- "keywords": [
-   "terminology"
- ],
- "author": "CSIRO"
+  },
+  "keywords": [
+    "terminology"
+  ],
+  "author": "CSIRO"
 }
-

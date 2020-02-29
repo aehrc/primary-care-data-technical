@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Clinical_Indication_For_Medication_ValueSet",
+  "id": "clinical-indication-for-medication",
+  "title": "Clinical Indication For Medication ValueSet",
+  "description": "Clinical Indication For Medication ValueSet",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/clinical-indication-for-medication",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "(<< 182929008|Drug prophylaxis| OR 169443000|Preventive procedure| OR ^ 32570581000036105|Problem/Diagnosis reference set|)"
+          }
+        ]
+      }
+    ]
+  }
+}

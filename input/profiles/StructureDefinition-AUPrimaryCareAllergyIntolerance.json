@@ -1,0 +1,124 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUPrimaryCareAllergyIntolerance",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareAllergyIntolerance",
+  "title": "AU Primary Care Allergy Intolerance",
+  "status": "active",
+  "description": "This profile defines an allergy intolerance structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-allergyintolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance.verificationStatus",
+        "path": "AllergyIntolerance.verificationStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.criticality",
+        "path": "AllergyIntolerance.criticality",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.recordedDate",
+        "path": "AllergyIntolerance.recordedDate",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance",
+        "path": "AllergyIntolerance.reaction.substance",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding",
+        "path": "AllergyIntolerance.reaction.substance.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedSubstance",
+        "path": "AllergyIntolerance.reaction.substance.coding",
+        "sliceName": "snomedSubstance",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation",
+        "path": "AllergyIntolerance.reaction.manifestation",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding",
+        "path": "AllergyIntolerance.reaction.manifestation.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding:snomedManifestation",
+        "path": "AllergyIntolerance.reaction.manifestation.coding",
+        "sliceName": "snomedManifestation",
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://aehrc.com/valueset/reaction-manifestation"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.note.text",
+        "path": "AllergyIntolerance.reaction.note.text",
+        "mustSupport": true
+      }
+    ]
+  }
+}

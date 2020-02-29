@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUPrimaryCareFamilyMemberHistory",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareFamilyMemberHistory",
+  "title": "AU Primary Care Family Member History",
+  "status": "active",
+  "description": "This profile defines a family member history structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "FamilyMemberHistory",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "FamilyMemberHistory.relationship",
+        "path": "FamilyMemberHistory.relationship",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://aehrc.com/valueset/geneticfamilymember"
+        }
+      },
+      {
+        "id": "FamilyMemberHistory.condition.code",
+        "path": "FamilyMemberHistory.condition.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1"
+        }
+      }
+    ]
+  }
+}

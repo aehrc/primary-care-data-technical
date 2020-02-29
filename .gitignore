@@ -1,12 +1,6 @@
 input-cache/**
 output/**
-qa/
 temp/**
 template/**
 txCache/
-resources/ig-new.json
-resources/ig-new.xml
-resources/ig-validation-parameters.json
-resources/ig-expansion-parameters.json
-ig.ini
 *.swp

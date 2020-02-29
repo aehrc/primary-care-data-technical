@@ -1,0 +1,312 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "au.csiro.fhir.au-primarycare",
+  "url": "https://aehrc.com/fhir/ImplementationGuide/au.csiro.fhir.au-primarycare",
+  "version": "0.0.3",
+  "name": "aucsirofhirauprimarycare",
+  "title": "au.csiro.fhir.au-primarycare",
+  "status": "active",
+  "publisher": "CSIRO",
+  "packageId": "au.csiro.fhir.au-primarycare",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
+      "packageId": "hl7.fhir.au.base",
+      "version": "dev"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAllergyIntolerance"
+        },
+        "name": "AU Primary Care Allergy Intolerance",
+        "description": "This profile defines an allergy intolerance structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+        },
+        "name": "AU Primary Care Allergy Intolerance List",
+        "description": "This profile defines an allergy intolerance list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareComposition"
+        },
+        "name": "AU Primary Care Composition",
+        "description": "This profile defines a composition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareCondition"
+        },
+        "name": "AU Primary Care Condition",
+        "description": "This profile defines a condition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+        },
+        "name": "AU Primary Care Family Member History",
+        "description": "This profile defines a family member history structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+        },
+        "name": "AU Primary Care Family Member History List",
+        "description": "This profile defines a family member history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFollowUp"
+        },
+        "name": "AU Primary Care Follow UP",
+        "description": "This profile defines a follow up structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context. It uses a CarePlan resource, but is not intended to be a fully fledged Care Plan. CarePlans may be profiled in the future to support a proper Care Plan in the Australian primary care context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFollowUpList"
+        },
+        "name": "AU Primary Care Follow Up List",
+        "description": "This profile defines a follow up list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-gravidity"
+        },
+        "name": "AU Primary Care Gravidity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareImmunisation"
+        },
+        "name": "AU Primary Care Immunisation",
+        "description": "This profile defines an immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareImmunisationList"
+        },
+        "name": "AU Primary Care Immunisation List",
+        "description": "This profile defines an immunisation list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedicalHistoryList"
+        },
+        "name": "AU Primary Care Medical History List",
+        "description": "This profile defines a medical history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedication"
+        },
+        "name": "AU Primary Care Medication",
+        "description": "This profile defines a medication structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedicationStatement"
+        },
+        "name": "AU Primary Care Medication Statement",
+        "description": "This profile defines a medication statement structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedicineList"
+        },
+        "name": "AU Primary Care Medicine List",
+        "description": "This profile defines a medicine list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-parity"
+        },
+        "name": "AU Primary Care Parity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCarePatient"
+        },
+        "name": "AU Primary Care Patient",
+        "description": "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareProblemList"
+        },
+        "name": "AU Primary Care Problem List",
+        "description": "This profile defines a problem list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareProcedure"
+        },
+        "name": "AU Primary Care Procedure",
+        "description": "This profile defines a procedure structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareProcedureList"
+        },
+        "name": "AU Primary Care Procedure List",
+        "description": "This profile defines a procedure list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareSocialHistoryList"
+        },
+        "name": "AU Primary Care Social History List",
+        "description": "This profile defines a social history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-EDD"
+        },
+        "name": "Expected Date of Delivery",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
+        },
+        "name": "Gestation On Scan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-LNMP"
+        },
+        "name": "LastNormalMenstrualPeriod",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric"
+        },
+        "name": "Ultrasound Scan Obstetric",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/condition-course"
+        },
+        "name": "Course of the Condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/clinical-indication-for-medication"
+        },
+        "name": "Clinical Indication For Medication ValueSet",
+        "description": "Clinical Indication For Medication ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/course"
+        },
+        "name": "Course ValueSet",
+        "description": "Course ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/expecteddateofdeliverytypes"
+        },
+        "name": "Expected Date Of Delivery Types",
+        "description": "Expected Date of Delivery observables, e.g. calculated from either scan date or last normal menstrual period and cycle length.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/geneticfamilymember"
+        },
+        "name": "Genetic Family Member ValueSet",
+        "description": "null",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/reaction-manifestation"
+        },
+        "name": "Reaction manifestation ValueSet",
+        "description": "Reaction manifestation ValueSet",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "history.html",
+          "title": "History",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Genetic_Family_Member_ValueSet",
+  "id": "geneticfamilymember",
+  "title": "Genetic Family Member ValueSet",
+  "description": "null",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/geneticfamilymember",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "constraint",
+            "op": "=",
+            "value": "< 444148008"
+          }
+        ]
+      }
+    ]
+  }
+}
