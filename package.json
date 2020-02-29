@@ -2,12 +2,17 @@
   "name": "au.csiro.fhir.au-primarycare",
   "version": "0.0.3",
   "canonical": "https://aehrc.com/fhir",
+  "title": "Primary Care Practice-to-Practice",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "hl7.fhir.au.base": "dev"
   },
   "keywords": [
-    "terminology"
+    "Primary Care",
+    "terminology",
+    "IG"
   ],
-  "author": "CSIRO"
+  "language": "en",
+  "author": "CSIRO",
+  "license": "CC0-1.0"
 }
