@@ -23,12 +23,13 @@ Description: "This profile defines a medication structure that includes core loc
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
 * extension contains null 0..1 MS
 * code MS
-* code.coding contains amt 0..1
 * code.coding[amt] MS
 * form MS
 * form.coding MS
-* ingredient.itemCodeableConcept contains itemCodeableConcept 0..1
 * ingredient.itemCodeableConcept[itemCodeableConcept] MS
+* ingredient.itemCodeableConcept.coding ^slicing.discriminator.type = #value
+* ingredient.itemCodeableConcept.coding ^slicing.discriminator.path = "system"
+* ingredient.itemCodeableConcept.coding ^slicing.rules = #open
 * ingredient.itemCodeableConcept.coding contains amtMP 0..1
 * ingredient.itemCodeableConcept.coding[amtMP] MS
 * ingredient.strength MS

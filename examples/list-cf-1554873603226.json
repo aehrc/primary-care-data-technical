@@ -1,5 +1,10 @@
 {
   "resourceType": "List",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+    ]
+  },
   "text": {
     "status": "generated",
     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Allergy Intolerance List<a name='mm'/></div>"

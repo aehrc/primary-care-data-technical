@@ -24,9 +24,15 @@ Description: "This profile defines an allergy intolerance structure that include
 * recordedDate MS
 * reaction.substance 1..1
 * reaction.substance MS
+* reaction.substance.coding ^slicing.discriminator.type = #value
+* reaction.substance.coding ^slicing.discriminator.path = "system"
+* reaction.substance.coding ^slicing.rules = #open
 * reaction.substance.coding contains snomedSubstance 0..1
 * reaction.substance.coding[snomedSubstance] MS
 * reaction.manifestation MS
+* reaction.manifestation.coding ^slicing.discriminator.type = #value
+* reaction.manifestation.coding ^slicing.discriminator.path = "system"
+* reaction.manifestation.coding ^slicing.rules = #open
 * reaction.manifestation.coding contains snomedManifestation 0..1
 * reaction.manifestation.coding[snomedManifestation] from http://aehrc.com/valueset/reaction-manifestation (preferred)
 * reaction.manifestation.coding[snomedManifestation] MS
