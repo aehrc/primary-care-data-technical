@@ -14,7 +14,9 @@ Description: "This profile defines a condition structure that includes core loca
 * code.coding ^slicing.rules = #open
 * code.coding contains snomedCondition 0..1
 * code.coding[snomedCondition] MS
-* bodySite from null (preferred)
+
+//dh - fixed null...
+* bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)
 * bodySite MS
 * recordedDate MS
 * note.text MS

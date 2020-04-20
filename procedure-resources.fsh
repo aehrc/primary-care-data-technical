@@ -36,7 +36,8 @@ Description: "This profile defines a procedure structure that includes core loca
 * code from https://healthterminologies.gov.au/fhir/ValueSet/procedure-1 (preferred)
 * code MS
 * performed[x] MS
-* bodySite from null (preferred)
+//dh - fixed null, made same VS as condition
+* bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)
 * bodySite MS
 * note.text MS
 

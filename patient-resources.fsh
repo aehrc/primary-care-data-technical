@@ -37,6 +37,6 @@ Description: "This profile defines a patient administration details structure th
 * contact[emergencyContact].telecom.system = #phone
 * contact[emergencyContact].telecom.system MS
 * communication MS
-* communication.language from null (required)
+* communication.language from https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 (required)
 * communication.language MS
 

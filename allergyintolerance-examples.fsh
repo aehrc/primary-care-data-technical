@@ -1,9 +1,12 @@
 // EXTENSIONS 
 
+Alias: $SNOMED = http://snomed.info/sct
+
 Instance: cf-1554873772436
 InstanceOf: AUPrimaryCareAllergyIntolerance
 Title: "cf-1554873772436"
 * text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Oesophagitis</div>"
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * clinicalStatus.text = "active"
 * verificationStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
@@ -22,6 +25,7 @@ Title: "cf-1554873772436"
 Instance: cf-1554878062500
 InstanceOf: AUPrimaryCareAllergyIntolerance
 Title: "cf-1554878062500"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Peanut allergy</div>"
 * text.status = #generated
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * clinicalStatus.text = "active"
@@ -37,11 +41,13 @@ Title: "cf-1554878062500"
 * reaction.substance.coding = http://snomed.info/sct#762952008 "Peanut"
 * reaction.manifestation.coding = http://snomed.info/sct#126485001 "Urticaria"
 
+
 Instance: B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6
 InstanceOf: AUPrimaryCareAllergyIntolerance
 Title: "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"
-* meta.versionId = "20060222130000"
-* meta.lastUpdated = 2006-02-22T13:00:00+00:00
+//* meta.versionId = "20060222130000"
+//* meta.lastUpdated = 2006-02-22T13:00:00+00:00
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Penicillin anaphylaxis</div>"
 * text.status = #generated
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * clinicalStatus.text = "active"
@@ -54,6 +60,8 @@ Title: "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"
 * patient.reference = "Patient/cf-1552457299474"
 * recordedDate = 2006-02-23
 * recorder.reference = "Practitioner/cf-1573174872703"
+* reaction.substance.coding =  $SNOMED#764146007 "Penicillin"
+
 * reaction.manifestation.coding[0] = http://oridashi.com.au/system/code/bestpracticereaction#1 "Anaphylaxis"
 * reaction.manifestation.coding[1] = http://snomed.info/sct#39579001 "Anaphylaxis"
 * reaction.manifestation.text = "Anaphylaxis"
@@ -62,8 +70,9 @@ Title: "B0E0A3ADB59E2F77D6D51ADCA7DAD6B2.6"
 Instance: 4E756D076EDCAF7552FFF6CF7B7BB2A1.18
 InstanceOf: AUPrimaryCareAllergyIntolerance
 Title: "4E756D076EDCAF7552FFF6CF7B7BB2A1.18"
-* meta.versionId = "20180412005602"
-* meta.lastUpdated = 2018-04-12T00:56:02.153+00:00
+//* meta.versionId = "20180412005602"
+//* meta.lastUpdated = 2018-04-12T00:56:02.153+00:00
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Rash to alpha blockers</div>"
 * text.status = #generated
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * clinicalStatus.text = "active"
@@ -76,6 +85,8 @@ Title: "4E756D076EDCAF7552FFF6CF7B7BB2A1.18"
 * patient.reference = "Patient/cf-1552457299474"
 * recordedDate = 2018-04-12
 * recorder.reference = "Practitioner/cf-1573174872703"
+
+* reaction.substance.coding =  $SNOMED#372623002 "Substance with central alpha adrenergic receptor agonist mechanism of action (substance)"
 * reaction.manifestation.text = "rash"
 * reaction.severity = #moderate
 
