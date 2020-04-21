@@ -21,9 +21,11 @@ Description: "This profile defines a condition structure that includes core loca
 * recordedDate MS
 * note.text MS
 
+//dh - note that sushi can find an external extension defintion: https://aehrc.com/fhir/StructureDefinition/condition-course
+//dh - it will ignore that one in favour of this one...
 Extension: ConditionCourse
 Id: condition-course
 Title: "Course of the Condition"
 * value[x] only code
-* valueCode from Course_ValueSet (required)
+* valueCode from Course_ValueSet (required) //VS defined in terminology fsh
 
