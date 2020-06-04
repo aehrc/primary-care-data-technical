@@ -1,0 +1,105 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUPrimaryCareMedicationStatement",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareMedicationStatement",
+  "title": "AU Primary Care Medication Statement",
+  "status": "active",
+  "description": "This profile defines a medication statement structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-medicationstatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationStatement.note.text",
+        "path": "MedicationStatement.note.text",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.additionalInstruction",
+        "path": "MedicationStatement.dosage.additionalInstruction",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.additionalInstruction:snomedAdditionalInstruction",
+        "path": "MedicationStatement.dosage.additionalInstruction",
+        "sliceName": "snomedAdditionalInstruction",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.timing.repeat.duration",
+        "path": "MedicationStatement.dosage.timing.repeat.duration",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.timing.repeat.frequency",
+        "path": "MedicationStatement.dosage.timing.repeat.frequency",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.timing.repeat.period",
+        "path": "MedicationStatement.dosage.timing.repeat.period",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.timing.repeat.when",
+        "path": "MedicationStatement.dosage.timing.repeat.when",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeeded[x]",
+        "path": "MedicationStatement.dosage.asNeeded[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeededCodeableConcept",
+        "path": "MedicationStatement.dosage.asNeededCodeableConcept",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeededBoolean",
+        "path": "MedicationStatement.dosage.asNeededBoolean",
+        "mustSupport": true
+      }
+    ]
+  }
+}

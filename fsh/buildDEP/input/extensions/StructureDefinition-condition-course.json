@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "condition-course",
+  "url": "https://aehrc.com/fhir/StructureDefinition/condition-course",
+  "version": "0.0.3",
+  "name": "ConditionCourse",
+  "title": "Course of the Condition",
+  "status": "active",
+  "description": "The clinical course of a condition",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://aehrc.com/fhir/StructureDefinition/condition-course"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.valueCode",
+        "path": "Extension.valueCode",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://aehrc.com/fhir/ValueSet/course"
+        }
+      }
+    ]
+  }
+}

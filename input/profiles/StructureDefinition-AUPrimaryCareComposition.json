@@ -43,48 +43,31 @@
   "differential": {
     "element": [
       {
+        "id": "Composition",
+        "path": "Composition"
+      },
+      {
         "id": "Composition.status",
         "path": "Composition.status",
-        "fixedCode": "final"
+        "patternCode": "final"
       },
       {
-        "id": "Composition.type.coding",
-        "path": "Composition.type.coding",
-        "slicing": {
-          "discriminator": [
+        "id": "Composition.type",
+        "path": "Composition.type",
+        "patternCodeableConcept": {
+          "coding": [
             {
-              "type": "value",
-              "path": "code"
+              "code": "11503-0",
+              "system": "http://loinc.org",
+              "display": "Medical Records"
             }
-          ],
-          "rules": "open"
+          ]
         }
-      },
-      {
-        "id": "Composition.type.coding:loincMedicalRecords",
-        "path": "Composition.type.coding",
-        "sliceName": "loincMedicalRecords",
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Composition.type.coding:loincMedicalRecords.system",
-        "path": "Composition.type.coding.system",
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Composition.type.coding:loincMedicalRecords.code",
-        "path": "Composition.type.coding.code",
-        "fixedCode": "11503-0"
-      },
-      {
-        "id": "Composition.type.coding:loincMedicalRecords.display",
-        "path": "Composition.type.coding.display",
-        "fixedString": "Medical Records"
       },
       {
         "id": "Composition.subject",
         "path": "Composition.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -102,7 +85,7 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "fixedString": "Practice to Practice Patient Summary"
+        "patternString": "Practice to Practice Patient Summary"
       },
       {
         "id": "Composition.section",
@@ -119,25 +102,45 @@
         "min": 4
       },
       {
+        "id": "Composition.section.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
         "id": "Composition.section:medicalHistoryList",
         "path": "Composition.section",
         "sliceName": "medicalHistoryList",
+        "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.code.coding",
+        "path": "Composition.section.code.coding"
       },
       {
         "id": "Composition.section:medicalHistoryList.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "patternUri": "http://loinc.org"
       },
       {
         "id": "Composition.section:medicalHistoryList.code.coding.code",
         "path": "Composition.section.code.coding.code",
+        "min": 1,
         "fixedCode": "11348-0"
       },
       {
         "id": "Composition.section:medicalHistoryList.mode",
         "path": "Composition.section.mode",
-        "fixedCode": "snapshot"
+        "patternCode": "snapshot"
       },
       {
         "id": "Composition.section:medicalHistoryList.entry",
@@ -158,22 +161,32 @@
         "id": "Composition.section:adverseReactionList",
         "path": "Composition.section",
         "sliceName": "adverseReactionList",
+        "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Composition.section:adverseReactionList.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:adverseReactionList.code.coding",
+        "path": "Composition.section.code.coding"
       },
       {
         "id": "Composition.section:adverseReactionList.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "patternUri": "http://loinc.org"
       },
       {
         "id": "Composition.section:adverseReactionList.code.coding.code",
         "path": "Composition.section.code.coding.code",
+        "min": 1,
         "fixedCode": "48765-2"
       },
       {
         "id": "Composition.section:adverseReactionList.mode",
         "path": "Composition.section.mode",
-        "fixedCode": "snapshot"
+        "patternCode": "snapshot"
       },
       {
         "id": "Composition.section:adverseReactionList.entry",
@@ -196,24 +209,33 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:vaccinationList.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:vaccinationList.code.coding",
+        "path": "Composition.section.code.coding"
+      },
+      {
         "id": "Composition.section:vaccinationList.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "patternUri": "http://loinc.org"
       },
       {
         "id": "Composition.section:vaccinationList.code.coding.code",
         "path": "Composition.section.code.coding.code",
+        "min": 1,
         "fixedCode": "41291-6"
       },
       {
         "id": "Composition.section:vaccinationList.code.coding.display",
         "path": "Composition.section.code.coding.display",
-        "fixedString": "Immunization"
+        "patternString": "Immunization"
       },
       {
         "id": "Composition.section:vaccinationList.mode",
         "path": "Composition.section.mode",
-        "fixedCode": "snapshot"
+        "patternCode": "snapshot"
       },
       {
         "id": "Composition.section:vaccinationList.entry",
@@ -236,19 +258,28 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:medicineList.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:medicineList.code.coding",
+        "path": "Composition.section.code.coding"
+      },
+      {
         "id": "Composition.section:medicineList.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "patternUri": "http://loinc.org"
       },
       {
         "id": "Composition.section:medicineList.code.coding.code",
         "path": "Composition.section.code.coding.code",
+        "min": 1,
         "fixedCode": "10160-0"
       },
       {
         "id": "Composition.section:medicineList.mode",
         "path": "Composition.section.mode",
-        "fixedCode": "snapshot"
+        "patternCode": "snapshot"
       },
       {
         "id": "Composition.section:medicineList.entry",
@@ -271,29 +302,43 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:clinicalSynopsis.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.code.coding",
+        "path": "Composition.section.code.coding"
+      },
+      {
         "id": "Composition.section:clinicalSynopsis.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "fixedUri": "http://loinc.org"
+        "patternUri": "http://loinc.org"
       },
       {
         "id": "Composition.section:clinicalSynopsis.code.coding.code",
         "path": "Composition.section.code.coding.code",
+        "min": 1,
         "fixedCode": "11329-0"
       },
       {
         "id": "Composition.section:clinicalSynopsis.code.coding.display",
         "path": "Composition.section.code.coding.display",
-        "fixedString": "History general"
+        "patternString": "History general"
       },
       {
         "id": "Composition.section:clinicalSynopsis.code.coding.userSelected",
         "path": "Composition.section.code.coding.userSelected",
-        "fixedBoolean": false
+        "patternBoolean": false
       },
       {
         "id": "Composition.section:clinicalSynopsis.text",
         "path": "Composition.section.text",
         "mustSupport": true
+      },
+      {
+        "id": "Composition.section:clinicalSynopsis.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot"
       },
       {
         "id": "Composition.section:familyHistory",
@@ -303,14 +348,28 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:familyHistory.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:familyHistory.code.coding",
+        "path": "Composition.section.code.coding"
+      },
+      {
+        "id": "Composition.section:familyHistory.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
         "id": "Composition.section:familyHistory.code.coding.code",
         "path": "Composition.section.code.coding.code",
+        "min": 1,
         "fixedCode": "10157-6"
       },
       {
         "id": "Composition.section:familyHistory.mode",
         "path": "Composition.section.mode",
-        "fixedCode": "snapshot"
+        "patternCode": "snapshot"
       },
       {
         "id": "Composition.section:familyHistory.entry",
@@ -325,6 +384,30 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:socialHistory.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:socialHistory.code.coding",
+        "path": "Composition.section.code.coding"
+      },
+      {
+        "id": "Composition.section:socialHistory.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:socialHistory.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "fixedCode": "29762-2"
+      },
+      {
+        "id": "Composition.section:socialHistory.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot"
+      },
+      {
         "id": "Composition.section:socialHistory.entry",
         "path": "Composition.section.entry",
         "type": [
@@ -332,6 +415,94 @@
             "code": "Reference",
             "targetProfile": [
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory",
+        "path": "Composition.section",
+        "sliceName": "pregnancyHistory",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.code.coding",
+        "path": "Composition.section.code.coding"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "fixedCode": "10163-4"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:followUp",
+        "path": "Composition.section",
+        "sliceName": "followUp",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:followUp.code",
+        "path": "Composition.section.code"
+      },
+      {
+        "id": "Composition.section:followUp.code.coding",
+        "path": "Composition.section.code.coding"
+      },
+      {
+        "id": "Composition.section:followUp.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:followUp.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "fixedCode": "69730-0"
+      },
+      {
+        "id": "Composition.section:followUp.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:followUp.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
             ]
           }
         ],

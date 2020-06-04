@@ -38,6 +38,10 @@
   "differential": {
     "element": [
       {
+        "id": "Procedure",
+        "path": "Procedure"
+      },
+      {
         "id": "Procedure.code",
         "path": "Procedure.code",
         "mustSupport": true,
@@ -57,8 +61,12 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "null"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"
         }
+      },
+      {
+        "id": "Procedure.note",
+        "path": "Procedure.note"
       },
       {
         "id": "Procedure.note.text",

@@ -6,6 +6,7 @@
   "name": "ConditionCourse",
   "title": "Course of the Condition",
   "status": "active",
+  "description": "The clinical course of a condition",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -27,6 +28,10 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Extension",
+        "path": "Extension"
+      },
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
@@ -59,9 +64,11 @@
       {
         "id": "Extension.valueCode",
         "path": "Extension.valueCode",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://aehrc.com/fhir/ValueSet/course"
+          "valueSet": "http://aehrc.com/valueset/course"
         }
       }
     ]

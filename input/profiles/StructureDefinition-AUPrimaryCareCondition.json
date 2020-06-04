@@ -48,9 +48,14 @@
   "differential": {
     "element": [
       {
+        "id": "Condition",
+        "path": "Condition"
+      },
+      {
         "id": "Condition.extension:ConditionCourse",
         "path": "Condition.extension",
         "sliceName": "ConditionCourse",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -72,6 +77,10 @@
         "mustSupport": true
       },
       {
+        "id": "Condition.code",
+        "path": "Condition.code"
+      },
+      {
         "id": "Condition.code.coding",
         "path": "Condition.code.coding",
         "slicing": {
@@ -88,22 +97,29 @@
         "id": "Condition.code.coding:snomedCondition",
         "path": "Condition.code.coding",
         "sliceName": "snomedCondition",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
+        "id": "Condition.code.coding:snomedCondition.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
         "id": "Condition.bodySite",
         "path": "Condition.bodySite",
-        "mustSupport": true,
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "null"
-        }
+        "mustSupport": true
       },
       {
         "id": "Condition.recordedDate",
         "path": "Condition.recordedDate",
         "mustSupport": true
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note"
       },
       {
         "id": "Condition.note.text",

@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUPrimaryCareMedicineList",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareMedicineList",
+  "title": "AU Primary Care Medicine List",
+  "status": "active",
+  "description": "This profile defines a medicine list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-medlist",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "patternCode": "current"
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "List.date",
+        "path": "List.date",
+        "mustSupport": true
+      },
+      {
+        "id": "List.entry",
+        "path": "List.entry",
+        "mustSupport": true
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.emptyReason",
+        "path": "List.emptyReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

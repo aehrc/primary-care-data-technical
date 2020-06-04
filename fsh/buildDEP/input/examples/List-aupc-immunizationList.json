@@ -1,0 +1,35 @@
+{
+  "resourceType": "List",
+  "id": "aupc-immunizationList",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">3 allergies</div>"
+  },
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "Immunization/aupc-immunization1"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/aupc-immunization2"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/aupc-immunization3"
+      }
+    }
+  ]
+}

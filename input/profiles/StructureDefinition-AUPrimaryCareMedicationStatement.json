@@ -38,6 +38,10 @@
   "differential": {
     "element": [
       {
+        "id": "MedicationStatement",
+        "path": "MedicationStatement"
+      },
+      {
         "id": "MedicationStatement.medication[x]",
         "path": "MedicationStatement.medication[x]",
         "type": [
@@ -50,14 +54,36 @@
         ]
       },
       {
+        "id": "MedicationStatement.note",
+        "path": "MedicationStatement.note"
+      },
+      {
         "id": "MedicationStatement.note.text",
         "path": "MedicationStatement.note.text",
         "mustSupport": true
       },
       {
+        "id": "MedicationStatement.dosage",
+        "path": "MedicationStatement.dosage"
+      },
+      {
         "id": "MedicationStatement.dosage.additionalInstruction",
         "path": "MedicationStatement.dosage.additionalInstruction",
         "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.additionalInstruction:snomedAdditionalInstruction",
+        "path": "MedicationStatement.dosage.additionalInstruction",
+        "sliceName": "snomedAdditionalInstruction",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.timing",
+        "path": "MedicationStatement.dosage.timing"
+      },
+      {
+        "id": "MedicationStatement.dosage.timing.repeat",
+        "path": "MedicationStatement.dosage.timing.repeat"
       },
       {
         "id": "MedicationStatement.dosage.timing.repeat.duration",
@@ -82,6 +108,16 @@
       {
         "id": "MedicationStatement.dosage.asNeeded[x]",
         "path": "MedicationStatement.dosage.asNeeded[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeededCodeableConcept",
+        "path": "MedicationStatement.dosage.asNeededCodeableConcept",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeededBoolean",
+        "path": "MedicationStatement.dosage.asNeededBoolean",
         "mustSupport": true
       }
     ]

@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUPrimaryCareImmunisationList",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareImmunisationList",
+  "title": "AU Primary Care Immunisation List",
+  "status": "active",
+  "description": "This profile defines an immunisation list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "patternCode": "current"
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.emptyReason",
+        "path": "List.emptyReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -6,6 +6,7 @@
   "name": "GestationOnScan",
   "title": "Gestation On Scan",
   "status": "active",
+  "description": "The gestational age from an ultrasound scan",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -47,6 +48,10 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation"
+      },
+      {
         "id": "Observation.partOf",
         "path": "Observation.partOf",
         "slicing": {
@@ -65,6 +70,8 @@
         "id": "Observation.partOf:ultrasoundScan",
         "path": "Observation.partOf",
         "sliceName": "ultrasoundScan",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -77,7 +84,11 @@
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "fixedCode": "final"
+        "patternCode": "final"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code"
       },
       {
         "id": "Observation.code.coding",
@@ -91,17 +102,25 @@
           ],
           "rules": "open"
         },
-        "min": 1,
-        "max": "1"
+        "min": 1
       },
       {
         "id": "Observation.code.coding:gestationSnomed",
         "path": "Observation.code.coding",
         "sliceName": "gestationSnomed",
-        "patternCoding": {
-          "code": "57036006",
-          "system": "http://snomed.info/sct"
-        }
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:gestationSnomed.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:gestationSnomed.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "57036006"
       },
       {
         "id": "Observation.subject",
@@ -115,6 +134,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1
       },
       {
         "id": "Observation.value[x]",

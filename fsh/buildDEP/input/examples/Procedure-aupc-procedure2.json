@@ -1,0 +1,29 @@
+{
+  "resourceType": "Procedure",
+  "id": "aupc-procedure2",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plantar wart excision</div>"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "surg.foot@planw",
+        "system": "http://oridashi.com.au/system/code/medicaldirectorterm",
+        "display": "Plantar wart excision"
+      }
+    ]
+  },
+  "performedPeriod": {
+    "start": "2017-12-28"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "resourceType": "FamilyMemberHistory",
+  "id": "aupc-familyHistory1",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Father with diabetes</div>"
+  },
+  "status": "completed",
+  "patient": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "name": "Tom Daniel Smith",
+  "relationship": {
+    "coding": [
+      {
+        "code": "444295003",
+        "system": "http://snomed.info/sct",
+        "display": "Father of Subject"
+      }
+    ]
+  },
+  "bornDate": "1956",
+  "condition": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "73211009",
+            "system": "http://snomed.info/sct",
+            "display": "Diabetes mellitus (disorder)"
+          }
+        ]
+      },
+      "contributedToDeath": true
+    }
+  ]
+}

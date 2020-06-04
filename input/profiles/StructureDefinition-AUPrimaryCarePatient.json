@@ -43,9 +43,14 @@
   "differential": {
     "element": [
       {
+        "id": "Patient",
+        "path": "Patient"
+      },
+      {
         "id": "Patient.extension:null",
         "path": "Patient.extension",
         "sliceName": "null",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
@@ -57,7 +62,7 @@
       {
         "id": "Patient.active",
         "path": "Patient.active",
-        "fixedBoolean": true
+        "patternBoolean": true
       },
       {
         "id": "Patient.name",
@@ -83,11 +88,13 @@
         "id": "Patient.telecom:phone",
         "path": "Patient.telecom",
         "sliceName": "phone",
+        "min": 0,
         "max": "1"
       },
       {
         "id": "Patient.telecom:phone.system",
         "path": "Patient.telecom.system",
+        "min": 1,
         "fixedCode": "phone",
         "mustSupport": true
       },
@@ -100,11 +107,13 @@
         "id": "Patient.telecom:email",
         "path": "Patient.telecom",
         "sliceName": "email",
+        "min": 0,
         "max": "1"
       },
       {
         "id": "Patient.telecom:email.system",
         "path": "Patient.telecom.system",
+        "min": 1,
         "fixedCode": "email",
         "mustSupport": true
       },
@@ -143,23 +152,37 @@
         "id": "Patient.contact:emergencyContact",
         "path": "Patient.contact",
         "sliceName": "emergencyContact",
+        "min": 0,
         "max": "1"
+      },
+      {
+        "id": "Patient.contact:emergencyContact.relationship",
+        "path": "Patient.contact.relationship"
+      },
+      {
+        "id": "Patient.contact:emergencyContact.relationship.coding",
+        "path": "Patient.contact.relationship.coding"
       },
       {
         "id": "Patient.contact:emergencyContact.relationship.coding.system",
         "path": "Patient.contact.relationship.coding.system",
-        "fixedUri": "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+        "patternUri": "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
       },
       {
         "id": "Patient.contact:emergencyContact.relationship.coding.code",
         "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "C",
+        "min": 1,
+        "patternCode": "C",
         "mustSupport": true
+      },
+      {
+        "id": "Patient.contact:emergencyContact.telecom",
+        "path": "Patient.contact.telecom"
       },
       {
         "id": "Patient.contact:emergencyContact.telecom.system",
         "path": "Patient.contact.telecom.system",
-        "fixedCode": "phone",
+        "patternCode": "phone",
         "mustSupport": true
       },
       {
@@ -173,7 +196,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "null"
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2"
         }
       }
     ]

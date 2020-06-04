@@ -6,6 +6,7 @@
   "name": "AUPrimaryCareGravidity",
   "title": "AU Primary Care Gravidity",
   "status": "active",
+  "description": "Represents the gravidity (number of pregnancies) of a female patient",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -47,9 +48,17 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation"
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
-        "fixedCode": "final"
+        "patternCode": "final"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code"
       },
       {
         "id": "Observation.code.coding",
@@ -63,17 +72,25 @@
           ],
           "rules": "open"
         },
-        "min": 1,
-        "max": "1"
+        "min": 1
       },
       {
         "id": "Observation.code.coding:graviditySnomed",
         "path": "Observation.code.coding",
         "sliceName": "graviditySnomed",
-        "patternCoding": {
-          "code": "161732006",
-          "system": "http://snomed.info/sct"
-        }
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:graviditySnomed.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:graviditySnomed.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "161732006"
       },
       {
         "id": "Observation.subject",

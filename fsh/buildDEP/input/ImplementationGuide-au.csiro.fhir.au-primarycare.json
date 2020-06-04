@@ -1,0 +1,642 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "au.csiro.fhir.au-primarycare",
+  "url": "https://aehrc.com/fhir/ImplementationGuide/au.csiro.fhir.au-primarycare",
+  "version": "0.0.3",
+  "name": "PrimaryCarePracticetoPractice",
+  "title": "Primary Care Practice-to-Practice",
+  "status": "active",
+  "publisher": "CSIRO",
+  "contact": [
+    {
+      "name": "CSIRO-1",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:david.hay25@gmail.com"
+        }
+      ]
+    }
+  ],
+  "packageId": "au.csiro.fhir.au-primarycare",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
+      "packageId": "hl7.fhir.au.base",
+      "version": "current"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAllergyIntolerance"
+        },
+        "name": "AU Primary Care Allergy Intolerance",
+        "description": "This profile defines an allergy intolerance structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+        },
+        "name": "AU Primary Care Allergy Intolerance List",
+        "description": "This profile defines an allergy intolerance list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareComposition"
+        },
+        "name": "AU Primary Care Composition",
+        "description": "This profile defines a composition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareCondition"
+        },
+        "name": "AU Primary Care Condition",
+        "description": "This profile defines a condition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+        },
+        "name": "AU Primary Care Family Member History",
+        "description": "This profile defines a family member history structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+        },
+        "name": "AU Primary Care Family Member History List",
+        "description": "This profile defines a family member history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFollowUp"
+        },
+        "name": "AU Primary Care Follow UP",
+        "description": "This profile defines a follow up structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context. It uses a CarePlan resource, but is not intended to be a fully fledged Care Plan. CarePlans may be profiled in the future to support a proper Care Plan in the Australian primary care context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFollowUpList"
+        },
+        "name": "AU Primary Care Follow Up List",
+        "description": "This profile defines a follow up list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-gravidity"
+        },
+        "name": "AU Primary Care Gravidity",
+        "description": "Represents the gravidity (number of pregnancies) of a female patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareImmunisation"
+        },
+        "name": "AU Primary Care Immunisation",
+        "description": "This profile defines an immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareImmunisationList"
+        },
+        "name": "AU Primary Care Immunisation List",
+        "description": "This profile defines an immunisation list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedicalHistoryList"
+        },
+        "name": "AU Primary Care Medical History List",
+        "description": "This profile defines a medical history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedication"
+        },
+        "name": "AU Primary Care Medication",
+        "description": "This profile defines a medication structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedicationStatement"
+        },
+        "name": "AU Primary Care Medication Statement",
+        "description": "This profile defines a medication statement structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedicineList"
+        },
+        "name": "AU Primary Care Medicine List",
+        "description": "This profile defines a medicine list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-parity"
+        },
+        "name": "AU Primary Care Parity",
+        "description": "The number of births where the fetus is overr 24 weeks",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCarePatient"
+        },
+        "name": "AU Primary Care Patient",
+        "description": "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareProblemList"
+        },
+        "name": "AU Primary Care Problem List",
+        "description": "This profile defines a problem list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareProcedure"
+        },
+        "name": "AU Primary Care Procedure",
+        "description": "This profile defines a procedure structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareProcedureList"
+        },
+        "name": "AU Primary Care Procedure List",
+        "description": "This profile defines a procedure list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareSocialHistoryList"
+        },
+        "name": "AU Primary Care Social History List",
+        "description": "This profile defines a social history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-EDD"
+        },
+        "name": "Expected Date of Delivery",
+        "description": "The date that delivery is due. Method of estimation not specified.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
+        },
+        "name": "Gestation On Scan",
+        "description": "The gestational age from an ultrasound scan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareObservation-LNMP"
+        },
+        "name": "Last Menstrual Period",
+        "description": "The date of the womand last normal menstrual period",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric"
+        },
+        "name": "Ultrasound Scan Obstetric",
+        "description": "A ultrasound scan for obstetric purposes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/condition-course"
+        },
+        "name": "Course of the Condition",
+        "description": "The clinical course of a condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/clinical-indication-for-medication"
+        },
+        "name": "Clinical Indication For Medication ValueSet",
+        "description": "Clinical Indication For Medication ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/course"
+        },
+        "name": "Course ValueSet",
+        "description": "The valueset of options to represent clincial course of a condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/expecteddateofdeliverytypes"
+        },
+        "name": "Expected Date Of Delivery Types",
+        "description": "Expected Date of Delivery observables, e.g. calculated from either scan date or last normal menstrual period and cycle length.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/geneticfamilymember"
+        },
+        "name": "Genetic Family Member ValueSet",
+        "description": "Members of a family from a genetic perspective",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/reaction-manifestation"
+        },
+        "name": "Reaction manifestation ValueSet",
+        "description": "The types of reaction to an allergic reaction or intolerance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-adverseReactionEmpty"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-adverseReactionList"
+        },
+        "name": "Allergy List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy1"
+        },
+        "name": "Oesophagitis caused by dairy food",
+        "description": "Oesophagitis caused by dairy food",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy2"
+        },
+        "name": "Peanut allergy",
+        "description": "Urticaria as a result of a Peanut allergy",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy3"
+        },
+        "name": "Penicillin anaphylaxis",
+        "description": "Penicillin anaphylaxis",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy4"
+        },
+        "name": "Alpha blocker rash",
+        "description": "A rash as a consequence to Alpha adrenergic blockers",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "Composition/aupc-compositionComplete"
+        },
+        "name": "Example composition with all sections populated",
+        "description": "The composition for a patient with an allergy list only. Other required sections are present with no data.\nThis shows ONLY required sectioons. ",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
+          "reference": "Composition/aupc-compositionEmpty"
+        },
+        "name": "Example composition with no data",
+        "description": "The composition for a patient with no relevant history. Required sections are present with no data.\nThis shows ONLY required elements. List resources are contained.",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/aupc-condition1"
+        },
+        "name": "Conformed diagnosis of Polio",
+        "description": "Polio",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/aupc-condition2"
+        },
+        "name": "Conformed diagnosis of Asthma",
+        "description": "Asthma",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-edd1"
+        },
+        "name": "Estimated Date of Delivery",
+        "description": "Estimated Date of Delivery",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD"
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/aupc-familyHistory1"
+        },
+        "name": "Father with diabetes",
+        "description": "Father with diabetes",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-familyHistoryList"
+        },
+        "name": "Family History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-followUpList"
+        },
+        "name": "Followup list",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/aupc-followup1"
+        },
+        "name": "Blood Pressure review",
+        "description": "Review to check Blood Pressure",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-gestationOnScan1"
+        },
+        "name": "Gestation on scan ",
+        "description": "Gestation on scan",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-gravidity1"
+        },
+        "name": "Gravidity",
+        "description": "Gravidity",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-gravidity"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization1"
+        },
+        "name": "MMR Vaccination",
+        "description": "MMR",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization2"
+        },
+        "name": "MMR Vaccination",
+        "description": "MMR",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization3"
+        },
+        "name": "Hepatitis",
+        "description": "Hepatitis ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-immunizationEmpty"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-immunizationList"
+        },
+        "name": "Immunizations list",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-lmp1"
+        },
+        "name": "Last Menstrual Period",
+        "description": "Last Menstrual Period",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicalHistoryEmpty"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicalHistoryList"
+        },
+        "name": "Medical History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/aupc-medicationstatement1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicineList"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicineListEmpty"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-parity1"
+        },
+        "name": "Parity",
+        "description": "Parity",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-parity"
+      },
+      {
+        "reference": {
+          "reference": "Patient/aupc-patient1"
+        },
+        "name": "Patient",
+        "description": "Supporting patient for examples",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/aupc-practitioner1"
+        },
+        "name": "Practitioner",
+        "description": "Supporting practitioner for examples",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/aupc-procedure1"
+        },
+        "name": "Stent, coronary artery",
+        "description": "Stent, coronary artery",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/aupc-procedure2"
+        },
+        "name": "Plantar wart excision",
+        "description": "Plantar wart excision",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/aupc-procedureUltraSound"
+        },
+        "name": "Obstetric Ultrasound",
+        "description": "Obstetric Ultrasound",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-smoker1"
+        },
+        "name": "Cigarette smoker",
+        "description": "is a cigarette smoker",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-socialHistoryList"
+        },
+        "name": "Social History resources",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "Medication/medication1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/aupc-compositionAllergy"
+        },
+        "name": "aupc-compositionAllergy",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/aupc-compositionComplete"
+        },
+        "name": "aupc-compositionComplete",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/aupc-compositionEmpty"
+        },
+        "name": "aupc-compositionEmpty",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "history.html",
+          "title": "History",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

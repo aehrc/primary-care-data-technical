@@ -1,0 +1,119 @@
+{
+  "resourceType": "Composition",
+  "id": "aupc-compositionEmpty",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "11503-0",
+        "system": "http://loinc.org",
+        "display": "Medical Records"
+      }
+    ]
+  },
+  "title": "Practice to Practice Patient Summary",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known data</div>"
+  },
+  "identifier": {
+    "system": "http://clinfhir.com/fhir/namingSystem/test",
+    "value": "testingEmpty"
+  },
+  "author": [
+    {
+      "reference": "Practitioner/aupc-practitioner1"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "date": "2020-04-21",
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-medicalHistoryEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "11348-0",
+            "system": "http://loinc.org",
+            "display": "Medical History"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No significant medical history</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-adverseReactionEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "48765-2",
+            "system": "http://loinc.org",
+            "display": "Adverse Reactions"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergies</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-immunizationEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "41291-6",
+            "system": "http://loinc.org",
+            "display": "Immunization"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known immunizations</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-medicineListEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "10160-0",
+            "system": "http://loinc.org",
+            "display": "Medication List"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known medications</div>",
+        "status": "generated"
+      }
+    }
+  ]
+}

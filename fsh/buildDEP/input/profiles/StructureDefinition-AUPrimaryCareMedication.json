@@ -1,0 +1,105 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUPrimaryCareMedication",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareMedication",
+  "title": "AU Primary Care Medication",
+  "status": "active",
+  "description": "This profile defines a medication structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "script10.6",
+      "uri": "http://ncpdp.org/SCRIPT10_6",
+      "name": "Mapping to NCPDP SCRIPT 10.6"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.extension:null",
+        "path": "Medication.extension",
+        "sliceName": "null",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.extension:null.url",
+        "path": "Medication.extension.url",
+        "fixedUri": "null"
+      },
+      {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:amt",
+        "path": "Medication.code.coding",
+        "sliceName": "amt",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form",
+        "path": "Medication.form",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form.coding",
+        "path": "Medication.form.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept",
+        "path": "Medication.ingredient.itemCodeableConcept",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding",
+        "path": "Medication.ingredient.itemCodeableConcept.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:amtMP",
+        "path": "Medication.ingredient.itemCodeableConcept.coding",
+        "sliceName": "amtMP",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.strength",
+        "path": "Medication.ingredient.strength",
+        "mustSupport": true
+      }
+    ]
+  }
+}

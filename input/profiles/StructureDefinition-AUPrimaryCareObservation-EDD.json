@@ -6,6 +6,7 @@
   "name": "ExpectedDateOfDelivery",
   "title": "Expected Date of Delivery",
   "status": "active",
+  "description": "The date that delivery is due. Method of estimation not specified.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -47,27 +48,19 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
+        "id": "Observation",
+        "path": "Observation"
       },
       {
-        "id": "Observation.code.coding:sliceCoding",
-        "path": "Observation.code.coding",
-        "sliceName": "sliceCoding",
-        "min": 1,
-        "max": "1",
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "patternCode": "final"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://aehrc.com/valueset/expecteddateofdeliverytypes"
         }
       },

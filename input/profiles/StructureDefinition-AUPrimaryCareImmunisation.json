@@ -43,6 +43,14 @@
   "differential": {
     "element": [
       {
+        "id": "Immunization",
+        "path": "Immunization"
+      },
+      {
+        "id": "Immunization.vaccineCode",
+        "path": "Immunization.vaccineCode"
+      },
+      {
         "id": "Immunization.vaccineCode.coding:amtVaccineCode",
         "path": "Immunization.vaccineCode.coding",
         "sliceName": "amtVaccineCode",
@@ -52,6 +60,10 @@
         "id": "Immunization.occurrence[x]",
         "path": "Immunization.occurrence[x]",
         "mustSupport": true
+      },
+      {
+        "id": "Immunization.note",
+        "path": "Immunization.note"
       },
       {
         "id": "Immunization.note.text",

@@ -33,6 +33,10 @@
   "differential": {
     "element": [
       {
+        "id": "AllergyIntolerance",
+        "path": "AllergyIntolerance"
+      },
+      {
         "id": "AllergyIntolerance.verificationStatus",
         "path": "AllergyIntolerance.verificationStatus",
         "mustSupport": true
@@ -60,59 +64,30 @@
         "mustSupport": true
       },
       {
+        "id": "AllergyIntolerance.reaction",
+        "path": "AllergyIntolerance.reaction"
+      },
+      {
         "id": "AllergyIntolerance.reaction.substance",
         "path": "AllergyIntolerance.reaction.substance",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "AllergyIntolerance.reaction.substance.coding",
-        "path": "AllergyIntolerance.reaction.substance.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://aehrc.com/valueset/reaction-substance"
         }
-      },
-      {
-        "id": "AllergyIntolerance.reaction.substance.coding:snomedSubstance",
-        "path": "AllergyIntolerance.reaction.substance.coding",
-        "sliceName": "snomedSubstance",
-        "max": "1",
-        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.reaction.manifestation",
         "path": "AllergyIntolerance.reaction.manifestation",
-        "mustSupport": true
-      },
-      {
-        "id": "AllergyIntolerance.reaction.manifestation.coding",
-        "path": "AllergyIntolerance.reaction.manifestation.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "AllergyIntolerance.reaction.manifestation.coding:snomedManifestation",
-        "path": "AllergyIntolerance.reaction.manifestation.coding",
-        "sliceName": "snomedManifestation",
-        "max": "1",
-        "mustSupport": true,
         "binding": {
           "strength": "preferred",
           "valueSet": "http://aehrc.com/valueset/reaction-manifestation"
         }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.note",
+        "path": "AllergyIntolerance.reaction.note"
       },
       {
         "id": "AllergyIntolerance.reaction.note.text",

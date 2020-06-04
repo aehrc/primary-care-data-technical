@@ -1,0 +1,24 @@
+{
+  "name": "au.csiro.fhir.au-primarycare",
+  "version": "0.0.3",
+  "canonical": "https://aehrc.com/fhir",
+  "title": "Primary Care Practice-to-Practice",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.au.base": "current"
+  },
+  "keywords": [
+    "Primary Care",
+    "terminology",
+    "IG"
+  ],
+  "language": "en",
+  "author": "CSIRO",
+  "maintainers": [
+    {
+      "name": "CSIRO-1",
+      "email": "mailto:david.hay25@gmail.com"
+    }
+  ],
+  "license": "CC0-1.0"
+}

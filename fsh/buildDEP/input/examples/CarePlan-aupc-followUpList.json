@@ -1,0 +1,18 @@
+{
+  "resourceType": "CarePlan",
+  "id": "aupc-followUpList",
+  "meta": {
+    "profile": [
+      "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
+    ]
+  },
+  "status": "active",
+  "intent": "proposal",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">3 allergies</div>"
+  },
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  }
+}

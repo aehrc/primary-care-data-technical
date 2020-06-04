@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "aupc-gravidity1",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-gravidity"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "161732006",
+        "display": "Gravidity"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Gravidity</div>"
+  },
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "valueInteger": 3
+}

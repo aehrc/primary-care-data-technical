@@ -38,14 +38,18 @@
   "differential": {
     "element": [
       {
+        "id": "CarePlan",
+        "path": "CarePlan"
+      },
+      {
         "id": "CarePlan.status",
         "path": "CarePlan.status",
-        "fixedCode": "active"
+        "patternCode": "active"
       },
       {
         "id": "CarePlan.intent",
         "path": "CarePlan.intent",
-        "fixedCode": "proposal"
+        "patternCode": "proposal"
       },
       {
         "id": "CarePlan.title",
@@ -54,9 +58,18 @@
         "mustSupport": true
       },
       {
+        "id": "CarePlan.period",
+        "path": "CarePlan.period"
+      },
+      {
         "id": "CarePlan.period.start",
         "path": "CarePlan.period.start",
         "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity",
+        "path": "CarePlan.activity",
+        "max": "0"
       },
       {
         "id": "CarePlan.note",

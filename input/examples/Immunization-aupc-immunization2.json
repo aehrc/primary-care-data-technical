@@ -1,0 +1,27 @@
+{
+  "resourceType": "Immunization",
+  "id": "aupc-immunization2",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">MMR</div>"
+  },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "396429000",
+        "system": "http://snomed.info/sct",
+        "display": "MMR vaccine"
+      }
+    ]
+  },
+  "occurrenceDateTime": "2020-02-10",
+  "patient": {
+    "reference": "Patient/aupc-patient1"
+  }
+}

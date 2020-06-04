@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "aupc-gestationOnScan1",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "57036006",
+        "display": "Gestation on scan"
+      }
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Gestation on scan</div>"
+  },
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/aupc-procedureUltraSound"
+    }
+  ],
+  "valueQuantity": {
+    "value": 30,
+    "unit": "weeks",
+    "system": "http://unitsofmeasure.org",
+    "code": "wk"
+  },
+  "effectiveDateTime": "2020-04-01"
+}

@@ -1,0 +1,73 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "aupc-allergy4",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Rash to alpha blockers</div>",
+    "status": "additional"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "display": "Active"
+      }
+    ],
+    "text": "active"
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "display": "Confirmed"
+      }
+    ],
+    "text": "confirmed"
+  },
+  "category": [
+    "medication"
+  ],
+  "criticality": "low",
+  "code": {
+    "coding": [
+      {
+        "code": "1AA89EE6CE4C79150C522899B2721609",
+        "system": "http://oridashi.com.au/system/code/md-drug-class",
+        "display": "ALPHA-ADRENERGIC BLOCKERS"
+      }
+    ],
+    "text": "ALPHA-ADRENERGIC BLOCKERS"
+  },
+  "patient": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "recordedDate": "2018-04-12",
+  "recorder": {
+    "reference": "Practitioner/aupc-practitioner1"
+  },
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "code": "372623002",
+            "system": "http://snomed.info/sct",
+            "display": "Substance with central alpha adrenergic receptor agonist mechanism of action (substance)"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "text": "rash"
+        }
+      ],
+      "severity": "moderate"
+    }
+  ]
+}

@@ -38,9 +38,14 @@
   "differential": {
     "element": [
       {
+        "id": "Medication",
+        "path": "Medication"
+      },
+      {
         "id": "Medication.extension:null",
         "path": "Medication.extension",
         "sliceName": "null",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
@@ -71,6 +76,10 @@
         "mustSupport": true
       },
       {
+        "id": "Medication.ingredient",
+        "path": "Medication.ingredient"
+      },
+      {
         "id": "Medication.ingredient.itemCodeableConcept",
         "path": "Medication.ingredient.itemCodeableConcept",
         "mustSupport": true
@@ -92,6 +101,7 @@
         "id": "Medication.ingredient.itemCodeableConcept.coding:amtMP",
         "path": "Medication.ingredient.itemCodeableConcept.coding",
         "sliceName": "amtMP",
+        "min": 0,
         "max": "1",
         "mustSupport": true
       },
