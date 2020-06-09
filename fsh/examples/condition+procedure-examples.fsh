@@ -5,7 +5,7 @@ Instance: aupc-condition1
 InstanceOf: AUPrimaryCareCondition
 //BaseType: Condition
 Description: "Polio"
-Title: "Conformed diagnosis of Polio"
+Title: "Confirmed diagnosis of Polio"
 
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Polio</div>"
@@ -32,7 +32,7 @@ Instance: aupc-condition2
 InstanceOf: AUPrimaryCareCondition
 //BaseType: Condition
 Description: "Asthma"
-Title: "Conformed diagnosis of Asthma"
+Title: "Confirmed diagnosis of Asthma"
 
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Ashma</div>"
