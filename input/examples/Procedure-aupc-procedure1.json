@@ -12,7 +12,7 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/aupc-patient1"
+    "reference": "undefined/aupc-patient1"
   },
   "code": {
     "coding": [

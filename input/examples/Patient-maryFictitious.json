@@ -1,0 +1,29 @@
+{
+  "resourceType": "Patient",
+  "id": "maryFictitious",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mary Fictitious. Female aged 49</div>"
+  },
+  "name": [
+    {
+      "family": "Fictitious",
+      "given": [
+        "Mary"
+      ],
+      "text": "Mary Fictitious"
+    }
+  ],
+  "birthDate": "1971",
+  "gender": "female",
+  "address": [
+    {
+      "text": "23 Thule st"
+    }
+  ]
+}

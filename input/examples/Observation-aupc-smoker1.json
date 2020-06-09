@@ -7,7 +7,7 @@
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/aupc-patient1"
+    "reference": "undefined/aupc-patient1"
   },
   "effectiveDateTime": "2020-04-01",
   "code": {

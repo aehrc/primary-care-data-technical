@@ -10,7 +10,7 @@
 {% endcomment %} -->
 
 ### [aupc-compositionComplete](Composition-aupc-compositionComplete.json.html) [(Document bundle)](Bundle-aupc-compositionComplete.json.html)
-*Allergies only*
+*A complete example of an extract*
 
 |  | Section | Section references | List references
 | --- | --- | --- | --- |
@@ -87,14 +87,26 @@
 |  | [aupc-allergy4](AllergyIntolerance-aupc-allergy4.json.html) | Alpha blocker rash | A rash as a consequence to Alpha adrenergic blockers |
 | [AUPrimaryCareAllergyIntoleranceList](StructureDefinition-AUPrimaryCareAllergyIntoleranceList.html) | [aupc-adverseReactionList](List-aupc-adverseReactionList.json.html) | Allergy List |  |
 |  | [aupc-adverseReactionEmpty](List-aupc-adverseReactionEmpty.json.html) | No significant history |  |
-| [AUPrimaryCareComposition](StructureDefinition-AUPrimaryCareComposition.html) | [aupc-compositionComplete](AllergyIntolerance-aupc-compositionComplete.json.html) | Example composition with all sections populated |  |
+| [AUPrimaryCareComposition](StructureDefinition-AUPrimaryCareComposition.html) | [aupc-compositionComplete](Composition-aupc-compositionComplete.json.html) | Example composition with all sections populated |  |
 |  | [aupc-compositionEmpty](Composition-aupc-compositionEmpty.json.html) | Example composition with no data |  |
-| [AUPrimaryCareCondition](StructureDefinition-AUPrimaryCareCondition.html) | [aupc-condition1](Condition-aupc-condition1.json.html) | Conformed diagnosis of Polio | Polio |
-|  | [aupc-condition2](Condition-aupc-condition2.json.html) | Conformed diagnosis of Asthma | Asthma |
-| [AUPrimaryCareProcedure](StructureDefinition-AUPrimaryCareProcedure.html) | [aupc-procedure1](Procedure-aupc-procedure1.json.html) | Stent, coronary artery | Stent, coronary artery |
-|  | [aupc-procedure2](Procedure-aupc-procedure2.json.html) | Plantar wart excision | Plantar wart excision |
-| [AUPrimaryCareMedicalHistoryList](StructureDefinition-AUPrimaryCareMedicalHistoryList.html) | [aupc-medicalHistoryList](List-aupc-medicalHistoryList.json.html) | Medical History List |  |
+| [AUPrimaryCareCompoCompositionAllergyIntolerance ](StructureDefinition-AUPrimaryCareCompoCompositionAllergyIntolerance .html) | maryFictitious | Mary Fictitious example |  |
+| [AUPrimaryCareMedicalHistoryList](StructureDefinition-AUPrimaryCareMedicalHistoryList.html) | [mf-medicalHistoryList](List-mf-medicalHistoryList.json.html) | Medical History List |  |
+|  | [aupc-medicalHistoryList](List-aupc-medicalHistoryList.json.html) | Medical History List |  |
 |  | [aupc-medicalHistoryEmpty](List-aupc-medicalHistoryEmpty.json.html) | No significant history |  |
+| [AUPrimaryCareCondition](StructureDefinition-AUPrimaryCareCondition.html) | [mf-condition1](Condition-mf-condition1.json.html) | Hypertension | Hypertension |
+|  | [mf-condition2](Condition-mf-condition2.json.html) | Rheumatoid Arthritis | Rheumatoid Arthritis |
+|  | [mf-condition3](Condition-mf-condition3.json.html) | Bipolar disorder | Bipolar disorder |
+|  | [aupc-condition1](Condition-aupc-condition1.json.html) | Conformed diagnosis of Polio | Polio |
+|  | [aupc-condition2](Condition-aupc-condition2.json.html) | Conformed diagnosis of Asthma | Asthma |
+| [AUPrimaryCareProcedure](StructureDefinition-AUPrimaryCareProcedure.html) | [mf-procedure1](Procedure-mf-procedure1.json.html) | UteroVaginal prolapse repair | UteroVaginal prolapse repair |
+|  | [aupc-procedure1](Procedure-aupc-procedure1.json.html) | Stent, coronary artery | Stent, coronary artery |
+|  | [aupc-procedure2](Procedure-aupc-procedure2.json.html) | Plantar wart excision | Plantar wart excision |
+| [AUPrimaryCareSocialHistoryList](StructureDefinition-AUPrimaryCareSocialHistoryList.html) | [mf-SocialHistoryList](List-mf-SocialHistoryList.json.html) | Social History resources |  |
+|  | [aupc-socialHistoryList](List-aupc-socialHistoryList.json.html) | Social History resources |  |
+| [Observation](StructureDefinition-Observation.html) | [mfWidowed](Observation-mfWidowed.json.html) | Widowed May 2019 | Widowed May 2019 |
+|  | [aupc-smoker1](Observation-aupc-smoker1.json.html) | Cigarette smoker | is a cigarette smoker |
+| [AUPrimaryCarePatient](StructureDefinition-AUPrimaryCarePatient.html) | [maryFictitious](Patient-maryFictitious.json.html) | Mary Fictitious | Supporting patient for examples |
+|  | [aupc-patient1](Patient-aupc-patient1.json.html) | Patient | Supporting patient for examples |
 | [AUPrimaryCareFamilyMemberHistory](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) | [aupc-familyHistory1](FamilyMemberHistory-aupc-familyHistory1.json.html) | Father with diabetes | Father with diabetes |
 | [AUPrimaryCareFamilyMemberHistoryList](StructureDefinition-AUPrimaryCareFamilyMemberHistoryList.html) | [aupc-familyHistoryList](List-aupc-familyHistoryList.json.html) | Family History List |  |
 | [AUPrimaryCareFollowUp](StructureDefinition-AUPrimaryCareFollowUp.html) | [aupc-followup1](CarePlan-aupc-followup1.json.html) | Blood Pressure review | Review to check Blood Pressure |
@@ -114,7 +126,4 @@
 | [AUPrimaryCareObservation-EDD](StructureDefinition-AUPrimaryCareObservation-EDD.html) | [aupc-edd1](Observation-aupc-edd1.json.html) | Estimated Date of Delivery | Estimated Date of Delivery |
 | [AUPrimaryCareObservation-LNMP](StructureDefinition-AUPrimaryCareObservation-LNMP.html) | [aupc-lmp1](Observation-aupc-lmp1.json.html) | Last Menstrual Period | Last Menstrual Period |
 | [Procedure //AUPrimaryCareProcedure-UltrasoundScanObstetric ](StructureDefinition-Procedure //AUPrimaryCareProcedure-UltrasoundScanObstetric .html) | [aupc-procedureUltraSound](Procedure-aupc-procedureUltraSound.json.html) | Obstetric Ultrasound | Obstetric Ultrasound |
-| [Observation](StructureDefinition-Observation.html) | [aupc-smoker1](Observation-aupc-smoker1.json.html) | Cigarette smoker | is a cigarette smoker |
-| [AUPrimaryCareSocialHistoryList](StructureDefinition-AUPrimaryCareSocialHistoryList.html) | [aupc-socialHistoryList](List-aupc-socialHistoryList.json.html) | Social History resources |  |
-| [AUPrimaryCarePatient](StructureDefinition-AUPrimaryCarePatient.html) | [aupc-patient1](Patient-aupc-patient1.json.html) | Patient | Supporting patient for examples |
 | [Practitioner](StructureDefinition-Practitioner.html) | [aupc-practitioner1](Practitioner-aupc-practitioner1.json.html) | Practitioner | Supporting practitioner for examples |

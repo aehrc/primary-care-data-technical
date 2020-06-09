@@ -1,6 +1,6 @@
 {
   "resourceType": "List",
-  "id": "aupc-socialHistoryList",
+  "id": "mf-SocialHistoryList",
   "meta": {
     "profile": [
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
@@ -13,12 +13,12 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Social history resources</div>"
   },
   "subject": {
-    "reference": "Patient/aupc-patient1"
+    "reference": "undefined/maryFictitious"
   },
   "entry": [
     {
       "item": {
-        "reference": "Observation/aupc-smoker1"
+        "reference": "Observation/mfWidowed"
       }
     }
   ]

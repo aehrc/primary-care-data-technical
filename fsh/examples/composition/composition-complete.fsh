@@ -1,10 +1,9 @@
 Instance: aupc-compositionComplete
 InstanceOf: AUPrimaryCareComposition
-//BaseType: AllergyIntolerance 
+//BaseType: Composition 
 Title: "Example composition with all sections populated"
 Description: """
-The composition for a patient with an allergy list only. Other required sections are present with no data.
-This shows ONLY required sectioons. 
+The composition for a patient with all sections completed 
 """
 Usage: #Example
 

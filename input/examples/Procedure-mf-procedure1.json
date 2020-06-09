@@ -1,6 +1,6 @@
 {
   "resourceType": "Procedure",
-  "id": "aupc-procedure2",
+  "id": "mf-procedure1",
   "meta": {
     "profile": [
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plantar wart excision</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">UteroVaginal prolapse repair (with mesh)</div>"
   },
   "status": "completed",
   "subject": {
@@ -17,13 +17,10 @@
   "code": {
     "coding": [
       {
-        "code": "surg.foot@planw",
-        "system": "http://oridashi.com.au/system/code/medicaldirectorterm",
-        "display": "Plantar wart excision"
+        "code": "238034001",
+        "system": "http://snomed.info/sct",
+        "display": "Repair of vaginal wall prolapse (procedure)"
       }
     ]
-  },
-  "performedPeriod": {
-    "start": "2017-12-28"
   }
 }

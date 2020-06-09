@@ -12,7 +12,7 @@
   },
   "status": "completed",
   "patient": {
-    "reference": "Patient/aupc-patient1"
+    "reference": "undefined/aupc-patient1"
   },
   "name": "Tom Daniel Smith",
   "relationship": {

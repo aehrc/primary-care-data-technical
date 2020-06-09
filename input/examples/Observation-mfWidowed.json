@@ -1,21 +1,21 @@
 {
   "resourceType": "Observation",
-  "id": "aupc-smoker1",
+  "id": "mfWidowed",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cigarette smoker</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Widowed May 2019r</div>"
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/aupc-patient1"
+    "reference": "undefined/aupc-patient1"
   },
   "effectiveDateTime": "2020-04-01",
   "code": {
     "coding": [
       {
-        "code": "65568007",
+        "code": "33553000",
         "system": "http://snomed.info/sct",
-        "display": "Cigarette smoker"
+        "display": "Widowed"
       }
     ]
   }

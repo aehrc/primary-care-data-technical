@@ -1,12 +1,24 @@
 #!/usr/bin/env node
-//create an example page containing all the examples in the Guide
+/*create an example page containing all the examples in the Guide
 
+Iterate through all the examples to create a summary page - with a special format for documents.
+The summary by base type uses the //BaseType entry that is in all instances as a comment.
+The output is places in the pagecontend folder of both fsh and input so that it can be run
+as part of the runSushi command ()
+
+*/
 let fs = require('fs')
-let examplePath =  '../shorthand/examples'
-let abBundleOutputFolder = ['../shorthand/build/input/examples/','../shorthand/ig-data/input/examples/'];            //where to save a bundle
-let outFileName = '../shorthand/ig-data/input/pagecontent/examples.md';
-let outFileName2 = '../shorthand/build/input/pagecontent/examples.md';      //also put a copy directly in the IG input - otherwise have to run sushi again
+let examplePath =  '../fsh/examples'
+//where to write out the bundles (that represent the document examples). The IG publisher can pick them up from there
+let abBundleOutputFolder = ['../input/examples/','../fsh/ig-data/input/examples/'];            //where to save a bundle
+let outFileName = '../fsh/ig-data/input/pagecontent/examples.md';
+let outFileName2 = '../input/pagecontent/examples.md';      //also put a copy directly in the IG input - otherwise have to run sushi again
 let bundleServer = "http://clinfhir.com/fhir/";          //root for full url
+
+
+let FhirExamplePath =  '../input/examples/' //where the example FHIR instances are placed by sushi
+
+
 //retrieve all the files 
 let results = walk(examplePath)
 
@@ -58,7 +70,7 @@ for (var key of Object.keys(hashExamples)) {
 // -------------
 
 
-let FhirExamplePath =  '../shorthand/build/input/examples/'
+
 let hashResources = {};
 
 
