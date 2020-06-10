@@ -48,6 +48,14 @@
       {
         "id": "List.entry.item",
         "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

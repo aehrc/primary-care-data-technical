@@ -13,7 +13,7 @@
     "start": "2020-05-05"
   },
   "subject": {
-    "reference": "undefined/aupc-patient1",
+    "reference": "Patient/aupc-patient1",
     "display": "John Doe"
   },
   "note": [

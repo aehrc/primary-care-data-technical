@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 //create bundles for thre examples
+//not currently used, but may be useful...
 
 let fs = require('fs')
 

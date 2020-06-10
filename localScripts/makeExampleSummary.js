@@ -3,36 +3,40 @@
 
 Iterate through all the examples to create a summary page - with a special format for documents.
 The summary by base type uses the //BaseType entry that is in all instances as a comment.
-The output is places in the pagecontend folder of both fsh and input so that it can be run
+The output is places in the pagecontent folder of both fsh and input so that it can be run
 as part of the runSushi command ()
+
+Uses fsh for the summary by type (baseType), actual generated instances for the Composition
 
 */
 let fs = require('fs')
-let examplePath =  '../fsh/examples'
+let examplePath =  './fsh/examples'
 //where to write out the bundles (that represent the document examples). The IG publisher can pick them up from there
-let abBundleOutputFolder = ['../input/examples/','../fsh/ig-data/input/examples/'];            //where to save a bundle
-let outFileName = '../fsh/ig-data/input/pagecontent/examples.md';
-let outFileName2 = '../input/pagecontent/examples.md';      //also put a copy directly in the IG input - otherwise have to run sushi again
+let abBundleOutputFolder = ['./input/examples/','./fsh/ig-data/input/examples/'];            //where to save a bundle
+let outFileName = './fsh/ig-data/input/pagecontent/examples.md';
+let outFileName2 = './input/pagecontent/examples.md';      //also put a copy directly in the IG input - otherwise have to run sushi again
 let bundleServer = "http://clinfhir.com/fhir/";          //root for full url
 
+let FhirExamplePath =  './input/examples/' //where the example FHIR instances are placed by sushi
 
-let FhirExamplePath =  '../input/examples/' //where the example FHIR instances are placed by sushi
 
-
-//retrieve all the files 
+//retrieve all the file names into a list
 let results = walk(examplePath)
+//console.log(results)
 
-let hashExamples = {};      //hash by InstanceOf: contains {id:, description:, title}
+let hashExamples = {};      //hash by InstanceOf: contains [{id:, description:, title:, type:, fileName:, link:}] for each key
 
-//process the files - build the hash hashExamples
+//process the files - build the hash hashExamples (a single file can have multiple instances in it). 
 results.forEach(function(fullFileName) {
     let contents = fs.readFileSync(fullFileName).toString()
     processFile(contents,fullFileName)
 })
 
+//console.log(hashExamples)
 
 
-//now iterate through hashExamples to build the summary
+
+//now iterate through hashExamples to build the summary by type
 let arMD = []
 arMD.push("### Examples by Type")
 arMD.push("");
@@ -40,9 +44,9 @@ arMD.push("| Type | Id | Title | Description |")
 arMD.push("| --- | --- | --- | --- |")
 
 
-for (var key of Object.keys(hashExamples)) {
+for (var key of Object.keys(hashExamples)) {        //key is the 'instanceOf'
     let ctr = 0;
-    hashExamples[key].forEach(function(summary){
+    hashExamples[key].forEach(function(summary){    //multiple examples for each instance
         let linkId = summary.id
         if (summary.link) {
             linkId = "[" + summary.id + "](" + summary.link + ")"
@@ -67,7 +71,7 @@ for (var key of Object.keys(hashExamples)) {
 //arMD.push("### Documents");
 
 
-// -------------
+// -------------  now processing for compositions...
 
 
 
@@ -75,7 +79,7 @@ let hashResources = {};
 
 
 //let bundle = {resourceType:"Bundle",entry:[]}
-//build the hash of all FHIR exmple resources...
+//build the hash of all FHIR exmple resources... - these are the actual rersource instances - not the shorthand
 let list = fs.readdirSync(FhirExamplePath);
 list.forEach(function(file) {
     if (file.indexOf('.json') > -1) {
@@ -104,6 +108,7 @@ for (var key of Object.keys(hashResources)) {
     let resource = hashResources[key]
     //console.log(resource.resourceType)
     if (resource.resourceType == 'Composition') {
+       // console.log(resource.id)
         //let ar = processComposition(resource)
        // console.log(ar)arMD.push("");
        arALLCompositionMD.push("");
@@ -149,8 +154,8 @@ function processComposition(comp) {
     
     arComposition.push(text)
     arComposition.push("");
-    arComposition.push("|  | Section | Section references | List references")
-    arComposition.push("| --- | --- | --- | --- |")
+    arComposition.push("|  | Section | Section references | List references | Text")
+    arComposition.push("| --- | --- | --- | --- | --- |")
 
     //let lnk = comp.subject.reference.replace(
     let subjectLink = "[" + comp.subject.display +"](" + makeLinkFromReference(comp.subject.reference) + ".json.html)"
@@ -176,23 +181,32 @@ function processComposition(comp) {
     arComposition.push("| Sections:  | | |")
     //add the sections
     comp.section.forEach(function(sect){
-        let sectionDisplay=""
+        let sectionDisplay=""       
+        let sectionText = getDivText(sect.text.div);        //the section narrative
+
+        //'cause there can be multiple codes in a section...
         sect.code.coding.forEach(function(coding){
             sectionDisplay += coding.display;
         })
-        arComposition.push("| | " + sectionDisplay)      //the section header
+        //arComposition.push("| | " + sectionDisplay)      //the section header
+        arComposition.push("| | " + sectionDisplay + " | | | " + sectionText + " |")      //the section header
+
         //now for the section contents
-        let sectionText = "";       //will be assembled during the scan...
+        
+
+        
+
         sect.entry.forEach(function(entry){     //generally only 1
             let resource = hashResources[entry.reference]
             if (resource && resource.resourceType == 'List') {
 
+                
 
                 //bundle.entry.push({resource:resource})
                 bundle.entry.push({resource:resource,fullUrl:bundleServer+resource.resourceType + "/" + resource.id})
                 let listLink = "[*List resource*](List-"+ resource.id +".json.html)"
                 arComposition.push("| | | " + listLink)      //the section header
-
+                //arComposition.push("| | | " + listLink + " | | " + sectionText + " |")      //the section header
                 //retrieve the contents of the list and display each on a line
                 if (resource.emptyReason) {
                     arComposition.push("| | | Section is empty")  
@@ -202,6 +216,10 @@ function processComposition(comp) {
                     resource.entry.forEach(function(entry){
                         let entryResource = hashResources[entry.item.reference]
 
+                        if (! entryResource) {
+                            console.log('----------> ' + entry.item.reference + ": not found! (suggests the composition section is rerferencing an unknown resource")
+                        }
+                        
                        
                        //only add each resource once
                        let key = entryResource.type + "/" + entryResource.id
@@ -222,7 +240,6 @@ function processComposition(comp) {
                         let link = entryResource.resourceType + '-' + entryResource.id + '.json.html'
                         let display = "[" + text + "](" + link + ")"
 
-                        //arMD.push("| | | " + display)  
                         arComposition.push("| | | | " + display) 
                     })
                 }
@@ -257,7 +274,7 @@ function processComposition(comp) {
     })
 
 
-    console.log(bundle)
+    //console.log(bundle)
 
     return arComposition;
 
@@ -289,8 +306,7 @@ function processFile(contents,fullFileName) {
     arInstances.forEach(function(i) {       //check each instance
 
         let fileContents = splitter + i     //add back in the splitter
-        //arResults.push(splitter + i)
-        //console.log(fileContents)
+        
         let summary = {description:"",title:""}
         let ar = fileContents.split('\n')
         ar.forEach(function(lne){
@@ -301,7 +317,7 @@ function processFile(contents,fullFileName) {
                 summary.id = lne.substr(10)
             } else if (lne.substr(0,11) == '//BaseType:') {
                 summary.baseType = lne.substr(12).trim();
-            }else if (lne.substr(0,6) == 'Title:') {
+            } else if (lne.substr(0,6) == 'Title:') {
                 summary.title = lne.substr(7)
             } else if (lne.substr(0,12) == 'Description:') {
                 summary.description = lne.substr(13)
@@ -321,7 +337,7 @@ function processFile(contents,fullFileName) {
         }
 
 
-        console.log(summary.id)
+        //console.log(summary.id)
 
     })
    
@@ -329,7 +345,7 @@ function processFile(contents,fullFileName) {
 
 }
 
-function assembleSectioonText(section) {
+function assembleSectionText(section) {
 
 }
 

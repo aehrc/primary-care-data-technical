@@ -13,17 +13,17 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Polio, asthma, warts and a stent</div>"
   },
   "subject": {
-    "reference": "undefined/aupc-patient1"
+    "reference": "Patient/aupc-patient1"
   },
   "entry": [
     {
       "item": {
-        "reference": "undefined/aupc-condition1"
+        "reference": "Condition/aupc-condition1"
       }
     },
     {
       "item": {
-        "reference": "undefined/aupc-condition2"
+        "reference": "Condition/aupc-condition2"
       }
     },
     {

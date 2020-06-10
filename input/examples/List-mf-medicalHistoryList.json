@@ -13,32 +13,27 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hypertension, Rheumatoid Arthritis and bipolar disorder</div>"
   },
   "subject": {
-    "reference": "undefined/maryFictitious"
+    "reference": "Patient/maryFictitious"
   },
   "entry": [
     {
       "item": {
-        "reference": "undefined/mf-condition1"
+        "reference": "Condition/mf-condition1"
       }
     },
     {
       "item": {
-        "reference": "undefined/mf-condition2"
+        "reference": "Condition/mf-condition2"
       }
     },
     {
       "item": {
-        "reference": "undefined/mf-condition3"
+        "reference": "Condition/mf-condition3"
       }
     },
     {
       "item": {
         "reference": "Procedure/mf-procedure1"
-      }
-    },
-    {
-      "item": {
-        "reference": "mf-procedure2"
       }
     }
   ]

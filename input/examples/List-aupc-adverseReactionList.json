@@ -13,27 +13,27 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No allerrgies or intolerances known</div>"
   },
   "subject": {
-    "reference": "undefined/aupc-patient1"
+    "reference": "Patient/aupc-patient1"
   },
   "entry": [
     {
       "item": {
-        "reference": "undefined/aupc-allergy1"
+        "reference": "AllergyIntolerance/aupc-allergy1"
       }
     },
     {
       "item": {
-        "reference": "undefined/aupc-allergy2"
+        "reference": "AllergyIntolerance/aupc-allergy2"
       }
     },
     {
       "item": {
-        "reference": "undefined/aupc-allergy3"
+        "reference": "AllergyIntolerance/aupc-allergy3"
       }
     },
     {
       "item": {
-        "reference": "undefined/aupc-allergy4"
+        "reference": "AllergyIntolerance/aupc-allergy4"
       }
     }
   ]

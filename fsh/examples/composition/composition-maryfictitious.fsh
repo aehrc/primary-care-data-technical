@@ -2,8 +2,9 @@
 Alias: $clinicalCondition = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
 
-Instance: maryFictitious
-InstanceOf: AUPrimaryCareCompoCompositionAllergyIntolerance 
+Instance: aupc-maryFictitious
+InstanceOf: AUPrimaryCareComposition
+//BaseType: Composition 
 Title: "Mary Fictitious example"
 Description: """
 Rendering a supplied clincial example into a bundle
@@ -27,17 +28,32 @@ Usage: #Example
 //medical history
 * section[medicalHistoryList].entry = Reference(mf-medicalHistoryList)    //defined in condition+procedure-examples
 * section[medicalHistoryList].code = $LOINC#11348-0 "Medical History"
-* section[medicalHistoryList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Polio and asthma</div>"
+* section[medicalHistoryList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Hypertension, Rheumatoid Arthritis and bipolar disorder</div>"
 * section[medicalHistoryList].text.status = #generated
-
-
 
 //Social History
 * section[socialHistory].code = $LOINC#29762-2  "Social History Narrative"
-* section[socialHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Social History</div>"
+//* section[socialHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Widowed May 2019</li><li>line 2</li></ul></div>"
+* section[socialHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Widowed May 2019</div>"
+
 * section[socialHistory].text.status = #generated
 * section[socialHistory].entry = Reference(mf-SocialHistoryList) //defined in socialhistory-examples.fsh
 
+
+* section[adverseReactionList].entry = Reference(aupc-adverseReactionEmpty) //defined in supporting.fsh
+* section[adverseReactionList].code = http://loinc.org#48765-2 "Adverse Reactions"
+* section[adverseReactionList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known allergies</div>"
+* section[adverseReactionList].text.status = #generated
+
+* section[vaccinationList].entry = Reference(aupc-immunizationEmpty) //defined in supporting.fsh
+* section[vaccinationList].code = http://loinc.org#41291-6 "Immunization"
+* section[vaccinationList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known immunizations</div>"
+* section[vaccinationList].text.status = #generated
+
+* section[medicineList].entry = Reference(aupc-medicineListEmpty) //defined in supporting.fsh
+* section[medicineList].code = http://loinc.org#10160-0 "Medication List"
+* section[medicineList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known medications</div>"
+* section[medicineList].text.status = #generated
 
 // ----------------------- medical history
 //The list that references all of the medicalhistory resources - Condition and procedure
@@ -57,7 +73,7 @@ Usage: #example
 * entry[1].item = Reference(mf-condition2)
 * entry[2].item = Reference(mf-condition3)
 * entry[3].item = Reference(mf-procedure1)
-* entry[4].item = Reference(mf-procedure2)
+//* entry[4].item = Reference(mf-procedure2)
 
 Instance: mf-condition1
 InstanceOf: AUPrimaryCareCondition

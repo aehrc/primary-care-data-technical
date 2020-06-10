@@ -21,7 +21,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Gravidity</div>"
   },
   "subject": {
-    "reference": "undefined/aupc-patient1"
+    "reference": "Patient/aupc-patient1"
   },
   "valueInteger": 3
 }

@@ -23,14 +23,46 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
+      "packageId": "hl7.fhir.au.base",
+      "id": "hl7_fhir_au_base",
+      "version": "current"
+    }
+  ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAllergyIntolerance"
+        },
+        "name": "AU Primary Care Allergy Intolerance",
+        "description": "This profile defines an allergy intolerance structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
         },
         "name": "AU Primary Care Allergy Intolerance List",
         "description": "This profile defines an allergy intolerance list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareComposition"
+        },
+        "name": "AU Primary Care Composition",
+        "description": "This profile defines a composition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareCondition"
+        },
+        "name": "AU Primary Care Condition",
+        "description": "This profile defines a condition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
         "exampleBoolean": false
       },
       {
@@ -75,6 +107,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareImmunisation"
+        },
+        "name": "AU Primary Care Immunisation",
+        "description": "This profile defines an immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareImmunisationList"
         },
         "name": "AU Primary Care Immunisation List",
@@ -91,10 +131,42 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedication"
+        },
+        "name": "AU Primary Care Medication",
+        "description": "This profile defines a medication structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedicationStatement"
+        },
+        "name": "AU Primary Care Medication Statement",
+        "description": "This profile defines a medication statement structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareMedicineList"
+        },
+        "name": "AU Primary Care Medicine List",
+        "description": "This profile defines a medicine list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareObservation-parity"
         },
         "name": "AU Primary Care Parity",
         "description": "The number of births where the fetus is overr 24 weeks",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCarePatient"
+        },
+        "name": "AU Primary Care Patient",
+        "description": "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
         "exampleBoolean": false
       },
       {
@@ -225,6 +297,70 @@
       },
       {
         "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy1"
+        },
+        "name": "Oesophagitis caused by dairy food",
+        "description": "Oesophagitis caused by dairy food",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy2"
+        },
+        "name": "Peanut allergy",
+        "description": "Urticaria as a result of a Peanut allergy",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy3"
+        },
+        "name": "Penicillin anaphylaxis",
+        "description": "Penicillin anaphylaxis",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy4"
+        },
+        "name": "Alpha blocker rash",
+        "description": "A rash as a consequence to Alpha adrenergic blockers",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "Composition/aupc-compositionComplete"
+        },
+        "name": "Example composition with all sections populated",
+        "description": "The composition for a patient with all sections completed ",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
+          "reference": "Composition/aupc-compositionEmpty"
+        },
+        "name": "Example composition with no data",
+        "description": "The composition for a patient with no relevant history. Required sections are present with no data.\nThis shows ONLY required elements. List resources are contained.",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/aupc-condition1"
+        },
+        "name": "Confirmed diagnosis of Polio",
+        "description": "Polio",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/aupc-condition2"
+        },
+        "name": "Confirmed diagnosis of Asthma",
+        "description": "Asthma",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
           "reference": "Observation/aupc-edd1"
         },
         "name": "Estimated Date of Delivery",
@@ -279,6 +415,30 @@
       },
       {
         "reference": {
+          "reference": "Immunization/aupc-immunization1"
+        },
+        "name": "MMR Vaccination",
+        "description": "MMR",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization2"
+        },
+        "name": "MMR Vaccination",
+        "description": "MMR",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization3"
+        },
+        "name": "Hepatitis",
+        "description": "Hepatitis ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "List/aupc-immunizationEmpty"
         },
         "name": "No significant history",
@@ -301,6 +461,14 @@
       },
       {
         "reference": {
+          "reference": "Composition/aupc-maryFictitious"
+        },
+        "name": "Mary Fictitious example",
+        "description": "Rendering a supplied clincial example into a bundle",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
           "reference": "List/aupc-medicalHistoryEmpty"
         },
         "name": "No significant history",
@@ -315,11 +483,41 @@
       },
       {
         "reference": {
+          "reference": "MedicationStatement/aupc-medicationstatement1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicineList"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicineListEmpty"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
           "reference": "Observation/aupc-parity1"
         },
         "name": "Parity",
         "description": "Parity",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-parity"
+      },
+      {
+        "reference": {
+          "reference": "Patient/aupc-patient1"
+        },
+        "name": "Patient",
+        "description": "Supporting patient for examples",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
       },
       {
         "reference": {
@@ -370,10 +568,50 @@
       },
       {
         "reference": {
+          "reference": "Patient/maryFictitious"
+        },
+        "name": "Mary Fictitious",
+        "description": "Supporting patient for examples",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+      },
+      {
+        "reference": {
+          "reference": "Medication/medication1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
+      },
+      {
+        "reference": {
           "reference": "List/mf-SocialHistoryList"
         },
         "name": "Social History resources",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "Condition/mf-condition1"
+        },
+        "name": "Hypertension",
+        "description": "Hypertension",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/mf-condition2"
+        },
+        "name": "Rheumatoid Arthritis",
+        "description": "Rheumatoid Arthritis",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/mf-condition3"
+        },
+        "name": "Bipolar disorder",
+        "description": "Bipolar disorder",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
       },
       {
         "reference": {
@@ -400,13 +638,6 @@
       },
       {
         "reference": {
-          "reference": "Bundle/aupc-compositionAllergy"
-        },
-        "name": "aupc-compositionAllergy",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Bundle/aupc-compositionComplete"
         },
         "name": "aupc-compositionComplete",
@@ -417,6 +648,13 @@
           "reference": "Bundle/aupc-compositionEmpty"
         },
         "name": "aupc-compositionEmpty",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/aupc-maryFictitious"
+        },
+        "name": "aupc-maryFictitious",
         "exampleBoolean": true
       }
     ],
