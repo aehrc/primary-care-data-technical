@@ -48,10 +48,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation",
-        "path": "Observation"
-      },
-      {
         "id": "Observation.partOf",
         "path": "Observation.partOf",
         "slicing": {
@@ -85,10 +81,6 @@
         "id": "Observation.status",
         "path": "Observation.status",
         "patternCode": "final"
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code"
       },
       {
         "id": "Observation.code.coding",

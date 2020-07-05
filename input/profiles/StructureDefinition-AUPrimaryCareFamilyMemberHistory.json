@@ -38,20 +38,12 @@
   "differential": {
     "element": [
       {
-        "id": "FamilyMemberHistory",
-        "path": "FamilyMemberHistory"
-      },
-      {
         "id": "FamilyMemberHistory.relationship",
         "path": "FamilyMemberHistory.relationship",
         "binding": {
           "strength": "extensible",
           "valueSet": "http://aehrc.com/valueset/geneticfamilymember"
         }
-      },
-      {
-        "id": "FamilyMemberHistory.condition",
-        "path": "FamilyMemberHistory.condition"
       },
       {
         "id": "FamilyMemberHistory.condition.code",

@@ -144,7 +144,7 @@ function processComposition(comp) {
 
     let compLink = "[" + comp.id +"](Composition-" + comp.id + ".json.html)"
 
-    compLink += " [(Document bundle)](Bundle-"+  comp.id + ".json.html)"
+    compLink += " [(View Document bundle)](Bundle-"+  comp.id + ".js./ru on.html)"
 
     arComposition.push("### " + compLink)
     let text = ""
@@ -188,6 +188,8 @@ function processComposition(comp) {
         sect.code.coding.forEach(function(coding){
             sectionDisplay += coding.display;
         })
+        sectionDisplay = "**" + sectionDisplay + "**"
+
         //arComposition.push("| | " + sectionDisplay)      //the section header
         arComposition.push("| | " + sectionDisplay + " | | | " + sectionText + " |")      //the section header
 

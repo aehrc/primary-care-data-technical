@@ -55,6 +55,32 @@ Usage: #Example
 * section[medicineList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known medications</div>"
 * section[medicineList].text.status = #generated
 
+
+
+// ----------------------- medications --------------
+
+
+
+Instance: mf-medication1
+InstanceOf: AUPrimaryCareMedication
+//BaseType: Medication
+Description: "Simvastatin"
+Title: "Simvastatin"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Simvastatin</div>"
+
+* code = http://oridashi.com.au/system/code/medicaldirectordrug#22138 "SIMVASTATIN 10mg Tablet"
+* code.text = "SIMVASTATIN 10mg Tablet"
+* code.coding[1] = $SNOMED#28211011000036108 "simvastatin 10 mg tablet, 30"
+* code.coding[1].extension.url = "http://hl7.org.au/fhir/StructureDefinition/medication-type"
+* code.coding[1].extension.valueCoding = http://hl7.org.au/fhir/CodeSystem/medication-type#UPG "Unbranded package with no container"
+* code.coding[2] = http://pbs.gov.au/code/item#2011W "Simvastatin"
+* code.coding[3] = http://oridashi.com.au/system/code/medicaldirectorgeneric#HMG "Simvastatin"
+* code.coding[4] = http://www.whocc.no/atc#C10AA01  "Simvastatin"
+
+
+
 // ----------------------- medical history
 //The list that references all of the medicalhistory resources - Condition and procedure
 Instance: mf-medicalHistoryList

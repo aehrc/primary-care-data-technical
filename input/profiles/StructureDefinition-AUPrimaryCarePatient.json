@@ -43,10 +43,6 @@
   "differential": {
     "element": [
       {
-        "id": "Patient",
-        "path": "Patient"
-      },
-      {
         "id": "Patient.extension:null",
         "path": "Patient.extension",
         "sliceName": "null",
@@ -156,14 +152,6 @@
         "max": "1"
       },
       {
-        "id": "Patient.contact:emergencyContact.relationship",
-        "path": "Patient.contact.relationship"
-      },
-      {
-        "id": "Patient.contact:emergencyContact.relationship.coding",
-        "path": "Patient.contact.relationship.coding"
-      },
-      {
         "id": "Patient.contact:emergencyContact.relationship.coding.system",
         "path": "Patient.contact.relationship.coding.system",
         "patternUri": "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
@@ -174,10 +162,6 @@
         "min": 1,
         "patternCode": "C",
         "mustSupport": true
-      },
-      {
-        "id": "Patient.contact:emergencyContact.telecom",
-        "path": "Patient.contact.telecom"
       },
       {
         "id": "Patient.contact:emergencyContact.telecom.system",

@@ -38,10 +38,6 @@
   "differential": {
     "element": [
       {
-        "id": "Medication",
-        "path": "Medication"
-      },
-      {
         "id": "Medication.extension:null",
         "path": "Medication.extension",
         "sliceName": "null",
@@ -74,10 +70,6 @@
         "id": "Medication.form.coding",
         "path": "Medication.form.coding",
         "mustSupport": true
-      },
-      {
-        "id": "Medication.ingredient",
-        "path": "Medication.ingredient"
       },
       {
         "id": "Medication.ingredient.itemCodeableConcept",

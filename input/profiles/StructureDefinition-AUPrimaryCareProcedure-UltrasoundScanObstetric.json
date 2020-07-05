@@ -38,10 +38,6 @@
   "differential": {
     "element": [
       {
-        "id": "Procedure",
-        "path": "Procedure"
-      },
-      {
         "id": "Procedure.code",
         "path": "Procedure.code",
         "min": 1

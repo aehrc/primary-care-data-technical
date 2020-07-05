@@ -6,7 +6,6 @@
   "name": "PrimaryCarePracticetoPractice",
   "title": "Primary Care Practice-to-Practice",
   "status": "active",
-  "publisher": "CSIRO",
   "contact": [
     {
       "name": "CSIRO-1",
@@ -619,6 +618,14 @@
         },
         "name": "Medical History List",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "Medication/mf-medication1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
       },
       {
         "reference": {

@@ -33,10 +33,6 @@
   "differential": {
     "element": [
       {
-        "id": "AllergyIntolerance",
-        "path": "AllergyIntolerance"
-      },
-      {
         "id": "AllergyIntolerance.verificationStatus",
         "path": "AllergyIntolerance.verificationStatus",
         "mustSupport": true
@@ -64,10 +60,6 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.reaction",
-        "path": "AllergyIntolerance.reaction"
-      },
-      {
         "id": "AllergyIntolerance.reaction.substance",
         "path": "AllergyIntolerance.reaction.substance",
         "min": 1,
@@ -78,16 +70,40 @@
         }
       },
       {
+        "id": "AllergyIntolerance.reaction.substance.coding",
+        "path": "AllergyIntolerance.reaction.substance.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "openAtEnd"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedSubstance",
+        "path": "AllergyIntolerance.reaction.substance.coding",
+        "sliceName": "snomedSubstance",
+        "short": "There must be  SNOMED coded slice",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding:snomedSubstance.system",
+        "path": "AllergyIntolerance.reaction.substance.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
         "id": "AllergyIntolerance.reaction.manifestation",
         "path": "AllergyIntolerance.reaction.manifestation",
         "binding": {
           "strength": "preferred",
           "valueSet": "http://aehrc.com/valueset/reaction-manifestation"
         }
-      },
-      {
-        "id": "AllergyIntolerance.reaction.note",
-        "path": "AllergyIntolerance.reaction.note"
       },
       {
         "id": "AllergyIntolerance.reaction.note.text",

@@ -48,10 +48,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation",
-        "path": "Observation"
-      },
-      {
         "id": "Observation.status",
         "path": "Observation.status",
         "patternCode": "final"

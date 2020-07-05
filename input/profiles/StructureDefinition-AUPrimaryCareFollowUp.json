@@ -38,10 +38,6 @@
   "differential": {
     "element": [
       {
-        "id": "CarePlan",
-        "path": "CarePlan"
-      },
-      {
         "id": "CarePlan.status",
         "path": "CarePlan.status",
         "patternCode": "active"
@@ -56,10 +52,6 @@
         "path": "CarePlan.title",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "CarePlan.period",
-        "path": "CarePlan.period"
       },
       {
         "id": "CarePlan.period.start",
