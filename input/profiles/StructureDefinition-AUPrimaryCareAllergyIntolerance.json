@@ -86,7 +86,7 @@
         "id": "AllergyIntolerance.reaction.substance.coding:snomedSubstance",
         "path": "AllergyIntolerance.reaction.substance.coding",
         "sliceName": "snomedSubstance",
-        "short": "There must be  SNOMED coded slice",
+        "short": "There must be a SNOMED coded slice",
         "min": 0,
         "max": "1",
         "mustSupport": true

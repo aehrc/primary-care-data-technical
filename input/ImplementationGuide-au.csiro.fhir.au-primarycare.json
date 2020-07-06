@@ -614,6 +614,29 @@
       },
       {
         "reference": {
+          "reference": "FamilyMemberHistory/mf-familyHistory1"
+        },
+        "name": "Mother hypothyroid",
+        "description": "Mother hypothyroid",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mf-familyHistory2"
+        },
+        "name": "Sister hypothyroid",
+        "description": "Sister hypothyroid",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+      },
+      {
+        "reference": {
+          "reference": "List/mf-familyHistoryList"
+        },
+        "name": "Family History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+      },
+      {
+        "reference": {
           "reference": "List/mf-medicalHistoryList"
         },
         "name": "Medical History List",
@@ -621,11 +644,34 @@
       },
       {
         "reference": {
-          "reference": "Medication/mf-medication1"
+          "reference": "MedicationStatement/mf-medication1"
         },
-        "name": "Simvastatin",
-        "description": "Simvastatin",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
+        "name": "Sevikar HCT 40/10/25",
+        "description": "Sevikar HCT 40/10/25",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mf-medication2"
+        },
+        "name": "SMethotrexate",
+        "description": "Methotrexate",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mf-medication3"
+        },
+        "name": "lithium carbonate",
+        "description": "lithium carbonate",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "List/mf-medicineList"
+        },
+        "name": "Medication List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
       },
       {
         "reference": {

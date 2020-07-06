@@ -24,6 +24,7 @@ Id: AUPrimaryCareAllergyIntolerance
 //The AllergyIntolerance resource. Note that this constrains the AU primary profile (http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-allergyintolerance.html)
 Profile: AUPrimaryCareAllergyIntolerance
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-allergyintolerance
+//BaseType: AllergyIntolerance
 Id: AUPrimaryCareAllergyIntolerance
 Title: "AU Primary Care Allergy Intolerance"
 Description: "This profile defines an allergy intolerance structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."

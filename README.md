@@ -19,7 +19,9 @@ Specifies the structure of a FHIR document to exchange a clinical summary for a 
 #### Notes
 * The shell scripts are for a *nix system. 
 * At the time of writing, the build.sh script excludes the terminology test. There's a commented out line that will run with terminology support.
-
+* The 'runSushi' script also executes a local javascript script that does a couple of things:
+    * It creates a file - examples.md - that has a list of all examples ordered by the profile
+    * It creates a Bundle resource for each Composition (found in the examples\composition folder) that contains all the resource instances references by the Composition. Each bundle is added to the examples.md file using a format that allows easy navigation within the bundle.
 
 
 ## Folder structure

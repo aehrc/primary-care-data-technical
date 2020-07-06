@@ -1,0 +1,42 @@
+{
+  "resourceType": "FamilyMemberHistory",
+  "id": "mf-familyHistory1",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mother hypothyroid</div>"
+  },
+  "status": "completed",
+  "patient": {
+    "reference": "Patient/maryFictitious"
+  },
+  "name": "Mummy",
+  "relationship": {
+    "coding": [
+      {
+        "code": "72705000",
+        "system": "http://snomed.info/sct",
+        "display": "Mother (person)"
+      }
+    ]
+  },
+  "bornDate": "1956",
+  "condition": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "40930008",
+            "system": "http://snomed.info/sct",
+            "display": "Hypothyroidism (disorder)"
+          }
+        ]
+      },
+      "onsetString": "30 years"
+    }
+  ]
+}

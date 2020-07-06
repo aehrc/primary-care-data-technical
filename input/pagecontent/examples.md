@@ -9,7 +9,7 @@
 *****************************************************************************************
 {% endcomment %} -->
 
-### [aupc-compositionComplete](Composition-aupc-compositionComplete.json.html) [(View Document bundle)](Bundle-aupc-compositionComplete.js./ru on.html)
+### [aupc-compositionComplete](Composition-aupc-compositionComplete.json.html) [(View Document bundle)](Bundle-aupc-compositionComplete.json.html)
 *A complete example of an extract*
 
 |  | Section | Section references | List references | Text
@@ -19,27 +19,27 @@
 | Sections:  | | |
 | | **Medical History** | | | Polio and asthma |
 | | | [*List resource*](List-aupc-medicalHistoryList.json.html)
-| | | | [Polio](Condition-aupc-condition1.json.html)
-| | | | [Ashma](Condition-aupc-condition2.json.html)
-| | | | [Stent, coronary artery](Procedure-aupc-procedure1.json.html)
-| | | | [Plantar wart excision](Procedure-aupc-procedure2.json.html)
+| | | | [*A complete example of an extract*](Condition-aupc-condition1.json.html)
+| | | | [*A complete example of an extract*](Condition-aupc-condition2.json.html)
+| | | | [*A complete example of an extract*](Procedure-aupc-procedure1.json.html)
+| | | | [*A complete example of an extract*](Procedure-aupc-procedure2.json.html)
 | | **Adverse Reactions** | | | Peanuts and others |
 | | | [*List resource*](List-aupc-adverseReactionList.json.html)
-| | | | [Oesophagitis](AllergyIntolerance-aupc-allergy1.json.html)
-| | | | [Peanut allergy](AllergyIntolerance-aupc-allergy2.json.html)
-| | | | [Penicillin anaphylaxis](AllergyIntolerance-aupc-allergy3.json.html)
-| | | | [Rash to alpha blockers](AllergyIntolerance-aupc-allergy4.json.html)
+| | | | [*A complete example of an extract*](AllergyIntolerance-aupc-allergy1.json.html)
+| | | | [*A complete example of an extract*](AllergyIntolerance-aupc-allergy2.json.html)
+| | | | [*A complete example of an extract*](AllergyIntolerance-aupc-allergy3.json.html)
+| | | | [*A complete example of an extract*](AllergyIntolerance-aupc-allergy4.json.html)
 | | **Immunization** | | | Immunizations |
 | | | [*List resource*](List-aupc-immunizationList.json.html)
-| | | | [MMR](Immunization-aupc-immunization1.json.html)
-| | | | [MMR](Immunization-aupc-immunization2.json.html)
-| | | | [Hepatitis](Immunization-aupc-immunization3.json.html)
+| | | | [*A complete example of an extract*](Immunization-aupc-immunization1.json.html)
+| | | | [*A complete example of an extract*](Immunization-aupc-immunization2.json.html)
+| | | | [*A complete example of an extract*](Immunization-aupc-immunization3.json.html)
 | | **Medicine list** | | | Medications |
 | | | [*List resource*](List-aupc-medicineList.json.html)
-| | | | [Simvastatin 10mg daily](MedicationStatement-aupc-medicationstatement1.json.html)
+| | | | [*A complete example of an extract*](MedicationStatement-aupc-medicationstatement1.json.html)
 | | **Family history list** | | | Father with diabetes |
 | | | [*List resource*](List-aupc-familyHistoryList.json.html)
-| | | | [Father with diabetes](FamilyMemberHistory-aupc-familyHistory1.json.html)
+| | | | [*A complete example of an extract*](FamilyMemberHistory-aupc-familyHistory1.json.html)
 | | **History of pregnancies** | | | History of pregnancies |
 | | | [Gravidity](Observation-aupc-gravidity1.json.html)
 | | | [Parity](Observation-aupc-parity1.json.html)
@@ -48,14 +48,14 @@
 | | | [Last Menstrual Period](Observation-aupc-lmp1.json.html)
 | | **Social History Narrative** | | | Social History |
 | | | [*List resource*](List-aupc-socialHistoryList.json.html)
-| | | | [Cigarette smoker](Observation-aupc-smoker1.json.html)
+| | | | [*A complete example of an extract*](Observation-aupc-smoker1.json.html)
 | | **Follow ups** | | | Follow ups |
 | | | [*List resource*](List-aupc-followUpList.json.html)
-| | | | [](CarePlan-aupc-followup1.json.html)
+| | | | [*A complete example of an extract*](CarePlan-aupc-followup1.json.html)
 
 
 
-### [aupc-compositionEmpty](Composition-aupc-compositionEmpty.json.html) [(View Document bundle)](Bundle-aupc-compositionEmpty.js./ru on.html)
+### [aupc-compositionEmpty](Composition-aupc-compositionEmpty.json.html) [(View Document bundle)](Bundle-aupc-compositionEmpty.json.html)
 *No known data*
 
 |  | Section | Section references | List references | Text
@@ -78,7 +78,7 @@
 
 
 
-### [aupc-maryFictitious](Composition-aupc-maryFictitious.json.html) [(View Document bundle)](Bundle-aupc-maryFictitious.js./ru on.html)
+### [aupc-maryFictitious](Composition-aupc-maryFictitious.json.html) [(View Document bundle)](Bundle-aupc-maryFictitious.json.html)
 *A complete example of an extract*
 
 |  | Section | Section references | List references | Text
@@ -88,22 +88,29 @@
 | Sections:  | | |
 | | **Medical History** | | | Hypertension, Rheumatoid Arthritis and bipolar disorder |
 | | | [*List resource*](List-mf-medicalHistoryList.json.html)
-| | | | [Hypertension](Condition-mf-condition1.json.html)
-| | | | [Rheumatoid Arthritis](Condition-mf-condition2.json.html)
-| | | | [Bipolar disorder](Condition-mf-condition3.json.html)
-| | | | [UteroVaginal prolapse repair (with mesh)](Procedure-mf-procedure1.json.html)
+| | | | [*A complete example of an extract*](Condition-mf-condition1.json.html)
+| | | | [*A complete example of an extract*](Condition-mf-condition2.json.html)
+| | | | [*A complete example of an extract*](Condition-mf-condition3.json.html)
+| | | | [*A complete example of an extract*](Procedure-mf-procedure1.json.html)
 | | **Social History Narrative** | | | Widowed May 2019 |
 | | | [*List resource*](List-mf-SocialHistoryList.json.html)
-| | | | [Widowed May 2019r](Observation-mfWidowed.json.html)
+| | | | [*A complete example of an extract*](Observation-mfWidowed.json.html)
 | | **Adverse Reactions** | | | No known allergies |
 | | | [*List resource*](List-aupc-adverseReactionEmpty.json.html)
 | | | Section is empty
 | | **Immunization** | | | No known immunizations |
 | | | [*List resource*](List-aupc-immunizationEmpty.json.html)
 | | | Section is empty
-| | **Medication List** | | | No known medications |
-| | | [*List resource*](List-aupc-medicineListEmpty.json.html)
-| | | Section is empty
+| | **Medication List** | | |  |
+| | | [*List resource*](List-mf-medicineList.json.html)
+| | | | [*A complete example of an extract*](MedicationStatement-mf-medication1.json.html)
+| | | | [*A complete example of an extract*](MedicationStatement-mf-medication2.json.html)
+| | | | [*A complete example of an extract*](MedicationStatement-mf-medication3.json.html)
+| | **Family History** | | | Mother and Sister hypothyroid in 30s |
+| | | [*List resource*](List-mf-familyHistoryList.json.html)
+| | | | [*A complete example of an extract*](FamilyMemberHistory-mf-familyHistory1.json.html)
+| | | | [*A complete example of an extract*](FamilyMemberHistory-mf-familyHistory2.json.html)
+| | **Follow up visit item set** | | |  |
 
 
 ### Examples by Type
@@ -119,8 +126,12 @@
 | [AUPrimaryCareComposition](StructureDefinition-AUPrimaryCareComposition.html) | [aupc-compositionComplete](Composition-aupc-compositionComplete.json.html) | Example composition with all sections populated |  |
 |  | [aupc-compositionEmpty](Composition-aupc-compositionEmpty.json.html) | Example composition with no data |  |
 |  | [aupc-maryFictitious](Composition-aupc-maryFictitious.json.html) | Mary Fictitious example |  |
-| [AUPrimaryCareMedication](StructureDefinition-AUPrimaryCareMedication.html) | [mf-medication1](Medication-mf-medication1.json.html) | Simvastatin | Simvastatin |
-|  | [medication1](Medication-medication1.json.html) | Simvastatin | Simvastatin |
+| [AUPrimaryCareMedicineList](StructureDefinition-AUPrimaryCareMedicineList.html) | [mf-medicineList](List-mf-medicineList.json.html) | Medication List |  |
+|  | [aupc-medicineList](List-aupc-medicineList.json.html) | No significant history |  |
+|  | [aupc-medicineListEmpty](List-aupc-medicineListEmpty.json.html) | No significant history |  |
+| [AUPrimaryCareMedicationStatement](StructureDefinition-AUPrimaryCareMedicationStatement.html) | [mf-medication1](MedicationStatement-mf-medication1.json.html) | Sevikar HCT 40/10/25 | Sevikar HCT 40/10/25 |
+|  | [mf-medication2](MedicationStatement-mf-medication2.json.html) | SMethotrexate | Methotrexate |
+|  | [mf-medication3](MedicationStatement-mf-medication3.json.html) | lithium carbonate | lithium carbonate |
 | [AUPrimaryCareMedicalHistoryList](StructureDefinition-AUPrimaryCareMedicalHistoryList.html) | [mf-medicalHistoryList](List-mf-medicalHistoryList.json.html) | Medical History List |  |
 |  | [aupc-medicalHistoryList](List-aupc-medicalHistoryList.json.html) | Medical History List |  |
 |  | [aupc-medicalHistoryEmpty](List-aupc-medicalHistoryEmpty.json.html) | No significant history |  |
@@ -136,10 +147,13 @@
 |  | [aupc-socialHistoryList](List-aupc-socialHistoryList.json.html) | Social History resources |  |
 | [Observation](StructureDefinition-Observation.html) | [mfWidowed](Observation-mfWidowed.json.html) | Widowed May 2019 | Widowed May 2019 |
 |  | [aupc-smoker1](Observation-aupc-smoker1.json.html) | Cigarette smoker | is a cigarette smoker |
+| [AUPrimaryCareFamilyMemberHistory](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) | [mf-familyHistory1](FamilyMemberHistory-mf-familyHistory1.json.html) | Mother hypothyroid | Mother hypothyroid |
+|  | [mf-familyHistory2](FamilyMemberHistory-mf-familyHistory2.json.html) | Sister hypothyroid | Sister hypothyroid |
+|  | [aupc-familyHistory1](FamilyMemberHistory-aupc-familyHistory1.json.html) | Father with diabetes | Father with diabetes |
+| [AUPrimaryCareFamilyMemberHistoryList](StructureDefinition-AUPrimaryCareFamilyMemberHistoryList.html) | [mf-familyHistoryList](List-mf-familyHistoryList.json.html) | Family History List |  |
+|  | [aupc-familyHistoryList](List-aupc-familyHistoryList.json.html) | Family History List |  |
 | [AUPrimaryCarePatient](StructureDefinition-AUPrimaryCarePatient.html) | [maryFictitious](Patient-maryFictitious.json.html) | Mary Fictitious | Supporting patient for examples |
 |  | [aupc-patient1](Patient-aupc-patient1.json.html) | Patient | Supporting patient for examples |
-| [AUPrimaryCareFamilyMemberHistory](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) | [aupc-familyHistory1](FamilyMemberHistory-aupc-familyHistory1.json.html) | Father with diabetes | Father with diabetes |
-| [AUPrimaryCareFamilyMemberHistoryList](StructureDefinition-AUPrimaryCareFamilyMemberHistoryList.html) | [aupc-familyHistoryList](List-aupc-familyHistoryList.json.html) | Family History List |  |
 | [AUPrimaryCareFollowUp](StructureDefinition-AUPrimaryCareFollowUp.html) | [aupc-followup1](CarePlan-aupc-followup1.json.html) | Blood Pressure review | Review to check Blood Pressure |
 | [AUPrimaryCareFollowUpList](StructureDefinition-AUPrimaryCareFollowUpList.html) | [aupc-followUpList](List-aupc-followUpList.json.html) | Followup list |  |
 | [AUPrimaryCareImmunisation](StructureDefinition-AUPrimaryCareImmunisation.html) | [aupc-immunization1](Immunization-aupc-immunization1.json.html) | MMR Vaccination | MMR |
@@ -148,8 +162,7 @@
 | [AUPrimaryCareImmunisationList](StructureDefinition-AUPrimaryCareImmunisationList.html) | [aupc-immunizationList](List-aupc-immunizationList.json.html) | Immunizations list |  |
 |  | [aupc-immunizationEmpty](List-aupc-immunizationEmpty.json.html) | No significant history |  |
 | [AUPrimaryCareMedicationStatement //MedicationStatement //](StructureDefinition-AUPrimaryCareMedicationStatement //MedicationStatement //.html) | [aupc-medicationstatement1](MedicationStatement-aupc-medicationstatement1.json.html) | Simvastatin | Simvastatin |
-| [AUPrimaryCareMedicineList](StructureDefinition-AUPrimaryCareMedicineList.html) | [aupc-medicineList](List-aupc-medicineList.json.html) | No significant history |  |
-|  | [aupc-medicineListEmpty](List-aupc-medicineListEmpty.json.html) | No significant history |  |
+| [AUPrimaryCareMedication](StructureDefinition-AUPrimaryCareMedication.html) | [medication1](Medication-medication1.json.html) | Simvastatin | Simvastatin |
 | [AUPrimaryCareGravidity ](StructureDefinition-AUPrimaryCareGravidity .html) | [aupc-gravidity1](Observation-aupc-gravidity1.json.html) | Gravidity | Gravidity |
 | [AUPrimaryCareParity ](StructureDefinition-AUPrimaryCareParity .html) | [aupc-parity1](Observation-aupc-parity1.json.html) | Parity | Parity |
 | [AUPrimaryCareObservation-GestationOnScan](StructureDefinition-AUPrimaryCareObservation-GestationOnScan.html) | [aupc-gestationOnScan1](Observation-aupc-gestationOnScan1.json.html) | Gestation on scan  | Gestation on scan |
