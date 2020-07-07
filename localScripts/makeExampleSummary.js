@@ -20,7 +20,7 @@ let outFileName2 = './input/pagecontent/examples.md';      //also put a copy dir
 let bundleServer = "http://clinfhir.com/fhir/";          //root for full url
 
 let dataServer = "http://home.clinfhir.com:8054/baseR4/";   //upload Bundles to this server
-let bvServer = "clinfhir.com/bundleVisualizer.html";        //the link to the Bundle Visualizer
+let bvServer = "http://clinfhir.com/bundleVisualizer.html";        //the link to the Bundle Visualizer
 
 let FhirExamplePath =  './input/examples/' //where the example FHIR instances are placed by sushi
 

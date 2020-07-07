@@ -2,7 +2,7 @@
 ### [aupc-compositionComplete](Composition-aupc-compositionComplete.json.html) [(View Document bundle)](Bundle-aupc-compositionComplete.json.html)
 *A complete example of an extract*
 
-<a href='clinfhir.com/bundleVisualizer.html?id=aupc-compositionComplete?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
+<a href='http://clinfhir.com/bundleVisualizer.html?id=aupc-compositionComplete?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
 
 |  | Section | Section references | List references | Text
 | --- | --- | --- | --- | --- |
@@ -50,7 +50,7 @@
 ### [aupc-compositionEmpty](Composition-aupc-compositionEmpty.json.html) [(View Document bundle)](Bundle-aupc-compositionEmpty.json.html)
 *No known data*
 
-<a href='clinfhir.com/bundleVisualizer.html?id=aupc-compositionEmpty?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
+<a href='http://clinfhir.com/bundleVisualizer.html?id=aupc-compositionEmpty?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
 
 |  | Section | Section references | List references | Text
 | --- | --- | --- | --- | --- |
@@ -75,7 +75,7 @@
 ### [aupc-maryFictitious](Composition-aupc-maryFictitious.json.html) [(View Document bundle)](Bundle-aupc-maryFictitious.json.html)
 *Mary Fictitious example*
 
-<a href='clinfhir.com/bundleVisualizer.html?id=aupc-maryFictitious?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
+<a href='http://clinfhir.com/bundleVisualizer.html?id=aupc-maryFictitious?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
 
 |  | Section | Section references | List references | Text
 | --- | --- | --- | --- | --- |
