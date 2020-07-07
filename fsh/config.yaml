@@ -34,9 +34,9 @@ releaseLabel: CI Build
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# template: fhir.base.template#current
+template: fhir.base.template#current
 
-template: hl7.au.fhir.template
+# template: hl7.au.fhir.template
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯

@@ -590,6 +590,21 @@
       },
       {
         "reference": {
+          "reference": "Observation/mf-alcohol"
+        },
+        "name": "Cigarette smoker",
+        "description": "Alcohol intake ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mf-allergiesList"
+        },
+        "name": "Allergy List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+      },
+      {
+        "reference": {
           "reference": "Condition/mf-condition1"
         },
         "name": "Hypertension",
@@ -611,6 +626,14 @@
         "name": "Bipolar disorder",
         "description": "Bipolar disorder",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mf-exSmoker"
+        },
+        "name": "Cigarette smoker",
+        "description": "is a ex cigarette smoker",
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -672,6 +695,22 @@
         },
         "name": "Medication List",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/mf-noAllergy"
+        },
+        "name": "No allergies reported",
+        "description": "Urticaria as a result of a Peanut allergy",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mf-occupation"
+        },
+        "name": "Occupation",
+        "description": "Occupation",
+        "exampleBoolean": true
       },
       {
         "reference": {

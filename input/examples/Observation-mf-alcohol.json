@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "id": "mf-alcohol",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Alcohol intake 2 std. drinks 5 times a week</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/maryFictitious"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "365967005",
+        "system": "http://snomed.info/sct",
+        "display": "Finding of alcohol intake (finding)"
+      }
+    ]
+  },
+  "valueString": "Alcohol intake 2 std. drinks 5 times a week"
+}

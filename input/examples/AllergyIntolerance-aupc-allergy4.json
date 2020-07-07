@@ -6,6 +6,25 @@
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
     ]
   },
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "372623002",
+            "display": "Substance with central alpha adrenergic receptor agonist mechanism of action (substance)"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "text": "rash"
+        }
+      ],
+      "severity": "moderate"
+    }
+  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Rash to alpha blockers</div>",
     "status": "additional"
@@ -50,24 +69,5 @@
   "recordedDate": "2018-04-12",
   "recorder": {
     "reference": "Practitioner/aupc-practitioner1"
-  },
-  "reaction": [
-    {
-      "substance": {
-        "coding": [
-          {
-            "code": "372623002",
-            "system": "http://snomed.info/sct",
-            "display": "Substance with central alpha adrenergic receptor agonist mechanism of action (substance)"
-          }
-        ]
-      },
-      "manifestation": [
-        {
-          "text": "rash"
-        }
-      ],
-      "severity": "moderate"
-    }
-  ]
+  }
 }

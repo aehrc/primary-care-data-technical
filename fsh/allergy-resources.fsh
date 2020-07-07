@@ -49,7 +49,7 @@ Description: "This profile defines an allergy intolerance structure that include
 
 
 * reaction.substance.coding contains 
-    snomedSubstance 0..1 MS 
+    snomedSubstance 1..1 MS 
 
 * reaction.substance.coding[snomedSubstance].system = "http://snomed.info/sct"
 * reaction.substance.coding[snomedSubstance] ^short = "There must be a SNOMED coded slice"

@@ -19,6 +19,9 @@ let outFileName = './fsh/ig-data/input/pagecontent/examples.md';
 let outFileName2 = './input/pagecontent/examples.md';      //also put a copy directly in the IG input - otherwise have to run sushi again
 let bundleServer = "http://clinfhir.com/fhir/";          //root for full url
 
+let dataServer = "http://home.clinfhir.com:8054/baseR4/";   //upload Bundles to this server
+let bvServer = "clinfhir.com/bundleVisualizer.html";        //the link to the Bundle Visualizer
+
 let FhirExamplePath =  './input/examples/' //where the example FHIR instances are placed by sushi
 
 
@@ -129,6 +132,10 @@ let outContents = ar.join('\n')
 //let outContents = arMD.join('\n')
 fs.writeFileSync(outFileName,outContents)       //This is sushi ig-data
 fs.writeFileSync(outFileName2,outContents)      //This is the IG input
+
+
+
+
     return
 
 //process the composition resource
@@ -156,6 +163,15 @@ function processComposition(comp) {
     
     arComposition.push(text)
     arComposition.push("");
+
+    //let bvUrl = "http://localhost:8081/bundleVisualizer.html?id=aupc-maryFictitious&server=http://home.clinfhir.com:8054/baseR4/"
+    let bvUrl = bvServer + "?id=" + comp.id + "?server=" + dataServer
+
+    let bvLink = "<a href='"+bvUrl+"' target='_blank'>View in clinFHIR Bundle Visualizer</a>";
+
+    arComposition.push(bvLink)
+    arComposition.push("");
+
     arComposition.push("|  | Section | Section references | List references | Text")
     arComposition.push("| --- | --- | --- | --- | --- |")
 
@@ -274,6 +290,31 @@ function processComposition(comp) {
         let bundleName = folderName + "Bundle-" + bundle.id + '.json';
         fs.writeFileSync(bundleName,JSON.stringify(bundle)) 
     })
+
+    //if there's a dataserver, then save the Bundle to it. Only works from my machine (has the sync-request library)
+
+    if (dataServer) {
+        let url = dataServer + "Bundle/" + bundle.id;
+        let syncRequest = require('../../scripts/node_modules/sync-request');
+
+        let options = {};
+        options.headers = {"content-type": "application/json+fhir"}
+        options.body = JSON.stringify(bundle)
+        options.timeout = 20000;        //20 seconds
+        
+        
+        console.log(url)
+        let response = syncRequest('PUT', url, options);
+        console.log('Response to saving at ' + url + ": " + response.statusCode)
+
+        if (response.statusCode !== 200 && response.statusCode !== 201) {
+            console.log(response.body.toString())
+        }
+
+
+
+
+    }
 
 
     //console.log(bundle)

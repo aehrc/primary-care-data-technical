@@ -1,21 +1,23 @@
 {
   "resourceType": "Observation",
-  "id": "mfWidowed",
+  "id": "mf-exSmoker",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Widowed May 2019r</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Stopped smoking 2015</div>"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/maryFictitious"
   },
-  "effectiveDateTime": "2020-04-01",
+  "effectivePeriod": {
+    "end": "2015"
+  },
   "code": {
     "coding": [
       {
-        "code": "33553000",
+        "code": "65568007",
         "system": "http://snomed.info/sct",
-        "display": "Widowed"
+        "display": "Cigarette smoker"
       }
     ]
   }

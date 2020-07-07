@@ -2,6 +2,8 @@
 ### [aupc-compositionComplete](Composition-aupc-compositionComplete.json.html) [(View Document bundle)](Bundle-aupc-compositionComplete.json.html)
 *A complete example of an extract*
 
+<a href='clinfhir.com/bundleVisualizer.html?id=aupc-compositionComplete?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
+
 |  | Section | Section references | List references | Text
 | --- | --- | --- | --- | --- |
 | Subject:[John Doe](Patient-aupc-patient1.json.html) | | |
@@ -48,6 +50,8 @@
 ### [aupc-compositionEmpty](Composition-aupc-compositionEmpty.json.html) [(View Document bundle)](Bundle-aupc-compositionEmpty.json.html)
 *No known data*
 
+<a href='clinfhir.com/bundleVisualizer.html?id=aupc-compositionEmpty?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
+
 |  | Section | Section references | List references | Text
 | --- | --- | --- | --- | --- |
 | Subject:[undefined](Patient-aupc-patient1.json.html) | | |
@@ -69,7 +73,9 @@
 
 
 ### [aupc-maryFictitious](Composition-aupc-maryFictitious.json.html) [(View Document bundle)](Bundle-aupc-maryFictitious.json.html)
-*A complete example of an extract*
+*Mary Fictitious example*
+
+<a href='clinfhir.com/bundleVisualizer.html?id=aupc-maryFictitious?server=http://home.clinfhir.com:8054/baseR4/' target='_blank'>View in clinFHIR Bundle Visualizer</a>
 
 |  | Section | Section references | List references | Text
 | --- | --- | --- | --- | --- |
@@ -78,13 +84,16 @@
 | Sections:  | | |
 | | **Medical History** | | | Hypertension, Rheumatoid Arthritis and bipolar disorder |
 | | | [*List resource*](List-mf-medicalHistoryList.json.html)
-| | | | [*A complete example of an extract*](Condition-mf-condition1.json.html)
-| | | | [*A complete example of an extract*](Condition-mf-condition2.json.html)
-| | | | [*A complete example of an extract*](Condition-mf-condition3.json.html)
-| | | | [*A complete example of an extract*](Procedure-mf-procedure1.json.html)
+| | | | [*Mary Fictitious example*](Condition-mf-condition1.json.html)
+| | | | [*Mary Fictitious example*](Condition-mf-condition2.json.html)
+| | | | [*Mary Fictitious example*](Condition-mf-condition3.json.html)
+| | | | [*Mary Fictitious example*](Procedure-mf-procedure1.json.html)
 | | **Social History Narrative** | | | Widowed May 2019 |
 | | | [*List resource*](List-mf-SocialHistoryList.json.html)
-| | | | [*A complete example of an extract*](Observation-mfWidowed.json.html)
+| | | | [*Mary Fictitious example*](Observation-mfWidowed.json.html)
+| | | | [*Mary Fictitious example*](Observation-mf-exSmoker.json.html)
+| | | | [*Mary Fictitious example*](Observation-mf-alcohol.json.html)
+| | | | [*Mary Fictitious example*](Observation-mf-occupation.json.html)
 | | **Adverse Reactions** | | | No known allergies |
 | | | [*List resource*](List-aupc-adverseReactionEmpty.json.html)
 | | | Section is empty
@@ -93,13 +102,13 @@
 | | | Section is empty
 | | **Medication List** | | |  |
 | | | [*List resource*](List-mf-medicineList.json.html)
-| | | | [*A complete example of an extract*](MedicationStatement-mf-medication1.json.html)
-| | | | [*A complete example of an extract*](MedicationStatement-mf-medication2.json.html)
-| | | | [*A complete example of an extract*](MedicationStatement-mf-medication3.json.html)
+| | | | [*Mary Fictitious example*](MedicationStatement-mf-medication1.json.html)
+| | | | [*Mary Fictitious example*](MedicationStatement-mf-medication2.json.html)
+| | | | [*Mary Fictitious example*](MedicationStatement-mf-medication3.json.html)
 | | **Family History** | | | Mother and Sister hypothyroid in 30s |
 | | | [*List resource*](List-mf-familyHistoryList.json.html)
-| | | | [*A complete example of an extract*](FamilyMemberHistory-mf-familyHistory1.json.html)
-| | | | [*A complete example of an extract*](FamilyMemberHistory-mf-familyHistory2.json.html)
+| | | | [*Mary Fictitious example*](FamilyMemberHistory-mf-familyHistory1.json.html)
+| | | | [*Mary Fictitious example*](FamilyMemberHistory-mf-familyHistory2.json.html)
 | | **Follow up visit item set** | | |  |
 
 
@@ -111,7 +120,9 @@
 |  | [aupc-allergy2](AllergyIntolerance-aupc-allergy2.json.html) | Peanut allergy | Urticaria as a result of a Peanut allergy |
 |  | [aupc-allergy3](AllergyIntolerance-aupc-allergy3.json.html) | Penicillin anaphylaxis | Penicillin anaphylaxis |
 |  | [aupc-allergy4](AllergyIntolerance-aupc-allergy4.json.html) | Alpha blocker rash | A rash as a consequence to Alpha adrenergic blockers |
+|  | [mf-noAllergy](AllergyIntolerance-mf-noAllergy.json.html) | No allergies reported | Urticaria as a result of a Peanut allergy |
 | [AUPrimaryCareAllergyIntoleranceList](StructureDefinition-AUPrimaryCareAllergyIntoleranceList.html) | [aupc-adverseReactionList](List-aupc-adverseReactionList.json.html) | Allergy List |  |
+|  | [mf-allergiesList](List-mf-allergiesList.json.html) | Allergy List |  |
 |  | [aupc-adverseReactionEmpty](List-aupc-adverseReactionEmpty.json.html) | No significant history |  |
 | [AUPrimaryCareComposition](StructureDefinition-AUPrimaryCareComposition.html) | [aupc-compositionComplete](Composition-aupc-compositionComplete.json.html) | Example composition with all sections populated |  |
 |  | [aupc-compositionEmpty](Composition-aupc-compositionEmpty.json.html) | Example composition with no data |  |
@@ -136,6 +147,9 @@
 | [AUPrimaryCareSocialHistoryList](StructureDefinition-AUPrimaryCareSocialHistoryList.html) | [mf-SocialHistoryList](List-mf-SocialHistoryList.json.html) | Social History resources |  |
 |  | [aupc-socialHistoryList](List-aupc-socialHistoryList.json.html) | Social History resources |  |
 | [Observation](StructureDefinition-Observation.html) | [mfWidowed](Observation-mfWidowed.json.html) | Widowed May 2019 | Widowed May 2019 |
+|  | [mf-exSmoker](Observation-mf-exSmoker.json.html) | Cigarette smoker | is a ex cigarette smoker |
+|  | [mf-alcohol](Observation-mf-alcohol.json.html) | Cigarette smoker | Alcohol intake  |
+|  | [mf-occupation](Observation-mf-occupation.json.html) | Occupation | Occupation |
 |  | [aupc-smoker1](Observation-aupc-smoker1.json.html) | Cigarette smoker | is a cigarette smoker |
 | [AUPrimaryCareFamilyMemberHistory](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) | [mf-familyHistory1](FamilyMemberHistory-mf-familyHistory1.json.html) | Mother hypothyroid | Mother hypothyroid |
 |  | [mf-familyHistory2](FamilyMemberHistory-mf-familyHistory2.json.html) | Sister hypothyroid | Sister hypothyroid |

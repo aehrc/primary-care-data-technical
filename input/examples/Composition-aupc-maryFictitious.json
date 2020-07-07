@@ -19,7 +19,7 @@
   "title": "Practice to Practice Patient Summary",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A complete example of an extract</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mary Fictitious example</div>"
   },
   "identifier": {
     "system": "http://clinfhir.com/fhir/namingSystem/test",

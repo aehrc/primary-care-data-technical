@@ -6,6 +6,37 @@
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
     ]
   },
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "764146007",
+            "display": "Penicillin"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "code": "1",
+              "system": "http://oridashi.com.au/system/code/bestpracticereaction",
+              "display": "Anaphylaxis"
+            },
+            {
+              "code": "39579001",
+              "system": "http://snomed.info/sct",
+              "display": "Anaphylaxis"
+            }
+          ],
+          "text": "Anaphylaxis"
+        }
+      ],
+      "severity": "severe"
+    }
+  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Penicillin anaphylaxis</div>",
     "status": "additional"
@@ -50,36 +81,5 @@
   "recordedDate": "2006-02-23",
   "recorder": {
     "reference": "Practitioner/aupc-practitioner1"
-  },
-  "reaction": [
-    {
-      "substance": {
-        "coding": [
-          {
-            "code": "764146007",
-            "system": "http://snomed.info/sct",
-            "display": "Penicillin"
-          }
-        ]
-      },
-      "manifestation": [
-        {
-          "coding": [
-            {
-              "code": "1",
-              "system": "http://oridashi.com.au/system/code/bestpracticereaction",
-              "display": "Anaphylaxis"
-            },
-            {
-              "code": "39579001",
-              "system": "http://snomed.info/sct",
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        }
-      ],
-      "severity": "severe"
-    }
-  ]
+  }
 }

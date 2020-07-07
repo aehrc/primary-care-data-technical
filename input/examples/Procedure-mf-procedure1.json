@@ -12,7 +12,7 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/aupc-patient1"
+    "reference": "Patient/maryFictitious"
   },
   "code": {
     "coding": [

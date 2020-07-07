@@ -16,7 +16,7 @@ Rendering a supplied clincial example into a bundle
 Usage: #Example
 
 * text.status = #additional
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>A complete example  of an extract</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mary Fictitious example</div>"
 
 * status = #final
 * identifier.system = "http://clinfhir.com/fhir/namingSystem/test"
@@ -100,9 +100,7 @@ Usage: #Example
 
 """
 * section[followUp].text.status = #generated
-
-
-
+// ============================== end of Composition =====================
 
 // ----------------------- medications --------------
 
@@ -235,7 +233,7 @@ Title: "UteroVaginal prolapse repair"
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>UteroVaginal prolapse repair (with mesh) </div>"
 * status = #completed
-* subject = Reference(aupc-patient1)
+* subject = Reference(maryFictitious)
 * code.coding = $SNOMED#238034001 "Repair of vaginal wall prolapse (procedure)"
 
 
@@ -254,6 +252,11 @@ Usage: #example
 * status = #current
 * subject = Reference(maryFictitious)
 * entry.item = Reference(mfWidowed)
+* entry[1].item = Reference(mf-exSmoker)
+* entry[2].item = Reference(mf-alcohol)
+* entry[3].item = Reference(mf-occupation)
+
+
 
 Instance: mfWidowed
 InstanceOf: Observation
@@ -265,10 +268,60 @@ Title: "Widowed May 2019"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Widowed May 2019r</div>"
 
 * status = #final
-* subject = Reference(aupc-patient1)
+* subject = Reference(maryFictitious)
 * effectiveDateTime = "2020-04-01"
 
 * code.coding = $SNOMED#33553000  "Widowed"
+
+
+Instance: mf-exSmoker
+InstanceOf: Observation
+//BaseType: Observation
+Description: "is a ex cigarette smoker"
+Title: "Cigarette smoker"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Stopped smoking 2015</div>"
+
+* status = #final
+* subject = Reference(maryFictitious)
+* effectivePeriod.end = "2015"
+
+* code.coding = $SNOMED#65568007  "Cigarette smoker"
+
+Instance: mf-alcohol
+InstanceOf: Observation
+//BaseType: Observation
+Description: "Alcohol intake "
+Title: "Cigarette smoker"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Alcohol intake 2 std. drinks 5 times a week</div>"
+
+* status = #final
+* subject = Reference(maryFictitious)
+
+
+* code.coding = $SNOMED#365967005  "Finding of alcohol intake (finding)"
+* valueString = "Alcohol intake 2 std. drinks 5 times a week"
+
+Instance: mf-occupation
+InstanceOf: Observation
+//BaseType: Observation
+Description: "Occupation"
+Title: "Occupation"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Works at Centrelink</div>"
+
+* status = #final
+* subject = Reference(maryFictitious)
+
+
+* code.coding = $SNOMED#14679004  "Occupation (occupation)"
+* valueString = "Works at Centrelink, able to transfer"
+
+
 
 //------------ family history
 
@@ -344,3 +397,42 @@ Title: "Mary Fictitious"
 * gender = #female
 
 * address.text = "23 Thule st"
+
+//============= Allergies
+
+
+
+Instance: mf-allergiesList
+InstanceOf: AUPrimaryCareAllergyIntoleranceList
+//BaseType: List 
+Title: "Allergy List"
+Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No allerrgies or intolerances known</div>"
+
+* mode = #snapshot
+* status = #current
+* subject = Reference(maryFictitious)
+* entry.item = Reference(mf-noAllergy)
+
+
+Instance: mf-noAllergy
+InstanceOf: AUPrimaryCareAllergyIntolerance
+Title: "No allergies reported"
+Description: "Urticaria as a result of a Peanut allergy"
+//BaseType: AllergyIntolerance 
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Peanut allergy</div>"
+* text.status = #additional
+
+* patient = Reference(maryFictitious)
+
+* clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
+* clinicalStatus.text = "active"
+* verificationStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#unconfirmed "Unconfirmed"
+* verificationStatus.text = "unconfirmed"
+* type = #allergy
+* category = #food
+* criticality = #unable-to-assess
+* code.coding = http://snomed.info/sct#91935009 "Allergy to peanuts"
+

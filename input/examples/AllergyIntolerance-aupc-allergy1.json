@@ -6,6 +6,52 @@
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
     ]
   },
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "412071004",
+            "display": "Wheat"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "code": "235599003",
+              "system": "http://snomed.info/sct",
+              "display": "Eosinophilic esophagitis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "226760005",
+            "display": "Dairy foods"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "code": "235599003",
+              "system": "http://snomed.info/sct",
+              "display": "Eosinophilic esophagitis"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Oesophagitis</div>"
@@ -47,51 +93,5 @@
   "patient": {
     "reference": "Patient/aupc-patient1"
   },
-  "recordedDate": "2019-04-09T14:00:00.000Z",
-  "reaction": [
-    {
-      "substance": {
-        "coding": [
-          {
-            "code": "412071004",
-            "system": "http://snomed.info/sct",
-            "display": "Wheat"
-          }
-        ]
-      },
-      "manifestation": [
-        {
-          "coding": [
-            {
-              "code": "235599003",
-              "system": "http://snomed.info/sct",
-              "display": "Eosinophilic esophagitis"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "substance": {
-        "coding": [
-          {
-            "code": "226760005",
-            "system": "http://snomed.info/sct",
-            "display": "Dairy foods"
-          }
-        ]
-      },
-      "manifestation": [
-        {
-          "coding": [
-            {
-              "code": "235599003",
-              "system": "http://snomed.info/sct",
-              "display": "Eosinophilic esophagitis"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "recordedDate": "2019-04-09T14:00:00.000Z"
 }
