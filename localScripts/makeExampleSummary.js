@@ -165,7 +165,7 @@ function processComposition(comp) {
     arComposition.push("");
 
     //let bvUrl = "http://localhost:8081/bundleVisualizer.html?id=aupc-maryFictitious&server=http://home.clinfhir.com:8054/baseR4/"
-    let bvUrl = bvServer + "?id=" + comp.id + "?server=" + dataServer
+    let bvUrl = bvServer + "?id=" + comp.id + "&server=" + dataServer
 
     let bvLink = "<a href='"+bvUrl+"' target='_blank'>View in clinFHIR Bundle Visualizer</a>";
 
