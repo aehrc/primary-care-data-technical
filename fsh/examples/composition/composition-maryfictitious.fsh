@@ -395,7 +395,6 @@ Title: "Mary Fictitious"
 * name.text = "Mary Fictitious"
 * birthDate = "1971"
 * gender = #female
-
 * address.text = "23 Thule st"
 
 //============= Allergies
