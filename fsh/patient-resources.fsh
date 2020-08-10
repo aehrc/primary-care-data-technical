@@ -1,7 +1,7 @@
 // PROFILES 
 
 Profile: AUPrimaryCarePatient
-Parent: Patient
+Parent: http://hl7.org.au/fhir/StructureDefinition/au-patient
 Id: AUPrimaryCarePatient
 Title: "AU Primary Care Patient"
 Description: "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
