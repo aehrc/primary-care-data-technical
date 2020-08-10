@@ -11,6 +11,7 @@ Description: "This profile defines a patient administration details structure th
 * name 1..1
 * name MS
 
+
 //set the telecom phone and email as Must Support
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
