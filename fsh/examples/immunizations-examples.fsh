@@ -11,7 +11,7 @@ Title: "MMR Vaccination"
 
 * status = #completed
 //todo - get amt code
-* vaccineCode = $SNOMED#396429000 "MMR vaccine"
+* vaccineCode.coding = $SNOMED#396429000 "MMR vaccine"
 * occurrenceDateTime = "2020-01-01"
 * patient = Reference(aupc-patient1)
 

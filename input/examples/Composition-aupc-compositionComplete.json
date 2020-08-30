@@ -193,7 +193,7 @@
       "code": {
         "coding": [
           {
-            "code": "69730-02",
+            "code": "69730-0",
             "system": "http://loinc.org",
             "display": "Follow ups"
           }

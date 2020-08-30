@@ -77,7 +77,7 @@ Usage: #Example
 
 //family history
 * section[familyHistory].entry = Reference(mf-familyHistoryList)    //defined in condition+procedure-examples
-* section[familyHistory].code = $LOINC#11348-0 "Family History"
+* section[familyHistory].code = $LOINC#10157-6 "Family History"
 * section[familyHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mother and Sister hypothyroid in 30s</div>"
 * section[familyHistory].text.status = #generated
 
