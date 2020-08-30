@@ -83,7 +83,7 @@ Usage: #Example
 
 
 //Follow up
-* section[followUp].code = http://loinc.org#89083-0 "Follow up visit item set"
+* section[followUp].code = http://loinc.org#69730-0 "Follow up visit item set"
 
 * section[followUp].text.div = """
 <div xmlns='http://www.w3.org/1999/xhtml'>
