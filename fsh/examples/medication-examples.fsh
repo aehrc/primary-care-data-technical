@@ -43,7 +43,6 @@ Title: "Simvastatin"
 * code.coding[1] = http://pbs.gov.au/code/item#2011W "Simvastatin"
 * code.coding[2] = http://www.whocc.no/atc#C10AA01  "Simvastatin"
 
-
 * form.text = "Tablet"
 
 Instance: aupc-medicineList
