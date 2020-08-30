@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AUPrimaryCareFollowUp",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp",
   "version": "0.0.3",
   "name": "AUPrimaryCareFollowUp",

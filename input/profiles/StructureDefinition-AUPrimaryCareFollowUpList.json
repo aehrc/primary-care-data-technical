@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AUPrimaryCareFollowUpList",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
   "url": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList",
   "version": "0.0.3",
   "name": "AUPrimaryCareFollowUpList",

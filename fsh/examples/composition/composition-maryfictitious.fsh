@@ -388,15 +388,12 @@ Title: "Mary Fictitious"
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mary Fictitious. Female aged 49</div>"
 
-
-
 * name.family = "Fictitious"
 * name.given = "Mary"
 * name.text = "Mary Fictitious"
 * birthDate = "1971"
 * gender = #female
-
-* address.text = "23 Thule st"
+// * address.text = "23 Thule st"
 
 //============= Allergies
 

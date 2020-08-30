@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AUPrimaryCareObservation-gravidity",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-gravidity",
   "version": "0.0.3",
   "name": "AUPrimaryCareGravidity",

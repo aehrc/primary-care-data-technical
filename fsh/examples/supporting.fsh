@@ -26,7 +26,7 @@ Title: "Patient"
 * birthDate = "1989-01-02"
 * gender = #female
 
-* address.text = "23 Thule st"
+// * address.text = "23 Thule st"
 * telecom.system = #email
 * telecom.value = "jenny@myemailserver.com"
 

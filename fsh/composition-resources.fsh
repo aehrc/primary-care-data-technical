@@ -54,8 +54,8 @@ Description: "This profile defines a composition structure that includes core lo
 * section[medicalHistoryList].code.coding.system = "http://loinc.org"
 * section[medicalHistoryList].code.coding.code = #11348-0 (exactly)
 * section[medicalHistoryList].mode = #snapshot
-//* section[medicalHistoryList].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList | https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList | https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProblemList)
-* section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList | AUPrimaryCareProcedureList | AUPrimaryCareProblemList)
+//* section[medicalHistoryList].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList or https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList or https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProblemList)
+* section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList or AUPrimaryCareProcedureList or AUPrimaryCareProblemList)
 
 
 
