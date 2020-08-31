@@ -11,12 +11,8 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Simvastatin</div>"
   },
   "code": {
+    "text": "SIMVASTATIN 10mg Tablet",
     "coding": [
-      {
-        "code": "22138",
-        "system": "http://oridashi.com.au/system/code/medicaldirectordrug",
-        "display": "SIMVASTATIN 10mg Tablet"
-      },
       {
         "code": "28211011000036108",
         "system": "http://snomed.info/sct",
@@ -38,17 +34,11 @@
         "display": "Simvastatin"
       },
       {
-        "code": "HMG",
-        "system": "http://oridashi.com.au/system/code/medicaldirectorgeneric",
-        "display": "Simvastatin"
-      },
-      {
         "code": "C10AA01",
         "system": "http://www.whocc.no/atc",
         "display": "Simvastatin"
       }
-    ],
-    "text": "SIMVASTATIN 10mg Tablet"
+    ]
   },
   "form": {
     "text": "Tablet"

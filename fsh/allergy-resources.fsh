@@ -35,7 +35,21 @@ Description: "This profile defines an allergy intolerance structure that include
 * recordedDate MS
 
 
-//JS / ML please review intent of lines 39 -> 54
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.rules = #openAtEnd
+
+//slice the code (the substance that the allergt risk is to) to the AU valueset. Keep optional
+* code.coding contains 
+    substance 0..1 MS 
+
+* code.coding[substance].system = "https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1"
+* code.coding[substance] ^short = "SNOMED coded if available"
+
+/*
+
+Per Brett suggestion: All slicing on reaction.substance removed.
+? do we want to retain an optional slicing, or remove substance altogether (to avoid confusion)
 
 //The reaction substance must exist, and there must be at least one coding that is a snomed one that must be supported
 * reaction.substance 1..1 MS
@@ -48,21 +62,22 @@ Description: "This profile defines an allergy intolerance structure that include
 * reaction.substance.coding ^slicing.rules = #openAtEnd
 
 
+//dh - 09-01 loosened from 1..1 as not all systems will have coded data
 * reaction.substance.coding contains 
-    snomedSubstance 1..1 MS 
+    snomedSubstance 0..1 MS 
+
+
+
 
 * reaction.substance.coding[snomedSubstance].system = "http://snomed.info/sct"
 * reaction.substance.coding[snomedSubstance] ^short = "There must be a SNOMED coded slice"
 
+*/
 
-
-//* reaction.substance MS
-
-// * reaction.substance.coding[snomedSubstance] MS
 
 // specify the ValueSet that the manifestation must come from
-* reaction.manifestation from http://aehrc.com/valueset/reaction-manifestation (preferred)
-
+* reaction.manifestation from https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1 (preferred)
+//dh - 09-01 changes per brett comment  * reaction.manifestation from http://aehrc.com/valueset/reaction-manifestation (preferred)
 
 
 /*  dh-todo - once the dependency has been sorted...

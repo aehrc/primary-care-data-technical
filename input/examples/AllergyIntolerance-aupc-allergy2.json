@@ -6,30 +6,6 @@
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
     ]
   },
-  "reaction": [
-    {
-      "substance": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "762952008",
-            "display": "Peanut"
-          }
-        ]
-      },
-      "manifestation": [
-        {
-          "coding": [
-            {
-              "code": "126485001",
-              "system": "http://snomed.info/sct",
-              "display": "Urticaria"
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Peanut allergy</div>",
     "status": "additional"
@@ -74,5 +50,29 @@
   "recordedDate": "2019-04-09T14:00:00.000Z",
   "asserter": {
     "reference": "Patient/aupc-patient1"
-  }
+  },
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "code": "762952008",
+            "system": "http://snomed.info/sct",
+            "display": "Peanut"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "code": "126485001",
+              "system": "http://snomed.info/sct",
+              "display": "Urticaria"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

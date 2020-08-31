@@ -21,6 +21,10 @@ Description: "Members of a family from a genetic perspective"
 * ^url = "http://aehrc.com/valueset/geneticfamilymember"
 * codes from system http://snomed.info/sct where constraint = "< 444148008"
 
+
+/*
+No longer needed...
+
 ValueSet: Reaction_manifestation_ValueSet
 Id: reaction-manifestation
 Title: "Reaction manifestation ValueSet"
@@ -7465,6 +7469,10 @@ Description: "The types of reaction to an allergic reaction or intolerance"
 * http://snomed.info/sct#111488004
 * http://snomed.info/sct#23568008
 * http://snomed.info/sct#309528005
+
+
+*/
+
 
 ValueSet: Clinical_Indication_For_Medication_ValueSet
 Id: clinical-indication-for-medication

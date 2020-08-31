@@ -274,14 +274,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/reaction-manifestation"
-        },
-        "name": "Reaction manifestation ValueSet",
-        "description": "The types of reaction to an allergic reaction or intolerance",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "List/aupc-adverseReactionEmpty"
         },
         "name": "No significant history",
