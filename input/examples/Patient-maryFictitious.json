@@ -20,10 +20,5 @@
     }
   ],
   "birthDate": "1971",
-  "gender": "female",
-  "address": [
-    {
-      "text": "23 Thule st"
-    }
-  ]
+  "gender": "female"
 }

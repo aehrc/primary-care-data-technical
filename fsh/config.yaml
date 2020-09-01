@@ -36,6 +36,7 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 template: fhir.base.template#current
 
+# template: hl7.au.fhir.template
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
 # │  To use a provided ig-data/package-list.json file, delete the "history" property below.        │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯

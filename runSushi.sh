@@ -10,6 +10,6 @@ sushi fsh -o .
 # ../scripts/makeTerminologySummary.js hpi
 
 
-#this is a local script...
+# Generate the pahe in the IG that has all the summaries in a logical order (including documents)
 echo "Making Example summary"   # will copy into IG input folder
 ./localScripts/makeExampleSummary.js hpi

@@ -20,6 +20,21 @@
       "item": {
         "reference": "Observation/mfWidowed"
       }
+    },
+    {
+      "item": {
+        "reference": "Observation/mf-exSmoker"
+      }
+    },
+    {
+      "item": {
+        "reference": "Observation/mf-alcohol"
+      }
+    },
+    {
+      "item": {
+        "reference": "Observation/mf-occupation"
+      }
     }
   ]
 }

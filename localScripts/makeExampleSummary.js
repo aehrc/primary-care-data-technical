@@ -11,11 +11,16 @@ Uses fsh for the summary by type (baseType), actual generated instances for the 
 */
 let fs = require('fs')
 let examplePath =  './fsh/examples'
+
 //where to write out the bundles (that represent the document examples). The IG publisher can pick them up from there
-let abBundleOutputFolder = ['./input/examples/','./fsh/ig-data/input/examples/'];            //where to save a bundle
+let arBundleOutputFolder = ['./input/examples/','./fsh/ig-data/input/examples/'];            //where to save a bundle
+
 let outFileName = './fsh/ig-data/input/pagecontent/examples.md';
 let outFileName2 = './input/pagecontent/examples.md';      //also put a copy directly in the IG input - otherwise have to run sushi again
 let bundleServer = "http://clinfhir.com/fhir/";          //root for full url
+
+let dataServer = "http://home.clinfhir.com:8054/baseR4/";   //upload Bundles to this server
+let bvServer = "http://clinfhir.com/bundleVisualizer.html";        //the link to the Bundle Visualizer
 
 let FhirExamplePath =  './input/examples/' //where the example FHIR instances are placed by sushi
 
@@ -127,6 +132,10 @@ let outContents = ar.join('\n')
 //let outContents = arMD.join('\n')
 fs.writeFileSync(outFileName,outContents)       //This is sushi ig-data
 fs.writeFileSync(outFileName2,outContents)      //This is the IG input
+
+
+
+
     return
 
 //process the composition resource
@@ -144,7 +153,7 @@ function processComposition(comp) {
 
     let compLink = "[" + comp.id +"](Composition-" + comp.id + ".json.html)"
 
-    compLink += " [(Document bundle)](Bundle-"+  comp.id + ".json.html)"
+    compLink += " [(View Document bundle)](Bundle-"+  comp.id + ".json.html)"
 
     arComposition.push("### " + compLink)
     let text = ""
@@ -154,6 +163,16 @@ function processComposition(comp) {
     
     arComposition.push(text)
     arComposition.push("");
+
+    //let bvUrl = "http://localhost:8081/bundleVisualizer.html?id=aupc-maryFictitious&server=http://home.clinfhir.com:8054/baseR4/"
+    let bvUrl = bvServer + "?id=" + comp.id + "&server=" + dataServer
+    
+
+    let bvLink = "<a href='"+bvUrl+"' target='_blank'>View in clinFHIR Bundle Visualizer</a>";
+
+    arComposition.push(bvLink)
+    arComposition.push("");
+
     arComposition.push("|  | Section | Section references | List references | Text")
     arComposition.push("| --- | --- | --- | --- | --- |")
 
@@ -188,6 +207,8 @@ function processComposition(comp) {
         sect.code.coding.forEach(function(coding){
             sectionDisplay += coding.display;
         })
+        sectionDisplay = "**" + sectionDisplay + "**"
+
         //arComposition.push("| | " + sectionDisplay)      //the section header
         arComposition.push("| | " + sectionDisplay + " | | | " + sectionText + " |")      //the section header
 
@@ -196,71 +217,69 @@ function processComposition(comp) {
 
         
 
-        sect.entry.forEach(function(entry){     //generally only 1
-            let resource = hashResources[entry.reference]
-            if (resource && resource.resourceType == 'List') {
+        if (sect.entry) {
+            sect.entry.forEach(function(entry){     //generally only 1
+                let resource = hashResources[entry.reference]
+                if (resource && resource.resourceType == 'List') {
 
-                
+                    
 
-                //bundle.entry.push({resource:resource})
-                bundle.entry.push({resource:resource,fullUrl:bundleServer+resource.resourceType + "/" + resource.id})
-                let listLink = "[*List resource*](List-"+ resource.id +".json.html)"
-                arComposition.push("| | | " + listLink)      //the section header
-                //arComposition.push("| | | " + listLink + " | | " + sectionText + " |")      //the section header
-                //retrieve the contents of the list and display each on a line
-                if (resource.emptyReason) {
-                    arComposition.push("| | | Section is empty")  
+                    //bundle.entry.push({resource:resource})
+                    bundle.entry.push({resource:resource,fullUrl:bundleServer+resource.resourceType + "/" + resource.id})
+                    let listLink = "[*List resource*](List-"+ resource.id +".json.html)"
+                    arComposition.push("| | | " + listLink)      //the section header
+                    //arComposition.push("| | | " + listLink + " | | " + sectionText + " |")      //the section header
+                    //retrieve the contents of the list and display each on a line
+                    if (resource.emptyReason) {
+                        arComposition.push("| | | Section is empty")  
+                    } else {
+
+                        //iterate through the list contents
+                        resource.entry.forEach(function(entry){
+                            let entryResource = hashResources[entry.item.reference]
+
+                            if (! entryResource) {
+                                console.log('----------> ' + entry.item.reference + ": not found! (suggests the composition section is rerferencing an unknown resource")
+                            }
+                            
+                        
+                        //only add each resource once
+                        let key = entryResource.type + "/" + entryResource.id
+                        if (! hashResourceInDoc[key]) {
+                                bundle.entry.push({resource:entryResource,fullUrl:bundleServer+entryResource.resourceType + "/" + entryResource.id})
+                                hashResourceInDoc[key] = true;
+                        }
+                            
+    /* - don't do this for examples - the section text should be in the example...
+                            let text = ""
+
+                            
+                            if (entryResource.text) {
+                                text = getDivText(entryResource.text.div)
+                            
+                                sectionText += "<li>" + text + "</li>"
+
+                            }
+                            */
+                            let link = entryResource.resourceType + '-' + entryResource.id + '.json.html'
+                            let display = "[" + text + "](" + link + ")"
+
+                            arComposition.push("| | | | " + display) 
+                        })
+                    }
+                    
                 } else {
+                    let text = getDivText(resource.text.div)
+                    let link = resource.resourceType + '-' + resource.id + '.json.html'
+                    let display = "[" + text + "](" + link + ")"
 
-                    //iterate through the list contents
-                    resource.entry.forEach(function(entry){
-                        let entryResource = hashResources[entry.item.reference]
-
-                        if (! entryResource) {
-                            console.log('----------> ' + entry.item.reference + ": not found! (suggests the composition section is rerferencing an unknown resource")
-                        }
-                        
-                       
-                       //only add each resource once
-                       let key = entryResource.type + "/" + entryResource.id
-                       if (! hashResourceInDoc[key]) {
-                            bundle.entry.push({resource:entryResource,fullUrl:bundleServer+entryResource.resourceType + "/" + entryResource.id})
-                            hashResourceInDoc[key] = true;
-                       }
-                        
-
-                        let text = ""
-                        if (entryResource.text) {
-                            text = getDivText(entryResource.text.div)
-                           
-                            sectionText += "<li>" + text + "</li>"
-
-                        }
-                       
-                        let link = entryResource.resourceType + '-' + entryResource.id + '.json.html'
-                        let display = "[" + text + "](" + link + ")"
-
-                        arComposition.push("| | | | " + display) 
-                    })
+                    arComposition.push("| | | " + display)  
+                    bundle.entry.push({resource:resource,fullUrl:bundleServer+resource.resourceType + "/" + resource.id})
                 }
-                
-            } else {
-                let text = getDivText(resource.text.div)
-                let link = resource.resourceType + '-' + resource.id + '.json.html'
-                let display = "[" + text + "](" + link + ")"
+            })
+    }
 
-                arComposition.push("| | | " + display)  
-                //arComposition.push("| | | | " + display) 
-
-                bundle.entry.push({resource:resource,fullUrl:bundleServer+resource.resourceType + "/" + resource.id})
-
-
-                //console.log("WARNING: Section " +sectionDisplay + " is not a list" )
-
-            }
-        })
-
-        sect.text.div += sectionText;
+       
 
 
 
@@ -268,10 +287,35 @@ function processComposition(comp) {
     })
 
     //write out the bundles...
-    abBundleOutputFolder.forEach(function(folderName) {
+    arBundleOutputFolder.forEach(function(folderName) {
         let bundleName = folderName + "Bundle-" + bundle.id + '.json';
         fs.writeFileSync(bundleName,JSON.stringify(bundle)) 
     })
+
+    //if there's a dataserver, then save the Bundle to it. Only works from my machine (has the sync-request library)
+
+    if (dataServer) {
+        let url = dataServer + "Bundle/" + bundle.id;
+        let syncRequest = require('../../scripts/node_modules/sync-request');
+
+        let options = {};
+        options.headers = {"content-type": "application/json+fhir"}
+        options.body = JSON.stringify(bundle)
+        options.timeout = 20000;        //20 seconds
+        
+        
+        console.log(url)
+        let response = syncRequest('PUT', url, options);
+        console.log('Response to saving at ' + url + ": " + response.statusCode)
+
+        if (response.statusCode !== 200 && response.statusCode !== 201) {
+            console.log(response.body.toString())
+        }
+
+
+
+
+    }
 
 
     //console.log(bundle)

@@ -19,7 +19,7 @@
   "title": "Practice to Practice Patient Summary",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A complete example of an extract</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mary Fictitious example</div>"
   },
   "identifier": {
     "system": "http://clinfhir.com/fhir/namingSystem/test",
@@ -118,11 +118,6 @@
       }
     },
     {
-      "entry": [
-        {
-          "reference": "List/aupc-medicineListEmpty"
-        }
-      ],
       "code": {
         "coding": [
           {
@@ -133,7 +128,47 @@
         ]
       },
       "text": {
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known medications</div>",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Sevikar HCT 40/10/25</li><li>Methotrexate</li><li>lithium carbonate</li><li>Prednisolone during Rheumatoid Arthritis exascerbation</li></ul></div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "List/mf-medicineList"
+        }
+      ]
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/mf-familyHistoryList"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "10157-6",
+            "system": "http://loinc.org",
+            "display": "Family History"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mother and Sister hypothyroid in 30s</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "69730-0",
+            "system": "http://loinc.org",
+            "display": "Follow up visit item set"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Discuss HRT</li><li>Due for screening mammogram age 50</li><li>Due for bowel cancer screening age 50</li><li>CST due in 3 years for now</li><li>Refer for bone mineral densitometry next visit as her use of prednisolone, her rheumatoid arthritis, her alcohol intake and her peri-menopausal status increase her risk of osteoporosis</li></ul></div>",
         "status": "generated"
       }
     }

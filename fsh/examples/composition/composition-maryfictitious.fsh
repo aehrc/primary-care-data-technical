@@ -1,3 +1,7 @@
+// Example file
+// https://docs.google.com/document/d/1pHJn84fgzyKPnYyzlm8dsRnIs9iICENk8RfReKB6Tyg/edit
+
+
 //-------- Aliases
 Alias: $clinicalCondition = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
@@ -12,7 +16,7 @@ Rendering a supplied clincial example into a bundle
 Usage: #Example
 
 * text.status = #additional
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>A complete example  of an extract</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mary Fictitious example</div>"
 
 * status = #final
 * identifier.system = "http://clinfhir.com/fhir/namingSystem/test"
@@ -50,10 +54,109 @@ Usage: #Example
 * section[vaccinationList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known immunizations</div>"
 * section[vaccinationList].text.status = #generated
 
-* section[medicineList].entry = Reference(aupc-medicineListEmpty) //defined in supporting.fsh
+
 * section[medicineList].code = http://loinc.org#10160-0 "Medication List"
-* section[medicineList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known medications</div>"
+//* section[medicineList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>meds</div>"
+
+* section[medicineList].text.div = """
+<div xmlns='http://www.w3.org/1999/xhtml'>
+<ul>
+<li>Sevikar HCT 40/10/25</li>
+<li>Methotrexate</li>
+<li>lithium carbonate</li>
+<li>Prednisolone during Rheumatoid Arthritis exascerbation</li>
+
+</ul>
+
+</div>
+
+"""
+
 * section[medicineList].text.status = #generated
+* section[medicineList].entry = Reference(mf-medicineList) //defined in supporting.fsh
+
+//family history
+* section[familyHistory].entry = Reference(mf-familyHistoryList)    //defined in condition+procedure-examples
+* section[familyHistory].code = $LOINC#10157-6 "Family History"
+* section[familyHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mother and Sister hypothyroid in 30s</div>"
+* section[familyHistory].text.status = #generated
+
+
+//Follow up
+* section[followUp].code = http://loinc.org#69730-0 "Follow up visit item set"
+
+* section[followUp].text.div = """
+<div xmlns='http://www.w3.org/1999/xhtml'>
+<ul>
+<li>Discuss HRT</li>
+<li>Due for screening mammogram age 50</li>
+<li>Due for bowel cancer screening age 50</li>
+<li>CST due in 3 years for now</li>
+<li>Refer for bone mineral densitometry next visit as  her use of prednisolone, her rheumatoid arthritis, her alcohol intake and her peri-menopausal status increase her risk of osteoporosis</li>
+
+</ul>
+
+</div>
+
+"""
+* section[followUp].text.status = #generated
+// ============================== end of Composition =====================
+
+// ----------------------- medications --------------
+
+//The list that references all of the medication resources - Condition and procedure
+Instance: mf-medicineList
+InstanceOf: AUPrimaryCareMedicineList
+//BaseType: List 
+Title: "Medication List"
+Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'></div>"
+
+* mode = #snapshot
+* status = #current
+* subject = Reference(maryFictitious)
+* entry.item = Reference(mf-medication1)
+* entry[1].item = Reference(mf-medication2)
+* entry[2].item = Reference(mf-medication3)
+
+Instance: mf-medication1
+InstanceOf: AUPrimaryCareMedicationStatement
+//BaseType: MedicationStatement
+Description: "Sevikar HCT 40/10/25"
+Title: "Sevikar HCT 40/10/25"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Sevikar HCT 40/10/25</div>"
+* subject = Reference(maryFictitious)
+* status = #active
+* medicationCodeableConcept.text = "Sevikar HCT 40/10/25"
+
+Instance: mf-medication2
+InstanceOf: AUPrimaryCareMedicationStatement
+//BaseType: MedicationStatement
+Description: "Methotrexate"
+Title: "SMethotrexate"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Methotrexate</div>"
+* subject = Reference(maryFictitious)
+* status = #active
+* medicationCodeableConcept.text = "Methotrexate"
+
+Instance: mf-medication3
+InstanceOf: AUPrimaryCareMedicationStatement
+//BaseType: MedicationStatement
+Description: "lithium carbonate"
+Title: "lithium carbonate"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>lithium carbonate</div>"
+* subject = Reference(maryFictitious)
+* status = #active
+* medicationCodeableConcept.text = "lithium carbonate"
+
 
 // ----------------------- medical history
 //The list that references all of the medicalhistory resources - Condition and procedure
@@ -130,7 +233,7 @@ Title: "UteroVaginal prolapse repair"
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>UteroVaginal prolapse repair (with mesh) </div>"
 * status = #completed
-* subject = Reference(aupc-patient1)
+* subject = Reference(maryFictitious)
 * code.coding = $SNOMED#238034001 "Repair of vaginal wall prolapse (procedure)"
 
 
@@ -149,6 +252,11 @@ Usage: #example
 * status = #current
 * subject = Reference(maryFictitious)
 * entry.item = Reference(mfWidowed)
+* entry[1].item = Reference(mf-exSmoker)
+* entry[2].item = Reference(mf-alcohol)
+* entry[3].item = Reference(mf-occupation)
+
+
 
 Instance: mfWidowed
 InstanceOf: Observation
@@ -160,11 +268,114 @@ Title: "Widowed May 2019"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Widowed May 2019r</div>"
 
 * status = #final
-* subject = Reference(aupc-patient1)
+* subject = Reference(maryFictitious)
 * effectiveDateTime = "2020-04-01"
 
 * code.coding = $SNOMED#33553000  "Widowed"
 
+
+Instance: mf-exSmoker
+InstanceOf: Observation
+//BaseType: Observation
+Description: "is a ex cigarette smoker"
+Title: "Cigarette smoker"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Stopped smoking 2015</div>"
+
+* status = #final
+* subject = Reference(maryFictitious)
+* effectivePeriod.end = "2015"
+
+* code.coding = $SNOMED#65568007  "Cigarette smoker"
+
+Instance: mf-alcohol
+InstanceOf: Observation
+//BaseType: Observation
+Description: "Alcohol intake "
+Title: "Cigarette smoker"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Alcohol intake 2 std. drinks 5 times a week</div>"
+
+* status = #final
+* subject = Reference(maryFictitious)
+
+
+* code.coding = $SNOMED#365967005  "Finding of alcohol intake (finding)"
+* valueString = "Alcohol intake 2 std. drinks 5 times a week"
+
+Instance: mf-occupation
+InstanceOf: Observation
+//BaseType: Observation
+Description: "Occupation"
+Title: "Occupation"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Works at Centrelink</div>"
+
+* status = #final
+* subject = Reference(maryFictitious)
+
+
+* code.coding = $SNOMED#14679004  "Occupation (occupation)"
+* valueString = "Works at Centrelink, able to transfer"
+
+
+
+//------------ family history
+
+Instance: mf-familyHistory1
+InstanceOf: AUPrimaryCareFamilyMemberHistory
+//BaseType: FamilyMemberHistory
+Description: "Mother hypothyroid"
+Title: "Mother hypothyroid"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mother hypothyroid</div>"
+
+* status = #completed
+* patient = Reference(maryFictitious)
+* name = "Mummy"
+* relationship = $SNOMED#72705000 "Mother (person)"
+* bornDate = "1956"
+
+* condition.code = $SNOMED#40930008 "Hypothyroidism (disorder)"
+* condition.onsetString = "30 years"
+
+Instance: mf-familyHistory2
+InstanceOf: AUPrimaryCareFamilyMemberHistory
+//BaseType: FamilyMemberHistory
+Description: "Sister hypothyroid"
+Title: "Sister hypothyroid"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Sister hypothyroid</div>"
+
+* status = #completed
+* patient = Reference(maryFictitious)
+* name = "Sis"
+* relationship = $SNOMED#27733009 "Sister (person)"
+* bornDate = "1956"
+
+* condition.code = $SNOMED#40930008 "Hypothyroidism (disorder)"
+* condition.onsetString = "30 years"
+
+//The list of all the family history items
+Instance: mf-familyHistoryList
+InstanceOf: AUPrimaryCareFamilyMemberHistoryList
+//BaseType: List 
+Title: "Family History List"
+Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Father with diabetes</div>"
+
+* mode = #snapshot
+* status = #current
+* subject = Reference(maryFictitious)
+* entry.item = Reference(mf-familyHistory1)
+* entry[1].item = Reference(mf-familyHistory2)
 
 //========================= Patient resource
 
@@ -177,12 +388,48 @@ Title: "Mary Fictitious"
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mary Fictitious. Female aged 49</div>"
 
-
-
 * name.family = "Fictitious"
 * name.given = "Mary"
 * name.text = "Mary Fictitious"
 * birthDate = "1971"
 * gender = #female
+// * address.text = "23 Thule st"
 
-* address.text = "23 Thule st"
+//============= Allergies
+
+
+
+Instance: mf-allergiesList
+InstanceOf: AUPrimaryCareAllergyIntoleranceList
+//BaseType: List 
+Title: "Allergy List"
+Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No allerrgies or intolerances known</div>"
+
+* mode = #snapshot
+* status = #current
+* subject = Reference(maryFictitious)
+* entry.item = Reference(mf-noAllergy)
+
+
+Instance: mf-noAllergy
+InstanceOf: AUPrimaryCareAllergyIntolerance
+Title: "No allergies reported"
+Description: "Urticaria as a result of a Peanut allergy"
+//BaseType: AllergyIntolerance 
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Peanut allergy</div>"
+* text.status = #additional
+
+* patient = Reference(maryFictitious)
+
+* clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
+* clinicalStatus.text = "active"
+* verificationStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#unconfirmed "Unconfirmed"
+* verificationStatus.text = "unconfirmed"
+* type = #allergy
+* category = #food
+* criticality = #unable-to-assess
+* code.coding = http://snomed.info/sct#91935009 "Allergy to peanuts"
+

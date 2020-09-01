@@ -6,10 +6,11 @@ Id: AUPrimaryCarePatient
 Title: "AU Primary Care Patient"
 Description: "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
-* extension contains null 0..1 MS
+* extension contains http://hl7.org.au/fhir/StructureDefinition/indigenous-status named atsi 0..1 MS
 * active = true
 * name 1..1
 * name MS
+
 
 //set the telecom phone and email as Must Support
 * telecom ^slicing.discriminator.type = #value
@@ -43,7 +44,7 @@ Description: "This profile defines a patient administration details structure th
 
 * birthDate 1..1
 * birthDate MS
-* address 1..1
+// * address 1..1
 * address MS
 * contact ^slicing.discriminator.type = #value
 * contact ^slicing.discriminator.path = "telecom.system"

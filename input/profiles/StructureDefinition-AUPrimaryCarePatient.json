@@ -43,21 +43,20 @@
   "differential": {
     "element": [
       {
-        "id": "Patient",
-        "path": "Patient"
-      },
-      {
-        "id": "Patient.extension:null",
+        "id": "Patient.extension:atsi",
         "path": "Patient.extension",
-        "sliceName": "null",
+        "sliceName": "atsi",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/indigenous-status"
+            ]
+          }
+        ],
         "mustSupport": true
-      },
-      {
-        "id": "Patient.extension:null.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "null"
       },
       {
         "id": "Patient.active",
@@ -131,8 +130,6 @@
       {
         "id": "Patient.address",
         "path": "Patient.address",
-        "min": 1,
-        "max": "1",
         "mustSupport": true
       },
       {
@@ -156,14 +153,6 @@
         "max": "1"
       },
       {
-        "id": "Patient.contact:emergencyContact.relationship",
-        "path": "Patient.contact.relationship"
-      },
-      {
-        "id": "Patient.contact:emergencyContact.relationship.coding",
-        "path": "Patient.contact.relationship.coding"
-      },
-      {
         "id": "Patient.contact:emergencyContact.relationship.coding.system",
         "path": "Patient.contact.relationship.coding.system",
         "patternUri": "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
@@ -174,10 +163,6 @@
         "min": 1,
         "patternCode": "C",
         "mustSupport": true
-      },
-      {
-        "id": "Patient.contact:emergencyContact.telecom",
-        "path": "Patient.contact.telecom"
       },
       {
         "id": "Patient.contact:emergencyContact.telecom.system",

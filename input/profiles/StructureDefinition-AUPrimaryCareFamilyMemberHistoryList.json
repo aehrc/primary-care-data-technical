@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AUPrimaryCareFamilyMemberHistoryList",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList",
   "version": "0.0.3",
   "name": "AUPrimaryCareFamilyMemberHistoryList",
@@ -28,10 +38,6 @@
   "differential": {
     "element": [
       {
-        "id": "List",
-        "path": "List"
-      },
-      {
         "id": "List.status",
         "path": "List.status",
         "patternCode": "current"
@@ -40,10 +46,6 @@
         "id": "List.mode",
         "path": "List.mode",
         "patternCode": "snapshot"
-      },
-      {
-        "id": "List.entry",
-        "path": "List.entry"
       },
       {
         "id": "List.entry.item",

@@ -1,22 +1,22 @@
 {
   "resourceType": "Observation",
-  "id": "mfWidowed",
+  "id": "mf-occupation",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Widowed May 2019r</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Works at Centrelink</div>"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/maryFictitious"
   },
-  "effectiveDateTime": "2020-04-01",
   "code": {
     "coding": [
       {
-        "code": "33553000",
+        "code": "14679004",
         "system": "http://snomed.info/sct",
-        "display": "Widowed"
+        "display": "Occupation (occupation)"
       }
     ]
-  }
+  },
+  "valueString": "Works at Centrelink, able to transfer"
 }

@@ -1,0 +1,50 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "mf-noAllergy",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Peanut allergy</div>",
+    "status": "additional"
+  },
+  "patient": {
+    "reference": "Patient/maryFictitious"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "display": "Active"
+      }
+    ],
+    "text": "active"
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "unconfirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "display": "Unconfirmed"
+      }
+    ],
+    "text": "unconfirmed"
+  },
+  "type": "allergy",
+  "category": [
+    "food"
+  ],
+  "criticality": "unable-to-assess",
+  "code": {
+    "coding": [
+      {
+        "code": "91935009",
+        "system": "http://snomed.info/sct",
+        "display": "Allergy to peanuts"
+      }
+    ]
+  }
+}

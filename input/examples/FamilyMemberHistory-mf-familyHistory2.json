@@ -1,0 +1,42 @@
+{
+  "resourceType": "FamilyMemberHistory",
+  "id": "mf-familyHistory2",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sister hypothyroid</div>"
+  },
+  "status": "completed",
+  "patient": {
+    "reference": "Patient/maryFictitious"
+  },
+  "name": "Sis",
+  "relationship": {
+    "coding": [
+      {
+        "code": "27733009",
+        "system": "http://snomed.info/sct",
+        "display": "Sister (person)"
+      }
+    ]
+  },
+  "bornDate": "1956",
+  "condition": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "40930008",
+            "system": "http://snomed.info/sct",
+            "display": "Hypothyroidism (disorder)"
+          }
+        ]
+      },
+      "onsetString": "30 years"
+    }
+  ]
+}

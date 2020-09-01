@@ -1,0 +1,20 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "mf-medication2",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Methotrexate</div>"
+  },
+  "subject": {
+    "reference": "Patient/maryFictitious"
+  },
+  "status": "active",
+  "medicationCodeableConcept": {
+    "text": "Methotrexate"
+  }
+}

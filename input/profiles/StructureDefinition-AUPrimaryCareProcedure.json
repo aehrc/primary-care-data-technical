@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AUPrimaryCareProcedure",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure",
   "version": "0.0.3",
   "name": "AUPrimaryCareProcedure",
@@ -38,10 +48,6 @@
   "differential": {
     "element": [
       {
-        "id": "Procedure",
-        "path": "Procedure"
-      },
-      {
         "id": "Procedure.code",
         "path": "Procedure.code",
         "mustSupport": true,
@@ -63,10 +69,6 @@
           "strength": "preferred",
           "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"
         }
-      },
-      {
-        "id": "Procedure.note",
-        "path": "Procedure.note"
       },
       {
         "id": "Procedure.note.text",
