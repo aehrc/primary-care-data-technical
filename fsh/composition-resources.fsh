@@ -44,6 +44,7 @@ Description: "This profile defines a composition structure that includes core lo
     familyHistory 0..1 and
     socialHistory 0..1 and
     pregnancyHistory 0..1 and 
+    goalList 0..1 and
     followUp 0..1      //todo dhay added
 
 //* section 1..*
@@ -110,6 +111,13 @@ Description: "This profile defines a composition structure that includes core lo
 * section[pregnancyHistory].mode = #snapshot
 * section[pregnancyHistory].entry only Reference(Observation)
 * section[pregnancyHistory].entry MS
+
+//* section contains goalList 0..1
+* section[goalList].code.coding.system = "http://loinc.org"
+* section[goalList].code.coding.code = #61146-7 (exactly)
+* section[goalList].mode = #snapshot
+* section[goalList].entry only Reference(AUPrimaryCareGoalList)
+* section[goalList].entry MS
 
 //todo - added by DH
 //* section contains followups 0..1
