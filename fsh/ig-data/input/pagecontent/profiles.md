@@ -22,7 +22,7 @@ These Profiles have been defined for this implementation guide.
 * [AU Primary Care Immunisation](StructureDefinition-AUPrimaryCareImmunisation.html) - immunisation with local identifiers and attributes
 
 ### Medical History Profiles
-* [AU Primary Care Medical History List](StructureDefinition-AUPrimaryCareMedicalhistoryList.html) - medical history list with local identifiers and attributes
+* [AU Primary Care Medical History List](StructureDefinition-AUPrimaryCareMedicalHistoryList.html) - medical history list with local identifiers and attributes
 * [AU Primary Care Procedure List](StructureDefinition-AUPrimaryCareProcedureList.html) - procedure list with local identifiers and attributes
 * [AU Primary Care Problem List](StructureDefinition-AUPrimaryCareProblemList.html) - problem list with local identifiers and attributes
 * [AU Primary Care Procedure](StructureDefinition-AUPrimaryCareProcedure.html) - procedure with local identifiers and attributes
@@ -30,19 +30,23 @@ These Profiles have been defined for this implementation guide.
 
 ### Family History Profiles
 * [AU Primary Care Family Member History List](StructureDefinition-AUPrimaryCareFamilyMemberHistoryList.html) - family member history list with local identifiers and attributes
-* [AU Primary Care Family Member History](StructureDefinition-AUPrimarycareFamilyMemberHistory.html) - family member history with local identifiers and attributes
+* [AU Primary Care Family Member History](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) - family member history with local identifiers and attributes
 
 ### Social History Profiles
 * [AU Primary Care Social History List](StructureDefinition-AUPrimaryCareSocialHistoryList.html) - social history list with local identifiers and attributes
 
 ### Pregnancy / Breastfeeding Profiles
-* [AU Primary Care Last Normal Menstrual Period](StructureDefinition-AUPrimaryCareObservation-lnmp.html) - date of last normal menstrual period
-* [AU Primary Care Expected Date of Delivery](StructureDefinition-AUPrimaryCareObservation-edd.html) - expected date of delivery calculated from either scan date or last normal menstrual period and cycle length
-* [AU Primary Care Ultrasound Scan Obstetric](StructureDefinition-AUPrimaryCareProcedure-ultrasoundscanobstetric.html) - obstetric ultrasound scan, including date
-* [AU Primary Care Gestation On Scan](StructureDefinition-AUPrimaryCareObservation-gestationonscan.html) - estimated gestation of the pregnancy, based on findings from the ultrasound scan
+* [AU Primary Care Last Normal Menstrual Period](StructureDefinition-AUPrimaryCareObservation-LNMP.html) - date of last normal menstrual period
+* [AU Primary Care Expected Date of Delivery](StructureDefinition-AUPrimaryCareObservation-EDD.html) - expected date of delivery calculated from either scan date or last normal menstrual period and cycle length
+* [AU Primary Care Ultrasound Scan Obstetric](StructureDefinition-AUPrimaryCareProcedure-UltrasoundScanObstetric.html) - obstetric ultrasound scan, including date
+* [AU Primary Care Gestation On Scan](StructureDefinition-AUPrimaryCareObservation-GestationOnScan.html) - estimated gestation of the pregnancy, based on findings from the ultrasound scan
 * [AU Primary Care Gravidity](StructureDefinition-AUPrimaryCareObservation-gravidity.html) - number of times a woman has been pregnant, including the current pregnancy
 * [AU Primary Care Parity](StructureDefinition-AUPrimaryCareObservation-parity.html) - number of times a woman has given birth
 
 ### Follow Ups Profiles
-* [AU Primary Care Follow Up List](StructureDefinition-AUPrimaryCareFollowupList.html) - follow ups list with local identifiers and attributes
-* [AU Primary Care Follow Up](StructureDefinition-AUPrimaryCareFollowup.html) - follow ups with local identifiers and attributes
+* [AU Primary Care Follow Up List](StructureDefinition-AUPrimaryCareFollowUpList.html) - follow ups list with local identifiers and attributes
+* [AU Primary Care Follow Up](StructureDefinition-AUPrimaryCareFollowUp.html) - follow ups with local identifiers and attributes
+
+### Goals Profiles
+* [AU Primary Care Goal List](StructureDefinition-AUPrimaryCareGoalList.html) - Desired health, or well-being, outcome list for the individual
+* [AU Primary Care Goal](StructureDefinition-AUPrimaryCareGoal.html) - A desired health, or well-being, outcome for the individual

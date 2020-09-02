@@ -26,7 +26,7 @@ Description: "This profile defines a composition structure that includes core lo
 */
 * type = http://loinc.org#11503-0 "Medical Records"
 * subject 1..1      //there must be a subject
-* subject only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient)
+* subject only Reference(AUPrimaryCarePatient)
 * encounter 0..0
 * title = "Practice to Practice Patient Summary"
 
@@ -56,7 +56,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[medicalHistoryList].code.coding.code = #11348-0 (exactly)
 * section[medicalHistoryList].mode = #snapshot
 //* section[medicalHistoryList].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList or https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList or https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProblemList)
-* section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList or AUPrimaryCareProcedureList or AUPrimaryCareProblemList)
+* section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList | AUPrimaryCareProcedureList | AUPrimaryCareProblemList)
 
 
 
@@ -66,7 +66,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[adverseReactionList].code.coding.system = "http://loinc.org"
 * section[adverseReactionList].code.coding.code = #48765-2 (exactly)
 * section[adverseReactionList].mode = #snapshot
-* section[adverseReactionList].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList)
+* section[adverseReactionList].entry only Reference(AUPrimaryCareAllergyIntoleranceList)
 * section[adverseReactionList].entry MS
 
 //* section contains vaccinationList 1..1
@@ -74,14 +74,14 @@ Description: "This profile defines a composition structure that includes core lo
 * section[vaccinationList].code.coding.code = #41291-6 (exactly)
 * section[vaccinationList].code.coding.display = "Immunization"
 * section[vaccinationList].mode = #snapshot
-* section[vaccinationList].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList)
+* section[vaccinationList].entry only Reference(AUPrimaryCareImmunisationList)
 * section[vaccinationList].entry MS
 
 //* section contains medicineList 1..1
 * section[medicineList].code.coding.system = "http://loinc.org"
 * section[medicineList].code.coding.code = #10160-0 (exactly) 
 * section[medicineList].mode = #snapshot
-* section[medicineList].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList)
+* section[medicineList].entry only Reference(AUPrimaryCareMedicineList)
 * section[medicineList].entry MS
 
 //* section contains clinicalSynopsis 0..1
@@ -102,7 +102,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[socialHistory].code.coding.system = "http://loinc.org"
 * section[socialHistory].code.coding.code = #29762-2 (exactly)
 * section[socialHistory].mode = #snapshot
-* section[socialHistory].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList)
+* section[socialHistory].entry only Reference(AUPrimaryCareSocialHistoryList)
 * section[socialHistory].entry MS
 
 * section[pregnancyHistory].code.coding.system = "http://loinc.org"
