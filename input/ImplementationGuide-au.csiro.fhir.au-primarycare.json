@@ -98,6 +98,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareGoal"
+        },
+        "name": "AUPrimaryCareGoal",
+        "description": "Data group for the recording of goals",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareGoalList"
+        },
+        "name": "AU Primary Care Immunisation List",
+        "description": "This profile defines an goal list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareObservation-gravidity"
         },
         "name": "AU Primary Care Gravidity",
@@ -194,6 +210,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareSmokingStatus"
+        },
+        "name": "AU Primary Care Smoking Status",
+        "description": "This profile defines core information requirements for smoking status in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareSocialHistoryList"
         },
         "name": "AU Primary Care Social History List",
@@ -230,6 +254,14 @@
         },
         "name": "Ultrasound Scan Obstetric",
         "description": "A ultrasound scan for obstetric purposes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareReviewDate"
+        },
+        "name": "AU Primary Care Review Date",
+        "description": "Date when this goal is planned to be reviewed",
         "exampleBoolean": false
       },
       {

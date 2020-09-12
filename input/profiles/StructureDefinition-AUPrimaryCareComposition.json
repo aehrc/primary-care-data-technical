@@ -397,6 +397,42 @@
         "mustSupport": true
       },
       {
+        "id": "Composition.section:goalList",
+        "path": "Composition.section",
+        "sliceName": "goalList",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:goalList.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:goalList.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "fixedCode": "61146-7"
+      },
+      {
+        "id": "Composition.section:goalList.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:goalList.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGoalList"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:followUp",
         "path": "Composition.section",
         "sliceName": "followUp",

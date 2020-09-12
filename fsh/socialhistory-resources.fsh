@@ -14,3 +14,13 @@ Description: "This profile defines a social history list structure that includes
 * entry.item MS
 * emptyReason MS
 
+
+Profile: AUPrimaryCareSmokingStatus
+Parent: Observation
+Id: AuPrimaryCareSmokingStatus
+Title: "AU Primary Care Smoking Status"
+Description: "This profile defines core information requirements for smoking status in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus"
+* subject MS
+* value[x] 1..1 MS
+* value[x] only CodeableConcept

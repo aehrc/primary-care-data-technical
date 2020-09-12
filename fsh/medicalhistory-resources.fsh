@@ -8,7 +8,7 @@ Description: "This profile defines a medical history list structure that include
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
 * status = #current
 * mode = #snapshot
-* entry.item only Reference(AUPrimaryCareProcedure | AUPrimaryCareCondition)
+* entry.item only Reference(AUPrimaryCareProcedure or AUPrimaryCareCondition)
 * entry.item MS
 * emptyReason MS
 
