@@ -3,21 +3,28 @@
   "id": "mf-exSmoker",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Stopped smoking 2015</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ex-smoker</div>"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/maryFictitious"
   },
-  "effectivePeriod": {
-    "end": "2015"
-  },
+  "effectiveDateTime": "2020-07-01",
   "code": {
     "coding": [
       {
-        "code": "65568007",
-        "system": "http://snomed.info/sct",
-        "display": "Cigarette smoker"
+        "code": "72166-2",
+        "system": "http://loinc.org",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "LA15920-4",
+        "system": "http://loinc.org",
+        "display": "Former Smoker"
       }
     ]
   }

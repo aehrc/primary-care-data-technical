@@ -218,14 +218,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareSocialHistoryList"
-        },
-        "name": "AU Primary Care Social History List",
-        "description": "This profile defines a social history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareObservation-EDD"
         },
         "name": "Expected Date of Delivery",
@@ -584,13 +576,6 @@
       },
       {
         "reference": {
-          "reference": "List/aupc-socialHistoryList"
-        },
-        "name": "Social History resources",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
-      },
-      {
-        "reference": {
           "reference": "Patient/maryFictitious"
         },
         "name": "Mary Fictitious",
@@ -604,13 +589,6 @@
         "name": "Simvastatin",
         "description": "Simvastatin",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-SocialHistoryList"
-        },
-        "name": "Social History resources",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
       },
       {
         "reference": {

@@ -13,9 +13,18 @@
   "code": {
     "coding": [
       {
-        "code": "65568007",
-        "system": "http://snomed.info/sct",
-        "display": "Cigarette smoker"
+        "code": "72166-2",
+        "system": "http://loinc.org",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "LA18979-7",
+        "system": "http://loinc.org",
+        "display": "Smoker, current status unknown"
       }
     ]
   }

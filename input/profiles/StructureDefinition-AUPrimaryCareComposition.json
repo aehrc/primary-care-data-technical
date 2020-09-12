@@ -354,7 +354,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus"
             ]
           }
         ],

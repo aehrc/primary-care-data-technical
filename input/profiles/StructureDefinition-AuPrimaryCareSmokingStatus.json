@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AuPrimaryCareSmokingStatus",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus",
   "version": "0.0.3",
   "name": "AUPrimaryCareSmokingStatus",
@@ -53,24 +43,27 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-smokingstatus",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true
       }
     ]

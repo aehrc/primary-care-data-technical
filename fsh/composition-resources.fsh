@@ -102,7 +102,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[socialHistory].code.coding.system = "http://loinc.org"
 * section[socialHistory].code.coding.code = #29762-2 (exactly)
 * section[socialHistory].mode = #snapshot
-* section[socialHistory].entry only Reference(AUPrimaryCareSocialHistoryList)
+* section[socialHistory].entry only Reference(AUPrimaryCareSmokingStatus)
 * section[socialHistory].entry MS
 
 * section[pregnancyHistory].code.coding.system = "http://loinc.org"

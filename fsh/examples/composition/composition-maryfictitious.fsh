@@ -239,6 +239,7 @@ Title: "UteroVaginal prolapse repair"
 
 
 // ---------------------------------- social history --------------
+/*
 Instance: mf-SocialHistoryList
 InstanceOf: AUPrimaryCareSocialHistoryList
 //BaseType: List 
@@ -255,7 +256,7 @@ Usage: #example
 * entry[1].item = Reference(mf-exSmoker)
 * entry[2].item = Reference(mf-alcohol)
 * entry[3].item = Reference(mf-occupation)
-
+*/
 
 
 Instance: mfWidowed
@@ -281,13 +282,13 @@ Description: "is a ex cigarette smoker"
 Title: "Cigarette smoker"
 
 * text.status = #additional
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Stopped smoking 2015</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Ex-smoker</div>"
 
 * status = #final
 * subject = Reference(maryFictitious)
-* effectivePeriod.end = "2015"
-
-* code.coding = $SNOMED#65568007  "Cigarette smoker"
+* effectiveDateTime = "2020-07-01"
+* code.coding = $LOINC#72166-2  "Tobacco smoking status"
+* valueCodeableConcept = $LOINC#LA15920-4 "Former Smoker"
 
 Instance: mf-alcohol
 InstanceOf: Observation

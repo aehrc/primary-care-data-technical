@@ -12,9 +12,10 @@ Title: "Cigarette smoker"
 * status = #final
 * subject = Reference(aupc-patient1)
 * effectiveDateTime = "2020-04-01"
+* code.coding = $LOINC#72166-2  "Tobacco smoking status"
+* valueCodeableConcept = $LOINC#LA18979-7 "Smoker, current status unknown"
 
-* code.coding = $SNOMED#65568007  "Cigarette smoker"
-
+/*
 //The list that references all of the immunization resources 
 Instance: aupc-socialHistoryList
 InstanceOf: AUPrimaryCareSocialHistoryList
@@ -29,3 +30,4 @@ Usage: #example
 * status = #current
 * subject = Reference(aupc-patient1)
 * entry.item = Reference(aupc-smoker1)
+*/
