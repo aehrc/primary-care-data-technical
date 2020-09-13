@@ -66,6 +66,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareEncounter"
+        },
+        "name": "AU Primary Care Encounter",
+        "description": "This profile defines core information for encounter records in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistory"
         },
         "name": "AU Primary Care Family Member History",

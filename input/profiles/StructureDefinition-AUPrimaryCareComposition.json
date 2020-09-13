@@ -397,6 +397,42 @@
         "mustSupport": true
       },
       {
+        "id": "Composition.section:encounterHistory",
+        "path": "Composition.section",
+        "sliceName": "encounterHistory",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:encounterHistory.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:encounterHistory.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "fixedCode": "11347-2"
+      },
+      {
+        "id": "Composition.section:encounterHistory.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:encounterHistory.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:goalList",
         "path": "Composition.section",
         "sliceName": "goalList",
