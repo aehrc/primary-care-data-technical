@@ -8,7 +8,7 @@ Description: "Represents the gravidity (number of pregnancies) of a female patie
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-gravidity"
 * status = #final
 
-// code must have a SNOMED value of 161732006, but other codes are allowed
+// code must have a LOINC 11996-6 (SNOMED value of 161732006), but other codes are allowed
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
@@ -16,8 +16,8 @@ Description: "Represents the gravidity (number of pregnancies) of a female patie
 * code.coding contains graviditySnomed 1..1
 
 //* code.coding[graviditySnomed] = http://snomed.info/sct#161732006
-* code.coding[graviditySnomed].system = $SNOMED (exactly) 
-* code.coding[graviditySnomed].code = #161732006
+* code.coding[graviditySnomed].system = $LOINC (exactly) 
+* code.coding[graviditySnomed].code = #11996-6
 * subject 1..1
 * value[x] 1..1
 
@@ -30,7 +30,7 @@ Description: "The number of births where the fetus is overr 24 weeks"
 * status = #final
 
 
-// code must have a SNOMED value of 364325004, but other codes are allowed
+// code must have a LOINC 11977-6 (SNOMED value of 364325004), but other codes are allowed
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
@@ -38,10 +38,8 @@ Description: "The number of births where the fetus is overr 24 weeks"
 
 * code.coding contains paritySnomed 1..1
 //* code.coding[paritySnomed] = http://snomed.info/sct#364325004
-* code.coding[paritySnomed].system = $SNOMED (exactly)
-* code.coding[paritySnomed].code = #364325004
-
-
+* code.coding[paritySnomed].system = $LOINC (exactly)
+* code.coding[paritySnomed].code = #11977-6
 * subject 1..1
 * value[x] 1..1
 
@@ -52,7 +50,6 @@ Title: "Gestation On Scan"
 Description: "The gestational age from an ultrasound scan"
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
 
-
 * partOf ^slicing.discriminator.type = #profile
 * partOf ^slicing.discriminator.path = "reference"
 * partOf ^slicing.rules = #open
@@ -62,7 +59,6 @@ Description: "The gestational age from an ultrasound scan"
 //* partOf[ultrasoundScan] only Reference(Procedure)
 //* partOf[ultrasoundScan] only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric)
 *  partOf[ultrasoundScan] only Reference(AUPrimaryCareProcedure-UltrasoundScanObstetric)
-
 
 * status = #final
 
@@ -81,10 +77,10 @@ Description: "The gestational age from an ultrasound scan"
 
 * effective[x] 1..1  //dh - observation is meaningless without a perfromed data todo - in theory could get from procedurer
 
-
 //todo - ?slice to quantity
 * value[x] 1..1
 
+// EDD by scan LOINC 90368-2
 Profile: ExpectedDateOfDelivery
 Parent: Observation
 Id: AUPrimaryCareObservation-EDD

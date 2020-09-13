@@ -87,12 +87,12 @@
         "id": "Observation.code.coding:paritySnomed.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "fixedUri": "http://snomed.info/sct"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.code.coding:paritySnomed.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "364325004"
+        "patternCode": "11977-6"
       },
       {
         "id": "Observation.subject",

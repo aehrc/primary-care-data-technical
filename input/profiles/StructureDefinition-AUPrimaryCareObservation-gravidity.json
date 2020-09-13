@@ -87,12 +87,12 @@
         "id": "Observation.code.coding:graviditySnomed.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "fixedUri": "http://snomed.info/sct"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.code.coding:graviditySnomed.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "161732006"
+        "patternCode": "11996-6"
       },
       {
         "id": "Observation.subject",
