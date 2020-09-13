@@ -24,3 +24,4 @@ Description: "This profile defines core information requirements for smoking sta
 * subject only Reference(AUPrimaryCarePatient)
 * subject MS
 * value[x] 1..1 MS
+
