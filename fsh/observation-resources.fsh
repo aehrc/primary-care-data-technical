@@ -13,11 +13,11 @@ Description: "Represents the gravidity (number of pregnancies) of a female patie
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 //* code.coding 1..1
-* code.coding contains graviditySnomed 1..1
+* code.coding contains gravidityLOINC 1..1
 
-//* code.coding[graviditySnomed] = http://snomed.info/sct#161732006
-* code.coding[graviditySnomed].system = $LOINC (exactly) 
-* code.coding[graviditySnomed].code = #11996-6
+//* code.coding[gravidityLOINC] = http://snomed.info/sct#161732006
+* code.coding[gravidityLOINC].system = $LOINC (exactly) 
+* code.coding[gravidityLOINC].code = #11996-6
 * subject 1..1
 * value[x] 1..1
 
@@ -36,10 +36,10 @@ Description: "The number of births where the fetus is overr 24 weeks"
 * code.coding ^slicing.rules = #open
 //* code.coding 1..1
 
-* code.coding contains paritySnomed 1..1
-//* code.coding[paritySnomed] = http://snomed.info/sct#364325004
-* code.coding[paritySnomed].system = $LOINC (exactly)
-* code.coding[paritySnomed].code = #11977-6
+* code.coding contains parityLOINC 1..1
+//* code.coding[parityLOINC] = http://snomed.info/sct#364325004
+* code.coding[parityLOINC].system = $LOINC (exactly)
+* code.coding[parityLOINC].code = #11977-6
 * subject 1..1
 * value[x] 1..1
 
