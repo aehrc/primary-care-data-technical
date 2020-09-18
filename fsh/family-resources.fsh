@@ -1,14 +1,15 @@
 // PROFILES 
 
-Profile: AUPrimaryCareBasicFamilyMemberHistory
+Profile: AUPrimaryCareFamilyMemberHistory
 Parent: FamilyMemberHistory
-Id: AUPrimaryCareBasicFamilyMemberHistory
-Title: "AU Primary Care Family Member Basic History"
+Id: AUPrimaryCareFamilyMemberHistory
+Title: "AU Primary Care Family Member History"
 Description: "This profile defines a basic family member history note that for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
 * note MS
 
 
+/*
 Profile: AUPrimaryCareFamilyMemberHistory
 Parent: FamilyMemberHistory
 Id: AUPrimaryCareFamilyMemberHistory
@@ -17,7 +18,7 @@ Description: "This profile defines a family member history structure that includ
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
 * relationship from http://aehrc.com/valueset/geneticfamilymember (extensible)
 * condition.code from https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 (extensible)
-
+*/
 
 Profile: AUPrimaryCareFamilyMemberHistoryList
 Parent: List
