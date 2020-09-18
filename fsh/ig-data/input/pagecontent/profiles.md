@@ -30,7 +30,8 @@ These Profiles have been defined for this implementation guide.
 
 ### Family History Profiles
 * [AU Primary Care Family Member History List](StructureDefinition-AUPrimaryCareFamilyMemberHistoryList.html) - family member history list with local identifiers and attributes
-* [AU Primary Care Family Member History](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) - family member history with local identifiers and attributes
+* [AU Primary Care Basic Family Member History](StructureDefinition-AUPrimaryCareBasicFamilyMemberHistory.html) - basic family member history note
+* [AU Primary Care Family Member History](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) - family member history with structured information and coding
 
 ### Social History Profiles
 * [AU Primary Care Smoking Status](StructureDefinition-AUPrimaryCareSmokingStatus.html) - smoking status lifestyle factor record
