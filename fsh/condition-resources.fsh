@@ -19,6 +19,7 @@ Description: "This profile defines a condition structure that includes core loca
 
 * code.coding contains snomedCondition 0..1
 * code.coding[snomedCondition] MS
+* code.coding[snomedCondition] from https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 (extensible)
 * code.coding[snomedCondition].system = $SNOMED (exactly)
 
 
