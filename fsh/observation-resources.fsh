@@ -9,6 +9,8 @@ Description: "Represents the gravidity (number of pregnancies) of a female patie
 //* code.coding[gravidityLOINC] = http://snomed.info/sct#161732006
 * status 1..1 MS
 * code 1..1 MS
+* effective[x] 1..1 MS
+* value[x] 1..1 MS
 
 
 Profile: AUPrimaryCareParity
@@ -21,6 +23,8 @@ Description: "The number of births where the fetus is overr 24 weeks"
 //* code.coding[parityLOINC] = http://snomed.info/sct#364325004
 * status 1..1 MS
 * code 1..1 MS
+* effective[x] 1..1 MS
+* value[x] 1..1 MS
 
 Profile: GestationOnScan
 Parent: Observation
@@ -99,4 +103,6 @@ Description: "The date of the last normal menstrual period"
 //must have a SNOMED code with a value of 248993009, may have a LOINC one (8665-2) as well
 * status 1..1 MS
 * code 1..1 MS
+* effective[x] 1..1 MS
+* value[x] 1..1 MS
 
