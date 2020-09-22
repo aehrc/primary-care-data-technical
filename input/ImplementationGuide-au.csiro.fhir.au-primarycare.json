@@ -77,7 +77,7 @@
           "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistory"
         },
         "name": "AU Primary Care Family Member History",
-        "description": "This profile defines a family member history structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "This profile defines a basic family member history note that for use in an Australian primary care practice-to-practice record transfer context.",
         "exampleBoolean": false
       },
       {
@@ -245,7 +245,7 @@
           "reference": "StructureDefinition/AUPrimaryCareObservation-LNMP"
         },
         "name": "Last Menstrual Period",
-        "description": "The date of the womand last normal menstrual period",
+        "description": "The date of the last normal menstrual period",
         "exampleBoolean": false
       },
       {

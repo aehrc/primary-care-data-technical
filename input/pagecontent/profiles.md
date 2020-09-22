@@ -40,10 +40,11 @@ These Profiles have been defined for this implementation guide.
 
 ### Family History Profiles
 * [AU Primary Care Family Member History List](StructureDefinition-AUPrimaryCareFamilyMemberHistoryList.html) - family member history list with local identifiers and attributes
-* [AU Primary Care Family Member History](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) - family member history with local identifiers and attributes
+* [AU Primary Care Family Member History](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) - basic family member history note
+
 
 ### Social History Profiles
-* [AU Primary Care Smoking Status(StructureDefinition-AUPrimaryCareSmokingStatus.html) - smoking status record
+* [AU Primary Care Smoking Status](StructureDefinition-AUPrimaryCareSmokingStatus.html) - smoking status lifestyle factor record
 
 ### Pregnancy / Breastfeeding Profiles
 * [AU Primary Care Last Normal Menstrual Period](StructureDefinition-AUPrimaryCareObservation-LNMP.html) - date of last normal menstrual period

@@ -1,47 +1,26 @@
 // PROFILES 
 
 Profile: AUPrimaryCareGravidity
-Parent: Observation
+Parent: http://hl7.org.au/fhir/StructureDefinition/au-gravidity
 Id: AUPrimaryCareObservation-gravidity
 Title: "AU Primary Care Gravidity"
 Description: "Represents the gravidity (number of pregnancies) of a female patient"
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-gravidity"
-* status = #final
-
-// code must have a LOINC 11996-6 (SNOMED value of 161732006), but other codes are allowed
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-//* code.coding 1..1
-* code.coding contains gravidityLOINC 1..1
-
 //* code.coding[gravidityLOINC] = http://snomed.info/sct#161732006
-* code.coding[gravidityLOINC].system = $LOINC (exactly) 
-* code.coding[gravidityLOINC].code = #11996-6
-* subject 1..1
-* value[x] 1..1
+* status 1..1 MS
+* code 1..1 MS
+
 
 Profile: AUPrimaryCareParity
-Parent: Observation
+Parent: http://hl7.org.au/fhir/StructureDefinition/au-parity
 Id: AUPrimaryCareObservation-parity
 Title: "AU Primary Care Parity"
 Description: "The number of births where the fetus is overr 24 weeks"
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-parity"
-* status = #final
-
-
 // code must have a LOINC 11977-6 (SNOMED value of 364325004), but other codes are allowed
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-//* code.coding 1..1
-
-* code.coding contains parityLOINC 1..1
 //* code.coding[parityLOINC] = http://snomed.info/sct#364325004
-* code.coding[parityLOINC].system = $LOINC (exactly)
-* code.coding[parityLOINC].code = #11977-6
-* subject 1..1
-* value[x] 1..1
+* status 1..1 MS
+* code 1..1 MS
 
 Profile: GestationOnScan
 Parent: Observation
@@ -112,35 +91,12 @@ Description: "The date that delivery is due. Method of estimation not specified.
 * subject 1..1
 
 Profile: LastNormalMenstrualPeriod
-Parent: Observation
+Parent: http://hl7.org.au/fhir/StructureDefinition/au-lastmenstrualperiod
 Id: AUPrimaryCareObservation-LNMP
 Title: "Last Menstrual Period"
-Description: "The date of the womand last normal menstrual period"
+Description: "The date of the last normal menstrual period"
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP"
-* status = #final
-
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding 1..1
-
 //must have a SNOMED code with a value of 248993009, may have a LOINC one (8665-2) as well
-* code.coding contains 
-    lnmpSnomed 1..1 and
-    lnmpLoinc 0..1
-
-* code.coding[lnmpSnomed].system = $SNOMED (exactly)
-* code.coding[lnmpSnomed].code = #248993009
-
-* code.coding[lnmpLoinc].system = $LOINC (exactly)
-* code.coding[lnmpLoinc].code = #8665-2
-/*
-* code.coding contains lnmpSnomed 1..1      
-* code.coding[lnmpSnomed] = http://snomed.info/sct#248993009
-* code.coding contains lnmpLoinc 0..1
-* code.coding[lnmpLoinc] = http://loinc.org#8665-2
-*/
-
-* subject 1..1
-* value[x] 1..1
+* status 1..1 MS
+* code 1..1 MS
 

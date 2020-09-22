@@ -10,18 +10,27 @@
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
-        "code": "364325004",
+        "system": "http://loinc.org",
+        "code": "11977-6",
         "display": "Parity"
       }
     ]
   },
+  "value[x]": {
+    "system": "http://unitsofmeasure.org",
+    "code": "1"
+  },
   "text": {
-    "status": "additional",
+    "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Parity</div>"
   },
   "subject": {
     "reference": "Patient/aupc-patient1"
   },
-  "valueInteger": 3
+  "effectiveDateTime": "2020-03-01",
+  "valueQuantity": {
+    "value": 3,
+    "code": "1",
+    "system": "http://unitsofmeasure.org"
+  }
 }

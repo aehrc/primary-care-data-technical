@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareFamilyMemberHistory",
   "title": "AU Primary Care Family Member History",
   "status": "active",
-  "description": "This profile defines a family member history structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "description": "This profile defines a basic family member history note that for use in an Australian primary care practice-to-practice record transfer context.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -48,20 +48,9 @@
   "differential": {
     "element": [
       {
-        "id": "FamilyMemberHistory.relationship",
-        "path": "FamilyMemberHistory.relationship",
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://aehrc.com/valueset/geneticfamilymember"
-        }
-      },
-      {
-        "id": "FamilyMemberHistory.condition.code",
-        "path": "FamilyMemberHistory.condition.code",
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1"
-        }
+        "id": "FamilyMemberHistory.note",
+        "path": "FamilyMemberHistory.note",
+        "mustSupport": true
       }
     ]
   }

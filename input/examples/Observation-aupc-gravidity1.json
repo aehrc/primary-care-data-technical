@@ -10,11 +10,14 @@
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
-        "code": "161732006",
-        "display": "Gravidity"
+        "system": "http://loinc.org",
+        "code": "11996-6"
       }
     ]
+  },
+  "value[x]": {
+    "system": "http://unitsofmeasure.org",
+    "code": "1"
   },
   "text": {
     "status": "generated",
@@ -23,5 +26,10 @@
   "subject": {
     "reference": "Patient/aupc-patient1"
   },
-  "valueInteger": 3
+  "effectiveDateTime": "2020-03-01",
+  "valueQuantity": {
+    "value": 3,
+    "code": "1",
+    "system": "http://unitsofmeasure.org"
+  }
 }

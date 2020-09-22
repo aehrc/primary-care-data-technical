@@ -9,12 +9,12 @@ Title: "Gravidity"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gravidity</div>"
 
-
-* code.coding.system = $SNOMED
-* code.coding.code = #161732006 
-* code.coding.display = "Gravidity"
+* status = #final
+* code.coding.system = $LOINC
+* code.coding.code = #11996-6 
 * subject = Reference(aupc-patient1)
-* valueInteger = 3
+* effectiveDateTime = "2020-03-01"
+* valueQuantity = 3 '1'
 
 Instance: aupc-parity1
 InstanceOf: AUPrimaryCareParity 
@@ -22,16 +22,16 @@ InstanceOf: AUPrimaryCareParity
 Description: "Parity"
 Title: "Parity"
 
-* text.status = #additional
+* text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Parity </div>"
 
-
-* code.coding.system = $SNOMED
-* code.coding.code = #364325004 
+* status = #final
+* code.coding.system = $LOINC
+* code.coding.code = #11977-6 
 * code.coding.display = "Parity"
 * subject = Reference(aupc-patient1)
-* valueInteger = 3
-
+* effectiveDateTime = "2020-03-01"
+* valueQuantity = 3 '1'
 
 Instance: aupc-gestationOnScan1
 InstanceOf: AUPrimaryCareObservation-GestationOnScan
