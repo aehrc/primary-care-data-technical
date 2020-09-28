@@ -66,7 +66,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AuPrimaryCareEncounter"
+          "reference": "StructureDefinition/AUPrimaryCareEncounter"
         },
         "name": "AU Primary Care Encounter",
         "description": "This profile defines core information for encounter records in an Australian practice to practice record transfer.",
@@ -278,6 +278,14 @@
         },
         "name": "Clinical Indication For Medication ValueSet",
         "description": "Clinical Indication For Medication ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/conditioncode"
+        },
+        "name": "Condition Code Valueset",
+        "description": "Condition coding including absence",
         "exampleBoolean": false
       },
       {

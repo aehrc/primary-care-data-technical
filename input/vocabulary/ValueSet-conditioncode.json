@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Condition_Code_Valueset",
+  "id": "conditioncode",
+  "title": "Condition Code Valueset",
+  "description": "Condition coding including absence",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/conditoncode",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1"
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "443508001"
+          }
+        ]
+      }
+    ]
+  }
+}

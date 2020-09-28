@@ -21,7 +21,16 @@ Description: "Members of a family from a genetic perspective"
 * ^url = "http://aehrc.com/valueset/geneticfamilymember"
 * codes from system http://snomed.info/sct where constraint = "< 444148008"
 
+ValueSet: Condition_Code_Valueset
+Id: conditioncode
+Title: "Condition Code Valueset"
+Description: "Condition coding including absence"
+* ^url = "http://aehrc.com/valueset/conditoncode"
+* codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1
+* http://snomed.info/sct#443508001
 
+
+ 
 /*
 No longer needed...
 

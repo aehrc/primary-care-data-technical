@@ -94,7 +94,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1"
+          "valueSet": "http://aehrc.com/valueset/conditoncode"
         }
       },
       {

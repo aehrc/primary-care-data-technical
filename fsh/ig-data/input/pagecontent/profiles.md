@@ -8,6 +8,9 @@ These Profiles have been defined for this implementation guide.
 ### Demographic Profiles
 * [AU Primary Care Patient](StructureDefinition-AUPrimaryCarePatient.html) - patient demographic with local identifiers and attributes
 
+### Visit Profiles
+* [AU Primary Care Encounter](StructureDefinition-AUPrimaryCareEncounter.html) - visit record
+
 ### Allergy Intolerance / Adverse Reaction Profiles
 * [AU Primary Care Allergy Intolerance List](StructureDefinition-AUPrimaryCareAllergyIntoleranceList.html) - allergy intoerance list with local identifiers and attributes
 * [AU Primary Care Allergy Intolerance](StructureDefinition-AUPrimaryCareAllergyIntolerance.html) - allergy intolerance with local identifiers and attributes
@@ -31,7 +34,6 @@ These Profiles have been defined for this implementation guide.
 ### Family History Profiles
 * [AU Primary Care Family Member History List](StructureDefinition-AUPrimaryCareFamilyMemberHistoryList.html) - family member history list with local identifiers and attributes
 * [AU Primary Care Family Member History](StructureDefinition-AUPrimaryCareFamilyMemberHistory.html) - basic family member history note
-
 
 ### Social History Profiles
 * [AU Primary Care Smoking Status](StructureDefinition-AUPrimaryCareSmokingStatus.html) - smoking status lifestyle factor record
