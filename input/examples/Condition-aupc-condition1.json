@@ -6,14 +6,6 @@
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
     ]
   },
-  "code": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "398102009"
-      }
-    ]
-  },
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Polio</div>"
@@ -44,6 +36,14 @@
       ]
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "code": "398102009",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
   "onsetDateTime": "1913-03-05",
   "asserter": {
     "reference": "Practitioner/aupc-practitioner1"

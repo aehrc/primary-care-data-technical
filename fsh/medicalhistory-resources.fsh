@@ -12,3 +12,13 @@ Description: "This profile defines a medical history list structure that include
 * entry.item MS
 * emptyReason MS
 
+
+Extension: MedicalHistoryLaterality
+Id: medical-history-laterality
+Title: "Medical History Laterality"
+Description: "Laterality qualifying a diagnosis or procedure"
+* value[x] only code
+* valueCode from https://healthterminologies.gov.au/fhir/ValueSet/laterality-1 (required)
+
+
+

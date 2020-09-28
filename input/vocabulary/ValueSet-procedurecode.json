@@ -1,24 +1,24 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "Condition_Code_Valueset",
-  "id": "conditioncode",
-  "title": "Condition Code Valueset",
-  "description": "Condition coding including absence and exclusion",
+  "name": "Procedure_Code_Valueset",
+  "id": "procedurecode",
+  "title": "Procedure Code Valueset",
+  "description": "Procedure coding including absence and exclusion",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/conditoncode",
+  "url": "http://aehrc.com/valueset/procedurecode",
   "compose": {
     "include": [
       {
         "valueSet": [
-          "https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1"
+          "https://healthterminologies.gov.au/fhir/ValueSet/procedure-1"
         ]
       },
       {
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "443508001"
+            "code": "416128008"
           },
           {
             "code": "1224831000168103"

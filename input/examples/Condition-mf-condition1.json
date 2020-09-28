@@ -6,15 +6,6 @@
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
     ]
   },
-  "code": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "59621000",
-        "display": "Essential hypertension (disorder)"
-      }
-    ]
-  },
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hypertension</div>"
@@ -50,5 +41,14 @@
         }
       ]
     }
-  ]
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "59621000",
+        "system": "http://snomed.info/sct",
+        "display": "Essential hypertension (disorder)"
+      }
+    ]
+  }
 }

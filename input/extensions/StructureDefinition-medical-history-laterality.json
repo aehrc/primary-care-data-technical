@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medical-history-laterality",
+  "url": "https://aehrc.com/fhir/StructureDefinition/medical-history-laterality",
+  "version": "0.0.3",
+  "name": "MedicalHistoryLaterality",
+  "title": "Medical History Laterality",
+  "status": "active",
+  "description": "Laterality qualifying a diagnosis or procedure",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://aehrc.com/fhir/StructureDefinition/medical-history-laterality"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.valueCode",
+        "path": "Extension.valueCode",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/laterality-1"
+        }
+      }
+    ]
+  }
+}

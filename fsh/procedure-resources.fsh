@@ -33,10 +33,12 @@ Id: AUPrimaryCareProcedure
 Title: "AU Primary Care Procedure"
 Description: "This profile defines a procedure structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
-* code from https://healthterminologies.gov.au/fhir/ValueSet/procedure-1 (preferred)
+* extension contains MedicalHistoryLaterality named MedicalHistoryLaterality 0..1     //an external extension
+* code from http://aehrc.com/valueset/procedurecode (preferred)
 * code MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject MS
 * performed[x] MS
-//dh - fixed null, made same VS as condition
 * bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)
 * bodySite MS
 * note.text MS

@@ -24,13 +24,21 @@ Description: "Members of a family from a genetic perspective"
 ValueSet: Condition_Code_Valueset
 Id: conditioncode
 Title: "Condition Code Valueset"
-Description: "Condition coding including absence"
+Description: "Condition coding including absence and exclusion"
 * ^url = "http://aehrc.com/valueset/conditoncode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1
 * http://snomed.info/sct#443508001
+* http://snomed.info/sct#1224831000168103
 
+ValueSet: Procedure_Code_Valueset
+Id: procedurecode
+Title: "Procedure Code Valueset"
+Description: "Procedure coding including absence and exclusion"
+* ^url = "http://aehrc.com/valueset/procedurecode"
+* codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/procedure-1
+* http://snomed.info/sct#416128008
+* http://snomed.info/sct#1224831000168103
 
- 
 /*
 No longer needed...
 

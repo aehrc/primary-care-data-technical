@@ -6,15 +6,6 @@
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
     ]
   },
-  "code": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "69896004",
-        "display": "Rheumatoid Arthritis (disorder)"
-      }
-    ]
-  },
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Rheumatoid Arthritis</div>"
@@ -50,5 +41,14 @@
         }
       ]
     }
-  ]
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "69896004",
+        "system": "http://snomed.info/sct",
+        "display": "Rheumatoid Arthritis (disorder)"
+      }
+    ]
+  }
 }

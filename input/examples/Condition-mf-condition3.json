@@ -6,15 +6,6 @@
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
     ]
   },
-  "code": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "13746004",
-        "display": "Bipolar disorder (disorder)"
-      }
-    ]
-  },
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bipolar disorder</div>"
@@ -50,5 +41,14 @@
         }
       ]
     }
-  ]
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "13746004",
+        "system": "http://snomed.info/sct",
+        "display": "Bipolar disorder (disorder)"
+      }
+    ]
+  }
 }

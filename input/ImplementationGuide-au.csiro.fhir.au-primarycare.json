@@ -274,6 +274,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/medical-history-laterality"
+        },
+        "name": "Medical History Laterality",
+        "description": "Laterality qualifying a diagnosis or procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/clinical-indication-for-medication"
         },
         "name": "Clinical Indication For Medication ValueSet",
@@ -285,7 +293,7 @@
           "reference": "ValueSet/conditioncode"
         },
         "name": "Condition Code Valueset",
-        "description": "Condition coding including absence",
+        "description": "Condition coding including absence and exclusion",
         "exampleBoolean": false
       },
       {
@@ -310,6 +318,14 @@
         },
         "name": "Genetic Family Member ValueSet",
         "description": "Members of a family from a genetic perspective",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/procedurecode"
+        },
+        "name": "Procedure Code Valueset",
+        "description": "Procedure coding including absence and exclusion",
         "exampleBoolean": false
       },
       {

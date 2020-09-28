@@ -191,7 +191,7 @@ Title: "Hypertension"
 * clinicalStatus.coding = $clinicalCondition#active
 * verificationStatus.coding = $verificationStatus#confirmed
 * category.coding = $SNOMED#439401001
-* code.coding[snomedCondition] = $SNOMED#59621000 "Essential hypertension (disorder)"
+* code.coding = $SNOMED#59621000 "Essential hypertension (disorder)"
 
 
 Instance: mf-condition2
@@ -207,7 +207,7 @@ Title: "Rheumatoid Arthritis"
 * clinicalStatus.coding = $clinicalCondition#active
 * verificationStatus.coding = $verificationStatus#confirmed
 * category.coding = $SNOMED#439401001
-* code.coding[snomedCondition] = $SNOMED#69896004 "Rheumatoid Arthritis (disorder)"
+* code.coding = $SNOMED#69896004 "Rheumatoid Arthritis (disorder)"
 
 Instance: mf-condition3
 InstanceOf: AUPrimaryCareCondition
@@ -222,7 +222,7 @@ Title: "Bipolar disorder"
 * clinicalStatus.coding = $clinicalCondition#active
 * verificationStatus.coding = $verificationStatus#confirmed
 * category.coding = $SNOMED#439401001
-* code.coding[snomedCondition] = $SNOMED#13746004 "Bipolar disorder (disorder)"
+* code.coding = $SNOMED#13746004 "Bipolar disorder (disorder)"
 
 Instance: mf-procedure1
 InstanceOf: AUPrimaryCareProcedure

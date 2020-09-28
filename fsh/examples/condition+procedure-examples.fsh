@@ -22,7 +22,7 @@ Title: "Confirmed diagnosis of Polio"
 //* code.coding.system = $SNOMED
 //* code.coding.code = #398102009
 
-* code.coding[snomedCondition] = $SNOMED#398102009
+* code.coding = $SNOMED#398102009
 * onsetDateTime = "1913-03-05"
 
 * asserter = Reference(aupc-practitioner1)

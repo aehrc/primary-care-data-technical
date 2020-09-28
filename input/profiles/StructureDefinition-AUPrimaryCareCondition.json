@@ -63,8 +63,28 @@
         ]
       },
       {
+        "id": "Condition.extension:MedicalHistoryLaterality",
+        "path": "Condition.extension",
+        "sliceName": "MedicalHistoryLaterality",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://aehrc.com/fhir/StructureDefinition/medical-history-laterality"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "path": "Condition.verificationStatus",
         "mustSupport": true
       },
       {
@@ -73,35 +93,13 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.code.coding",
-        "path": "Condition.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Condition.code.coding:snomedCondition",
-        "path": "Condition.code.coding",
-        "sliceName": "snomedCondition",
-        "min": 0,
-        "max": "1",
+        "id": "Condition.code",
+        "path": "Condition.code",
         "mustSupport": true,
         "binding": {
-          "strength": "extensible",
-          "valueSet": "http://aehrc.com/valueset/conditoncode"
+          "strength": "preferred",
+          "valueSet": "http://aehrc.com/valueset/conditioncode"
         }
-      },
-      {
-        "id": "Condition.code.coding:snomedCondition.system",
-        "path": "Condition.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Condition.bodySite",
@@ -109,8 +107,28 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.recordedDate",
-        "path": "Condition.recordedDate",
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.onsetDateTime",
+        "path": "Condition.onsetDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
         "mustSupport": true
       },
       {
