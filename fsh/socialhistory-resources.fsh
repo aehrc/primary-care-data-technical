@@ -21,7 +21,10 @@ Id: AuPrimaryCareSmokingStatus
 Title: "AU Primary Care Smoking Status"
 Description: "This profile defines core information requirements for smoking status in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus"
+* status 1..1 MS
+* code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
 * subject MS
+* effective[x] 1..1 MS
 * value[x] 1..1 MS
 
