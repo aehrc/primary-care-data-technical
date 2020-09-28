@@ -102,6 +102,11 @@
         }
       },
       {
+        "id": "Condition.code.coding",
+        "path": "Condition.code.coding",
+        "mustSupport": true
+      },
+      {
         "id": "Condition.bodySite",
         "path": "Condition.bodySite",
         "mustSupport": true

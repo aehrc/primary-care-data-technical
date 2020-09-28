@@ -36,9 +36,10 @@ Description: "This profile defines a procedure structure that includes core loca
 * extension contains MedicalHistoryLaterality named MedicalHistoryLaterality 0..1     //an external extension
 * code from http://aehrc.com/valueset/procedurecode (preferred)
 * code MS
+* code.coding MS
 * subject only Reference(AUPrimaryCarePatient)
 * subject MS
-* performed[x] MS
+* performedDateTime MS
 * bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)
 * bodySite MS
 * note.text MS

@@ -49,13 +49,30 @@
         "mustSupport": true
       },
       {
-        "id": "Immunization.occurrence[x]",
-        "path": "Immunization.occurrence[x]",
+        "id": "Immunization.occurrenceDateTime",
+        "path": "Immunization.occurrenceDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "Immunization.note.text",
         "path": "Immunization.note.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.protocolApplied",
+        "path": "Immunization.protocolApplied",
+        "short": "Vaccination sequence number or description"
+      },
+      {
+        "id": "Immunization.protocolApplied.doseNumber[x]",
+        "path": "Immunization.protocolApplied.doseNumber[x]",
         "mustSupport": true
       }
     ]

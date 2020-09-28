@@ -86,6 +86,11 @@
         }
       },
       {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.subject",
         "path": "Procedure.subject",
         "type": [
@@ -99,8 +104,15 @@
         "mustSupport": true
       },
       {
-        "id": "Procedure.performed[x]",
-        "path": "Procedure.performed[x]",
+        "id": "Procedure.performedDateTime",
+        "path": "Procedure.performedDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
         "mustSupport": true
       },
       {
