@@ -12,8 +12,8 @@ Title: "Cigarette smoker"
 * status = #final
 * subject = Reference(aupc-patient1)
 * effectiveDateTime = "2020-04-01"
-* code.coding = $LOINC#72166-2  "Tobacco smoking status"
-* valueCodeableConcept = $LOINC#LA18979-7 "Smoker, current status unknown"
+* code.coding = $SNOMED#229819007  "Tobacco smoking status"
+* valueCodeableConcept = $LOINC#77176002 "Smoker, current status unknown"
 
 /*
 //The list that references all of the immunization resources 

@@ -13,8 +13,8 @@
   "code": {
     "coding": [
       {
-        "code": "72166-2",
-        "system": "http://loinc.org",
+        "code": "229819007",
+        "system": "http://snomed.info/sct",
         "display": "Tobacco smoking status"
       }
     ]
@@ -22,7 +22,7 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "LA18979-7",
+        "code": "77176002",
         "system": "http://loinc.org",
         "display": "Smoker, current status unknown"
       }

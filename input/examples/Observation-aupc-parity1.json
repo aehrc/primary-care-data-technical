@@ -10,8 +10,8 @@
   "code": {
     "coding": [
       {
-        "system": "http://loinc.org",
-        "code": "11977-6",
+        "system": "http://snomed.info/sct",
+        "code": "364325004",
         "display": "Parity"
       }
     ]

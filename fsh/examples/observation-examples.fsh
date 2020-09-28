@@ -10,8 +10,8 @@ Title: "Gravidity"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gravidity</div>"
 
 * status = #final
-* code.coding.system = $LOINC
-* code.coding.code = #11996-6 
+* code.coding.system = $SNOMED
+* code.coding.code = #161732006
 * subject = Reference(aupc-patient1)
 * effectiveDateTime = "2020-03-01"
 * valueQuantity = 3 '1'
@@ -26,8 +26,8 @@ Title: "Parity"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Parity </div>"
 
 * status = #final
-* code.coding.system = $LOINC
-* code.coding.code = #11977-6 
+* code.coding.system = $SNOMED
+* code.coding.code = #364325004 
 * code.coding.display = "Parity"
 * subject = Reference(aupc-patient1)
 * effectiveDateTime = "2020-03-01"
