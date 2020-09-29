@@ -24,7 +24,24 @@ Description: "This profile defines core information requirements for smoking sta
 * status 1..1 MS
 * code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
-* subject MS
+* subject 1..1 MS
 * effective[x] 1..1 MS
 * value[x] 1..1 MS
+
+Profile: AUPrimaryCareSociaSummary
+Parent: ClinicalImpression
+Id: AuPrimaryCareSocialSummary
+Title: "AU Primary Care Social Summary"
+Description: "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialSummary"
+* status MS
+* code = $SNOMED#160476009
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effectiveDateTime MS
+* summary 1..1 MS
+
+
+
 

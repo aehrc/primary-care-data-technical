@@ -226,6 +226,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareSocialSummary"
+        },
+        "name": "AU Primary Care Social Summary",
+        "description": "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareObservation-EDD"
         },
         "name": "Expected Date of Delivery",

@@ -1,0 +1,102 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AuPrimaryCareSocialSummary",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialSummary",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareSociaSummary",
+  "title": "AU Primary Care Social Summary",
+  "status": "active",
+  "description": "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ClinicalImpression",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ClinicalImpression.status",
+        "path": "ClinicalImpression.status",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.code",
+        "path": "ClinicalImpression.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "160476009",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject",
+        "path": "ClinicalImpression.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.effectiveDateTime",
+        "path": "ClinicalImpression.effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.summary",
+        "path": "ClinicalImpression.summary",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}
