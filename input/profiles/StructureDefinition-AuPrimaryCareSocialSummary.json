@@ -13,7 +13,7 @@
   ],
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialSummary",
   "version": "0.0.3",
-  "name": "AUPrimaryCareSociaSummary",
+  "name": "AUPrimaryCareSocialSummary",
   "title": "AU Primary Care Social Summary",
   "status": "active",
   "description": "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer.",

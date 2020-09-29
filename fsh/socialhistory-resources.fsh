@@ -28,7 +28,7 @@ Description: "This profile defines core information requirements for smoking sta
 * effective[x] 1..1 MS
 * value[x] 1..1 MS
 
-Profile: AUPrimaryCareSociaSummary
+Profile: AUPrimaryCareSocialSummary
 Parent: ClinicalImpression
 Id: AuPrimaryCareSocialSummary
 Title: "AU Primary Care Social Summary"
