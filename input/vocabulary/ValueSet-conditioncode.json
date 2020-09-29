@@ -18,10 +18,12 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "443508001"
+            "code": "443508001",
+            "display": "No H/O: clinical finding in subject"
           },
           {
-            "code": "1224831000168103"
+            "code": "1224831000168103",
+            "display": "No relevant medical history"
           }
         ]
       }

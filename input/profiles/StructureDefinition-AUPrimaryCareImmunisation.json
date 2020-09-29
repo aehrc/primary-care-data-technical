@@ -53,7 +53,7 @@
         "sliceName": "amtVaccineCode",
         "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "preferred",
           "valueSet": "http://aehrc.com/valueset/allergycode"
         }
       },

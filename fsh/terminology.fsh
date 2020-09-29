@@ -27,8 +27,8 @@ Title: "Condition Code Valueset"
 Description: "Condition coding including absence and exclusion"
 * ^url = "http://aehrc.com/valueset/conditoncode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1
-* http://snomed.info/sct#443508001
-* http://snomed.info/sct#1224831000168103
+* http://snomed.info/sct#443508001 "No H/O: clinical finding in subject"
+* http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 ValueSet: Procedure_Code_Valueset
 Id: procedurecode
@@ -36,8 +36,8 @@ Title: "Procedure Code Valueset"
 Description: "Procedure coding including absence and exclusion"
 * ^url = "http://aehrc.com/valueset/procedurecode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/procedure-1
-* http://snomed.info/sct#416128008
-* http://snomed.info/sct#1224831000168103
+* http://snomed.info/sct#416128008 "No H/O: procedure"
+* http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 
 ValueSet: Allergy_Code_Valueset
@@ -46,7 +46,7 @@ Title: "Allergy Code Valueset"
 Description: "Allergy coding including absence and exclusion"
 * ^url = "http://aehrc.com/valueset/allergycode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1
-* http://snomed.info/sct#1224831000168103
+* http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 ValueSet: Vaccination_Code_Valueset
 Id: vaccinationcode
@@ -54,8 +54,8 @@ Title: "Vaccination Code Valueset"
 Description: "Vaccination coding including absence and exclusion"
 * ^url = "http://aehrc.com/valueset/allergycode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1
-* http://snomed.info/sct#1224831000168103
-* http://snomed.info/sct#1234401000168109
+* http://snomed.info/sct#1234401000168109 "No H/O: vaccination"
+* http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 /*
 No longer needed...

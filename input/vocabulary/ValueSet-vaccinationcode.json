@@ -18,10 +18,12 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "1224831000168103"
+            "code": "1234401000168109",
+            "display": "No H/O: vaccination"
           },
           {
-            "code": "1234401000168109"
+            "code": "1224831000168103",
+            "display": "No relevant medical history"
           }
         ]
       }
