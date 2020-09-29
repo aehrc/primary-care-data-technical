@@ -43,6 +43,11 @@
   "differential": {
     "element": [
       {
+        "id": "Immunization.vaccineCode",
+        "path": "Immunization.vaccineCode",
+        "mustSupport": true
+      },
+      {
         "id": "Immunization.vaccineCode.coding:amtVaccineCode",
         "path": "Immunization.vaccineCode.coding",
         "sliceName": "amtVaccineCode",
@@ -66,13 +71,9 @@
         "mustSupport": true
       },
       {
-        "id": "Immunization.protocolApplied",
-        "path": "Immunization.protocolApplied",
-        "short": "Vaccination sequence number or description"
-      },
-      {
         "id": "Immunization.protocolApplied.doseNumber[x]",
         "path": "Immunization.protocolApplied.doseNumber[x]",
+        "short": "Vaccination sequence number or description",
         "mustSupport": true
       }
     ]
