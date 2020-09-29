@@ -40,6 +40,14 @@ Description: "Procedure coding including absence and exclusion"
 * http://snomed.info/sct#1224831000168103
 
 
+ValueSet: Allergy_Code_Valueset
+Id: allergycode
+Title: "Allergy Code Valueset"
+Description: "Allergy coding including absence and exclusion"
+* ^url = "http://aehrc.com/valueset/allergycode"
+* codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1
+* http://snomed.info/sct#1224831000168103
+
 /*
 No longer needed...
 

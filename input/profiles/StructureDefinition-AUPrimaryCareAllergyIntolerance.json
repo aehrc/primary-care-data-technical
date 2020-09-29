@@ -50,7 +50,11 @@
       {
         "id": "AllergyIntolerance.code",
         "path": "AllergyIntolerance.code",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://aehrc.com/valueset/conditioncode"
+        }
       },
       {
         "id": "AllergyIntolerance.patient",
