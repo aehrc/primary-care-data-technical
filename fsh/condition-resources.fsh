@@ -6,6 +6,7 @@ Id: AUPrimaryCareCondition
 Title: "AU Primary Care Condition"
 Description: "This profile defines a condition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+* meta.lastUpdated MS
 * extension contains ConditionCourse named ConditionCourse 0..1     //an external extension
 * extension contains MedicalHistoryLaterality named MedicalHistoryLaterality 0..1     //an external extension
 * clinicalStatus MS

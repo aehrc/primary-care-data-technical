@@ -48,6 +48,11 @@
   "differential": {
     "element": [
       {
+        "id": "Condition.meta.lastUpdated",
+        "path": "Condition.meta.lastUpdated",
+        "mustSupport": true
+      },
+      {
         "id": "Condition.extension:ConditionCourse",
         "path": "Condition.extension",
         "sliceName": "ConditionCourse",

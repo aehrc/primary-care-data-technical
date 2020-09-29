@@ -48,6 +48,11 @@
   "differential": {
     "element": [
       {
+        "id": "Procedure.meta.lastUpdated",
+        "path": "Procedure.meta.lastUpdated",
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.extension",
         "path": "Procedure.extension",
         "slicing": {
