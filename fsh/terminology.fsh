@@ -24,7 +24,7 @@ Description: "Members of a family from a genetic perspective"
 ValueSet: Condition_Code_Valueset
 Id: conditioncode
 Title: "Condition Code Valueset"
-Description: "Condition coding including absence and exclusion"
+Description: "Condition coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
 * ^url = "http://aehrc.com/valueset/conditoncode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1
 * http://snomed.info/sct#443508001 "No H/O: clinical finding in subject"
@@ -33,7 +33,7 @@ Description: "Condition coding including absence and exclusion"
 ValueSet: Procedure_Code_Valueset
 Id: procedurecode
 Title: "Procedure Code Valueset"
-Description: "Procedure coding including absence and exclusion"
+Description: "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
 * ^url = "http://aehrc.com/valueset/procedurecode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/procedure-1
 * http://snomed.info/sct#416128008 "No H/O: procedure"
@@ -43,7 +43,7 @@ Description: "Procedure coding including absence and exclusion"
 ValueSet: Allergy_Code_Valueset
 Id: allergycode
 Title: "Allergy Code Valueset"
-Description: "Allergy coding including absence and exclusion"
+Description: "Allergy coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
 * ^url = "http://aehrc.com/valueset/allergycode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1
 * http://snomed.info/sct#1224831000168103 "No relevant medical history"
@@ -51,10 +51,19 @@ Description: "Allergy coding including absence and exclusion"
 ValueSet: Vaccination_Code_Valueset
 Id: vaccinationcode
 Title: "Vaccination Code Valueset"
-Description: "Vaccination coding including absence and exclusion"
+Description: "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
 * ^url = "http://aehrc.com/valueset/allergycode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1
 * http://snomed.info/sct#1234401000168109 "No H/O: vaccination"
+* http://snomed.info/sct#1224831000168103 "No relevant medical history"
+
+
+ValueSet: Family_History_Absent_Code_Valueset
+Id: familyhistoryabsentcode
+Title: "Family History Absent Code Valueset"
+Description: "Family History coding for absence and exclusion; references relevant NCTS Assertion of Absence codes."
+* ^url = "http://aehrc.com/valueset/familyhistoryabsentcode"
+* http://snomed.info/sct#407559004 "Family history unknown"
 * http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 /*

@@ -6,6 +6,9 @@ Id: AUPrimaryCareFamilyMemberHistory
 Title: "AU Primary Care Family Member History"
 Description: "This profile defines a basic family member history note that for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+* status MS
+* dataAbsentReason from Family_History_Absent_Code_Valueset
+* dataAbsentReason MS
 * note MS
 
 

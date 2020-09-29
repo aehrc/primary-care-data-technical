@@ -285,7 +285,7 @@
           "reference": "ValueSet/allergycode"
         },
         "name": "Allergy Code Valueset",
-        "description": "Allergy coding including absence and exclusion",
+        "description": "Allergy coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
         "exampleBoolean": false
       },
       {
@@ -301,7 +301,7 @@
           "reference": "ValueSet/conditioncode"
         },
         "name": "Condition Code Valueset",
-        "description": "Condition coding including absence and exclusion",
+        "description": "Condition coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
         "exampleBoolean": false
       },
       {
@@ -322,6 +322,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/familyhistoryabsentcode"
+        },
+        "name": "Family History Absent Code Valueset",
+        "description": "Family History coding for absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/geneticfamilymember"
         },
         "name": "Genetic Family Member ValueSet",
@@ -333,7 +341,7 @@
           "reference": "ValueSet/procedurecode"
         },
         "name": "Procedure Code Valueset",
-        "description": "Procedure coding including absence and exclusion",
+        "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
         "exampleBoolean": false
       },
       {
@@ -341,7 +349,7 @@
           "reference": "ValueSet/vaccinationcode"
         },
         "name": "Vaccination Code Valueset",
-        "description": "Vaccination coding including absence and exclusion",
+        "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
         "exampleBoolean": false
       },
       {

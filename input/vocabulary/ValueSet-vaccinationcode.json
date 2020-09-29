@@ -4,7 +4,7 @@
   "name": "Vaccination_Code_Valueset",
   "id": "vaccinationcode",
   "title": "Vaccination Code Valueset",
-  "description": "Vaccination coding including absence and exclusion",
+  "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
   "version": "0.0.3",
   "url": "http://aehrc.com/valueset/allergycode",
   "compose": {

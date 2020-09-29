@@ -48,6 +48,20 @@
   "differential": {
     "element": [
       {
+        "id": "FamilyMemberHistory.status",
+        "path": "FamilyMemberHistory.status",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.dataAbsentReason",
+        "path": "FamilyMemberHistory.dataAbsentReason",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aehrc.com/valueset/familyhistoryabsentcode"
+        }
+      },
+      {
         "id": "FamilyMemberHistory.note",
         "path": "FamilyMemberHistory.note",
         "mustSupport": true

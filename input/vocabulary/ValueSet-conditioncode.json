@@ -4,7 +4,7 @@
   "name": "Condition_Code_Valueset",
   "id": "conditioncode",
   "title": "Condition Code Valueset",
-  "description": "Condition coding including absence and exclusion",
+  "description": "Condition coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
   "version": "0.0.3",
   "url": "http://aehrc.com/valueset/conditoncode",
   "compose": {

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Family_History_Absent_Code_Valueset",
+  "id": "familyhistoryabsentcode",
+  "title": "Family History Absent Code Valueset",
+  "description": "Family History coding for absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/familyhistoryabsentcode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "407559004",
+            "display": "Family history unknown"
+          },
+          {
+            "code": "1224831000168103",
+            "display": "No relevant medical history"
+          }
+        ]
+      }
+    ]
+  }
+}

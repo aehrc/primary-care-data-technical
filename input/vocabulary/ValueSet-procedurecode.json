@@ -4,7 +4,7 @@
   "name": "Procedure_Code_Valueset",
   "id": "procedurecode",
   "title": "Procedure Code Valueset",
-  "description": "Procedure coding including absence and exclusion",
+  "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
   "version": "0.0.3",
   "url": "http://aehrc.com/valueset/procedurecode",
   "compose": {

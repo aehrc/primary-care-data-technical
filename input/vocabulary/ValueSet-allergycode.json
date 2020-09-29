@@ -4,7 +4,7 @@
   "name": "Allergy_Code_Valueset",
   "id": "allergycode",
   "title": "Allergy Code Valueset",
-  "description": "Allergy coding including absence and exclusion",
+  "description": "Allergy coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
   "version": "0.0.3",
   "url": "http://aehrc.com/valueset/allergycode",
   "compose": {
