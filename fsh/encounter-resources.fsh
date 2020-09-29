@@ -8,6 +8,6 @@ Description: "This profile defines core information for encounter records in an 
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus"
 * class MS
 * subject only Reference(AUPrimaryCarePatient)
-* subject MS
+* subject 1..1 MS
 * period MS
 * reasonCode MS
