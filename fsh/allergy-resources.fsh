@@ -32,7 +32,7 @@ Description: "This profile defines an allergy intolerance structure that include
 * meta.lastUpdated MS
 * verificationStatus MS
 * criticality MS
-* code from http://aehrc.com/valueset/conditioncode (preferred)
+* code from  Allergy_Code_Valueset (preferred)
 * code MS
 * patient only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient)
 * recordedDate MS

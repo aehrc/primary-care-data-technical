@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Vaccination_Code_Valueset",
+  "id": "vaccinationcode",
+  "title": "Vaccination Code Valueset",
+  "description": "Vaccination coding including absence and exclusion",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/allergycode",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1"
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1224831000168103"
+          },
+          {
+            "code": "1234401000168109"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -338,6 +338,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/vaccinationcode"
+        },
+        "name": "Vaccination Code Valueset",
+        "description": "Vaccination coding including absence and exclusion",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "List/aupc-adverseReactionEmpty"
         },
         "name": "No significant history",

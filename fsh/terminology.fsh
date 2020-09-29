@@ -48,6 +48,15 @@ Description: "Allergy coding including absence and exclusion"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1
 * http://snomed.info/sct#1224831000168103
 
+ValueSet: Vaccination_Code_Valueset
+Id: vaccinationcode
+Title: "Vaccination Code Valueset"
+Description: "Vaccination coding including absence and exclusion"
+* ^url = "http://aehrc.com/valueset/allergycode"
+* codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-1
+* http://snomed.info/sct#1224831000168103
+* http://snomed.info/sct#1234401000168109
+
 /*
 No longer needed...
 

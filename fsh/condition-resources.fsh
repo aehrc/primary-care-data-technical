@@ -12,7 +12,7 @@ Description: "This profile defines a condition structure that includes core loca
 * clinicalStatus MS
 * verificationStatus MS
 * severity MS
-* code from http://aehrc.com/valueset/conditioncode (preferred)
+* code from Condition_Code_Valueset (preferred)
 * code MS
 * code.coding MS
 * bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)

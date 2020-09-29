@@ -103,7 +103,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://aehrc.com/valueset/conditioncode"
+          "valueSet": "http://aehrc.com/valueset/conditoncode"
         }
       },
       {
