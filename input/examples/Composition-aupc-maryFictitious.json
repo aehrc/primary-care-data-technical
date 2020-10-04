@@ -138,14 +138,6 @@
       ]
     },
     {
-      "entry": [
-        {
-          "reference": "FamilyMemberHistory/mf-familyHistory1"
-        },
-        {
-          "reference": "FamilyMemberHistory/mf-familyHistory2"
-        }
-      ],
       "code": {
         "coding": [
           {
@@ -158,7 +150,15 @@
       "text": {
         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mother and Sister hypothyroid in 30s</div>",
         "status": "generated"
-      }
+      },
+      "entry": [
+        {
+          "reference": "FamilyMemberHistory/mf-familyHistory1"
+        },
+        {
+          "reference": "FamilyMemberHistory/mf-familyHistory2"
+        }
+      ]
     },
     {
       "code": {

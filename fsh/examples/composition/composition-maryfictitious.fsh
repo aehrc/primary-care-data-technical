@@ -76,12 +76,12 @@ Usage: #Example
 * section[medicineList].entry = Reference(mf-medicineList) //defined in supporting.fsh
 
 //family history
-* section[familyHistoryList].entry = Reference(mf-familyHistory1)
-* section[familyHistoryList].entry[1] = Reference(mf-familyHistory2)
-* section[familyHistoryList].code = $LOINC#10157-6 "Family History"
+
+* section[familyHistoryList].code = http://loinc.org#10157-6 "Family History"
 * section[familyHistoryList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mother and Sister hypothyroid in 30s</div>"
 * section[familyHistoryList].text.status = #generated
-
+* section[familyHistoryList].entry = Reference(mf-familyHistory1)
+* section[familyHistoryList].entry[1] = Reference(mf-familyHistory2)
 
 
 //Follow up
@@ -400,8 +400,6 @@ Title: "Mary Fictitious"
 // * address.text = "23 Thule st"
 
 //============= Allergies
-
-
 
 Instance: mf-allergiesList
 InstanceOf: AUPrimaryCareAllergyIntoleranceList
