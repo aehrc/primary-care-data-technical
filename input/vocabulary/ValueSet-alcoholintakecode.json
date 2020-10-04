@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AlcoholIntake_Code_Valueset",
+  "id": "alcoholintakecode",
+  "title": "Alcohol Intake Code Valueset",
+  "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/alcoholintakecode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "783261004",
+            "display": "Lifetime non-drinker of alcohol"
+          },
+          {
+            "code": "82581004",
+            "display": "Former drinker"
+          },
+          {
+            "code": "219006",
+            "display": "Current drinker"
+          }
+        ]
+      }
+    ]
+  }
+}

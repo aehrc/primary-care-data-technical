@@ -1,12 +1,22 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareSmokingStatus",
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus",
+  "id": "AUPrimaryCareAlcoholStatus",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholStatus",
   "version": "0.0.3",
-  "name": "AUPrimaryCareSmokingStatus",
-  "title": "AU Primary Care Smoking Status",
+  "name": "AUPrimaryCareAlcoholStatus",
+  "title": "AU Primary Care Alcohol Status",
   "status": "active",
-  "description": "This profile defines core information requirements for smoking status in an Australian practice to practice record transfer.",
+  "description": "This profile defines core information requirements for alcohol status in an Australian practice to practice record transfer.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -43,7 +53,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-smokingstatus",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -55,11 +65,20 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "160573003",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -73,13 +92,23 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "min": 1,
-        "mustSupport": true
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aehrc.com/valueset/alcoholintakecode"
+        }
       }
     ]
   }

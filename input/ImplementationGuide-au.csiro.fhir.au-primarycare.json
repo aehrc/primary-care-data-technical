@@ -34,6 +34,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAlcoholStatus"
+        },
+        "name": "AU Primary Care Alcohol Status",
+        "description": "This profile defines core information requirements for alcohol status in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAllergyIntolerance"
         },
         "name": "AU Primary Care Allergy Intolerance",
@@ -210,7 +218,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AuPrimaryCareSmokingStatus"
+          "reference": "StructureDefinition/AUPrimaryCareSmokingStatus"
         },
         "name": "AU Primary Care Smoking Status",
         "description": "This profile defines core information requirements for smoking status in an Australian practice to practice record transfer.",
@@ -278,6 +286,14 @@
         },
         "name": "Medical History Laterality",
         "description": "Laterality qualifying a diagnosis or procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/alcoholintakecode"
+        },
+        "name": "Alcohol Intake Code Valueset",
+        "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
         "exampleBoolean": false
       },
       {

@@ -74,3 +74,11 @@ Description: "Clinical Indication For Medication ValueSet"
 * ^url = "http://aehrc.com/valueset/clinical-indication-for-medication"
 * codes from system http://snomed.info/sct where constraint = "(<< 182929008|Drug prophylaxis| OR 169443000|Preventive procedure| OR ^ 32570581000036105|Problem/Diagnosis reference set|)"
 
+ValueSet: AlcoholIntake_Code_Valueset
+Id: alcoholintakecode
+Title: "Alcohol Intake Code Valueset"
+Description: "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
+* ^url = "http://aehrc.com/valueset/alcoholintakecode"
+* http://snomed.info/sct#783261004 "Lifetime non-drinker of alcohol"
+* http://snomed.info/sct#82581004 "Former drinker" 
+* http://snomed.info/sct#219006 "Current drinker" 
