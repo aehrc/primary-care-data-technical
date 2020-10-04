@@ -120,7 +120,7 @@
     {
       "entry": [
         {
-          "reference": "List/aupc-familyHistoryList"
+          "reference": "aupc-familyHistoryList"
         }
       ],
       "code": {

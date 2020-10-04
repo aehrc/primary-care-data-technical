@@ -45,6 +45,7 @@
       {
         "id": "Encounter.subject",
         "path": "Encounter.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",

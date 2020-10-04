@@ -140,7 +140,10 @@
     {
       "entry": [
         {
-          "reference": "List/mf-familyHistoryList"
+          "reference": "FamilyMemberHistory/mf-familyHistory1"
+        },
+        {
+          "reference": "FamilyMemberHistory/mf-familyHistory2"
         }
       ],
       "code": {

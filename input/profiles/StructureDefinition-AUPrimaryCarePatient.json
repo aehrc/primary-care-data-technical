@@ -61,7 +61,7 @@
       {
         "id": "Patient.active",
         "path": "Patient.active",
-        "patternBoolean": true
+        "mustSupport": true
       },
       {
         "id": "Patient.name",
@@ -169,20 +169,6 @@
         "path": "Patient.contact.telecom.system",
         "patternCode": "phone",
         "mustSupport": true
-      },
-      {
-        "id": "Patient.communication",
-        "path": "Patient.communication",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication.language",
-        "path": "Patient.communication.language",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2"
-        }
       }
     ]
   }

@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareObservation-EDD",
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD",
+  "id": "AUPrimaryCareObservationGravidity",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGravidity",
   "version": "0.0.3",
-  "name": "ExpectedDateOfDelivery",
-  "title": "Expected Date of Delivery",
+  "name": "AUPrimaryCareGravidity",
+  "title": "AU Primary Care Gravidity",
   "status": "active",
-  "description": "The date that delivery is due. Method of estimation not specified.",
+  "description": "Represents the gravidity (number of pregnancies) of a female patient",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -43,14 +43,13 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-estimateddateofdelivery",
+  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-gravidity",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "patternCode": "final",
         "mustSupport": true
       },
       {
@@ -61,7 +60,6 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "min": 1,
         "type": [
           {
             "code": "Reference",

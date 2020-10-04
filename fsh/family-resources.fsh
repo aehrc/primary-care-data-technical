@@ -23,6 +23,7 @@ Description: "This profile defines a family member history structure that includ
 * condition.code from https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 (extensible)
 */
 
+/*
 Profile: AUPrimaryCareFamilyMemberHistoryList
 Parent: List
 Id: AUPrimaryCareFamilyMemberHistoryList
@@ -34,4 +35,4 @@ Description: "This profile defines a family member history list structure that i
 * entry.item only Reference(AUPrimaryCareFamilyMemberHistory)
 * entry.item MS
 * emptyReason MS
-
+*/

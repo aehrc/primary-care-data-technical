@@ -41,10 +41,10 @@ Usage: #Example
 * section[medicineList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Medications</div>"
 * section[medicineList].text.status = #generated
 
-* section[familyHistory].entry = Reference(aupc-familyHistoryList) //defined in familyHistory-examples.fsh
-* section[familyHistory].code = $LOINC#10157-6 "Family history list"
-* section[familyHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Father with diabetes</div>"
-* section[familyHistory].text.status = #generated
+* section[familyHistoryList].entry = Reference(aupc-familyHistoryList) //defined in familyHistory-examples.fsh
+* section[familyHistoryList].code = $LOINC#10157-6 "Family history list"
+* section[familyHistoryList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Father with diabetes</div>"
+* section[familyHistoryList].text.status = #generated
 
 //Doesn't refer to a List - multiple Observations - todo should it?
 * section[pregnancyHistory].code = $LOINC#10163-4  "History of pregnancies"

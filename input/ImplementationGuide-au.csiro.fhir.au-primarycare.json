@@ -82,14 +82,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
-        },
-        "name": "AU Primary Care Family Member History List",
-        "description": "This profile defines a family member history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFollowUp"
         },
         "name": "AU Primary Care Follow UP",
@@ -122,7 +114,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservation-gravidity"
+          "reference": "StructureDefinition/AUPrimaryCareObservationGravidity"
         },
         "name": "AU Primary Care Gravidity",
         "description": "Represents the gravidity (number of pregnancies) of a female patient",
@@ -178,7 +170,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservation-parity"
+          "reference": "StructureDefinition/AUPrimaryCareObservationParity"
         },
         "name": "AU Primary Care Parity",
         "description": "The number of births where the fetus is overr 24 weeks",
@@ -234,9 +226,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservation-EDD"
+          "reference": "StructureDefinition/AUPrimaryCareObservationEDD"
         },
-        "name": "Expected Date of Delivery",
+        "name": "Estimated Date of Delivery",
         "description": "The date that delivery is due. Method of estimation not specified.",
         "exampleBoolean": false
       },
@@ -250,7 +242,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservation-LNMP"
+          "reference": "StructureDefinition/AUPrimaryCareObservationLMP"
         },
         "name": "Last Menstrual Period",
         "description": "The date of the last normal menstrual period",
@@ -444,7 +436,7 @@
         },
         "name": "Estimated Date of Delivery",
         "description": "Estimated Date of Delivery",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationEDD"
       },
       {
         "reference": {
@@ -453,13 +445,6 @@
         "name": "Father with diabetes",
         "description": "Father with diabetes",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-      },
-      {
-        "reference": {
-          "reference": "List/aupc-familyHistoryList"
-        },
-        "name": "Family History List",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
       },
       {
         "reference": {
@@ -490,7 +475,7 @@
         },
         "name": "Gravidity",
         "description": "Gravidity",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-gravidity"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGravidity"
       },
       {
         "reference": {
@@ -536,7 +521,7 @@
         },
         "name": "Last Menstrual Period",
         "description": "Last Menstrual Period",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationLMP"
       },
       {
         "reference": {
@@ -588,7 +573,7 @@
         },
         "name": "Parity",
         "description": "Parity",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-parity"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationParity"
       },
       {
         "reference": {
@@ -716,13 +701,6 @@
         "name": "Sister hypothyroid",
         "description": "Sister hypothyroid",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-familyHistoryList"
-        },
-        "name": "Family History List",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
       },
       {
         "reference": {

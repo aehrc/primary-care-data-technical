@@ -76,10 +76,12 @@ Usage: #Example
 * section[medicineList].entry = Reference(mf-medicineList) //defined in supporting.fsh
 
 //family history
-* section[familyHistory].entry = Reference(mf-familyHistoryList)    //defined in condition+procedure-examples
-* section[familyHistory].code = $LOINC#10157-6 "Family History"
-* section[familyHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mother and Sister hypothyroid in 30s</div>"
-* section[familyHistory].text.status = #generated
+* section[familyHistoryList].entry = Reference(mf-familyHistory1)
+* section[familyHistoryList].entry[1] = Reference(mf-familyHistory2)
+* section[familyHistoryList].code = $LOINC#10157-6 "Family History"
+* section[familyHistoryList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mother and Sister hypothyroid in 30s</div>"
+* section[familyHistoryList].text.status = #generated
+
 
 
 //Follow up
@@ -363,6 +365,7 @@ Title: "Sister hypothyroid"
 * condition.onsetString = "30 years"
 
 //The list of all the family history items
+/*
 Instance: mf-familyHistoryList
 InstanceOf: AUPrimaryCareFamilyMemberHistoryList
 //BaseType: List 
@@ -377,7 +380,7 @@ Usage: #example
 * subject = Reference(maryFictitious)
 * entry.item = Reference(mf-familyHistory1)
 * entry[1].item = Reference(mf-familyHistory2)
-
+*/
 //========================= Patient resource
 
 Instance: maryFictitious

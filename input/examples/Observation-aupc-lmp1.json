@@ -3,7 +3,7 @@
   "id": "aupc-lmp1",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP"
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationLMP"
     ]
   },
   "status": "final",
@@ -11,8 +11,7 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "248993009",
-        "display": "Finding of estimated date of delivery (finding)"
+        "code": "248993009"
       }
     ]
   },
