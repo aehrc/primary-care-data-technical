@@ -100,7 +100,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[familyHistoryList].code.coding.system = "http://loinc.org"
 * section[familyHistoryList].code.coding.code = #10157-6 (exactly)
 * section[familyHistoryList].mode = #snapshot
-* section[familyHistoryList].entry only Reference(AUPrimaryCareFamilyMemberHistory)
+* section[familyHistoryList].entry only Reference(AUPrimaryCareFamilyMemberHistoryList)
 * section[familyHistoryList].entry MS
 
 //* section contains encounterHistory 0..1

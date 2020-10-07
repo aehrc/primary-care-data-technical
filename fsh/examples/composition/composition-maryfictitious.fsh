@@ -80,8 +80,8 @@ Usage: #Example
 * section[familyHistoryList].code = http://loinc.org#10157-6 "Family History"
 * section[familyHistoryList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Mother and Sister hypothyroid in 30s</div>"
 * section[familyHistoryList].text.status = #generated
-* section[familyHistoryList].entry = Reference(mf-familyHistory1)
-* section[familyHistoryList].entry[1] = Reference(mf-familyHistory2)
+* section[familyHistoryList].entry = Reference(mf-familyHistoryList)
+
 
 
 //Follow up
@@ -364,23 +364,8 @@ Title: "Sister hypothyroid"
 * condition.code = $SNOMED#40930008 "Hypothyroidism (disorder)"
 * condition.onsetString = "30 years"
 
-//The list of all the family history items
-/*
-Instance: mf-familyHistoryList
-InstanceOf: AUPrimaryCareFamilyMemberHistoryList
-//BaseType: List 
-Title: "Family History List"
-Usage: #example
 
-* text.status = #additional
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Father with diabetes</div>"
 
-* mode = #snapshot
-* status = #current
-* subject = Reference(maryFictitious)
-* entry.item = Reference(mf-familyHistory1)
-* entry[1].item = Reference(mf-familyHistory2)
-*/
 //========================= Patient resource
 
 Instance: maryFictitious

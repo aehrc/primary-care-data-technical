@@ -153,10 +153,7 @@
       },
       "entry": [
         {
-          "reference": "FamilyMemberHistory/mf-familyHistory1"
-        },
-        {
-          "reference": "FamilyMemberHistory/mf-familyHistory2"
+          "reference": "mf-familyHistoryList"
         }
       ]
     },

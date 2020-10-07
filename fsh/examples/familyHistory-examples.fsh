@@ -21,7 +21,7 @@ Title: "Father with diabetes"
 
 
 //The list of all the family history items
-/*
+
 Instance: aupc-familyHistoryList
 InstanceOf: AUPrimaryCareFamilyMemberHistoryList
 //BaseType: List 
@@ -35,4 +35,3 @@ Usage: #example
 * status = #current
 * subject = Reference(aupc-patient1)
 * entry.item = Reference(aupc-familyHistory1)
-*/

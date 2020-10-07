@@ -7,25 +7,28 @@ Title: "AU Primary Care Condition"
 Description: "This profile defines a condition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
 * meta.lastUpdated MS
-* extension contains ConditionCourse named ConditionCourse 0..1     //an external extension
-* extension contains MedicalHistoryLaterality named MedicalHistoryLaterality 0..1     //an external extension
+// * extension contains ConditionCourse named ConditionCourse 0..1     //an external extension
+// * extension contains MedicalHistoryLaterality named MedicalHistoryLaterality 0..1     //an external extension
 * clinicalStatus MS
 * verificationStatus MS
 * severity MS
-* code from Condition_Code_Valueset (preferred)
-* code MS
+* code from Condition_Code_Valueset (preferred) 
+* code MS 
+* code ^short = "Coding of a condition, may also describe abscence of condition"
 * code.coding MS
 * bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)
-* bodySite MS
+* bodySite MS 
+* bodySite ^short = "Body site is required to describe laterality of a condition"
 * subject only Reference(AUPrimaryCarePatient)
 * subject MS
-* onsetDateTime MS
+* onsetDateTime MS 
 * note.text MS
 
+/*
 Extension: ConditionCourse
 Id: condition-course
 Title: "Course of the Condition"
 Description: "The clinical course of a condition"
 * value[x] only code
 * valueCode from Course_ValueSet (required)
-
+*/

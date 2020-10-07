@@ -53,36 +53,6 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.extension:ConditionCourse",
-        "path": "Condition.extension",
-        "sliceName": "ConditionCourse",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://aehrc.com/fhir/StructureDefinition/condition-course"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Condition.extension:MedicalHistoryLaterality",
-        "path": "Condition.extension",
-        "sliceName": "MedicalHistoryLaterality",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://aehrc.com/fhir/StructureDefinition/medical-history-laterality"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
         "mustSupport": true
@@ -100,6 +70,7 @@
       {
         "id": "Condition.code",
         "path": "Condition.code",
+        "short": "Coding of a condition, may also describe abscence of condition",
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
@@ -114,6 +85,7 @@
       {
         "id": "Condition.bodySite",
         "path": "Condition.bodySite",
+        "short": "Body site is required to describe laterality of a condition",
         "mustSupport": true
       },
       {

@@ -15,19 +15,3 @@ Title: "Cigarette smoker"
 * code.coding = $SNOMED#229819007  "Tobacco smoking status"
 * valueCodeableConcept = $LOINC#77176002 "Smoker, current status unknown"
 
-/*
-//The list that references all of the immunization resources 
-Instance: aupc-socialHistoryList
-InstanceOf: AUPrimaryCareSocialHistoryList
-//BaseType: List 
-Title: "Social History resources"
-Usage: #example
-
-* text.status = #additional
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Social history resources</div>"
-
-* mode = #snapshot
-* status = #current
-* subject = Reference(aupc-patient1)
-* entry.item = Reference(aupc-smoker1)
-*/

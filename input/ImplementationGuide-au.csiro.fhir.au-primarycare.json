@@ -90,6 +90,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+        },
+        "name": "AU Primary Care Family Member History List",
+        "description": "This profile defines a family member history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistoryR2"
+        },
+        "name": "AU Primary Care Family Member History R2",
+        "description": "This profile defines a family member history structure for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFollowUp"
         },
         "name": "AU Primary Care Follow UP",
@@ -274,22 +290,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/condition-course"
-        },
-        "name": "Course of the Condition",
-        "description": "The clinical course of a condition",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/medical-history-laterality"
-        },
-        "name": "Medical History Laterality",
-        "description": "Laterality qualifying a diagnosis or procedure",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/alcoholintakecode"
         },
         "name": "Alcohol Intake Code Valueset",
@@ -461,6 +461,13 @@
         "name": "Father with diabetes",
         "description": "Father with diabetes",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-familyHistoryList"
+        },
+        "name": "Family History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
       },
       {
         "reference": {
