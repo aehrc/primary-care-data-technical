@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AuPrimaryCareSocialSummary",
+  "id": "AuPrimaryCareTobaccoSmokingSummary",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialSummary",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingSummary",
   "version": "0.0.3",
-  "name": "AUPrimaryCareSocialSummary",
-  "title": "AU Primary Care Social Summary",
+  "name": "AUPrimaryTobaccoSmokingSummary",
+  "title": "AU Primary Tobacco Smoking Summary",
   "status": "active",
-  "description": "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer.",
+  "description": "This profile defines core information requirements for a tobacco smoking summary in an Australian practice to practice record transfer.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,7 +68,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "160476009",
+              "code": "229819007",
               "system": "http://snomed.info/sct"
             }
           ]

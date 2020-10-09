@@ -34,6 +34,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareAlcoholConsumptionSummary"
+        },
+        "name": "AU Primary Alcohol Consumption Summary",
+        "description": "This profile defines core information requirements for a alcohol consumption summary in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholStatus"
         },
         "name": "AU Primary Care Alcohol Status",
@@ -246,6 +254,14 @@
         },
         "name": "AU Primary Care Social Summary",
         "description": "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareTobaccoSmokingSummary"
+        },
+        "name": "AU Primary Tobacco Smoking Summary",
+        "description": "This profile defines core information requirements for a tobacco smoking summary in an Australian practice to practice record transfer.",
         "exampleBoolean": false
       },
       {
