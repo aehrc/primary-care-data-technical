@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareBreastfeedingStatus",
   "title": "AU Primary Care Breastfeeding Status",
   "status": "active",
-  "description": "This profile defines core information requirements for breastfeeding status in an Australian practice to practice record transfer.",
+  "description": "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

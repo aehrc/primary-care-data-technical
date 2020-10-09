@@ -69,7 +69,7 @@
           "reference": "StructureDefinition/AuPrimaryCareBreastfeedingStatus"
         },
         "name": "AU Primary Care Breastfeeding Status",
-        "description": "This profile defines core information requirements for breastfeeding status in an Australian practice to practice record transfer.",
+        "description": "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer.",
         "exampleBoolean": false
       },
       {

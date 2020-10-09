@@ -101,7 +101,7 @@ Profile: AUPrimaryCareBreastfeedingStatus
 Parent: Observation
 Id: AuPrimaryCareBreastfeedingStatus
 Title: "AU Primary Care Breastfeeding Status"
-Description: "This profile defines core information requirements for breastfeeding status in an Australian practice to practice record transfer."
+Description: "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBreastfeedingStatus"
 * status 1..1 MS
 * code = $SNOMED#413712001
