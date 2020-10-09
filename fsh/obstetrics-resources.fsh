@@ -97,6 +97,22 @@ Description: "The date that delivery is due. Method of estimation not specified.
 * effective[x] 1..1 MS
 * value[x] 1..1 MS
 
-
+Profile: AUPrimaryCareBreastfeedingStatus
+Parent: Observation
+Id: AuPrimaryCareBreastfeedingStatus
+Title: "AU Primary Care Breastfeeding Status"
+Description: "This profile defines core information requirements for breastfeeding status in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBreastfeedingStatus"
+* status 1..1 MS
+* code = $SNOMED#413712001
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* note MS
+* value[x] only CodeableConcept
+* value[x] from Breastfeeding_Code_Valueset
+* value[x] 1..1 MS
 
 

@@ -82,3 +82,18 @@ Description: "Procedure coding including absence and exclusion; references relev
 * http://snomed.info/sct#783261004 "Lifetime non-drinker of alcohol"
 * http://snomed.info/sct#82581004 "Former drinker" 
 * http://snomed.info/sct#219006 "Current drinker" 
+
+
+ValueSet: Breastfeeding_Code_Valueset
+Id: breastfeedingcode
+Title: "Breastfeeding Code Valueset"
+Description: "Breastfeeding status record"
+* ^url = "http://aehrc.com/valueset/breastfeedingcode"
+* http://snomed.info/sct#169745008 "Breastfeeding started"
+* http://snomed.info/sct#169746009 "Breastfeeding stopped"
+* http://snomed.info/sct#733896006 "Breastfed and bottle fed"
+* http://snomed.info/sct#169644004 "Intends to bottle feed" 
+* http://snomed.info/sct#169643005 "Intends to breastfeed" 
+* http://snomed.info/sct#169642000 "Feeding intention - unsure" 
+
+

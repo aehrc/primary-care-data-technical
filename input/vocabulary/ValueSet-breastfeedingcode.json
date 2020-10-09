@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Breastfeeding_Code_Valueset",
+  "id": "breastfeedingcode",
+  "title": "Breastfeeding Code Valueset",
+  "description": "Breastfeeding status record",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/breastfeedingcode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "169745008",
+            "display": "Breastfeeding started"
+          },
+          {
+            "code": "169746009",
+            "display": "Breastfeeding stopped"
+          },
+          {
+            "code": "733896006",
+            "display": "Breastfed and bottle fed"
+          },
+          {
+            "code": "169644004",
+            "display": "Intends to bottle feed"
+          },
+          {
+            "code": "169643005",
+            "display": "Intends to breastfeed"
+          },
+          {
+            "code": "169642000",
+            "display": "Feeding intention - unsure"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -66,6 +66,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareBreastfeedingStatus"
+        },
+        "name": "AU Primary Care Breastfeeding Status",
+        "description": "This profile defines core information requirements for breastfeeding status in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareComposition"
         },
         "name": "AU Primary Care Composition",
@@ -318,6 +326,14 @@
         },
         "name": "Allergy Code Valueset",
         "description": "Allergy coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/breastfeedingcode"
+        },
+        "name": "Breastfeeding Code Valueset",
+        "description": "Breastfeeding status record",
         "exampleBoolean": false
       },
       {
