@@ -34,27 +34,21 @@ Title: "Parity"
 * valueQuantity = 3 '1'
 
 Instance: aupc-gestationOnScan1
-InstanceOf: AUPrimaryCareObservation-GestationOnScan
+InstanceOf: AUPrimaryCareObservationGestationalAge
 //BaseType: Observation
 Description: "Gestation on scan"
 Title: "Gestation on scan "
-
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gestation on scan </div>"
 * subject = Reference(aupc-patient1)
-
-* partOf[ultrasoundScan] = Reference(aupc-procedureUltraSound)
-//* partOf[ultrasoundScan] = Reference(aupc-edd1)
-//* partOf[ultrasoundScan] = Reference(aupc-patient1)
-
 * code.coding.system = $SNOMED
 * code.coding.code = #57036006 
 * code.coding.display = "Gestation on scan"
 * subject = Reference(aupc-patient1)
-* valueQuantity.value = 30
-* valueQuantity.unit = "weeks"
+* valueQuantity.value = 90
+* valueQuantity.unit = "day"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity.code = #wk
+* valueQuantity.code = #d
 
 * effectiveDateTime = "2020-04-01"  //date performed todo - in theory could get from proceduer
 

@@ -3,7 +3,7 @@
   "id": "aupc-gestationOnScan1",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGestationalAge"
     ]
   },
   "status": "final",
@@ -23,16 +23,11 @@
   "subject": {
     "reference": "Patient/aupc-patient1"
   },
-  "partOf": [
-    {
-      "reference": "Procedure/aupc-procedureUltraSound"
-    }
-  ],
   "valueQuantity": {
-    "value": 30,
-    "unit": "weeks",
+    "value": 90,
+    "unit": "day",
     "system": "http://unitsofmeasure.org",
-    "code": "wk"
+    "code": "d"
   },
   "effectiveDateTime": "2020-04-01"
 }

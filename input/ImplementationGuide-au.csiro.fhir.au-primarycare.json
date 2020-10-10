@@ -277,15 +277,15 @@
           "reference": "StructureDefinition/AUPrimaryCareObservationEDD"
         },
         "name": "Estimated Date of Delivery",
-        "description": "The date that delivery is due. Method of estimation not specified.",
+        "description": "The date that delivery is due.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
+          "reference": "StructureDefinition/AUPrimaryCareObservationGestationalAge"
         },
-        "name": "Gestation On Scan",
-        "description": "The gestational age from an ultrasound scan",
+        "name": "Gestational Age",
+        "description": "Gestational age of a fetus.",
         "exampleBoolean": false
       },
       {
@@ -522,7 +522,7 @@
         },
         "name": "Gestation on scan ",
         "description": "Gestation on scan",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGestationalAge"
       },
       {
         "reference": {
