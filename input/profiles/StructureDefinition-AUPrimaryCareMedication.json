@@ -38,17 +38,20 @@
   "differential": {
     "element": [
       {
-        "id": "Medication.extension:null",
+        "id": "Medication.extension:medication-strength",
         "path": "Medication.extension",
-        "sliceName": "null",
+        "sliceName": "medication-strength",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/medication-strength"
+            ]
+          }
+        ],
         "mustSupport": true
-      },
-      {
-        "id": "Medication.extension:null.url",
-        "path": "Medication.extension.url",
-        "fixedUri": "null"
       },
       {
         "id": "Medication.code",
@@ -74,27 +77,6 @@
       {
         "id": "Medication.ingredient.itemCodeableConcept",
         "path": "Medication.ingredient.itemCodeableConcept",
-        "mustSupport": true
-      },
-      {
-        "id": "Medication.ingredient.itemCodeableConcept.coding",
-        "path": "Medication.ingredient.itemCodeableConcept.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Medication.ingredient.itemCodeableConcept.coding:amtMP",
-        "path": "Medication.ingredient.itemCodeableConcept.coding",
-        "sliceName": "amtMP",
-        "min": 0,
-        "max": "1",
         "mustSupport": true
       },
       {

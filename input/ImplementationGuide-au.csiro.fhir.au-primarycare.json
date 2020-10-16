@@ -124,7 +124,7 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFollowUp"
         },
-        "name": "AU Primary Care Follow UP",
+        "name": "AU Primary Care Follow up",
         "description": "This profile defines a follow up structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context. It uses a CarePlan resource, but is not intended to be a fully fledged Care Plan. CarePlans may be profiled in the future to support a proper Care Plan in the Australian primary care context.",
         "exampleBoolean": false
       },
@@ -382,6 +382,14 @@
         },
         "name": "Genetic Family Member ValueSet",
         "description": "Members of a family from a genetic perspective",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/medicationcode"
+        },
+        "name": "Medication Code Valueset",
+        "description": "Medication coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
         "exampleBoolean": false
       },
       {

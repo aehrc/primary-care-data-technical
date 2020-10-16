@@ -39,6 +39,14 @@ Description: "Procedure coding including absence and exclusion; references relev
 * http://snomed.info/sct#416128008 "No H/O: procedure"
 * http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
+ValueSet: Medication_Code_Valueset
+Id: medicationcode
+Title: "Medication Code Valueset"
+Description: "Medication coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
+* ^url = "http://aehrc.com/valueset/medicationcode"
+* codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1
+* http://snomed.info/sct#1234391000168107 "No known current medicines"
+* http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 ValueSet: Allergy_Code_Valueset
 Id: allergycode

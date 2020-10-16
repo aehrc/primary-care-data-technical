@@ -38,6 +38,11 @@
   "differential": {
     "element": [
       {
+        "id": "MedicationStatement.status",
+        "path": "MedicationStatement.status",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationStatement.medication[x]",
         "path": "MedicationStatement.medication[x]",
         "type": [
@@ -50,8 +55,32 @@
         ]
       },
       {
+        "id": "MedicationStatement.medicationCodeableConcept",
+        "path": "MedicationStatement.medicationCodeableConcept",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://aehrc.com/valueset/medicationcode"
+        }
+      },
+      {
+        "id": "MedicationStatement.medicationReference",
+        "path": "MedicationStatement.medicationReference",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.reasonCode",
+        "path": "MedicationStatement.reasonCode",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationStatement.note.text",
         "path": "MedicationStatement.note.text",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.text",
+        "path": "MedicationStatement.dosage.text",
         "mustSupport": true
       },
       {
@@ -63,26 +92,6 @@
         "id": "MedicationStatement.dosage.additionalInstruction:snomedAdditionalInstruction",
         "path": "MedicationStatement.dosage.additionalInstruction",
         "sliceName": "snomedAdditionalInstruction",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.duration",
-        "path": "MedicationStatement.dosage.timing.repeat.duration",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.frequency",
-        "path": "MedicationStatement.dosage.timing.repeat.frequency",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.period",
-        "path": "MedicationStatement.dosage.timing.repeat.period",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.when",
-        "path": "MedicationStatement.dosage.timing.repeat.when",
         "mustSupport": true
       },
       {

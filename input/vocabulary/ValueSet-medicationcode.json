@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Medication_Code_Valueset",
+  "id": "medicationcode",
+  "title": "Medication Code Valueset",
+  "description": "Medication coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/medicationcode",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1"
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1234391000168107",
+            "display": "No known current medicines"
+          },
+          {
+            "code": "1224831000168103",
+            "display": "No relevant medical history"
+          }
+        ]
+      }
+    ]
+  }
+}

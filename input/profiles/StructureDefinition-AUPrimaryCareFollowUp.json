@@ -14,7 +14,7 @@
   "url": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp",
   "version": "0.0.3",
   "name": "AUPrimaryCareFollowUp",
-  "title": "AU Primary Care Follow UP",
+  "title": "AU Primary Care Follow up",
   "status": "active",
   "description": "This profile defines a follow up structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context. It uses a CarePlan resource, but is not intended to be a fully fledged Care Plan. CarePlans may be profiled in the future to support a proper Care Plan in the Australian primary care context.",
   "fhirVersion": "4.0.1",
@@ -58,25 +58,48 @@
         "patternCode": "proposal"
       },
       {
-        "id": "CarePlan.title",
-        "path": "CarePlan.title",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "CarePlan.period.start",
-        "path": "CarePlan.period.start",
-        "mustSupport": true
+        "id": "CarePlan.category",
+        "path": "CarePlan.category",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "412774003",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
       },
       {
         "id": "CarePlan.activity",
         "path": "CarePlan.activity",
-        "max": "0"
+        "min": 1,
+        "mustSupport": true
       },
       {
-        "id": "CarePlan.note",
-        "path": "CarePlan.note",
+        "id": "CarePlan.activity.detail",
+        "path": "CarePlan.activity.detail",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.code",
+        "path": "CarePlan.activity.detail.code",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.scheduledTiming",
+        "path": "CarePlan.activity.detail.scheduledTiming",
+        "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.activity.detail.scheduledTiming.event",
+        "path": "CarePlan.activity.detail.scheduledTiming.event",
         "mustSupport": true
       }
     ]

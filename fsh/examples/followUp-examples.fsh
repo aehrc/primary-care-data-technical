@@ -7,12 +7,12 @@ Title: "Blood Pressure review"
 * status = #active
 * intent = #proposal
 * title = "Follow up for Blood Pressure check"
-* period.start = "2020-05-05"       //this is when the BP check is due
-
 * subject = Reference(aupc-patient1)
 * subject.display = "John Doe"
-
 * note.text = "Need to use large sized cuff..."
+* activity.detail.status = #scheduled
+* activity.detail.code.text = "Blood Pressure"
+* activity.detail.scheduledTiming.event = "2020-11-01"
 
 //The list that references all of the followup resources 
 Instance: aupc-followUpList
