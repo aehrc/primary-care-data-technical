@@ -7,6 +7,8 @@ Title: "AU Primary Care Patient"
 Description: "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
 * extension contains http://hl7.org.au/fhir/StructureDefinition/indigenous-status named atsi 0..1 MS
+* extension contains http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthplace 0..1 MS
+* extension contains http://hl7.org.au/fhir/StructureDefinition/date-of-arrival named dateofarrival 0..1 MS
 * active MS
 * name 1..1
 * name MS
