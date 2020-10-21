@@ -33,6 +33,7 @@ Description: "This profile defines a medication statement structure that include
 * dosage.additionalInstruction MS
 * dosage.asNeeded[x] MS
 
+
 Profile: AUPrimaryCareMedication
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-medication
 Id: AUPrimaryCareMedication
