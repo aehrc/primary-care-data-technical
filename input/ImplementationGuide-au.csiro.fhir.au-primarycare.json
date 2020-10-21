@@ -114,14 +114,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistoryR2"
-        },
-        "name": "AU Primary Care Family Member History R2",
-        "description": "This profile defines a family member history structure for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFollowUp"
         },
         "name": "AU Primary Care Follow up",
