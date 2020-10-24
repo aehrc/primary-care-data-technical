@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AuPrimaryCareTobaccoSmokingSummary",
+  "id": "AuPrimaryCareTobaccoSmokingdDateCeased",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingSummary",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased",
   "version": "0.0.3",
-  "name": "AUPrimaryCareTobaccoSmokingSummary",
-  "title": "AU Primary Tobacco Smoking Summary",
+  "name": "AUPrimaryCareTobaccoSmokingDateCeased",
+  "title": "AU Primary Tobacco Smoking Date Ceased",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco smoking summary in an Australian practice to practice record transfer.",
+  "description": "This profile defines core information requirements for a tobacco smoking date ceased in an Australian practice to practice record transfer.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,7 +68,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "229819007",
+              "code": "160625004",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -117,13 +117,13 @@
         ]
       },
       {
-        "id": "Observation.valueString",
-        "path": "Observation.valueString",
+        "id": "Observation.valueDateTime",
+        "path": "Observation.valueDateTime",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "dateTime"
           }
         ],
         "mustSupport": true

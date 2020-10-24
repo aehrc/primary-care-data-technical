@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AuPrimaryCareTobaccoSmokingSummary",
+  "id": "AuPrimaryCareTobaccoPatternOfUse",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingSummary",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse",
   "version": "0.0.3",
-  "name": "AUPrimaryCareTobaccoSmokingSummary",
-  "title": "AU Primary Tobacco Smoking Summary",
+  "name": "AUPrimaryCareTobaccoPatternOfUse",
+  "title": "AU Primary Tobacco Smoking Pattern Of Use",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco smoking summary in an Australian practice to practice record transfer.",
+  "description": "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -65,13 +65,68 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "patternCodeableConcept": {
-          "coding": [
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
             {
-              "code": "229819007",
-              "system": "http://snomed.info/sct"
+              "type": "pattern",
+              "path": "code"
             }
-          ]
+          ],
+          "rules": "open",
+          "description": "by code slicing"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:tobaccouse",
+        "path": "Observation.code.coding",
+        "sliceName": "tobaccouse",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "266918002",
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:cigarettetype",
+        "path": "Observation.code.coding",
+        "sliceName": "cigarettetype",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "230056004",
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:cigartype",
+        "path": "Observation.code.coding",
+        "sliceName": "cigartype",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "230057008",
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:pipetype",
+        "path": "Observation.code.coding",
+        "sliceName": "pipetype",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "230058003",
+          "system": "http://snomed.info/sct"
         },
         "mustSupport": true
       },
@@ -117,13 +172,13 @@
         ]
       },
       {
-        "id": "Observation.valueString",
-        "path": "Observation.valueString",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity"
           }
         ],
         "mustSupport": true

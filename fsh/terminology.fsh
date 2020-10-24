@@ -66,6 +66,15 @@ Description: "Vaccination coding including absence and exclusion; references rel
 * http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 
+ValueSet: TobaccoPatternOfUse_Code_Valueset
+Id: tobaccopatternofuse
+Title: "Tobacco Pattern Of Use Code Valueset"
+Description: "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
+* ^url = "http://aehrc.com/valueset/tobaccopatternofuse"
+* http://snomed.info/sct#230057008 "Cigar consumption"
+* http://snomed.info/sct#230056004 "Cigarette consumption"
+* http://snomed.info/sct#230058003 "Pipe tobacco consumption"
+
 ValueSet: Family_History_Absent_Code_Valueset
 Id: familyhistoryabsentcode
 Title: "Family History Absent Code Valueset"

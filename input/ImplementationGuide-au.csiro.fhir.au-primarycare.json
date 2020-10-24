@@ -101,7 +101,7 @@
           "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistory"
         },
         "name": "AU Primary Care Family Member History",
-        "description": "This profile defines a basic family member history note that for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "This profile defines a family member historyfor use in an Australian primary care practice-to-practice record transfer context.",
         "exampleBoolean": false
       },
       {
@@ -258,6 +258,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareTobaccoPatternOfUse"
+        },
+        "name": "AU Primary Tobacco Smoking Pattern Of Use",
+        "description": "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareTobaccoSmokingdDateCeased"
+        },
+        "name": "AU Primary Tobacco Smoking Date Ceased",
+        "description": "This profile defines core information requirements for a tobacco smoking date ceased in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AuPrimaryCareTobaccoSmokingdDateStarted"
+        },
+        "name": "AU Primary Tobacco Smoking Date Started",
+        "description": "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AuPrimaryCareTobaccoSmokingSummary"
         },
         "name": "AU Primary Tobacco Smoking Summary",
@@ -390,6 +414,14 @@
         },
         "name": "Procedure Code Valueset",
         "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tobaccopatternofuse"
+        },
+        "name": "Tobacco Pattern Of Use Code Valueset",
+        "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
         "exampleBoolean": false
       },
       {

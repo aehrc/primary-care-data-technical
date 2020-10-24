@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TobaccoPatternOfUse_Code_Valueset",
+  "id": "tobaccopatternofuse",
+  "title": "Tobacco Pattern Of Use Code Valueset",
+  "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/tobaccopatternofuse",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "230057008",
+            "display": "Cigar consumption"
+          },
+          {
+            "code": "230056004",
+            "display": "Cigarette consumption"
+          },
+          {
+            "code": "230058003",
+            "display": "Pipe tobacco consumption"
+          }
+        ]
+      }
+    ]
+  }
+}

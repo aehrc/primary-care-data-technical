@@ -14,7 +14,8 @@ Description: "This profile defines core information requirements for smoking sta
 * effectiveDateTime MS
 * value[x] 1..1 MS
 
-Profile: AUPrimaryTobaccoSmokingSummary
+
+Profile: AUPrimaryCareTobaccoSmokingSummary
 Parent: Observation
 Id: AuPrimaryCareTobaccoSmokingSummary
 Title: "AU Primary Tobacco Smoking Summary"
@@ -29,6 +30,61 @@ Description: "This profile defines core information requirements for a tobacco s
 * effectiveDateTime MS
 * valueString MS
 
+
+Profile: AUPrimaryCareTobaccoSmokingDateCeased
+Parent: Observation
+Id: AuPrimaryCareTobaccoSmokingdDateCeased
+Title: "AU Primary Tobacco Smoking Date Ceased"
+Description: "This profile defines core information requirements for a tobacco smoking date ceased in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased"
+* status 1..1 MS
+* code = $SNOMED#160625004
+// $LOINC#74010-0
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* valueDateTime MS
+
+Profile: AUPrimaryCareTobaccoSmokingDateStarted
+Parent: Observation
+Id: AuPrimaryCareTobaccoSmokingdDateStarted
+Title: "AU Primary Tobacco Smoking Date Started"
+Description: "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateStarted"
+* status 1..1 MS
+* code = http://aehrc.com/fhir/observable-entity-temporary#smoking-date-started
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* valueDateTime MS
+
+Profile: AUPrimaryCareTobaccoPatternOfUse
+Parent: Observation
+Id: AuPrimaryCareTobaccoPatternOfUse
+Title: "AU Primary Tobacco Smoking Pattern Of Use"
+Description: "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
+* status 1..1 MS
+* code 1..1 MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* code.coding ^slicing.description = "by code slicing"
+* code.coding contains tobaccouse 1..1 MS and cigarettetype 0..1 MS and cigartype 0..1 MS and pipetype 0..1 MS
+* code.coding[tobaccouse] = $SNOMED#266918002
+* code.coding[cigarettetype] = $SNOMED#230056004
+* code.coding[cigartype] = $SNOMED#230057008
+* code.coding[pipetype] = $SNOMED#230058003
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* valueQuantity MS
 
 Profile: AUPrimaryCareAlcoholStatus
 Parent: Observation

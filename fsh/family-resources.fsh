@@ -4,23 +4,15 @@ Profile: AUPrimaryCareFamilyMemberHistory
 Parent: FamilyMemberHistory
 Id: AUPrimaryCareFamilyMemberHistory
 Title: "AU Primary Care Family Member History"
-Description: "This profile defines a basic family member history note that for use in an Australian primary care practice-to-practice record transfer context."
+Description: "This profile defines a family member historyfor use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
 * status MS
+* relationship from http://aehrc.com/valueset/geneticfamilymember (extensible)
+* condition.code from https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 (extensible)
 * dataAbsentReason from Family_History_Absent_Code_Valueset
 * dataAbsentReason MS 
 * note MS
 
-/*
-Profile: AUPrimaryCareFamilyMemberHistoryR2
-Parent: AUPrimaryCareFamilyMemberHistory
-Id: AUPrimaryCareFamilyMemberHistoryR2
-Title: "AU Primary Care Family Member History R2"
-Description: "This profile defines a family member history structure for use in an Australian primary care practice-to-practice record transfer context."
-* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-* relationship from http://aehrc.com/valueset/geneticfamilymember (extensible)
-* condition.code from https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1 (extensible)
-*/
 
 Profile: AUPrimaryCareFamilyMemberHistoryList
 Parent: List
