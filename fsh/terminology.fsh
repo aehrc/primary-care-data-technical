@@ -71,6 +71,7 @@ Id: tobaccopatternofuse
 Title: "Tobacco Pattern Of Use Code Valueset"
 Description: "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
 * ^url = "http://aehrc.com/valueset/tobaccopatternofuse"
+* http://snomed.info/sct#266918002 "Tobacco smoking consumption"
 * http://snomed.info/sct#230057008 "Cigar consumption"
 * http://snomed.info/sct#230056004 "Cigarette consumption"
 * http://snomed.info/sct#230058003 "Pipe tobacco consumption"

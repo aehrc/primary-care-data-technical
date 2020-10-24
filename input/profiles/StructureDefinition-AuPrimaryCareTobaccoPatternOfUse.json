@@ -65,7 +65,11 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aehrc.com/valueset/tobaccopatternofuse"
+        }
       },
       {
         "id": "Observation.code.coding",
@@ -91,44 +95,7 @@
         "patternCoding": {
           "code": "266918002",
           "system": "http://snomed.info/sct"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:cigarettetype",
-        "path": "Observation.code.coding",
-        "sliceName": "cigarettetype",
-        "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "code": "230056004",
-          "system": "http://snomed.info/sct"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:cigartype",
-        "path": "Observation.code.coding",
-        "sliceName": "cigartype",
-        "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "code": "230057008",
-          "system": "http://snomed.info/sct"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:pipetype",
-        "path": "Observation.code.coding",
-        "sliceName": "pipetype",
-        "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "code": "230058003",
-          "system": "http://snomed.info/sct"
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.subject",

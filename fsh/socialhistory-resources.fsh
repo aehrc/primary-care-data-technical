@@ -69,17 +69,15 @@ Title: "AU Primary Tobacco Smoking Pattern Of Use"
 Description: "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
 * status 1..1 MS
+* code from TobaccoPatternOfUse_Code_Valueset (required)
 * code 1..1 MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
 * code.coding ^slicing.description = "by code slicing"
-* code.coding contains tobaccouse 1..1 MS and cigarettetype 0..1 MS and cigartype 0..1 MS and pipetype 0..1 MS
+* code.coding contains tobaccouse 1..1
 * code.coding[tobaccouse] = $SNOMED#266918002
-* code.coding[cigarettetype] = $SNOMED#230056004
-* code.coding[cigartype] = $SNOMED#230057008
-* code.coding[pipetype] = $SNOMED#230058003
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
 * effective[x] 1..1 MS

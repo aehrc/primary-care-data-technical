@@ -13,6 +13,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "266918002",
+            "display": "Tobacco smoking consumption"
+          },
+          {
             "code": "230057008",
             "display": "Cigar consumption"
           },
