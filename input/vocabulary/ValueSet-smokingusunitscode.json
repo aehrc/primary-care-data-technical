@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SmokingUseUnits_Code_ValueSet",
+  "id": "smokingusunitscode",
+  "title": "Smoking Use Units",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/smokingunitscode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "g/d"
+          },
+          {
+            "code": "g/wk"
+          },
+          {
+            "code": "/d"
+          },
+          {
+            "code": "/wk"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -62,6 +62,7 @@ Description: "This profile defines core information requirements for a tobacco s
 * effectiveDateTime MS
 * valueDateTime MS
 
+
 Profile: AUPrimaryCareTobaccoPatternOfUse
 Parent: Observation
 Id: AuPrimaryCareTobaccoPatternOfUse
@@ -75,14 +76,18 @@ Description: "This profile defines core information requirements for a tobacco s
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding ^slicing.description = "by code slicing"
 * code.coding contains tobaccouse 1..1
 * code.coding[tobaccouse] = $SNOMED#266918002
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
 * effective[x] 1..1 MS
 * effectiveDateTime MS
+* value[x] ^slicing.discriminator.type = #type
+* valueQuantity.code from SmokingUseUnits_Code_ValueSet
 * valueQuantity MS
+* valueCodeableConcept from SmokingPattern_Code_ValueSet
+* valueCodeableConcept MS
+
 
 Profile: AUPrimaryCareAlcoholStatus
 Parent: Observation

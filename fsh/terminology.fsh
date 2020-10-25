@@ -115,3 +115,20 @@ Description: "Breastfeeding status record"
 * http://snomed.info/sct#169642000 "Feeding intention - unsure" 
 
 
+ValueSet: SmokingUseUnits_Code_ValueSet
+Id: smokingusunitscode
+Title: "Smoking Use Units"
+* ^url = "http://aehrc.com/valueset/smokingunitscode"
+* http://unitsofmeasure.org#g/d
+* http://unitsofmeasure.org#g/wk 
+* http://unitsofmeasure.org#/d 
+* http://unitsofmeasure.org#/wk 
+
+ValueSet: SmokingPattern_Code_ValueSet
+Id: smokingpatterncode
+Title: "Smoking Pattern"
+* ^url = "http://aehrc.com/valueset/smokingpatterncode"
+* http://snomed.info/sct#449868002 "Smokes tobacco daily"
+* http://snomed.info/sct#230059006 "Occasional cigarette smoker"
+
+

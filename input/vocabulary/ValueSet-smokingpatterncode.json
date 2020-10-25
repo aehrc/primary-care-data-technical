@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SmokingPattern_Code_ValueSet",
+  "id": "smokingpatterncode",
+  "title": "Smoking Pattern",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/smokingpatterncode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "449868002",
+            "display": "Smokes tobacco daily"
+          },
+          {
+            "code": "230059006",
+            "display": "Occasional cigarette smoker"
+          }
+        ]
+      }
+    ]
+  }
+}

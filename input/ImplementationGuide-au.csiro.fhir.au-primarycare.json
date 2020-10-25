@@ -418,6 +418,20 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/smokingpatterncode"
+        },
+        "name": "Smoking Pattern",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/smokingusunitscode"
+        },
+        "name": "Smoking Use Units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/tobaccopatternofuse"
         },
         "name": "Tobacco Pattern Of Use Code Valueset",
