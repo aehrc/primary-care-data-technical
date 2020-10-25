@@ -83,7 +83,7 @@ Description: "This profile defines core information requirements for a tobacco s
 * effective[x] 1..1 MS
 * effectiveDateTime MS
 * value[x] ^slicing.discriminator.type = #type
-* valueQuantity.code from SmokingUseUnits_Code_ValueSet
+* value[x] ^slicing.discriminator.path = "$this"
 * valueQuantity MS
 * valueCodeableConcept from SmokingPattern_Code_ValueSet
 * valueCodeableConcept MS

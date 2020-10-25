@@ -138,23 +138,6 @@
         ]
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type"
-            },
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.valueQuantity",
         "path": "Observation.valueQuantity",
         "min": 0,
@@ -165,14 +148,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Observation.valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/smokingunitscode"
-        }
       },
       {
         "id": "Observation.valueCodeableConcept",
