@@ -85,6 +85,8 @@ Description: "This profile defines core information requirements for a tobacco s
 * value[x] ^slicing.discriminator.type = #type
 * value[x] ^slicing.discriminator.path = "$this"
 * valueQuantity MS
+* valueQuantity.code from SmokingUseUnits_Code_ValueSet
+* valueQuantity.code MS
 * valueCodeableConcept from SmokingPattern_Code_ValueSet
 * valueCodeableConcept MS
 
