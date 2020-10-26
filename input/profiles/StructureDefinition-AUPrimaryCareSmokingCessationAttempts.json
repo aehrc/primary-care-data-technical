@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AuPrimaryCareTobaccoPatternOfUse",
+  "id": "AUPrimaryCareSmokingCessationAttempts",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingCessationAttempts",
   "version": "0.0.3",
-  "name": "AUPrimaryCareTobaccoPatternOfUse",
-  "title": "AU Primary Tobacco Smoking Pattern Of Use",
+  "name": "AUPrimaryCareSmokingCessationAttempts",
+  "title": "AU Primary Tobacco Smoking Cessation Attempts",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco pattern of use in an Australian practice to practice record transfer.",
+  "description": "This profile defines core information requirements for a tobacco smoking cessation attempts count in an Australian practice to practice record transfer.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,7 +68,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/tobaccopatternofuse"
+          "valueSet": "https://aehrc.com/fhir/ValueSet/smokingcessationattemptscode"
         }
       },
       {
@@ -86,14 +86,14 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding:tobaccouse",
+        "id": "Observation.code.coding:tobaccocessationattempts",
         "path": "Observation.code.coding",
-        "sliceName": "tobaccouse",
+        "sliceName": "tobaccocessationattempts",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "266918002",
-          "system": "http://snomed.info/sct"
+          "code": "cessation-attempts-smoking",
+          "system": "http://aehrc.com/fhir/observable-entity-temporary"
         }
       },
       {
@@ -152,27 +152,7 @@
       {
         "id": "Observation.valueQuantity.code",
         "path": "Observation.valueQuantity.code",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/smokingunitscode"
-        }
-      },
-      {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/smokingpatterncode"
-        }
+        "patternCode": "1"
       }
     ]
   }

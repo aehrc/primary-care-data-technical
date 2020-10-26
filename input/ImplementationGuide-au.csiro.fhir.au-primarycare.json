@@ -242,6 +242,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareSmokingCessationAttempts"
+        },
+        "name": "AU Primary Tobacco Smoking Cessation Attempts",
+        "description": "This profile defines core information requirements for a tobacco smoking cessation attempts count in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareSmokingStatus"
         },
         "name": "AU Primary Care Smoking Status",
@@ -261,7 +269,7 @@
           "reference": "StructureDefinition/AuPrimaryCareTobaccoPatternOfUse"
         },
         "name": "AU Primary Tobacco Smoking Pattern Of Use",
-        "description": "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer.",
+        "description": "This profile defines core information requirements for a tobacco pattern of use in an Australian practice to practice record transfer.",
         "exampleBoolean": false
       },
       {
@@ -418,6 +426,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/smokingcessationattemptscode"
+        },
+        "name": "Smoking Cessation Attempts Code Valueset",
+        "description": "Smoking cessation attempts count record",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/smokingpatterncode"
         },
         "name": "Smoking Pattern",
@@ -444,6 +460,14 @@
         },
         "name": "Vaccination Code Valueset",
         "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/smokingcessationattemptscodesystem"
+        },
+        "name": "Smoking Cessation Attempts CodeSystem",
+        "description": "Smoking cessation attempts count record",
         "exampleBoolean": false
       },
       {

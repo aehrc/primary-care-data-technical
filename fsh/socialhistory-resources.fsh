@@ -67,7 +67,7 @@ Profile: AUPrimaryCareTobaccoPatternOfUse
 Parent: Observation
 Id: AuPrimaryCareTobaccoPatternOfUse
 Title: "AU Primary Tobacco Smoking Pattern Of Use"
-Description: "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer."
+Description: "This profile defines core information requirements for a tobacco pattern of use in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
 * status 1..1 MS
 * code from TobaccoPatternOfUse_Code_Valueset (required)
@@ -90,6 +90,29 @@ Description: "This profile defines core information requirements for a tobacco s
 * valueCodeableConcept from SmokingPattern_Code_ValueSet
 * valueCodeableConcept MS
 
+
+
+Profile: AUPrimaryCareSmokingCessationAttempts
+Parent: Observation
+Id: AUPrimaryCareSmokingCessationAttempts
+Title: "AU Primary Tobacco Smoking Cessation Attempts"
+Description: "This profile defines core information requirements for a tobacco smoking cessation attempts count in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingCessationAttempts"
+* status 1..1 MS
+* code from SmokingCessationAttempts_Code_Valueset (required)
+* code 1..1 MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* code.coding contains tobaccocessationattempts 1..1
+* code.coding[tobaccocessationattempts] = http://aehrc.com/fhir/observable-entity-temporary#cessation-attempts-smoking
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* valueQuantity MS
+* valueQuantity.code = #1
 
 Profile: AUPrimaryCareAlcoholStatus
 Parent: Observation

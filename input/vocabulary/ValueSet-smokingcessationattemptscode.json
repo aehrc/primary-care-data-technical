@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SmokingCessationAttempts_Code_Valueset",
+  "id": "smokingcessationattemptscode",
+  "title": "Smoking Cessation Attempts Code Valueset",
+  "description": "Smoking cessation attempts count record",
+  "version": "0.0.3",
+  "url": "https://aehrc.com/fhir/ValueSet/smokingcessationattemptscode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://aehrc.com/fhir/observable-entity-temporary",
+        "concept": [
+          {
+            "code": "cessation-attempts-smoking",
+            "display": "Smoking cessation attempts"
+          },
+          {
+            "code": "cessation-attempts-cigarette",
+            "display": "Cigarette cessation attempts"
+          },
+          {
+            "code": "cessation-attempts-cigar",
+            "display": "Cigar cessation attempts"
+          },
+          {
+            "code": "cessation-attempts-pipe",
+            "display": "Pipe cessation attempts"
+          }
+        ]
+      }
+    ]
+  }
+}

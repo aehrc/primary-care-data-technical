@@ -12,16 +12,20 @@
         "system": "http://unitsofmeasure.org",
         "concept": [
           {
-            "code": "g/d"
+            "code": "g/d",
+            "display": "gram per day"
           },
           {
-            "code": "g/wk"
+            "code": "g/wk",
+            "display": "(gram) / (week)"
           },
           {
-            "code": "/d"
+            "code": "/d",
+            "display": "per day"
           },
           {
-            "code": "/wk"
+            "code": "/wk",
+            "display": "per week"
           }
         ]
       }
