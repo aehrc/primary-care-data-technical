@@ -202,6 +202,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareOverallPackYears"
+        },
+        "name": "AU Primary Tobacco Smoking Overall Pack Years",
+        "description": "This profile defines core information requirements for a tobacco smoking cigarette pack years attempts in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareObservationParity"
         },
         "name": "AU Primary Care Parity",

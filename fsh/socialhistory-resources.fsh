@@ -91,7 +91,6 @@ Description: "This profile defines core information requirements for a tobacco p
 * valueCodeableConcept MS
 
 
-
 Profile: AUPrimaryCareSmokingCessationAttempts
 Parent: Observation
 Id: AUPrimaryCareSmokingCessationAttempts
@@ -113,6 +112,27 @@ Description: "This profile defines core information requirements for a tobacco s
 * effectiveDateTime MS
 * valueQuantity MS
 * valueQuantity.code = #1
+
+Profile: AUPrimaryCareOverallPackYears
+Parent: Observation
+Id: AUPrimaryCareOverallPackYears
+Title: "AU Primary Tobacco Smoking Overall Pack Years"
+Description: "This profile defines core information requirements for a tobacco smoking cigarette pack years attempts in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareOverallPackYears"
+* status 1..1 MS
+* code 1..1 MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* code.coding contains tobaccooverallpackyears 1..1
+* code.coding[tobaccooverallpackyears] = $SNOMED#401201003
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* valueQuantity MS
+* valueQuantity.code = #{PackYears}
 
 Profile: AUPrimaryCareAlcoholStatus
 Parent: Observation
