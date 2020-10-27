@@ -17,7 +17,7 @@ Description: "This profile defines core information requirements for smoking sta
 
 Profile: AUPrimaryCareTobaccoSmokingSummary
 Parent: Observation
-Id: AuPrimaryCareTobaccoSmokingSummary
+Id: AUPrimaryCareTobaccoSmokingSummary
 Title: "AU Primary Tobacco Smoking Summary"
 Description: "This profile defines core information requirements for a tobacco smoking summary in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingSummary"
@@ -33,7 +33,7 @@ Description: "This profile defines core information requirements for a tobacco s
 
 Profile: AUPrimaryCareTobaccoSmokingDateCeased
 Parent: Observation
-Id: AuPrimaryCareTobaccoSmokingdDateCeased
+Id: AUPrimaryCareTobaccoSmokingdDateCeased
 Title: "AU Primary Tobacco Smoking Date Ceased"
 Description: "This profile defines core information requirements for a tobacco smoking date ceased in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased"
@@ -49,7 +49,7 @@ Description: "This profile defines core information requirements for a tobacco s
 
 Profile: AUPrimaryCareTobaccoSmokingDateStarted
 Parent: Observation
-Id: AuPrimaryCareTobaccoSmokingdDateStarted
+Id: AUPrimaryCareTobaccoSmokingdDateStarted
 Title: "AU Primary Tobacco Smoking Date Started"
 Description: "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateStarted"
@@ -65,7 +65,7 @@ Description: "This profile defines core information requirements for a tobacco s
 
 Profile: AUPrimaryCareTobaccoPatternOfUse
 Parent: Observation
-Id: AuPrimaryCareTobaccoPatternOfUse
+Id: AUPrimaryCareTobaccoPatternOfUse
 Title: "AU Primary Tobacco Smoking Pattern Of Use"
 Description: "This profile defines core information requirements for a tobacco pattern of use in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
@@ -153,7 +153,7 @@ Description: "This profile defines core information requirements for alcohol sta
 
 Profile: AUPrimaryAlcoholConsumptionSummary
 Parent: Observation
-Id: AuPrimaryCareAlcoholConsumptionSummary
+Id: AUPrimaryCareAlcoholConsumptionSummary
 Title: "AU Primary Alcohol Consumption Summary"
 Description: "This profile defines core information requirements for a alcohol consumption summary in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionSummary"
@@ -168,7 +168,7 @@ Description: "This profile defines core information requirements for a alcohol c
 
 Profile: AUPrimaryCareSocialSummary
 Parent: Observation
-Id: AuPrimaryCareSocialSummary
+Id: AUPrimaryCareSocialSummary
 Title: "AU Primary Care Social Summary"
 Description: "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialSummary"

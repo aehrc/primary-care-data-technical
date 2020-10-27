@@ -41,7 +41,7 @@ These Profiles have been defined for this implementation guide.
 * [AU Primary Care Tobacco Smoking Date Ceased](StructureDefinition-AUPrimaryCareTobaccoSmokingDateCeased.html) - tobacco smoking date ceased
 * [AU Primary Care Tobacco Smoking Date Started](StructureDefinition-AUPrimaryCareTobaccoSmokingDateStarted.html) - tobacco smoking date started
 * [AU Primary Care Tobacco Smoking Overall Pack Years](StructureDefinition-AUPrimaryCareOverallPackYears.html) - tobacco smoking overall pack years
-* [AU Primary Care Tobacco Smoking Cessation Attempts](StructureDefinition-AUPrimaryCareAUPrimaryCareSmokingCessationAttempts.html) - smoking cessation attempt count
+* [AU Primary Care Tobacco Smoking Cessation Attempts](StructureDefinition-AUPrimaryCareSmokingCessationAttempts.html) - smoking cessation attempt count
 * [AU Primary Care Alcohol Status](StructureDefinition-AUPrimaryCareAlcoholStatus.html) - alcohol consumption status lifestyle factor record
 * [AU Primary Care Alcohol Consumption Summary](StructureDefinition-AUPrimaryCareAlcoholConsumptionSummary.html) - alcohol consumption summary
 
