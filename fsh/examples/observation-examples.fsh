@@ -34,7 +34,7 @@ Title: "Parity"
 * valueQuantity = 3 '1'
 
 Instance: aupc-gestationOnScan1
-InstanceOf: AUPrimaryCareObservationGestationalAge
+InstanceOf: AUPrimaryCareGestationalAge
 //BaseType: Observation
 Description: "Gestation on scan"
 Title: "Gestation on scan "
@@ -54,7 +54,7 @@ Title: "Gestation on scan "
 
 
 Instance: aupc-edd1
-InstanceOf: AUPrimaryCareObservationEDD
+InstanceOf: AUPrimaryCareEDD
 //BaseType: Observation
 Description: "Estimated Date of Delivery"
 Title: "Estimated Date of Delivery"
@@ -69,7 +69,7 @@ Title: "Estimated Date of Delivery"
 
 
 Instance: aupc-lmp1
-InstanceOf: AUPrimaryCareObservationLMP
+InstanceOf: AUPrimaryCareLMP
 //BaseType: Observation
 Description: "Last Menstrual Period"
 Title: "Last Menstrual Period"

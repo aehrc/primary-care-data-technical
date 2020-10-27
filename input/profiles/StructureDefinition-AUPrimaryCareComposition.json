@@ -401,7 +401,8 @@
             "targetProfile": [
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGravidity",
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationParity",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationLMP"
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationLMP",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationEDD"
             ]
           }
         ],

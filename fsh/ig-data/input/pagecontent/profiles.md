@@ -6,7 +6,7 @@ These Profiles have been defined for this implementation guide.
 * [AU Primary Care Composition](StructureDefinition-AUPrimaryCareComposition.html) - composition with local identifiers and attributes
 
 ### Demographic Profiles
-* [AU Primary Care Patient](StructureDefinition-AUPrimaryCarePatient.html) - patient demographic with local identifiers and attributes
+* [AU Primary Care Patient](StructureDefinition-AUPrimaryCarePatient.html) - patient demographic with local identifiers and attributes including gender identity, and ethnicity
 
 ### Visit Profiles
 * [AU Primary Care Encounter](StructureDefinition-AUPrimaryCareEncounter.html) - visit record
@@ -37,14 +37,22 @@ These Profiles have been defined for this implementation guide.
 
 ### Social History Profiles
 * [AU Primary Care Smoking Status](StructureDefinition-AUPrimaryCareSmokingStatus.html) - smoking status lifestyle factor record
+* [AU Primary Care Tobacco Smoking Pattern of Use](StructureDefinition-AUPrimaryCareTobaccoPatternOfUse.html) - tobacco smoking pattern of use including quantity by weight, rate of use
+* [AU Primary Care Tobacco Smoking Date Ceased](StructureDefinition-AUPrimaryCareTobaccoSmokingDateCeased.html) - tobacco smoking date ceased
+* [AU Primary Care Tobacco Smoking Date Started](StructureDefinition-AUPrimaryCareTobaccoSmokingDateStarted.html) - tobacco smoking date started
+* [AU Primary Care Tobacco Smoking Overall Pack Years](StructureDefinition-AUPrimaryCareOverallPackYears.html) - tobacco smoking overall pack years
+* [AU Primary Care Tobacco Smoking Cessation Attempts](StructureDefinition-AUPrimaryCareAUPrimaryCareSmokingCessationAttempts.html) - smoking cessation attempt count
+* [AU Primary Care Alcohol Status](StructureDefinition-AUPrimaryCareAlcoholStatus.html) - alcohol consumption status lifestyle factor record
+* [AU Primary Care Alcohol Consumption Summary](StructureDefinition-AUPrimaryCareAlcoholConsumptionSummary.html) - alcohol consumption summary
+
 
 ### Pregnancy / Breastfeeding Profiles
-* [AU Primary Care Last Normal Menstrual Period](StructureDefinition-AUPrimaryCareObservation-LNMP.html) - date of last normal menstrual period
-* [AU Primary Care Expected Date of Delivery](StructureDefinition-AUPrimaryCareObservation-EDD.html) - expected date of delivery calculated from either scan date or last normal menstrual period and cycle length
-* [AU Primary Care Ultrasound Scan Obstetric](StructureDefinition-AUPrimaryCareProcedure-UltrasoundScanObstetric.html) - obstetric ultrasound scan, including date
-* [AU Primary Care Gestation On Scan](StructureDefinition-AUPrimaryCareObservation-GestationOnScan.html) - estimated gestation of the pregnancy, based on findings from the ultrasound scan
-* [AU Primary Care Gravidity](StructureDefinition-AUPrimaryCareObservation-gravidity.html) - number of times a woman has been pregnant, including the current pregnancy
-* [AU Primary Care Parity](StructureDefinition-AUPrimaryCareObservation-parity.html) - number of times a woman has given birth
+* [AU Primary Care Last Normal Menstrual Period](StructureDefinition-AUPrimaryCareLMP.html) - date of last normal menstrual period
+* [AU Primary Care Expected Date of Delivery](StructureDefinition-AUPrimaryCareEDD.html) - expected date of delivery calculated from either scan date or last normal menstrual period and cycle length
+* [AU Primary Care Gestation On Scan](StructureDefinition-AUPrimaryCareGestationalAge.html) - estimated gestation of the pregnancy, based on findings from the ultrasound scan
+* [AU Primary Care Gravidity](StructureDefinition-AUPrimaryCareGravidity.html) - number of times a woman has been pregnant, including the current pregnancy
+* [AU Primary Care Parity](StructureDefinition-AUPrimaryCareParity.html) - number of times a woman has given birth
+* [AU Primary Care Breastfeeding Status](StructureDefinition-AUPrimaryCareBreastFeedingStatus.html) - number of times a woman has given birth
 
 ### Follow Ups Profiles
 * [AU Primary Care Follow Up List](StructureDefinition-AUPrimaryCareFollowUpList.html) - follow ups list with local identifiers and attributes

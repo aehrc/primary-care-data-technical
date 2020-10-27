@@ -66,14 +66,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AuPrimaryCareBreastfeedingStatus"
-        },
-        "name": "AU Primary Care Breastfeeding Status",
-        "description": "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareComposition"
         },
         "name": "AU Primary Care Composition",
@@ -146,14 +138,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationGravidity"
-        },
-        "name": "AU Primary Care Gravidity",
-        "description": "Represents the gravidity (number of pregnancies) of a female patient",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareImmunisation"
         },
         "name": "AU Primary Care Immunisation",
@@ -206,14 +190,6 @@
         },
         "name": "AU Primary Tobacco Smoking Overall Pack Years",
         "description": "This profile defines core information requirements for a tobacco smoking cigarette pack years attempts in an Australian practice to practice record transfer.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationParity"
-        },
-        "name": "AU Primary Care Parity",
-        "description": "The number of births where the fetus is overr 24 weeks",
         "exampleBoolean": false
       },
       {
@@ -306,7 +282,15 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationEDD"
+          "reference": "StructureDefinition/AuPrimaryCareBreastfeedingStatus"
+        },
+        "name": "AU Primary Care Breastfeeding Status",
+        "description": "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareEDD"
         },
         "name": "Estimated Date of Delivery",
         "description": "The date that delivery is due.",
@@ -314,7 +298,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationGestationalAge"
+          "reference": "StructureDefinition/AUPrimaryCareGestationalAge"
         },
         "name": "Gestational Age",
         "description": "Gestational age of a fetus.",
@@ -322,10 +306,26 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationLMP"
+          "reference": "StructureDefinition/AUPrimaryCareGravidity"
+        },
+        "name": "AU Primary Care Gravidity",
+        "description": "Represents the gravidity (number of pregnancies) of a female patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareLMP"
         },
         "name": "Last Menstrual Period",
         "description": "The date of the last normal menstrual period",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareParity"
+        },
+        "name": "AU Primary Care Parity",
+        "description": "The number of births where the fetus is overr 24 weeks",
         "exampleBoolean": false
       },
       {

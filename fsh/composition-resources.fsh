@@ -114,7 +114,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[pregnancyHistory].code.coding.system = "http://loinc.org"
 * section[pregnancyHistory].code.coding.code = #10163-4 (exactly)
 * section[pregnancyHistory].mode = #snapshot
-* section[pregnancyHistory].entry only Reference(AUPrimaryCareObservationGravidity or AUPrimaryCareObservationParity or AUPrimaryCareObservationLMP)
+* section[pregnancyHistory].entry only Reference(AUPrimaryCareGravidity or AUPrimaryCareParity or AUPrimaryCareLMP or AUPrimaryCareEDD)
 * section[pregnancyHistory].entry MS
 
 //* section contains goalList 0..1
