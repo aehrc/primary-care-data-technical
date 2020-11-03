@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AuPrimaryCareTobaccoSmokingSummary",
+  "id": "AUPrimaryCareTobaccoSmokingSummary",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",

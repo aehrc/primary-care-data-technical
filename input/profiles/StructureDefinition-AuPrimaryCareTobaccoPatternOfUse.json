@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AuPrimaryCareTobaccoPatternOfUse",
+  "id": "AUPrimaryCareTobaccoPatternOfUse",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -65,35 +65,18 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "266918002",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://aehrc.com/valueset/tobaccopatternofuse"
-        }
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "code"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.code.coding:tobaccouse",
-        "path": "Observation.code.coding",
-        "sliceName": "tobaccouse",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "266918002",
-          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -138,8 +121,70 @@
         ]
       },
       {
-        "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity",
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:smokingtype",
+        "path": "Observation.component",
+        "sliceName": "smokingtype",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:smokingtype.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "smoking-type",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:smokingtype.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:unitofuse",
+        "path": "Observation.component",
+        "sliceName": "unitofuse",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:unitofuse.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "smoking-units-of-use",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:unitofuse.valueQuantity",
+        "path": "Observation.component.valueQuantity",
         "min": 0,
         "max": "1",
         "type": [
@@ -150,17 +195,35 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
-        "mustSupport": true,
+        "id": "Observation.component:unitofuse.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
         "binding": {
           "strength": "required",
           "valueSet": "http://aehrc.com/valueset/smokingunitscode"
         }
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation.component:dailyuse",
+        "path": "Observation.component",
+        "sliceName": "dailyuse",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:dailyuse.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "smoking-pattern-of-daily-use",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:dailyuse.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [
@@ -173,6 +236,42 @@
           "strength": "required",
           "valueSet": "http://aehrc.com/valueset/smokingpatterncode"
         }
+      },
+      {
+        "id": "Observation.component:cessationattempts",
+        "path": "Observation.component",
+        "sliceName": "cessationattempts",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cessationattempts.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "cessation-attempts-smoking",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:cessationattempts.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cessationattempts.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "patternCode": "1"
       }
     ]
   }

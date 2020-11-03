@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AuPrimaryCareTobaccoSmokingdDateCeased",
+  "id": "AUPrimaryCareTobaccoSmokingdDateCeased",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",

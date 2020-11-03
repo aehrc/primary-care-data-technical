@@ -14,7 +14,7 @@
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGoalList",
   "version": "0.0.3",
   "name": "AUPrimaryCareGoalList",
-  "title": "AU Primary Care Immunisation List",
+  "title": "AU Primary Care Goal List",
   "status": "active",
   "description": "This profile defines an goal list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
   "fhirVersion": "4.0.1",

@@ -14,6 +14,7 @@
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGoal",
   "version": "0.0.3",
   "name": "AUPrimaryCareGoal",
+  "title": "AU Primary Care Goal",
   "status": "active",
   "description": "Data group for the recording of goals",
   "fhirVersion": "4.0.1",

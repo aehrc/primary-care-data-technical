@@ -18,8 +18,8 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "443508001",
-            "display": "No H/O: clinical finding in subject"
+            "code": "160245001",
+            "display": "No current problems or disability"
           },
           {
             "code": "1224831000168103",

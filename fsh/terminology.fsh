@@ -27,7 +27,7 @@ Title: "Condition Code Valueset"
 Description: "Condition coding including absence and exclusion; references relevant NCTS Assertion of Absence codes."
 * ^url = "http://aehrc.com/valueset/conditoncode"
 * codes from valueset https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1
-* http://snomed.info/sct#443508001 "No H/O: clinical finding in subject"
+* http://snomed.info/sct#160245001 "No current problems or disability"
 * http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 ValueSet: Procedure_Code_Valueset

@@ -1,6 +1,7 @@
 
 Profile: AUPrimaryCareGoal
 Parent: Goal
+Title: "AU Primary Care Goal"
 Id: AUPrimaryCareGoal
 Description: "Data group for the recording of goals"
 * description 1..1 MS
@@ -29,7 +30,7 @@ Description: "Date when this goal is planned to be reviewed"
 Profile: AUPrimaryCareGoalList
 Parent: List
 Id: AUPrimaryCareGoalList
-Title: "AU Primary Care Immunisation List"
+Title: "AU Primary Care Goal List"
 Description: "This profile defines an goal list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGoalList"
 * status = #current

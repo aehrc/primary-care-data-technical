@@ -52,7 +52,6 @@ Description: "This profile defines a composition structure that includes core lo
 * section.section 0..0          //can't have sub sections
 * section.emptyReason 0..0      //and no empty reason on the sections
 
-//* section contains clinicalSynopsis 0..1
 * section[clinicalSynopsis].code.coding.userSelected = false
 * section[clinicalSynopsis].code.coding.system = "http://loinc.org"
 * section[clinicalSynopsis].code.coding.code = #11329-0 (exactly)
@@ -60,21 +59,18 @@ Description: "This profile defines a composition structure that includes core lo
 * section[clinicalSynopsis].mode = #snapshot
 * section[clinicalSynopsis].text MS
 
-//* section contains adverseReactionList 1..1
 * section[adverseReactionList].code.coding.system = "http://loinc.org"
 * section[adverseReactionList].code.coding.code = #48765-2 (exactly)
 * section[adverseReactionList].mode = #snapshot
 * section[adverseReactionList].entry only Reference(AUPrimaryCareAllergyIntoleranceList)
 * section[adverseReactionList].entry MS
 
-//* section contains medicalHistoryList 1..1
 * section[medicalHistoryList].code.coding.system = "http://loinc.org"
 * section[medicalHistoryList].code.coding.code = #11348-0 (exactly)
 * section[medicalHistoryList].mode = #snapshot
 * section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList or AUPrimaryCareProcedureList or AUPrimaryCareProblemList)
 * section[medicalHistoryList].entry MS
 
-//* section contains vaccinationList 1..1
 * section[vaccinationList].code.coding.system = "http://loinc.org"
 * section[vaccinationList].code.coding.code = #41291-6 (exactly)
 * section[vaccinationList].code.coding.display = "Immunization"
@@ -82,49 +78,42 @@ Description: "This profile defines a composition structure that includes core lo
 * section[vaccinationList].entry only Reference(AUPrimaryCareImmunisationList)
 * section[vaccinationList].entry MS
 
-//* section contains medicineList 1..1
 * section[medicineList].code.coding.system = "http://loinc.org"
 * section[medicineList].code.coding.code = #10160-0 (exactly) 
 * section[medicineList].mode = #snapshot
 * section[medicineList].entry only Reference(AUPrimaryCareMedicineList)
 * section[medicineList].entry MS
 
-//* section contains socialHistory 0..1
 * section[socialHistory].code.coding.system = "http://loinc.org"
 * section[socialHistory].code.coding.code = #29762-2 (exactly)
 * section[socialHistory].mode = #snapshot
 * section[socialHistory].entry only Reference(AUPrimaryCareSmokingStatus or AUPrimaryCareAlcoholStatus)
 * section[socialHistory].entry MS
 
-//* section contains familyHistoryList 0..1
 * section[familyHistoryList].code.coding.system = "http://loinc.org"
 * section[familyHistoryList].code.coding.code = #10157-6 (exactly)
 * section[familyHistoryList].mode = #snapshot
 * section[familyHistoryList].entry only Reference(AUPrimaryCareFamilyMemberHistoryList)
 * section[familyHistoryList].entry MS
 
-//* section contains encounterHistory 0..1
 * section[encounterHistory].code.coding.system = "http://loinc.org"
 * section[encounterHistory].code.coding.code = #11347-2 (exactly)
 * section[encounterHistory].mode = #snapshot
 * section[encounterHistory].entry only Reference(AUPrimaryCareEncounter)
 * section[encounterHistory].entry MS
 
-// section contains pregnancyHistory 0..1
 * section[pregnancyHistory].code.coding.system = "http://loinc.org"
 * section[pregnancyHistory].code.coding.code = #10163-4 (exactly)
 * section[pregnancyHistory].mode = #snapshot
 * section[pregnancyHistory].entry only Reference(AUPrimaryCareGravidity or AUPrimaryCareParity or AUPrimaryCareLMP or AUPrimaryCareEDD)
 * section[pregnancyHistory].entry MS
 
-//* section contains goalList 0..1
 * section[goalList].code.coding.system = "http://loinc.org"
 * section[goalList].code.coding.code = #61146-7 (exactly)
 * section[goalList].mode = #snapshot
 * section[goalList].entry only Reference(AUPrimaryCareGoalList)
 * section[goalList].entry MS
 
-//* section contains followups 0..1
 * section[followUp].code.coding.system = "http://loinc.org"
 * section[followUp].code.coding.code = #69730-0 (exactly)
 * section[followUp].mode = #snapshot

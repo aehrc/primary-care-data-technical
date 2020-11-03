@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AUPrimaryCareEncounter",
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounter",
   "version": "0.0.3",
   "name": "AUPrimaryCareEncounter",
   "title": "AU Primary Care Encounter",

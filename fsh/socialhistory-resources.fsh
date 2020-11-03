@@ -71,47 +71,30 @@ Description: "This profile defines core information requirements for a tobacco p
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
 * status 1..1 MS
 * code from TobaccoPatternOfUse_Code_Valueset (required)
+* code = $SNOMED#266918002
 * code 1..1 MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.discriminator.path = "code"
-* code.coding ^slicing.rules = #open
-* code.coding contains tobaccouse 1..1
-* code.coding[tobaccouse] = $SNOMED#266918002
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
 * effective[x] 1..1 MS
 * effectiveDateTime MS
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* valueQuantity MS
-* valueQuantity.code from SmokingUseUnits_Code_ValueSet
-* valueQuantity.code MS
-* valueCodeableConcept from SmokingPattern_Code_ValueSet
-* valueCodeableConcept MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component contains smokingtype 0..1
+* component[smokingtype].code =  http://aehrc.com/fhir/observable-entity#smoking-type
+* component[smokingtype].valueCodeableConcept MS
+* component contains unitofuse 0..1
+* component[unitofuse].code =  http://aehrc.com/fhir/observable-entity#smoking-units-of-use
+* component[unitofuse].valueQuantity.code from SmokingUseUnits_Code_ValueSet
+* component[unitofuse].valueQuantity MS
+* component contains dailyuse 0..1
+* component[dailyuse].code =  http://aehrc.com/fhir/observable-entity#smoking-pattern-of-daily-use
+* component[dailyuse].valueCodeableConcept from SmokingPattern_Code_ValueSet
+* component[dailyuse].valueCodeableConcept MS
+* component contains cessationattempts 0..1
+* component[cessationattempts].code =  http://aehrc.com/fhir/observable-entity#cessation-attempts-smoking
+* component[cessationattempts].valueQuantity MS
+* component[cessationattempts].valueQuantity.code = #1
 
-
-Profile: AUPrimaryCareSmokingCessationAttempts
-Parent: Observation
-Id: AUPrimaryCareSmokingCessationAttempts
-Title: "AU Primary Tobacco Smoking Cessation Attempts"
-Description: "This profile defines core information requirements for a tobacco smoking cessation attempts count in an Australian practice to practice record transfer."
-* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingCessationAttempts"
-* status 1..1 MS
-* code from SmokingCessationAttempts_Code_Valueset (required)
-* code 1..1 MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.discriminator.path = "code"
-* code.coding ^slicing.rules = #open
-* code.coding contains tobaccocessationattempts 1..1
-* code.coding[tobaccocessationattempts] = http://aehrc.com/fhir/observable-entity-temporary#cessation-attempts-smoking
-* subject only Reference(AUPrimaryCarePatient)
-* subject 1..1 MS
-* effective[x] 1..1 MS
-* effectiveDateTime MS
-* valueQuantity MS
-* valueQuantity.code = #1
 
 Profile: AUPrimaryCareOverallPackYears
 Parent: Observation
