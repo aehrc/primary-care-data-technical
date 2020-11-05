@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AlcoholPattern_Code_ValueSet",
+  "id": "alcoholpatterncode",
+  "title": "Alcohol Pattern",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/alcoholpatterncode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "228319007",
+            "display": "Daily drinker"
+          },
+          {
+            "code": "228276006",
+            "display": "Occasional drinker"
+          }
+        ]
+      }
+    ]
+  }
+}

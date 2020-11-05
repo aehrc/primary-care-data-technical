@@ -42,6 +42,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAlcoholPatternOfUse"
+        },
+        "name": "AU Primary Alcohol Pattern Of Use",
+        "description": "This profile defines core information requirements for alcohol pattern of use recording in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholStatus"
         },
         "name": "AU Primary Care Alcohol Status",
@@ -346,6 +354,20 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/alcoholunitscode"
+        },
+        "name": "Alcohol Use Units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/alcoholpatterncode"
+        },
+        "name": "Alcohol Pattern",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/allergycode"
         },
         "name": "Allergy Code Valueset",
@@ -444,14 +466,6 @@
           "reference": "ValueSet/smokingusunitscode"
         },
         "name": "Smoking Use Units",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/tobaccopatternofuse"
-        },
-        "name": "Tobacco Pattern Of Use Code Valueset",
-        "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
         "exampleBoolean": false
       },
       {

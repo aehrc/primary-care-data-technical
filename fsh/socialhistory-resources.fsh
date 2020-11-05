@@ -70,7 +70,6 @@ Title: "AU Primary Tobacco Smoking Pattern Of Use"
 Description: "This profile defines core information requirements for a tobacco pattern of use in an Australian practice to practice record transfer."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
 * status 1..1 MS
-* code from TobaccoPatternOfUse_Code_Valueset (required)
 * code = $SNOMED#266918002
 * code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
@@ -91,7 +90,7 @@ Description: "This profile defines core information requirements for a tobacco p
 * component[dailyuse].valueCodeableConcept from SmokingPattern_Code_ValueSet
 * component[dailyuse].valueCodeableConcept MS
 * component contains cessationattempts 0..1
-* component[cessationattempts].code =  http://aehrc.com/fhir/observable-entity#cessation-attempts-smoking
+* component[cessationattempts].code =  http://aehrc.com/fhir/observable-entity#smoking-cessation-attempts
 * component[cessationattempts].valueQuantity MS
 * component[cessationattempts].valueQuantity.code = #1
 
@@ -148,6 +147,51 @@ Description: "This profile defines core information requirements for a alcohol c
 * effective[x] 1..1 MS
 * effectiveDateTime MS
 * valueString MS
+
+Profile: AUPrimaryCareAlcoholPatternOfUse
+Parent: Observation
+Id: AUPrimaryCareAlcoholPatternOfUse
+Title: "AU Primary Alcohol Pattern Of Use"
+Description: "This profile defines core information requirements for alcohol pattern of use recording in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholPatternOfUse"
+* status 1..1 MS
+* code = $SNOMED#228308009
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component contains episodename 0..1
+* component[episodename].code =  http://aehrc.com/fhir/observable-entity#alcohol-episode-name
+* component[episodename].valueCodeableConcept MS
+* component contains periodofuse 0..1
+* component[periodofuse].code =  http://aehrc.com/fhir/observable-entity#alcohol-period-of-use
+* component[periodofuse].valuePeriod MS
+* component contains patternofuse 0..1
+* component[patternofuse].code =  http://aehrc.com/fhir/observable-entity#alcohol-pattern-of-use
+* component[patternofuse].valueCodeableConcept from AlcoholPattern_Code_ValueSet
+* component[patternofuse].valueCodeableConcept MS
+* component contains unitofuse 0..1
+* component[unitofuse].code =  http://aehrc.com/fhir/observable-entity#alcohol-units-of-use
+* component[unitofuse].valueQuantity.code from AlcoholPatternUnits_Code_ValueSet
+* component[unitofuse].valueQuantity MS
+* component contains alcoholfreedays 0..1
+* component[alcoholfreedays].code =  http://aehrc.com/fhir/observable-entity#alcohol-free-days
+* component[alcoholfreedays].valueQuantity.code from AlcoholPatternUnits_Code_ValueSet
+* component[alcoholfreedays].valueQuantity MS
+* component contains bingedrinkingfrequency 0..1
+* component[bingedrinkingfrequency].code =  http://aehrc.com/fhir/observable-entity#alcohol-binge-drinking-frequency
+* component[bingedrinkingfrequency].valueQuantity.code from AlcoholPatternUnits_Code_ValueSet
+* component[bingedrinkingfrequency].valueQuantity MS
+* component contains bingedringkingdescription 0..1
+* component[bingedringkingdescription].code =  http://aehrc.com/fhir/observable-entity#alcohol-binge-dringking-description
+* component[bingedringkingdescription].valueString MS
+* component contains cessationattempts 0..1
+* component[cessationattempts].code =  http://aehrc.com/fhir/observable-entity#alcohol-cessation-attempts
+* component[cessationattempts].valueQuantity MS
+* component[cessationattempts].valueQuantity.code = #1
 
 Profile: AUPrimaryCareSocialSummary
 Parent: Observation

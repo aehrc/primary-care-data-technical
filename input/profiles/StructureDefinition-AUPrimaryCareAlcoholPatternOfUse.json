@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareTobaccoPatternOfUse",
+  "id": "AUPrimaryCareAlcoholPatternOfUse",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholPatternOfUse",
   "version": "0.0.3",
-  "name": "AUPrimaryCareTobaccoPatternOfUse",
-  "title": "AU Primary Tobacco Smoking Pattern Of Use",
+  "name": "AUPrimaryCareAlcoholPatternOfUse",
+  "title": "AU Primary Alcohol Pattern Of Use",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco pattern of use in an Australian practice to practice record transfer.",
+  "description": "This profile defines core information requirements for alcohol pattern of use recording in an Australian practice to practice record transfer.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,7 +68,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "266918002",
+              "code": "228308009",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -129,26 +129,26 @@
         }
       },
       {
-        "id": "Observation.component:smokingtype",
+        "id": "Observation.component:episodename",
         "path": "Observation.component",
-        "sliceName": "smokingtype",
+        "sliceName": "episodename",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation.component:smokingtype.code",
+        "id": "Observation.component:episodename.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "smoking-type",
+              "code": "alcohol-episode-name",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:smokingtype.valueCodeableConcept",
+        "id": "Observation.component:episodename.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "min": 0,
         "max": "1",
@@ -158,6 +158,72 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.component:periodofuse",
+        "path": "Observation.component",
+        "sliceName": "periodofuse",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:periodofuse.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "alcohol-period-of-use",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:periodofuse.valuePeriod",
+        "path": "Observation.component.valuePeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:patternofuse",
+        "path": "Observation.component",
+        "sliceName": "patternofuse",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:patternofuse.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "alcohol-pattern-of-use",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:patternofuse.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aehrc.com/valueset/alcoholpatterncode"
+        }
       },
       {
         "id": "Observation.component:unitofuse",
@@ -172,7 +238,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "smoking-units-of-use",
+              "code": "alcohol-units-of-use",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
@@ -195,43 +261,117 @@
         "path": "Observation.component.valueQuantity.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/smokingunitscode"
+          "valueSet": "http://aehrc.com/valueset/alcoholunitscode"
         }
       },
       {
-        "id": "Observation.component:dailyuse",
+        "id": "Observation.component:alcoholfreedays",
         "path": "Observation.component",
-        "sliceName": "dailyuse",
+        "sliceName": "alcoholfreedays",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation.component:dailyuse.code",
+        "id": "Observation.component:alcoholfreedays.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "smoking-pattern-of-daily-use",
+              "code": "alcohol-free-days",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:dailyuse.valueCodeableConcept",
-        "path": "Observation.component.valueCodeableConcept",
+        "id": "Observation.component:alcoholfreedays.valueQuantity",
+        "path": "Observation.component.valueQuantity",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Quantity"
           }
         ],
-        "mustSupport": true,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:alcoholfreedays.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/smokingpatterncode"
+          "valueSet": "http://aehrc.com/valueset/alcoholunitscode"
         }
+      },
+      {
+        "id": "Observation.component:bingedrinkingfrequency",
+        "path": "Observation.component",
+        "sliceName": "bingedrinkingfrequency",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:bingedrinkingfrequency.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "alcohol-binge-drinking-frequency",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:bingedrinkingfrequency.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:bingedrinkingfrequency.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aehrc.com/valueset/alcoholunitscode"
+        }
+      },
+      {
+        "id": "Observation.component:bingedringkingdescription",
+        "path": "Observation.component",
+        "sliceName": "bingedringkingdescription",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:bingedringkingdescription.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "alcohol-binge-dringking-description",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:bingedringkingdescription.valueString",
+        "path": "Observation.component.valueString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.component:cessationattempts",
@@ -246,7 +386,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "smoking-cessation-attempts",
+              "code": "alcohol-cessation-attempts",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]

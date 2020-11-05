@@ -66,6 +66,7 @@ Description: "Vaccination coding including absence and exclusion; references rel
 * http://snomed.info/sct#1224831000168103 "No relevant medical history"
 
 
+/*
 ValueSet: TobaccoPatternOfUse_Code_Valueset
 Id: tobaccopatternofuse
 Title: "Tobacco Pattern Of Use Code Valueset"
@@ -75,6 +76,8 @@ Description: "Vaccination coding including absence and exclusion; references rel
 * http://snomed.info/sct#230057008 "Cigar consumption"
 * http://snomed.info/sct#230056004 "Cigarette consumption"
 * http://snomed.info/sct#230058003 "Pipe tobacco consumption"
+*/
+
 
 ValueSet: Family_History_Absent_Code_Valueset
 Id: familyhistoryabsentcode
@@ -114,6 +117,20 @@ Description: "Breastfeeding status record"
 * http://snomed.info/sct#169643005 "Intends to breastfeed" 
 * http://snomed.info/sct#169642000 "Feeding intention - unsure" 
 
+ValueSet: AlcoholPatternUnits_Code_ValueSet
+Id: alcoholunitscode
+Title: "Alcohol Use Units"
+* ^url = "http://aehrc.com/valueset/alcoholunitscode"
+* http://unitsofmeasure.org#/d "per day"
+* http://unitsofmeasure.org#/wk "per week" 
+* http://unitsofmeasure.org#/au "/ year"
+
+ValueSet: AlcoholPattern_Code_ValueSet
+Id: alcoholpatterncode
+Title: "Alcohol Pattern"
+* ^url = "http://aehrc.com/valueset/alcoholpatterncode"
+* http://snomed.info/sct#228319007 "Daily drinker"
+* http://snomed.info/sct#228276006 "Occasional drinker"
 
 ValueSet: SmokingUseUnits_Code_ValueSet
 Id: smokingusunitscode
@@ -130,8 +147,6 @@ Title: "Smoking Pattern"
 * ^url = "http://aehrc.com/valueset/smokingpatterncode"
 * http://snomed.info/sct#449868002 "Smokes tobacco daily"
 * http://snomed.info/sct#230059006 "Occasional cigarette smoker"
-
-
 
 CodeSystem: SmokingCessationAttempts_Code_CodeSystem
 Id: smokingcessationattemptscodesystem

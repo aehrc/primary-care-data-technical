@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AlcoholPatternUnits_Code_ValueSet",
+  "id": "alcoholunitscode",
+  "title": "Alcohol Use Units",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/alcoholunitscode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "/d",
+            "display": "per day"
+          },
+          {
+            "code": "/wk",
+            "display": "per week"
+          },
+          {
+            "code": "/au",
+            "display": "/ year"
+          }
+        ]
+      }
+    ]
+  }
+}
