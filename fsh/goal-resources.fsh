@@ -17,7 +17,6 @@ Description: "Data group for the recording of goals"
 * target ^definition = "Specify the details of what the target of this goal is."
 * extension contains AUPrimaryCareReviewDate named reviewDate 0..*
 * category ^definition =  "Element that describes what the goal relates to."
-// DONNA Is this a reference to the category e.g. genitourinary health, or a different element, e.g. a current med or a problem list entry
 * outcomeCode.text ^definition = "Outcome of this goal once review period is finished"
 
 Extension: AUPrimaryCareReviewDate

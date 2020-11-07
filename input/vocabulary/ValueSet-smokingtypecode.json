@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SmokingType_Code_ValueSet",
+  "id": "smokingtypecode",
+  "title": "Smoking Type",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/smokingtypecode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "59978006",
+            "display": "Cigar Smoker"
+          },
+          {
+            "code": "65568007",
+            "display": "Cigarette Smoker"
+          },
+          {
+            "code": "82302008",
+            "display": "Pipe Smoker"
+          }
+        ]
+      }
+    ]
+  }
+}

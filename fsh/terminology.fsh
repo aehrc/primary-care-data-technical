@@ -148,6 +148,15 @@ Title: "Smoking Pattern"
 * http://snomed.info/sct#449868002 "Smokes tobacco daily"
 * http://snomed.info/sct#230059006 "Occasional cigarette smoker"
 
+
+ValueSet: SmokingType_Code_ValueSet
+Id: smokingtypecode
+Title: "Smoking Type"
+* ^url = "http://aehrc.com/valueset/smokingtypecode"
+* http://snomed.info/sct#59978006 "Cigar Smoker"
+* http://snomed.info/sct#65568007 "Cigarette Smoker"
+* http://snomed.info/sct#82302008 "Pipe Smoker"
+
 CodeSystem: SmokingCessationAttempts_Code_CodeSystem
 Id: smokingcessationattemptscodesystem
 Title: "Smoking Cessation Attempts CodeSystem"

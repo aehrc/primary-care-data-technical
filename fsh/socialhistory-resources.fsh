@@ -80,6 +80,7 @@ Description: "This profile defines core information requirements for a tobacco p
 * component ^slicing.discriminator.path = "code"
 * component contains smokingtype 0..1
 * component[smokingtype].code =  http://aehrc.com/fhir/observable-entity#smoking-type
+* component[smokingtype].valueCodeableConcept from SmokingType_Code_ValueSet
 * component[smokingtype].valueCodeableConcept MS
 * component contains unitofuse 0..1
 * component[unitofuse].code =  http://aehrc.com/fhir/observable-entity#smoking-units-of-use
@@ -186,7 +187,7 @@ Description: "This profile defines core information requirements for alcohol pat
 * component[bingedrinkingfrequency].valueQuantity.code from AlcoholPatternUnits_Code_ValueSet
 * component[bingedrinkingfrequency].valueQuantity MS
 * component contains bingedringkingdescription 0..1
-* component[bingedringkingdescription].code =  http://aehrc.com/fhir/observable-entity#alcohol-binge-dringking-description
+* component[bingedringkingdescription].code =  http://aehrc.com/fhir/observable-entity#alcohol-binge-drinking-description
 * component[bingedringkingdescription].valueString MS
 * component contains cessationattempts 0..1
 * component[cessationattempts].code =  http://aehrc.com/fhir/observable-entity#alcohol-cessation-attempts

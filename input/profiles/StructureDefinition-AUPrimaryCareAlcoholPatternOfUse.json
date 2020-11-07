@@ -355,7 +355,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "alcohol-binge-dringking-description",
+              "code": "alcohol-binge-drinking-description",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]

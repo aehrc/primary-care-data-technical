@@ -463,6 +463,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/smokingtypecode"
+        },
+        "name": "Smoking Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/smokingusunitscode"
         },
         "name": "Smoking Use Units",
