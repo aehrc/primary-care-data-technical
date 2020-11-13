@@ -32,7 +32,7 @@ Description: "The number of births where the fetus is overr 24 weeks"
 Profile: AUPrimaryCareLMP
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-lastmenstrualperiod
 Id: AUPrimaryCareLMP
-Title: "Primary Care Last Menstrual Period"
+Title: "AU Primary Care Last Menstrual Period"
 Description: "The date of the last normal menstrual period"
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP"
 //must have a SNOMED code with a value of 248993009, may have a LOINC one (8665-2) as well
@@ -57,7 +57,7 @@ Description: "The date that delivery is due."
 * subject 1..1 MS
 * effective[x] 1..1 MS
 * value[x] 1..1 MS
-* partOf only Reference(AUPrimaryCareProcedureUltrasoundScanObstetric or MedicationAdministration or MedicationDispense or MedicationStatement or Procedure or Immunization or ImagingStudy)
+* partOf only Reference(AUPrimaryCareUltrasoundScanObstetric or MedicationAdministration or MedicationDispense or MedicationStatement or Procedure or Immunization or ImagingStudy)
 * partOf MS
 
 Profile: AUPrimaryCareGestationalAge

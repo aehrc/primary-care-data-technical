@@ -400,7 +400,10 @@
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity",
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity",
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBreastfeedingStatus",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge"
             ]
           }
         ],

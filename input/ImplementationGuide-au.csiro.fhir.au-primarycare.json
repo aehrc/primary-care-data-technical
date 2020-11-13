@@ -204,7 +204,7 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareLMP"
         },
-        "name": "Primary Care Last Menstrual Period",
+        "name": "AU Primary Care Last Menstrual Period",
         "description": "The date of the last normal menstrual period",
         "exampleBoolean": false
       },
@@ -322,7 +322,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareProcedureUltrasoundScanObstetric"
+          "reference": "StructureDefinition/AUPrimaryCareUltrasoundScanObstetric"
         },
         "name": "AU Primary Care Ultrasound Scan Obstetric",
         "description": "A ultrasound scan for obstetric purposes",

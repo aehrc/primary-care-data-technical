@@ -2,7 +2,7 @@
 
 Profile: AUPrimaryCareUltrasoundScanObstetric
 Parent: https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure
-Id: AUPrimaryCareProcedureUltrasoundScanObstetric
+Id: AUPrimaryCareUltrasoundScanObstetric
 Title: "AU Primary Care Ultrasound Scan Obstetric"
 Description: "A ultrasound scan for obstetric purposes"
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric"
@@ -13,7 +13,7 @@ Description: "A ultrasound scan for obstetric purposes"
 * code.coding 1..1
 * code.coding contains scanSnomed 1..1
 * code.coding[scanSnomed] = http://snomed.info/sct#268445003
-* performed[x] 1..1
+* performedDateTime 1..1
 
 /*
 Profile: AUPrimaryCareProcedureList

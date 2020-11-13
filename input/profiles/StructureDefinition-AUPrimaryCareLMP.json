@@ -4,7 +4,7 @@
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP",
   "version": "0.0.3",
   "name": "AUPrimaryCareLMP",
-  "title": "Primary Care Last Menstrual Period",
+  "title": "AU Primary Care Last Menstrual Period",
   "status": "active",
   "description": "The date of the last normal menstrual period",
   "fhirVersion": "4.0.1",
