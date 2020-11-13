@@ -15,7 +15,6 @@ Description: "This profile defines a medicine list structure that includes core 
 * entry.item MS
 * emptyReason MS
 
-
 Profile: AUPrimaryCareMedicationStatement
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-medicationstatement
 Id: AUPrimaryCareMedicationStatement
