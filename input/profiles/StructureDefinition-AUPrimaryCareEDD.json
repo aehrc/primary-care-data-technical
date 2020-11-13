@@ -4,7 +4,7 @@
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD",
   "version": "0.0.3",
   "name": "AUPrimaryCareEDD",
-  "title": "Primary Care Estimated Date of Delivery",
+  "title": "AU Primary Care Estimated Date of Delivery",
   "status": "active",
   "description": "The date that delivery is due.",
   "fhirVersion": "4.0.1",
@@ -47,6 +47,25 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Observation.partOf",
+        "path": "Observation.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric",
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+              "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/Immunization",
+              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
       {
         "id": "Observation.status",
         "path": "Observation.status",

@@ -2,7 +2,7 @@
 
 Profile: AUPrimaryCareUltrasoundScanObstetric
 Parent: https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure
-Id: AUPrimaryCareProcedure-UltrasoundScanObstetric
+Id: AUPrimaryCareProcedureUltrasoundScanObstetric
 Title: "AU Primary Care Ultrasound Scan Obstetric"
 Description: "A ultrasound scan for obstetric purposes"
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric"

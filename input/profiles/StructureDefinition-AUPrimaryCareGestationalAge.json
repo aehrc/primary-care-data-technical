@@ -4,7 +4,7 @@
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge",
   "version": "0.0.3",
   "name": "AUPrimaryCareGestationalAge",
-  "title": "Primary Care Gestational Age",
+  "title": "AU Primary Care Gestational Age",
   "status": "active",
   "description": "Gestational age of a fetus.",
   "fhirVersion": "4.0.1",

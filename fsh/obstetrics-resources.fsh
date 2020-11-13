@@ -47,7 +47,7 @@ Description: "The date of the last normal menstrual period"
 Profile: AUPrimaryCareEDD
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-estimateddateofdelivery
 Id: AUPrimaryCareEDD
-Title: "Primary Care Estimated Date of Delivery"
+Title: "AU Primary Care Estimated Date of Delivery"
 Description: "The date that delivery is due."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
 * status = #final
@@ -57,11 +57,13 @@ Description: "The date that delivery is due."
 * subject 1..1 MS
 * effective[x] 1..1 MS
 * value[x] 1..1 MS
+* partOf only Reference(AUPrimaryCareProcedureUltrasoundScanObstetric or MedicationAdministration or MedicationDispense or MedicationStatement or Procedure or Immunization or ImagingStudy)
+* partOf MS
 
 Profile: AUPrimaryCareGestationalAge
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-gestationalage
 Id: AUPrimaryCareGestationalAge
-Title: "Primary Care Gestational Age"
+Title: "AU Primary Care Gestational Age"
 Description: "Gestational age of a fetus."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge"
 * status = #final

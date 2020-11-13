@@ -108,7 +108,7 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareEDD"
         },
-        "name": "Primary Care Estimated Date of Delivery",
+        "name": "AU Primary Care Estimated Date of Delivery",
         "description": "The date that delivery is due.",
         "exampleBoolean": false
       },
@@ -156,7 +156,7 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareGestationalAge"
         },
-        "name": "Primary Care Gestational Age",
+        "name": "AU Primary Care Gestational Age",
         "description": "Gestational age of a fetus.",
         "exampleBoolean": false
       },
@@ -322,7 +322,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric"
+          "reference": "StructureDefinition/AUPrimaryCareProcedureUltrasoundScanObstetric"
         },
         "name": "AU Primary Care Ultrasound Scan Obstetric",
         "description": "A ultrasound scan for obstetric purposes",
