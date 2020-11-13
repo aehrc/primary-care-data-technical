@@ -80,19 +80,9 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.additionalInstruction",
-        "path": "MedicationStatement.dosage.additionalInstruction",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationStatement.dosage.additionalInstruction:snomedAdditionalInstruction",
         "path": "MedicationStatement.dosage.additionalInstruction",
         "sliceName": "snomedAdditionalInstruction",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.asNeeded[x]",
-        "path": "MedicationStatement.dosage.asNeeded[x]",
         "mustSupport": true
       },
       {
@@ -103,6 +93,11 @@
       {
         "id": "MedicationStatement.dosage.asNeededBoolean",
         "path": "MedicationStatement.dosage.asNeededBoolean",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.route",
+        "path": "MedicationStatement.dosage.route",
         "mustSupport": true
       }
     ]
