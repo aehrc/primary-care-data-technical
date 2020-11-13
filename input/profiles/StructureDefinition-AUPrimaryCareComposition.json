@@ -320,11 +320,43 @@
       {
         "id": "Composition.section:socialHistory.entry",
         "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:smokingStatus",
+        "path": "Composition.section.entry",
+        "sliceName": "smokingStatus",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:alcoholStatus",
+        "path": "Composition.section.entry",
+        "sliceName": "alcoholStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholStatus"
             ]
           }
@@ -439,7 +471,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounter"
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounterList"
             ]
           }
         ],

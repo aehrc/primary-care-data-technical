@@ -122,6 +122,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareEncounterList"
+        },
+        "name": "AU Primary Care Encounter List",
+        "description": "This profile defines a encounter list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistory"
         },
         "name": "AU Primary Care Family Member History",

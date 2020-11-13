@@ -1,0 +1,65 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUPrimaryCareEncounterList",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounterList",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareEncounterList",
+  "title": "AU Primary Care Encounter List",
+  "status": "active",
+  "description": "This profile defines a encounter list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List.status",
+        "path": "List.status",
+        "patternCode": "current"
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

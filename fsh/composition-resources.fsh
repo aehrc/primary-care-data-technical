@@ -46,7 +46,7 @@ Description: "This profile defines a composition structure that includes core lo
     pregnancyHistory 0..1 and 
     encounterHistory 0..1 and
     goalList 0..1 and
-    followUp 0..1      //todo dhay added
+    followUp 0..1   
 
 //* section 1..*
 * section.section 0..0          //can't have sub sections
@@ -87,7 +87,16 @@ Description: "This profile defines a composition structure that includes core lo
 * section[socialHistory].code.coding.system = "http://loinc.org"
 * section[socialHistory].code.coding.code = #29762-2 (exactly)
 * section[socialHistory].mode = #snapshot
-* section[socialHistory].entry only Reference(AUPrimaryCareSmokingStatus or AUPrimaryCareAlcoholStatus)
+* section[socialHistory].entry ^slicing.discriminator.type = #profile
+* section[socialHistory].entry ^slicing.discriminator.path = "resolve()"
+* section[socialHistory].entry ^slicing.rules = #open
+* section[socialHistory].entry contains 
+    smokingStatus 0..1 and
+    alcoholStatus 0..1 
+* section[socialHistory].entry[smokingStatus] only Reference(AUPrimaryCareSmokingStatus)
+* section[socialHistory].entry[alcoholStatus] only Reference(AUPrimaryCareAlcoholStatus)
+
+// * section[socialHistory].entry only Reference(AUPrimaryCareSmokingStatus or AUPrimaryCareAlcoholStatus)
 * section[socialHistory].entry MS
 
 * section[familyHistoryList].code.coding.system = "http://loinc.org"
@@ -99,7 +108,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[encounterHistory].code.coding.system = "http://loinc.org"
 * section[encounterHistory].code.coding.code = #11347-2 (exactly)
 * section[encounterHistory].mode = #snapshot
-* section[encounterHistory].entry only Reference(AUPrimaryCareEncounter)
+* section[encounterHistory].entry only Reference(AUPrimaryCareEncounterList)
 * section[encounterHistory].entry MS
 
 * section[pregnancyHistory].code.coding.system = "http://loinc.org"
