@@ -29,7 +29,9 @@ Description: "This profile defines a medication statement structure that include
 * note.text MS
 * reasonCode MS
 * dosage.text MS
-* dosage.additionalInstruction[snomedAdditionalInstruction] MS
+* dosage.doseAndRate.doseQuantity MS
+* dosage.timing.code MS
+* dosage.additionalInstruction MS
 * dosage.asNeeded[x][asNeededCodeableConcept] MS
 * dosage.asNeeded[x][asNeededBoolean] MS
 * dosage.route MS
