@@ -80,9 +80,19 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationStatement.dosage.additionalInstruction",
+        "path": "MedicationStatement.dosage.additionalInstruction",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationStatement.dosage.additionalInstruction:snomedAdditionalInstruction",
         "path": "MedicationStatement.dosage.additionalInstruction",
         "sliceName": "snomedAdditionalInstruction",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.timing.code",
+        "path": "MedicationStatement.dosage.timing.code",
         "mustSupport": true
       },
       {
@@ -98,6 +108,21 @@
       {
         "id": "MedicationStatement.dosage.route",
         "path": "MedicationStatement.dosage.route",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.doseQuantity",
+        "path": "MedicationStatement.dosage.doseAndRate.doseQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

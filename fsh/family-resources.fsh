@@ -24,5 +24,4 @@ Description: "This profile defines a family member history list structure that i
 * mode = #snapshot
 * entry.item only Reference(AUPrimaryCareFamilyMemberHistory)
 * entry.item MS
-* emptyReason MS
 

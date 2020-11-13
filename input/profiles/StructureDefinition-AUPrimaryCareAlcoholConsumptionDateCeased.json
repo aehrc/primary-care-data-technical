@@ -1,12 +1,22 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareLMP",
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP",
+  "id": "AUPrimaryCareAlcoholConsumptionDateCeased",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased",
   "version": "0.0.3",
-  "name": "AUPrimaryCareLMP",
-  "title": "Primary Care Last Menstrual Period",
+  "name": "AUPrimaryCareAlcoholConsumptionDateCeased",
+  "title": "AU Primary Alcohol Consumption Date Ceased",
   "status": "active",
-  "description": "The date of the last normal menstrual period",
+  "description": "This profile defines core information requirements for a alcohol consumption date ceased in an Australian practice to practice record transfer.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -43,7 +53,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org.au/fhir/StructureDefinition/au-lastmenstrualperiod",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -55,11 +65,20 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "1373041000168105",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -73,12 +92,40 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "min": 1,
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.valueDateTime",
+        "path": "Observation.valueDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
         "mustSupport": true
       }
     ]

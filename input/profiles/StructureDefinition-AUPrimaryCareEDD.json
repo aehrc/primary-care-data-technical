@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AUPrimaryCareEDD",
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationEDD",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD",
   "version": "0.0.3",
-  "name": "EstimatedDateOfDelivery",
-  "title": "Estimated Date of Delivery",
+  "name": "AUPrimaryCareEDD",
+  "title": "Primary Care Estimated Date of Delivery",
   "status": "active",
   "description": "The date that delivery is due.",
   "fhirVersion": "4.0.1",

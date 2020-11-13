@@ -1,5 +1,6 @@
 // PROFILES 
 
+/*
 Profile: AUPrimaryCareProblemList
 Parent: List
 Id: AUPrimaryCareProblemList
@@ -10,5 +11,4 @@ Description: "This profile defines a problem list structure that includes core l
 * mode = #snapshot
 * entry.item only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition)
 * entry.item MS
-* emptyReason MS
-
+*/

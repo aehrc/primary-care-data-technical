@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AuPrimaryCareBreastfeedingStatus",
+  "id": "AUPrimaryCareBreastfeedingStatus",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -13,7 +13,7 @@
   ],
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBreastfeedingStatus",
   "version": "0.0.3",
-  "name": "BreastfeedingStatus",
+  "name": "AUPrimaryCareBreastfeedingStatus",
   "title": "AU Primary Care Breastfeeding Status",
   "status": "active",
   "description": "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer.",

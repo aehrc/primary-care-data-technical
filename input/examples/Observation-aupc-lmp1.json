@@ -3,7 +3,7 @@
   "id": "aupc-lmp1",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationLMP"
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP"
     ]
   },
   "status": "final",

@@ -3,7 +3,7 @@
   "id": "aupc-gravidity1",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGravidity"
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity"
     ]
   },
   "status": "final",

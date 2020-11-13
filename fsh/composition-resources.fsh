@@ -68,7 +68,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[medicalHistoryList].code.coding.system = "http://loinc.org"
 * section[medicalHistoryList].code.coding.code = #11348-0 (exactly)
 * section[medicalHistoryList].mode = #snapshot
-* section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList or AUPrimaryCareProcedureList or AUPrimaryCareProblemList)
+* section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList)
 * section[medicalHistoryList].entry MS
 
 * section[vaccinationList].code.coding.system = "http://loinc.org"

@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "AUPrimaryCareGravidity",
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGravidity",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity",
   "version": "0.0.3",
-  "name": "Gravidity",
+  "name": "AUPrimaryCareGravidity",
   "title": "AU Primary Care Gravidity",
   "status": "active",
   "description": "Represents the gravidity (number of pregnancies) of a female patient",

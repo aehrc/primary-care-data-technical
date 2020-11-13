@@ -3,7 +3,7 @@
   "id": "aupc-gestationOnScan1",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGestationalAge"
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge"
     ]
   },
   "status": "final",

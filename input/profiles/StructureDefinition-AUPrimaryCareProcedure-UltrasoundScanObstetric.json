@@ -11,10 +11,10 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric",
   "version": "0.0.3",
-  "name": "UltrasoundScanObstetric",
-  "title": "Ultrasound Scan Obstetric",
+  "name": "AUPrimaryCareUltrasoundScanObstetric",
+  "title": "AU Primary Care Ultrasound Scan Obstetric",
   "status": "active",
   "description": "A ultrasound scan for obstetric purposes",
   "fhirVersion": "4.0.1",

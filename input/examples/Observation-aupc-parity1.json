@@ -3,7 +3,7 @@
   "id": "aupc-parity1",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationParity"
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity"
     ]
   },
   "status": "final",

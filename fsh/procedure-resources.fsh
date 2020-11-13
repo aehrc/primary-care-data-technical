@@ -1,11 +1,11 @@
 // PROFILES 
 
-Profile: UltrasoundScanObstetric
+Profile: AUPrimaryCareUltrasoundScanObstetric
 Parent: https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure
 Id: AUPrimaryCareProcedure-UltrasoundScanObstetric
-Title: "Ultrasound Scan Obstetric"
+Title: "AU Primary Care Ultrasound Scan Obstetric"
 Description: "A ultrasound scan for obstetric purposes"
-* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric"
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric"
 * code 1..1
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
@@ -15,6 +15,7 @@ Description: "A ultrasound scan for obstetric purposes"
 * code.coding[scanSnomed] = http://snomed.info/sct#268445003
 * performed[x] 1..1
 
+/*
 Profile: AUPrimaryCareProcedureList
 Parent: List
 Id: AUPrimaryCareProcedureList
@@ -25,7 +26,7 @@ Description: "This profile defines a procedure list structure that includes core
 * mode = #snapshot
 * entry.item only Reference(AUPrimaryCareProcedure)
 * entry.item MS
-* emptyReason MS
+*/
 
 Profile: AUPrimaryCareProcedure
 Parent: Procedure

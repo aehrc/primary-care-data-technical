@@ -3,7 +3,7 @@
   "id": "aupc-edd1",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationEDD"
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
     ]
   },
   "status": "final",

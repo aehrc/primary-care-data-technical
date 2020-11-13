@@ -60,11 +60,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "List.emptyReason",
-        "path": "List.emptyReason",
-        "mustSupport": true
       }
     ]
   }

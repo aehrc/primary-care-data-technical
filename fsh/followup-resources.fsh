@@ -26,5 +26,5 @@ Description: "This profile defines a follow up list structure that includes core
 * mode = #snapshot
 * entry.item only Reference(AUPrimaryCareFollowUp)
 * entry.item MS
-* emptyReason MS
+
 

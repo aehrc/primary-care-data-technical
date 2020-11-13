@@ -209,6 +209,21 @@ Description: "This profile defines core information requirements for a social hi
 * effectiveDateTime MS
 * valueString MS
 
+Profile: AUPrimaryCareAlcoholConsumptionDateCeased
+Parent: Observation
+Id: AUPrimaryCareAlcoholConsumptionDateCeased
+Title: "AU Primary Alcohol Consumption Date Ceased"
+Description: "This profile defines core information requirements for a alcohol consumption date ceased in an Australian practice to practice record transfer."
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased"
+* status 1..1 MS
+* code = $SNOMED#1373041000168105
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* valueDateTime MS
+
 
 
 

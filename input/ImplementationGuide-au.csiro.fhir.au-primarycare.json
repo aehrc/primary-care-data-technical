@@ -42,6 +42,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased"
+        },
+        "name": "AU Primary Alcohol Consumption Date Ceased",
+        "description": "This profile defines core information requirements for a alcohol consumption date ceased in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholPatternOfUse"
         },
         "name": "AU Primary Alcohol Pattern Of Use",
@@ -74,6 +82,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareBreastfeedingStatus"
+        },
+        "name": "AU Primary Care Breastfeeding Status",
+        "description": "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareComposition"
         },
         "name": "AU Primary Care Composition",
@@ -86,6 +102,14 @@
         },
         "name": "AU Primary Care Condition",
         "description": "This profile defines a condition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareEDD"
+        },
+        "name": "Primary Care Estimated Date of Delivery",
+        "description": "The date that delivery is due.",
         "exampleBoolean": false
       },
       {
@@ -130,6 +154,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareGestationalAge"
+        },
+        "name": "Primary Care Gestational Age",
+        "description": "Gestational age of a fetus.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareGoal"
         },
         "name": "AU Primary Care Goal",
@@ -146,6 +178,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareGravidity"
+        },
+        "name": "AU Primary Care Gravidity",
+        "description": "Represents the gravidity (number of pregnancies) of a female patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareImmunisation"
         },
         "name": "AU Primary Care Immunisation",
@@ -158,6 +198,14 @@
         },
         "name": "AU Primary Care Immunisation List",
         "description": "This profile defines an immunisation list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareLMP"
+        },
+        "name": "Primary Care Last Menstrual Period",
+        "description": "The date of the last normal menstrual period",
         "exampleBoolean": false
       },
       {
@@ -202,6 +250,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareParity"
+        },
+        "name": "AU Primary Care Parity",
+        "description": "The number of births where the fetus is overr 24 weeks",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCarePatient"
         },
         "name": "AU Primary Care Patient",
@@ -210,26 +266,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareProblemList"
-        },
-        "name": "AU Primary Care Problem List",
-        "description": "This profile defines a problem list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareProcedure"
         },
         "name": "AU Primary Care Procedure",
         "description": "This profile defines a procedure structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareProcedureList"
-        },
-        "name": "AU Primary Care Procedure List",
-        "description": "This profile defines a procedure list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
         "exampleBoolean": false
       },
       {
@@ -282,57 +322,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/AuPrimaryCareBreastfeedingStatus"
-        },
-        "name": "AU Primary Care Breastfeeding Status",
-        "description": "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareEDD"
-        },
-        "name": "Estimated Date of Delivery",
-        "description": "The date that delivery is due.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareGestationalAge"
-        },
-        "name": "Gestational Age",
-        "description": "Gestational age of a fetus.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareGravidity"
-        },
-        "name": "AU Primary Care Gravidity",
-        "description": "Represents the gravidity (number of pregnancies) of a female patient",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareLMP"
-        },
-        "name": "Last Menstrual Period",
-        "description": "The date of the last normal menstrual period",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareParity"
-        },
-        "name": "AU Primary Care Parity",
-        "description": "The number of births where the fetus is overr 24 weeks",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric"
         },
-        "name": "Ultrasound Scan Obstetric",
+        "name": "AU Primary Care Ultrasound Scan Obstetric",
         "description": "A ultrasound scan for obstetric purposes",
         "exampleBoolean": false
       },
@@ -575,7 +567,7 @@
         },
         "name": "Estimated Date of Delivery",
         "description": "Estimated Date of Delivery",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationEDD"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
       },
       {
         "reference": {
@@ -613,7 +605,7 @@
         },
         "name": "Gestation on scan ",
         "description": "Gestation on scan",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGestationalAge"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge"
       },
       {
         "reference": {
@@ -621,7 +613,7 @@
         },
         "name": "Gravidity",
         "description": "Gravidity",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGravidity"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity"
       },
       {
         "reference": {
@@ -667,7 +659,7 @@
         },
         "name": "Last Menstrual Period",
         "description": "Last Menstrual Period",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationLMP"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP"
       },
       {
         "reference": {
@@ -719,7 +711,7 @@
         },
         "name": "Parity",
         "description": "Parity",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationParity"
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity"
       },
       {
         "reference": {

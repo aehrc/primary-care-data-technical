@@ -24,5 +24,4 @@ Description: "This profile defines an immunisation list structure that includes 
 * mode = #snapshot
 * entry.item only Reference(AUPrimaryCareImmunisation)
 * entry.item MS
-* emptyReason MS
 

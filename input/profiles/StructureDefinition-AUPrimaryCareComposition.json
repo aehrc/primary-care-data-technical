@@ -175,9 +175,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProblemList"
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
             ]
           }
         ],
@@ -399,10 +397,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGravidity",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationParity",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationLMP",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationEDD"
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
             ]
           }
         ],
