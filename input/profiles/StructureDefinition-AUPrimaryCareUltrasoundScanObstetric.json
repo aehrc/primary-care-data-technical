@@ -77,16 +77,6 @@
           "code": "268445003",
           "system": "http://snomed.info/sct"
         }
-      },
-      {
-        "id": "Procedure.performed[x]",
-        "path": "Procedure.performed[x]",
-        "min": 1
-      },
-      {
-        "id": "Procedure.performedDateTime",
-        "path": "Procedure.performedDateTime",
-        "min": 1
       }
     ]
   }

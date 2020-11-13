@@ -13,7 +13,7 @@ Description: "A ultrasound scan for obstetric purposes"
 * code.coding 1..1
 * code.coding contains scanSnomed 1..1
 * code.coding[scanSnomed] = http://snomed.info/sct#268445003
-* performedDateTime 1..1
+
 
 /*
 Profile: AUPrimaryCareProcedureList
