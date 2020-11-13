@@ -79,7 +79,8 @@
               "http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Procedure.code",

@@ -43,18 +43,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.medication[x]",
-        "path": "MedicationStatement.medication[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
-            ]
-          }
-        ]
-      },
-      {
         "id": "MedicationStatement.medicationCodeableConcept",
         "path": "MedicationStatement.medicationCodeableConcept",
         "mustSupport": true,
@@ -66,6 +54,14 @@
       {
         "id": "MedicationStatement.medicationReference",
         "path": "MedicationStatement.medicationReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

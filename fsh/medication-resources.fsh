@@ -22,9 +22,9 @@ Id: AUPrimaryCareMedicationStatement
 Title: "AU Primary Care Medication Statement"
 Description: "This profile defines a medication statement structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
-* medication[x] only Reference(AUPrimaryCareMedication)
 * medicationCodeableConcept from Medication_Code_Valueset (preferred) 
 * medicationCodeableConcept MS
+* medicationReference only Reference(AUPrimaryCareMedication)
 * medicationReference MS
 * status MS
 * note.text MS

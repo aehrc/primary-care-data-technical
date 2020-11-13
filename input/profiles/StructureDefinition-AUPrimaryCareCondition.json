@@ -65,7 +65,8 @@
               "http://hl7.org/fhir/StructureDefinition/bodySite"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Condition.clinicalStatus",
