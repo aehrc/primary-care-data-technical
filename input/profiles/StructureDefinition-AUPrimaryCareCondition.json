@@ -53,6 +53,21 @@
         "mustSupport": true
       },
       {
+        "id": "Condition.extension:bodySiteReference",
+        "path": "Condition.extension",
+        "sliceName": "bodySiteReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/bodySite"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
         "mustSupport": true
@@ -85,7 +100,7 @@
       {
         "id": "Condition.bodySite",
         "path": "Condition.bodySite",
-        "short": "Body site is required to describe laterality of a condition",
+        "short": "Body site for named body site",
         "mustSupport": true
       },
       {

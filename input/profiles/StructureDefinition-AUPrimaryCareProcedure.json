@@ -53,6 +53,35 @@
         "mustSupport": true
       },
       {
+        "id": "Procedure.extension",
+        "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Procedure.extension:targetBodyStructureReference",
+        "path": "Procedure.extension",
+        "sliceName": "targetBodyStructureReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Procedure.code",
         "path": "Procedure.code",
         "mustSupport": true,

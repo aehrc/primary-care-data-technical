@@ -7,8 +7,7 @@ Title: "AU Primary Care Condition"
 Description: "This profile defines a condition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
 * meta.lastUpdated MS
-// * extension contains ConditionCourse named ConditionCourse 0..1     //an external extension
-// * extension contains MedicalHistoryLaterality named MedicalHistoryLaterality 0..1     //an external extension
+* extension contains http://hl7.org/fhir/StructureDefinition/bodySite named bodySiteReference 0..1 
 * clinicalStatus MS
 * verificationStatus MS
 * severity MS
@@ -18,7 +17,7 @@ Description: "This profile defines a condition structure that includes core loca
 * code.coding MS
 * bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)
 * bodySite MS 
-* bodySite ^short = "Body site is required to describe laterality of a condition"
+* bodySite ^short = "Body site for named body site"
 * subject only Reference(AUPrimaryCarePatient)
 * subject MS
 * onsetDateTime MS 
