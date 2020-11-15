@@ -368,6 +368,22 @@
         "mustSupport": true
       },
       {
+        "id": "Composition.section:socialHistory.entry:socialSummary",
+        "path": "Composition.section.entry",
+        "sliceName": "socialSummary",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialSummary"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:socialHistory.entry:smokingStatus",
         "path": "Composition.section.entry",
         "sliceName": "smokingStatus",
@@ -469,6 +485,62 @@
         "sliceName": "alcoholStatus",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholStatus"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:alcoholSummary",
+        "path": "Composition.section.entry",
+        "sliceName": "alcoholSummary",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionSummary"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:alcoholPattern",
+        "path": "Composition.section.entry",
+        "sliceName": "alcoholPattern",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholPatternOfUse"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:alcoholCeased",
+        "path": "Composition.section.entry",
+        "sliceName": "alcoholCeased",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

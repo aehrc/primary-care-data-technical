@@ -103,19 +103,28 @@ Description: "This profile defines a composition structure that includes core lo
 * section[socialHistory].entry ^slicing.discriminator.path = "resolve()"
 * section[socialHistory].entry ^slicing.rules = #open
 * section[socialHistory].entry contains 
-    smokingStatus 0..1 and
-    smokingSummary 0..1 and
-    smokingStarted 0..1 and
-    smokingCeased 0..1 and
-    smokingPattern 0..* and 
-    smokingOverallPackYears 0..1 and 
-    alcoholStatus 0..1   
+    socialSummary 0..1 MS and
+    smokingStatus 0..1 MS and
+    smokingSummary 0..1 MS and
+    smokingStarted 0..1 MS and
+    smokingCeased 0..1 MS and
+    smokingPattern 0..* MS and 
+    smokingOverallPackYears 0..1 MS and 
+    alcoholStatus 0..1 MS and 
+    alcoholSummary 0..1 MS and
+    alcoholPattern 0..* MS and
+    alcoholCeased 0..1 MS 
+* section[socialHistory].entry[socialSummary] only Reference(AUPrimaryCareSocialSummary)
 * section[socialHistory].entry[smokingStatus] only Reference(AUPrimaryCareSmokingStatus)
 * section[socialHistory].entry[smokingSummary] only Reference(AUPrimaryCareTobaccoSmokingSummary)
 * section[socialHistory].entry[smokingStarted] only Reference(AUPrimaryCareTobaccoSmokingDateStarted)
 * section[socialHistory].entry[smokingCeased] only Reference(AUPrimaryCareTobaccoSmokingDateCeased)
 * section[socialHistory].entry[smokingPattern] only Reference(AUPrimaryCareTobaccoPatternOfUse)
 * section[socialHistory].entry[smokingOverallPackYears] only Reference(AUPrimaryCareOverallPackYears)
+* section[socialHistory].entry[alcoholStatus] only Reference(AUPrimaryCareAlcoholStatus)
+* section[socialHistory].entry[alcoholSummary] only Reference(AUPrimaryAlcoholConsumptionSummary)
+* section[socialHistory].entry[alcoholPattern] only Reference(AUPrimaryCareAlcoholPatternOfUse)
+* section[socialHistory].entry[alcoholCeased] only Reference(AUPrimaryCareAlcoholConsumptionDateCeased)
 * section[socialHistory].entry MS
 
 * section[familyHistoryList].code.coding.system = "http://loinc.org"
