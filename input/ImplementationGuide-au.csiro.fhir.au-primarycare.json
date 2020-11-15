@@ -82,6 +82,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAttachment"
+        },
+        "name": "AU Primary Care Attachment",
+        "description": "This profile defines a attached document structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareBreastfeedingStatus"
         },
         "name": "AU Primary Care Breastfeeding Status",
