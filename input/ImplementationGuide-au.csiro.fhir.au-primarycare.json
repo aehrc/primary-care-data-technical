@@ -245,7 +245,7 @@
           "reference": "StructureDefinition/AUPrimaryCareMedicationStatement"
         },
         "name": "AU Primary Care Medication Statement",
-        "description": "This profile defines a medication statement structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "A snapshot view about the use of a specified medication by an individual.\n\nUsage \nUse to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.\nA Medication statement can only be considered correct and accurate at the time it was asserted.\n\nMisuse\nUse to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.\nA Medication statement can only be considered correct and accurate at the time it was asserted.",
         "exampleBoolean": false
       },
       {

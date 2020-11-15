@@ -19,7 +19,17 @@ Profile: AUPrimaryCareMedicationStatement
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-medicationstatement
 Id: AUPrimaryCareMedicationStatement
 Title: "AU Primary Care Medication Statement"
-Description: "This profile defines a medication statement structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
+Description: """
+A snapshot view about the use of a specified medication by an individual.
+
+Usage 
+Use to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.
+A Medication statement can only be considered correct and accurate at the time it was asserted.
+
+Misuse
+Use to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.
+A Medication statement can only be considered correct and accurate at the time it was asserted.
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
 * medication[x][medicationCodeableConcept] from Medication_Code_Valueset (preferred) 
 * medication[x][medicationCodeableConcept] MS
