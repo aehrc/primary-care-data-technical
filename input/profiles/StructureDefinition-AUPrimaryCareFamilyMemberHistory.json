@@ -62,12 +62,59 @@
         }
       },
       {
+        "id": "FamilyMemberHistory.patient",
+        "path": "FamilyMemberHistory.patient",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.name",
+        "path": "FamilyMemberHistory.name",
+        "mustSupport": true
+      },
+      {
         "id": "FamilyMemberHistory.relationship",
         "path": "FamilyMemberHistory.relationship",
+        "mustSupport": true,
         "binding": {
           "strength": "extensible",
           "valueSet": "http://aehrc.com/valueset/geneticfamilymember"
         }
+      },
+      {
+        "id": "FamilyMemberHistory.deceasedBoolean",
+        "path": "FamilyMemberHistory.deceasedBoolean",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.deceasedDate",
+        "path": "FamilyMemberHistory.deceasedDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.deceasedAge",
+        "path": "FamilyMemberHistory.deceasedAge",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Age"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "FamilyMemberHistory.note",
@@ -77,10 +124,45 @@
       {
         "id": "FamilyMemberHistory.condition.code",
         "path": "FamilyMemberHistory.condition.code",
+        "mustSupport": true,
         "binding": {
           "strength": "extensible",
           "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1"
         }
+      },
+      {
+        "id": "FamilyMemberHistory.condition.contributedToDeath",
+        "path": "FamilyMemberHistory.condition.contributedToDeath",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.condition.onsetAge",
+        "path": "FamilyMemberHistory.condition.onsetAge",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Age"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.condition.onsetString",
+        "path": "FamilyMemberHistory.condition.onsetString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.condition.note.text",
+        "path": "FamilyMemberHistory.condition.note.text",
+        "mustSupport": true
       }
     ]
   }
