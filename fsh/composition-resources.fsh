@@ -56,75 +56,104 @@ Description: "This profile defines a composition structure that includes core lo
 * section[clinicalSynopsis].code.coding.system = "http://loinc.org"
 * section[clinicalSynopsis].code.coding.code = #11329-0 (exactly)
 * section[clinicalSynopsis].code.coding.display = "History general"
+* section[clinicalSynopsis].code MS
 * section[clinicalSynopsis].mode = #snapshot
+* section[clinicalSynopsis].mode MS 
 * section[clinicalSynopsis].text MS
 
 * section[adverseReactionList].code.coding.system = "http://loinc.org"
 * section[adverseReactionList].code.coding.code = #48765-2 (exactly)
+* section[adverseReactionList].code MS
 * section[adverseReactionList].mode = #snapshot
+* section[adverseReactionList].mode MS
 * section[adverseReactionList].entry only Reference(AUPrimaryCareAllergyIntoleranceList)
 * section[adverseReactionList].entry MS
 
 * section[medicalHistoryList].code.coding.system = "http://loinc.org"
 * section[medicalHistoryList].code.coding.code = #11348-0 (exactly)
+* section[medicalHistoryList].code MS
 * section[medicalHistoryList].mode = #snapshot
+* section[medicalHistoryList].mode MS
 * section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList)
 * section[medicalHistoryList].entry MS
 
 * section[vaccinationList].code.coding.system = "http://loinc.org"
 * section[vaccinationList].code.coding.code = #41291-6 (exactly)
 * section[vaccinationList].code.coding.display = "Immunization"
+* section[vaccinationList].code MS
 * section[vaccinationList].mode = #snapshot
+* section[vaccinationList].mode MS
 * section[vaccinationList].entry only Reference(AUPrimaryCareImmunisationList)
 * section[vaccinationList].entry MS
 
 * section[medicineList].code.coding.system = "http://loinc.org"
 * section[medicineList].code.coding.code = #10160-0 (exactly) 
+* section[medicineList].code MS
 * section[medicineList].mode = #snapshot
+* section[medicineList].mode MS
 * section[medicineList].entry only Reference(AUPrimaryCareMedicineList)
 * section[medicineList].entry MS
 
 * section[socialHistory].code.coding.system = "http://loinc.org"
 * section[socialHistory].code.coding.code = #29762-2 (exactly)
+* section[socialHistory].code MS
 * section[socialHistory].mode = #snapshot
+* section[socialHistory].mode MS
 * section[socialHistory].entry ^slicing.discriminator.type = #profile
 * section[socialHistory].entry ^slicing.discriminator.path = "resolve()"
 * section[socialHistory].entry ^slicing.rules = #open
 * section[socialHistory].entry contains 
     smokingStatus 0..1 and
-    alcoholStatus 0..1 
+    smokingSummary 0..1 and
+    smokingStarted 0..1 and
+    smokingCeased 0..1 and
+    smokingPattern 0..* and 
+    smokingOverallPackYears 0..1 and 
+    alcoholStatus 0..1   
 * section[socialHistory].entry[smokingStatus] only Reference(AUPrimaryCareSmokingStatus)
-* section[socialHistory].entry[alcoholStatus] only Reference(AUPrimaryCareAlcoholStatus)
-
-// * section[socialHistory].entry only Reference(AUPrimaryCareSmokingStatus or AUPrimaryCareAlcoholStatus)
+* section[socialHistory].entry[smokingSummary] only Reference(AUPrimaryCareTobaccoSmokingSummary)
+* section[socialHistory].entry[smokingStarted] only Reference(AUPrimaryCareTobaccoSmokingDateStarted)
+* section[socialHistory].entry[smokingCeased] only Reference(AUPrimaryCareTobaccoSmokingDateCeased)
+* section[socialHistory].entry[smokingPattern] only Reference(AUPrimaryCareTobaccoPatternOfUse)
+* section[socialHistory].entry[smokingOverallPackYears] only Reference(AUPrimaryCareOverallPackYears)
 * section[socialHistory].entry MS
 
 * section[familyHistoryList].code.coding.system = "http://loinc.org"
 * section[familyHistoryList].code.coding.code = #10157-6 (exactly)
+* section[familyHistoryList].code MS
 * section[familyHistoryList].mode = #snapshot
+* section[familyHistoryList].mode MS
 * section[familyHistoryList].entry only Reference(AUPrimaryCareFamilyMemberHistoryList)
 * section[familyHistoryList].entry MS
 
 * section[encounterHistory].code.coding.system = "http://loinc.org"
 * section[encounterHistory].code.coding.code = #11347-2 (exactly)
+* section[encounterHistory].code MS
 * section[encounterHistory].mode = #snapshot
+* section[encounterHistory].mode MS
 * section[encounterHistory].entry only Reference(AUPrimaryCareEncounterList)
 * section[encounterHistory].entry MS
 
 * section[pregnancyHistory].code.coding.system = "http://loinc.org"
 * section[pregnancyHistory].code.coding.code = #10163-4 (exactly)
+* section[pregnancyHistory].code MS
 * section[pregnancyHistory].mode = #snapshot
+* section[pregnancyHistory].mode MS
 * section[pregnancyHistory].entry only Reference(AUPrimaryCareGravidity or AUPrimaryCareParity or AUPrimaryCareLMP or AUPrimaryCareEDD or AUPrimaryCareUltrasoundScanObstetric or AUPrimaryCareBreastfeedingStatus or AUPrimaryCareGestationalAge)
 * section[pregnancyHistory].entry MS
 
 * section[goalList].code.coding.system = "http://loinc.org"
 * section[goalList].code.coding.code = #61146-7 (exactly)
+* section[goalList].code MS
 * section[goalList].mode = #snapshot
+* section[goalList].mode MS
 * section[goalList].entry only Reference(AUPrimaryCareGoalList)
 * section[goalList].entry MS
 
 * section[followUp].code.coding.system = "http://loinc.org"
 * section[followUp].code.coding.code = #69730-0 (exactly)
+* section[followUp].code MS
 * section[followUp].mode = #snapshot
+* section[followUp].mode MS
 * section[followUp].entry only Reference(AUPrimaryCareFollowUpList)
 * section[followUp].entry MS

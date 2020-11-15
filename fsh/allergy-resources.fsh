@@ -13,6 +13,7 @@ Description: "This profile defines an allergy intolerance list structure that in
 * entry.item only Reference(AUPrimaryCareAllergyIntolerance)
 * entry.item MS
 * emptyReason MS
+
 /*
 Profile: AUPrimaryCareAllergyIntolerance
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-allergyintolerance

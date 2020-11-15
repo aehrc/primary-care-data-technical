@@ -115,6 +115,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:clinicalSynopsis.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:clinicalSynopsis.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -143,7 +148,8 @@
       {
         "id": "Composition.section:clinicalSynopsis.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:medicalHistoryList",
@@ -151,6 +157,11 @@
         "sliceName": "medicalHistoryList",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Composition.section:medicalHistoryList.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:medicalHistoryList.code.coding.system",
@@ -166,7 +177,8 @@
       {
         "id": "Composition.section:medicalHistoryList.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:medicalHistoryList.entry",
@@ -189,6 +201,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:adverseReactionList.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:adverseReactionList.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -202,7 +219,8 @@
       {
         "id": "Composition.section:adverseReactionList.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:adverseReactionList.entry",
@@ -225,6 +243,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:vaccinationList.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:vaccinationList.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -243,7 +266,8 @@
       {
         "id": "Composition.section:vaccinationList.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:vaccinationList.entry",
@@ -266,6 +290,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:medicineList.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:medicineList.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -279,7 +308,8 @@
       {
         "id": "Composition.section:medicineList.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:medicineList.entry",
@@ -302,6 +332,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:socialHistory.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:socialHistory.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -315,7 +350,8 @@
       {
         "id": "Composition.section:socialHistory.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:socialHistory.entry",
@@ -348,19 +384,91 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:socialHistory.entry:alcoholStatus",
+        "id": "Composition.section:socialHistory.entry:smokingSummary",
         "path": "Composition.section.entry",
-        "sliceName": "alcoholStatus",
+        "sliceName": "smokingSummary",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholStatus"
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingSummary"
             ]
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:smokingStarted",
+        "path": "Composition.section.entry",
+        "sliceName": "smokingStarted",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateStarted"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:smokingCeased",
+        "path": "Composition.section.entry",
+        "sliceName": "smokingCeased",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:smokingPattern",
+        "path": "Composition.section.entry",
+        "sliceName": "smokingPattern",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:smokingOverallPackYears",
+        "path": "Composition.section.entry",
+        "sliceName": "smokingOverallPackYears",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareOverallPackYears"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:socialHistory.entry:alcoholStatus",
+        "path": "Composition.section.entry",
+        "sliceName": "alcoholStatus",
+        "min": 0,
+        "max": "1",
         "mustSupport": true
       },
       {
@@ -369,6 +477,11 @@
         "sliceName": "familyHistoryList",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "Composition.section:familyHistoryList.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:familyHistoryList.code.coding.system",
@@ -384,7 +497,8 @@
       {
         "id": "Composition.section:familyHistoryList.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:familyHistoryList.entry",
@@ -407,6 +521,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:pregnancyHistory.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:pregnancyHistory.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -420,7 +539,8 @@
       {
         "id": "Composition.section:pregnancyHistory.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:pregnancyHistory.entry",
@@ -449,6 +569,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:encounterHistory.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:encounterHistory.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -462,7 +587,8 @@
       {
         "id": "Composition.section:encounterHistory.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:encounterHistory.entry",
@@ -485,6 +611,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:goalList.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:goalList.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -498,7 +629,8 @@
       {
         "id": "Composition.section:goalList.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:goalList.entry",
@@ -521,6 +653,11 @@
         "max": "1"
       },
       {
+        "id": "Composition.section:followUp.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
         "id": "Composition.section:followUp.code.coding.system",
         "path": "Composition.section.code.coding.system",
         "patternUri": "http://loinc.org"
@@ -534,7 +671,8 @@
       {
         "id": "Composition.section:followUp.mode",
         "path": "Composition.section.mode",
-        "patternCode": "snapshot"
+        "patternCode": "snapshot",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:followUp.entry",
