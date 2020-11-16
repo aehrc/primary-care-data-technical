@@ -363,7 +363,7 @@
               "path": "resolve()"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "mustSupport": true
       },
@@ -617,16 +617,123 @@
       {
         "id": "Composition.section:pregnancyHistory.entry",
         "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "closed"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:gravidity",
+        "path": "Composition.section.entry",
+        "sliceName": "gravidity",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric",
-              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBreastfeedingStatus",
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:parity",
+        "path": "Composition.section.entry",
+        "sliceName": "parity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:lmp",
+        "path": "Composition.section.entry",
+        "sliceName": "lmp",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:edd",
+        "path": "Composition.section.entry",
+        "sliceName": "edd",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:scan",
+        "path": "Composition.section.entry",
+        "sliceName": "scan",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:breastfeeding",
+        "path": "Composition.section.entry",
+        "sliceName": "breastfeeding",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBreastfeedingStatus"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry:gestationalage",
+        "path": "Composition.section.entry",
+        "sliceName": "gestationalage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
               "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge"
             ]
           }
@@ -754,6 +861,48 @@
             "code": "Reference",
             "targetProfile": [
               "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:attachments",
+        "path": "Composition.section",
+        "sliceName": "attachments",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:attachments.code",
+        "path": "Composition.section.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:attachments.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:attachments.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "fixedCode": "52033-8"
+      },
+      {
+        "id": "Composition.section:attachments.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:attachments.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAttachment"
             ]
           }
         ],

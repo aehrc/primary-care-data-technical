@@ -46,7 +46,8 @@ Description: "This profile defines a composition structure that includes core lo
     pregnancyHistory 0..1 and 
     encounterHistory 0..1 and
     goalList 0..1 and
-    followUp 0..1   
+    followUp 0..1 and 
+    attachments 0..1 
 
 //* section 1..*
 * section.section 0..0          //can't have sub sections
@@ -101,7 +102,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[socialHistory].mode MS
 * section[socialHistory].entry ^slicing.discriminator.type = #profile
 * section[socialHistory].entry ^slicing.discriminator.path = "resolve()"
-* section[socialHistory].entry ^slicing.rules = #open
+* section[socialHistory].entry ^slicing.rules = #closed
 * section[socialHistory].entry contains 
     socialSummary 0..1 MS and
     smokingStatus 0..1 MS and
@@ -148,7 +149,24 @@ Description: "This profile defines a composition structure that includes core lo
 * section[pregnancyHistory].code MS
 * section[pregnancyHistory].mode = #snapshot
 * section[pregnancyHistory].mode MS
-* section[pregnancyHistory].entry only Reference(AUPrimaryCareGravidity or AUPrimaryCareParity or AUPrimaryCareLMP or AUPrimaryCareEDD or AUPrimaryCareUltrasoundScanObstetric or AUPrimaryCareBreastfeedingStatus or AUPrimaryCareGestationalAge)
+* section[pregnancyHistory].entry ^slicing.discriminator.type = #profile
+* section[pregnancyHistory].entry ^slicing.discriminator.path = "resolve()"
+* section[pregnancyHistory].entry ^slicing.rules = #closed
+* section[pregnancyHistory].entry contains 
+    gravidity 0..1 MS and
+    parity 0..1 MS and
+    lmp 0..1 MS and
+    edd 0..1 MS and
+    scan 0..1 MS and
+    breastfeeding 0..1 MS and 
+    gestationalage 0..1 MS
+* section[pregnancyHistory].entry[gravidity] only Reference(AUPrimaryCareGravidity)
+* section[pregnancyHistory].entry[parity] only Reference(AUPrimaryCareParity)
+* section[pregnancyHistory].entry[lmp] only Reference(AUPrimaryCareLMP)
+* section[pregnancyHistory].entry[edd] only Reference(AUPrimaryCareEDD)
+* section[pregnancyHistory].entry[scan] only Reference(AUPrimaryCareUltrasoundScanObstetric)
+* section[pregnancyHistory].entry[breastfeeding] only Reference(AUPrimaryCareBreastfeedingStatus)
+* section[pregnancyHistory].entry[gestationalage] only Reference(AUPrimaryCareGestationalAge)
 * section[pregnancyHistory].entry MS
 
 * section[goalList].code.coding.system = "http://loinc.org"
@@ -166,3 +184,11 @@ Description: "This profile defines a composition structure that includes core lo
 * section[followUp].mode MS
 * section[followUp].entry only Reference(AUPrimaryCareFollowUpList)
 * section[followUp].entry MS
+
+* section[attachments].code.coding.system = "http://loinc.org"
+* section[attachments].code.coding.code = #52033-8 (exactly)
+* section[attachments].code MS
+* section[attachments].mode = #snapshot
+* section[attachments].mode MS
+* section[attachments].entry only Reference(AUPrimaryCareAttachment)
+* section[attachments].entry MS

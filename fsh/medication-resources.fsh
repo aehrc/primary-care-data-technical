@@ -22,13 +22,11 @@ Title: "AU Primary Care Medication Statement"
 Description: """
 A snapshot view about the use of a specified medication by an individual.
 
-'''Usage''' 
-
+**Usage** 
 Use to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.
 A Medication statement can only be considered correct and accurate at the time it was asserted.
 
-'''Misuse'''
-
+**Misuse**
 Use to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.
 A Medication statement can only be considered correct and accurate at the time it was asserted.
 """

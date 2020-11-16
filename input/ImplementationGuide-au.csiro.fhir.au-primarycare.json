@@ -69,7 +69,7 @@
           "reference": "StructureDefinition/AUPrimaryCareAllergyIntolerance"
         },
         "name": "AU Primary Care Allergy Intolerance",
-        "description": "This profile defines an allergy intolerance structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "Risk of harmful or undesirable physiological response which is unique to the individual and associated with exposure to a known substance.\n\n**Usage**\nUse to provide a single place within the health record to document a range of clinical statements about adverse reactions, including:\n- record a clinical assessment of the individual’s propensity for a potential future reaction upon re-exposure; and\n- record cumulative information about the reaction to each exposure.\n\nUse to record information about the positive presence of the risk of an adverse reaction:\n- to support direct clinical care of an individual;\n- as part of a managed adverse reaction or allergy/intolerance list;\n- to support exchange of information about the propensity and events related to adverse reactions;\n- to inform adverse reaction reporting; and\n- to assist computerised knowledge-based activities such as clinical decision support and alerts.\n\nUse to record information about the risk of adverse reactions to a broad range of substances, including: incipients and excipients in medicinal preparations; biological products; metal salts; and organic chemical compounds.\n\nAdverse reaction may be:\n- an immune mediated reaction - Types I-IV (including allergic reactions and hypersensitivities); or\n- a non-immune mediated reaction - including pseudo-allergic reactions, side effects, intolerances, drug toxicities (eg to Gentamicin).\nIn clinical practice distinguishing between immune-mediated and non-immune mediated reactions is difficult and often not practical. Identification of the type of reaction is not a proxy for seriousness or risk of harm to the patient, which is better expressed by the manifestation in clinical practice.\n\nThe risk of an adverse reaction event or manifestation should not be recorded without identifying a proposed causative substance or class of substance. If there is uncertainty that a specific substance is the cause, this uncertainty can be recorded using the ‘Verification status’ data element. If there are multiple possible substances that may have caused a reaction/manifestation, each substance should be recorded using a separate instance of this adverse reaction archetype with the ‘Status’ set to an initial state of ‘Unconfirmed’ so that adverse reaction checking can be activated in clinical systems. Once the substance, agent or class is later proven not to be the cause for a given reaction then the ‘Status’ can be modified to ‘Refuted’.\n\nThis item has been designed to allow recording of information about a specific substance (amoxycillin, oysters, or bee sting venom) or, alternatively, a class of substance (eg Penicillins). If a class of substance is recorded then identification of the exact substance can be recorded on a per exposure basis.",
         "exampleBoolean": false
       },
       {
@@ -85,7 +85,7 @@
           "reference": "StructureDefinition/AUPrimaryCareAttachment"
         },
         "name": "AU Primary Care Attachment",
-        "description": "This profile defines a attached document structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "Document content as an attachment.\nThis includes the binary content of the document as part of the entry.",
         "exampleBoolean": false
       },
       {
@@ -245,7 +245,7 @@
           "reference": "StructureDefinition/AUPrimaryCareMedicationStatement"
         },
         "name": "AU Primary Care Medication Statement",
-        "description": "A snapshot view about the use of a specified medication by an individual.\n\n'''Usage''' \n\nUse to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.\nA Medication statement can only be considered correct and accurate at the time it was asserted.\n\n'''Misuse'''\n\nUse to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.\nA Medication statement can only be considered correct and accurate at the time it was asserted.",
+        "description": "A snapshot view about the use of a specified medication by an individual.\n\n**Usage** \nUse to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.\nA Medication statement can only be considered correct and accurate at the time it was asserted.\n\n**Misuse**\nUse to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.\nA Medication statement can only be considered correct and accurate at the time it was asserted.",
         "exampleBoolean": false
       },
       {

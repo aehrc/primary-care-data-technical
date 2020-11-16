@@ -2,7 +2,10 @@ Profile: AUPrimaryCareAttachment
 Parent: DocumentReference
 Id: AUPrimaryCareAttachment
 Title: "AU Primary Care Attachment"
-Description: "This profile defines a attached document structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
+Description: """
+Document content as an attachment.
+This includes the binary content of the document as part of the entry.
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAttachment"
 * meta.lastUpdated MS
 * status MS

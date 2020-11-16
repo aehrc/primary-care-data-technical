@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareAttachment",
   "title": "AU Primary Care Attachment",
   "status": "active",
-  "description": "This profile defines a attached document structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "description": "Document content as an attachment.\nThis includes the binary content of the document as part of the entry.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
