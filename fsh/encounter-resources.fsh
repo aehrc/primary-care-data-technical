@@ -17,6 +17,7 @@ Reason for Encounter - Use to record the reason, or reasons, for initiation of a
 * class MS
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
+/*
 * participant ^slicing.discriminator.type = #pattern
 * participant ^slicing.discriminator.path = "type"
 * participant ^slicing.rules = #open
@@ -26,7 +27,7 @@ Reason for Encounter - Use to record the reason, or reasons, for initiation of a
 * participant[performer].individual.type = "Practitioner"
 * participant[performer].individual.type 1..1 MS
 * participant[performer].individual.display 1..1 MS
-* participant MS
+*/
 * period MS
 * reasonCode MS
 * serviceProvider MS
