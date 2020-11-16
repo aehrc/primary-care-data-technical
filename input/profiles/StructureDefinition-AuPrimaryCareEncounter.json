@@ -62,6 +62,52 @@
         "mustSupport": true
       },
       {
+        "id": "Encounter.participant",
+        "path": "Encounter.participant",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.participant:performer",
+        "path": "Encounter.participant",
+        "sliceName": "performer",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant:performer.type",
+        "path": "Encounter.participant.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "PPRF",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Encounter.participant:performer.individual.type",
+        "path": "Encounter.participant.individual.type",
+        "min": 1,
+        "patternUri": "Practitioner",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant:performer.individual.display",
+        "path": "Encounter.participant.individual.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Encounter.period",
         "path": "Encounter.period",
         "mustSupport": true
