@@ -23,12 +23,14 @@ Description: """
 A snapshot view about the use of a specified medication by an individual.
 
 **Usage** 
+
 Use to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.
 A Medication statement can only be considered correct and accurate at the time it was asserted.
 
 **Misuse**
-Use to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.
-A Medication statement can only be considered correct and accurate at the time it was asserted.
+
+Not to be used to record specific details about a medication order.
+Not to be used to record details about specific medication-related activities, such as administration or dispense.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
 * medication[x][medicationCodeableConcept] from Medication_Code_Valueset (preferred) 

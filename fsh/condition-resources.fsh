@@ -4,7 +4,17 @@ Profile: AUPrimaryCareCondition
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-condition
 Id: AUPrimaryCareCondition
 Title: "AU Primary Care Condition"
-Description: "This profile defines a condition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
+Description: """
+Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.
+
+**Usage**
+Use to record details about a single, identified health problem or diagnosis.
+Clear delineation between the scope of a problem versus a diagnosis is often not easy to achieve in practice. For the purposes of clinical documentation using this item, problem and diagnosis are regarded as a continuum, with increasing information and reaching or exceeding diagnostic criteria supporting formalisation of the label of 'diagnosis'. It is not necessary to classify the condition as a 'problem' or 'diagnosis', especially as a problem may evolve into a formal diagnosis as evidence is gathered. The data requirements to support documentation of either are identical, with additional data structure required to support inclusion of the evidence if and when it becomes available. In practice, most problems or diagnoses do not sit at either end of the problem-diagnosis spectrum, but somewhere in between.
+
+**Misuse**
+
+Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
 * meta.lastUpdated MS
 * extension contains http://hl7.org/fhir/StructureDefinition/bodySite named bodySiteReference 0..1 MS

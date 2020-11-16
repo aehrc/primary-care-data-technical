@@ -32,6 +32,7 @@ Description: """
 Risk of harmful or undesirable physiological response which is unique to the individual and associated with exposure to a known substance.
 
 **Usage**
+
 Use to provide a single place within the health record to document a range of clinical statements about adverse reactions, including:
 - record a clinical assessment of the individual’s propensity for a potential future reaction upon re-exposure; and
 - record cumulative information about the reaction to each exposure.

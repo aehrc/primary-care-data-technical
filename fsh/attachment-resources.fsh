@@ -3,8 +3,11 @@ Parent: DocumentReference
 Id: AUPrimaryCareAttachment
 Title: "AU Primary Care Attachment"
 Description: """
-Document content as an attachment.
-This includes the binary content of the document as part of the entry.
+Document content as an attachment. This includes the binary content of the document as part of the entry.
+
+**Usage**
+
+Used to attach any relevant documents to the summary including their full content.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAttachment"
 * meta.lastUpdated MS

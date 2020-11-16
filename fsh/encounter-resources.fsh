@@ -4,13 +4,33 @@ Profile: AUPrimaryCareEncounter
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-encounter
 Id: AUPrimaryCareEncounter
 Title: "AU Primary Care Encounter"
-Description: "This profile defines core information for encounter records in an Australian practice to practice record transfer."
+Description: """
+
+**Usage**
+
+Record of a visit 
+Reason for Encounter - Use to record the reason, or reasons, for initiation of any type of healthcare encounter or contact between a healthcare provider and an individual who is the subject of care. The reason may be for clinical, social or administrative purposes.
+
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounter"
+* status = #finished
 * class MS
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
+* participant ^slicing.discriminator.type = #pattern
+* participant ^slicing.discriminator.path = "type"
+* participant ^slicing.rules = #open
+* participant contains 
+    performer 0..1 MS 
+* participant[performer].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PPRF
+* participant[performer].individual.type = "Practitioner"
+* participant[performer].individual.type 1..1 MS
+* participant[performer].individual.display 1..1 MS
+* participant MS
 * period MS
 * reasonCode MS
+* serviceProvider MS
+* serviceProvider.display MS
 
 
 Profile: AUPrimaryCareEncounterList

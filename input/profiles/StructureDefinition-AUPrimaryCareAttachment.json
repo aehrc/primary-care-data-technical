@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareAttachment",
   "title": "AU Primary Care Attachment",
   "status": "active",
-  "description": "Document content as an attachment.\nThis includes the binary content of the document as part of the entry.",
+  "description": "Document content as an attachment. This includes the binary content of the document as part of the entry.\n\n**Usage**\n\nUsed to attach any relevant documents to the summary including their full content.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
