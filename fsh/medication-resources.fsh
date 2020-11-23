@@ -53,7 +53,18 @@ Profile: AUPrimaryCareMedication
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-medication
 Id: AUPrimaryCareMedication
 Title: "AU Primary Care Medication"
-Description: "This profile defines a medication structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
+Description: """
+A single medication, ingredient, or substance.
+
+**Usage** 
+
+Use to record specific details about a single medication:
+- when details about the medication are not part of an authoritative knowledge base or pharmacopoeia;
+- to represent a custom compounded medication and/or it's components; and
+- to identify medications which are included in a multi-component pack.
+
+Designed to be nested within a clinically appropriate, standalone item which requires a consistent model for recording details about a single medication - for example, to extend the 'Medication statement item' by inserting within the [Medication item] data element.
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
 * extension contains http://hl7.org.au/fhir/StructureDefinition/medication-strength named medication-strength 0..1  MS
 * code MS

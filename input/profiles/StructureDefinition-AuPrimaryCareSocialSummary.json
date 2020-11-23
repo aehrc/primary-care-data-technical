@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareSocialSummary",
   "title": "AU Primary Care Social Summary",
   "status": "active",
-  "description": "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer.",
+  "description": "Narrative description about social circumstances or experiences that may have a potential impact on an individual's health.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions about social history-related information within existing or legacy clinical systems into this data element.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

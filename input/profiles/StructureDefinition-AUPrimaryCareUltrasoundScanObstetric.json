@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareUltrasoundScanObstetric",
   "title": "AU Primary Care Ultrasound Scan Obstetric",
   "status": "active",
-  "description": "A ultrasound scan for obstetric purposes",
+  "description": "A record ultrasound scan for obstetric purposes. Including the date scan performed.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

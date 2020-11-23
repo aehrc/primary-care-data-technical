@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareEDD",
   "title": "AU Primary Care Estimated Date of Delivery",
   "status": "active",
-  "description": "The date that delivery is due.",
+  "description": "\"\nEstimated date of delivery for a pregnancy, calculated or estimated by a variety of methods.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

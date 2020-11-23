@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareTobaccoSmokingDateCeased",
   "title": "AU Primary Tobacco Smoking Date Ceased",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco smoking date ceased in an Australian practice to practice record transfer.",
+  "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

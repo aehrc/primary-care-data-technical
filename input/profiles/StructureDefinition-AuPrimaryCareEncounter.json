@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareEncounter",
   "title": "AU Primary Care Encounter",
   "status": "active",
-  "description": "\n**Usage**\n\nRecord of a visit \nReason for Encounter - Use to record the reason, or reasons, for initiation of any type of healthcare encounter or contact between a healthcare provider and an individual who is the subject of care. The reason may be for clinical, social or administrative purposes.\n",
+  "description": "Record of a patient encounter including timing, reason, type and participating practitoner.\n\n**Usage**\n\nReason for Encounter - Use to record the reason, or reasons, for initiation of any type of healthcare encounter or contact between a healthcare provider and an individual who is the subject of care. The reason may be for clinical, social or administrative purposes.\n",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -75,16 +75,18 @@
         }
       },
       {
-        "id": "Encounter.participant:performer",
+        "id": "Encounter.participant:primaryperformer",
         "path": "Encounter.participant",
-        "sliceName": "performer",
+        "sliceName": "primaryperformer",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Encounter.participant:performer.type",
+        "id": "Encounter.participant:primaryperformer.type",
         "path": "Encounter.participant.type",
+        "min": 1,
+        "max": "1",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -92,17 +94,18 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
-        "id": "Encounter.participant:performer.individual.type",
+        "id": "Encounter.participant:primaryperformer.individual.type",
         "path": "Encounter.participant.individual.type",
         "min": 1,
         "patternUri": "Practitioner",
         "mustSupport": true
       },
       {
-        "id": "Encounter.participant:performer.individual.display",
+        "id": "Encounter.participant:primaryperformer.individual.display",
         "path": "Encounter.participant.individual.display",
         "min": 1,
         "mustSupport": true

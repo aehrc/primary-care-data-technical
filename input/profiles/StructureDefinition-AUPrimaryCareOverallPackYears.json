@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareOverallPackYears",
   "title": "AU Primary Tobacco Smoking Overall Pack Years",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco smoking cigarette pack years attempts in an Australian practice to practice record transfer.",
+  "description": "Total number of times the individual has attempted to stop smoking the specified type of tobacco.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

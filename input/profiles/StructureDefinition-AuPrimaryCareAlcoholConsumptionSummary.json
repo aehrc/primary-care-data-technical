@@ -16,7 +16,7 @@
   "name": "AUPrimaryAlcoholConsumptionSummary",
   "title": "AU Primary Alcohol Consumption Summary",
   "status": "active",
-  "description": "This profile defines core information requirements for a alcohol consumption summary in an Australian practice to practice record transfer.",
+  "description": "Narrative description about all forms of alcohol consumption.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions of alcohol consumption within existing or legacy clinical systems into this data element.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

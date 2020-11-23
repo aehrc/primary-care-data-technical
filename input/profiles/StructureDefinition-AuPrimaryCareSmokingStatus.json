@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareSmokingStatus",
   "title": "AU Primary Care Smoking Status",
   "status": "active",
-  "description": "This profile defines core information requirements for smoking status in an Australian practice to practice record transfer.",
+  "description": "Statement about current behaviour for all types of tobacco smoking.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

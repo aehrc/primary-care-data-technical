@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareTobaccoPatternOfUse",
   "title": "AU Primary Tobacco Smoking Pattern Of Use",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco pattern of use in an Australian practice to practice record transfer.",
+  "description": "Details about smoking activity for a specified type of smoked tobacco.\n\n**Usage** \n\nRecord a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\nIncludes:\n* Type - Record a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\n* Typical Use (Units) - Estimate of number of units of the specified type of tobacco smoked.\n* Typical Use (Mass) - Estimate of the weight of loose leaf tobacco smoked.\n* Pattern - The typical pattern of smoking for the specified type of tobacco.\n* Number of Quit Attempts - Total number of times the individual has attempted to stop smoking the specified type of tobacco.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

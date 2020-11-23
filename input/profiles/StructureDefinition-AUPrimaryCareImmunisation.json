@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareImmunisation",
   "title": "AU Primary Care Immunisation",
   "status": "active",
-  "description": "This profile defines an immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "description": "A vaccine that has been administered to an individual.\n\n**Usage**\n\nUse to record details about a vaccination that had been administered to an individual.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareGestationalAge",
   "title": "AU Primary Care Gestational Age",
   "status": "active",
-  "description": "Gestational age of a fetus.",
+  "description": "Estimated gestational age by variable methods.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

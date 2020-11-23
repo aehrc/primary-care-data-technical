@@ -4,7 +4,13 @@ Profile: AUPrimaryCareImmunisation
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-immunization
 Id: AUPrimaryCareImmunisation
 Title: "AU Primary Care Immunisation"
-Description: "This profile defines an immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
+Description: """
+A vaccine that has been administered to an individual.
+
+**Usage**
+
+Use to record details about a vaccination that had been administered to an individual.
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
 * vaccineCode MS
 * vaccineCode.coding[amtVaccineCode] from Vaccination_Code_Valueset (preferred)

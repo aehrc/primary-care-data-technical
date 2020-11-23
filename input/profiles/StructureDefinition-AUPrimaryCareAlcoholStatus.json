@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareAlcoholStatus",
   "title": "AU Primary Care Alcohol Status",
   "status": "active",
-  "description": "This profile defines core information requirements for alcohol status in an Australian practice to practice record transfer.",
+  "description": "Statement about current consumption habits for all types of alcohol.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

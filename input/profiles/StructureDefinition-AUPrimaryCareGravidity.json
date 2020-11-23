@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareGravidity",
   "title": "AU Primary Care Gravidity",
   "status": "active",
-  "description": "Represents the gravidity (number of pregnancies) of a female patient",
+  "description": "Number of times a woman has been pregnant, current and past, regardless of the pregnancy outcome.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

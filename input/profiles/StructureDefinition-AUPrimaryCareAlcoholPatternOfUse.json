@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareAlcoholPatternOfUse",
   "title": "AU Primary Alcohol Pattern Of Use",
   "status": "active",
-  "description": "This profile defines core information requirements for alcohol pattern of use recording in an Australian practice to practice record transfer.",
+  "description": "Details about a discrete period of time with a consistent pattern of typical consumption.\n\n**Usage** \nThis includes:\n* Episode Label - Identification of an episode of alcohol consumption.\n* Episode Period - Date when this episode ocurred.\n* Pattern - The typical pattern of consumption of alcohol.\n* Typical Consumption - Estimate of number of standard alcohol units consumed in the specified time period\n* Alcohol Free Days - The number of days where no alcohol was consumed during the specified interval.\n* Binge Drinking Frequency - The individual's typical frequency of heavy drinking over a short period of time with the intent of becoming intoxicated.\n* Binge Drinking Description - Narrative description about the individual's typical pattern of binge drinking.\n* Number Quit Attempts - Total number of times the individual has attempted to stop consuming alcohol within this episode.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

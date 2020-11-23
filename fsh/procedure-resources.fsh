@@ -4,7 +4,9 @@ Profile: AUPrimaryCareUltrasoundScanObstetric
 Parent: https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure
 Id: AUPrimaryCareUltrasoundScanObstetric
 Title: "AU Primary Care Ultrasound Scan Obstetric"
-Description: "A ultrasound scan for obstetric purposes"
+Description: """
+A record ultrasound scan for obstetric purposes. Including the date scan performed.
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareUltrasoundScanObstetric"
 * code 1..1
 * code.coding ^slicing.discriminator.type = #value
@@ -32,7 +34,15 @@ Profile: AUPrimaryCareProcedure
 Parent: Procedure
 Id: AUPrimaryCareProcedure
 Title: "AU Primary Care Procedure"
-Description: "This profile defines a procedure structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
+Description: """
+A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.
+
+**Usage** 
+
+Use to record information about procedures that have been carried out for an individual.
+
+The scope of this item encompasses activities for a broad range of clinical procedures performed for evaluative, investigative, screening, diagnostic, curative, therapeutic or palliative purposes. Examples range from the relatively simple activities, such as insertion of an intravenous cannula, through to complex surgical operations.
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
 * meta.lastUpdated MS
 * extension contains http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure named targetBodyStructureReference 0..1 MS

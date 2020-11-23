@@ -6,7 +6,7 @@
   "name": "AUPrimaryCarePatient",
   "title": "AU Primary Care Patient",
   "status": "active",
-  "description": "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "description": "Details of a patient including identity, demographic and contacts.\n\n**Extensions**\n\n* Indigenous Status : Aboriginal or Torres Strait Islander origin status for the individual, usually self-identified.\n* Birth Place : Record of place of birth.\n* Date of Arrival : Record of date of arrival in australia.\n* Ethnicity : Use to record information about one or more cultural and ethnic identities, self described by the individual.\n* Gender Identity : Record of personal identity with respect to gender.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

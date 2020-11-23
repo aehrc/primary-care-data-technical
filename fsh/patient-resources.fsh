@@ -4,7 +4,17 @@ Profile: AUPrimaryCarePatient
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-patient
 Id: AUPrimaryCarePatient
 Title: "AU Primary Care Patient"
-Description: "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
+Description: """
+Details of a patient including identity, demographic and contacts.
+
+**Extensions**
+
+* Indigenous Status : Aboriginal or Torres Strait Islander origin status for the individual, usually self-identified.
+* Birth Place : Record of place of birth.
+* Date of Arrival : Record of date of arrival in australia.
+* Ethnicity : Use to record information about one or more cultural and ethnic identities, self described by the individual.
+* Gender Identity : Record of personal identity with respect to gender.
+"""
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
 * extension[http://hl7.org.au/fhir/StructureDefinition/indigenous-status] 0..1 MS
 * extension[http://hl7.org/fhir/StructureDefinition/patient-birthPlace]  0..1 MS

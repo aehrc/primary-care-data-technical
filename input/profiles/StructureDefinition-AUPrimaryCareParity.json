@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareParity",
   "title": "AU Primary Care Parity",
   "status": "active",
-  "description": "The number of births where the fetus is overr 24 weeks",
+  "description": "Number of times a woman has given birth to a viable baby, regardless of the pregnancy outcome.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

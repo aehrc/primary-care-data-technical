@@ -5,10 +5,10 @@ Parent: http://hl7.org.au/fhir/StructureDefinition/au-encounter
 Id: AUPrimaryCareEncounter
 Title: "AU Primary Care Encounter"
 Description: """
+Record of a patient encounter including timing, reason, type and participating practitoner.
 
 **Usage**
 
-Record of a visit 
 Reason for Encounter - Use to record the reason, or reasons, for initiation of any type of healthcare encounter or contact between a healthcare provider and an individual who is the subject of care. The reason may be for clinical, social or administrative purposes.
 
 """
@@ -21,11 +21,12 @@ Reason for Encounter - Use to record the reason, or reasons, for initiation of a
 * participant ^slicing.discriminator.path = "type.code"
 * participant ^slicing.rules = #open
 * participant contains 
-    performer 0..1 MS 
-* participant[performer].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PPRF
-* participant[performer].individual.type = "Practitioner"
-* participant[performer].individual.type 1..1 MS
-* participant[performer].individual.display 1..1 MS
+    primaryperformer 0..1 MS 
+* participant[primaryperformer].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PPRF
+* participant[primaryperformer].type 1..1 MS
+* participant[primaryperformer].individual.type = "Practitioner"
+* participant[primaryperformer].individual.type 1..1 MS
+* participant[primaryperformer].individual.display 1..1 MS
 * period MS
 * reasonCode MS
 * serviceProvider MS

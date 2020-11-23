@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareLMP",
   "title": "AU Primary Care Last Menstrual Period",
   "status": "active",
-  "description": "The date of the last normal menstrual period",
+  "description": "First day of menstrual bleeding in the most recent typical menstrual cycle experienced by the individual.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

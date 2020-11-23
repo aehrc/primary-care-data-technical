@@ -37,7 +37,7 @@
           "reference": "StructureDefinition/AUPrimaryCareAlcoholConsumptionSummary"
         },
         "name": "AU Primary Alcohol Consumption Summary",
-        "description": "This profile defines core information requirements for a alcohol consumption summary in an Australian practice to practice record transfer.",
+        "description": "Narrative description about all forms of alcohol consumption.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions of alcohol consumption within existing or legacy clinical systems into this data element.",
         "exampleBoolean": false
       },
       {
@@ -45,7 +45,7 @@
           "reference": "StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased"
         },
         "name": "AU Primary Alcohol Consumption Date Ceased",
-        "description": "This profile defines core information requirements for a alcohol consumption date ceased in an Australian practice to practice record transfer.",
+        "description": "The date when the individual last ceased consuming alcohol of any type.\n\n**Usage** \n\nThe definition of alcohol cessation is not universally clear, obviously involving abstinence from alcohol consumption for a period of time. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
         "exampleBoolean": false
       },
       {
@@ -53,7 +53,7 @@
           "reference": "StructureDefinition/AUPrimaryCareAlcoholPatternOfUse"
         },
         "name": "AU Primary Alcohol Pattern Of Use",
-        "description": "This profile defines core information requirements for alcohol pattern of use recording in an Australian practice to practice record transfer.",
+        "description": "Details about a discrete period of time with a consistent pattern of typical consumption.\n\n**Usage** \nThis includes:\n* Episode Label - Identification of an episode of alcohol consumption.\n* Episode Period - Date when this episode ocurred.\n* Pattern - The typical pattern of consumption of alcohol.\n* Typical Consumption - Estimate of number of standard alcohol units consumed in the specified time period\n* Alcohol Free Days - The number of days where no alcohol was consumed during the specified interval.\n* Binge Drinking Frequency - The individual's typical frequency of heavy drinking over a short period of time with the intent of becoming intoxicated.\n* Binge Drinking Description - Narrative description about the individual's typical pattern of binge drinking.\n* Number Quit Attempts - Total number of times the individual has attempted to stop consuming alcohol within this episode.",
         "exampleBoolean": false
       },
       {
@@ -61,7 +61,7 @@
           "reference": "StructureDefinition/AUPrimaryCareAlcoholStatus"
         },
         "name": "AU Primary Care Alcohol Status",
-        "description": "This profile defines core information requirements for alcohol status in an Australian practice to practice record transfer.",
+        "description": "Statement about current consumption habits for all types of alcohol.",
         "exampleBoolean": false
       },
       {
@@ -93,7 +93,7 @@
           "reference": "StructureDefinition/AUPrimaryCareBreastfeedingStatus"
         },
         "name": "AU Primary Care Breastfeeding Status",
-        "description": "This profile defines core information requirements for breastfeeding related status in an Australian practice to practice record transfer.",
+        "description": "Summary or persistent information about current or past breastfeeding activity by an individual.\n\n**Usage** \n\nUse to record details about the current breastfeeding status and current and/or past breastfeeding activity.\nRecord as a single instance in a health record; updated and revised over time as a new version.",
         "exampleBoolean": false
       },
       {
@@ -109,7 +109,7 @@
           "reference": "StructureDefinition/AUPrimaryCareCondition"
         },
         "name": "AU Primary Care Condition",
-        "description": "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.\n\n**Usage**\n\nUse to record details about a single, identified health problem or diagnosis.\nClear delineation between the scope of a problem versus a diagnosis is often not easy to achieve in practice. For the purposes of clinical documentation using this item, problem and diagnosis are regarded as a continuum, with increasing information and reaching or exceeding diagnostic criteria supporting formalisation of the label of 'diagnosis'. It is not necessary to classify the condition as a 'problem' or 'diagnosis', especially as a problem may evolve into a formal diagnosis as evidence is gathered. The data requirements to support documentation of either are identical, with additional data structure required to support inclusion of the evidence if and when it becomes available. In practice, most problems or diagnoses do not sit at either end of the problem-diagnosis spectrum, but somewhere in between.\n\n**Misuse**\n\nDetails about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.",
+        "description": "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.\n\n**Usage**\n\n* Use to record details about a single, identified health problem or diagnosis.\n* Clear delineation between the scope of a problem versus a diagnosis is often not easy to achieve in practice. For the purposes of clinical documentation using this item, problem and diagnosis are regarded as a continuum, with increasing information and reaching or exceeding diagnostic criteria supporting formalisation of the label of 'diagnosis'. It is not necessary to classify the condition as a 'problem' or 'diagnosis', especially as a problem may evolve into a formal diagnosis as evidence is gathered. The data requirements to support documentation of either are identical, with additional data structure required to support inclusion of the evidence if and when it becomes available. In practice, most problems or diagnoses do not sit at either end of the problem-diagnosis spectrum, but somewhere in between.\n\n**Misuse**\n\n* Not to be used to describe reasons for encounter - use the 'Reason for encounter' item.\n* Not to be used to describe procedures - use the 'Procedure' item.\n* Not to be used to describe adverse reactions - use the 'Adverse reaction' item.\n* Not to be used to describe symptoms, examination findings, diagnostic test results or health risk assessments.\n* Not to be used to describe differential diagnoses.",
         "exampleBoolean": false
       },
       {
@@ -117,7 +117,7 @@
           "reference": "StructureDefinition/AUPrimaryCareEDD"
         },
         "name": "AU Primary Care Estimated Date of Delivery",
-        "description": "The date that delivery is due.",
+        "description": "\"\nEstimated date of delivery for a pregnancy, calculated or estimated by a variety of methods.",
         "exampleBoolean": false
       },
       {
@@ -125,7 +125,7 @@
           "reference": "StructureDefinition/AUPrimaryCareEncounter"
         },
         "name": "AU Primary Care Encounter",
-        "description": "\n**Usage**\n\nRecord of a visit \nReason for Encounter - Use to record the reason, or reasons, for initiation of any type of healthcare encounter or contact between a healthcare provider and an individual who is the subject of care. The reason may be for clinical, social or administrative purposes.\n",
+        "description": "Record of a patient encounter including timing, reason, type and participating practitoner.\n\n**Usage**\n\nReason for Encounter - Use to record the reason, or reasons, for initiation of any type of healthcare encounter or contact between a healthcare provider and an individual who is the subject of care. The reason may be for clinical, social or administrative purposes.\n",
         "exampleBoolean": false
       },
       {
@@ -141,7 +141,7 @@
           "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistory"
         },
         "name": "AU Primary Care Family Member History",
-        "description": "This profile defines a family member historyfor use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "Summary or persistent information about significant health and related issues in family members.\n\n**Usage**\n\nUse to record a summary of information about problems or diagnoses found in family members. This information may be used to contribute to the identification of a current health problem, assessment of future risk from familial problems or conditions, or to initiate preventive health activities.\n\nTraditionally the scope of family history has been focused on genetic factors or biomarkers as indicators of risk or potential risk. The scope of this item includes both recording of problems or diagnoses that have an inheritable origin as well as those that are not directly inheritable but influenced by the domestic setting, including psycho-social or environmental factors. Examples include exposure to toxins in the family environment, domestic violence, sexual abuse, alcoholism and other addictions.\n\nNon-genetic family members can include adopted or long term fostered children, those related by marriage, or other unrelated individuals who participate in the regular life and influence of the family.\n\nIt may be necessary to identify each family member specifically and not just by the relationship to the individual. For example, while there will be only one maternal grandmother, there may be many female maternal cousins. This may be required to ensure that a pedigree chart is accurate. It will also enable accurate amendments to the record for each identified family member. If the record is private and will not be shared, for reasons of clarity it may be preferable to record the relative's actual name. If the record, or part of the record, is to be shared, it may be more appropriate for the family member to be identified by a unique label or alias.\n\nRecord as a single instance in a health record; updated and revised over time as a new version.",
         "exampleBoolean": false
       },
       {
@@ -157,7 +157,7 @@
           "reference": "StructureDefinition/AUPrimaryCareFollowUp"
         },
         "name": "AU Primary Care Follow up",
-        "description": "This profile defines a follow up structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context. It uses a CarePlan resource, but is not intended to be a fully fledged Care Plan. CarePlans may be profiled in the future to support a proper Care Plan in the Australian primary care context.",
+        "description": "Health-related service or activity to be delivered by a clinician, organisation or agency at a future time.\n\n**Usage**\n\nUse to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.\n\nThis item has been designed as a framework that can be used as the basis for:\n- a request from one clinician, organisation or agency to another clinician, organisation or agency for a health-related service. For example: a referral to a specialist clinician for treatment or a second clinical opinion; transfer of care to an emergency department; four hourly vital signs monitoring; and provision of home services from a municipal council; or\n- a request for a follow up service to be scheduled for the same clinician, organisation or agency. For example: a review appointment in outpatients in 6 weeks.",
         "exampleBoolean": false
       },
       {
@@ -173,7 +173,7 @@
           "reference": "StructureDefinition/AUPrimaryCareGestationalAge"
         },
         "name": "AU Primary Care Gestational Age",
-        "description": "Gestational age of a fetus.",
+        "description": "Estimated gestational age by variable methods.",
         "exampleBoolean": false
       },
       {
@@ -197,7 +197,7 @@
           "reference": "StructureDefinition/AUPrimaryCareGravidity"
         },
         "name": "AU Primary Care Gravidity",
-        "description": "Represents the gravidity (number of pregnancies) of a female patient",
+        "description": "Number of times a woman has been pregnant, current and past, regardless of the pregnancy outcome.",
         "exampleBoolean": false
       },
       {
@@ -205,7 +205,7 @@
           "reference": "StructureDefinition/AUPrimaryCareImmunisation"
         },
         "name": "AU Primary Care Immunisation",
-        "description": "This profile defines an immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "A vaccine that has been administered to an individual.\n\n**Usage**\n\nUse to record details about a vaccination that had been administered to an individual.",
         "exampleBoolean": false
       },
       {
@@ -221,7 +221,7 @@
           "reference": "StructureDefinition/AUPrimaryCareLMP"
         },
         "name": "AU Primary Care Last Menstrual Period",
-        "description": "The date of the last normal menstrual period",
+        "description": "First day of menstrual bleeding in the most recent typical menstrual cycle experienced by the individual.",
         "exampleBoolean": false
       },
       {
@@ -237,7 +237,7 @@
           "reference": "StructureDefinition/AUPrimaryCareMedication"
         },
         "name": "AU Primary Care Medication",
-        "description": "This profile defines a medication structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "A single medication, ingredient, or substance.\n\n**Usage** \n\nUse to record specific details about a single medication:\n- when details about the medication are not part of an authoritative knowledge base or pharmacopoeia;\n- to represent a custom compounded medication and/or it's components; and\n- to identify medications which are included in a multi-component pack.\n\nDesigned to be nested within a clinically appropriate, standalone item which requires a consistent model for recording details about a single medication - for example, to extend the 'Medication statement item' by inserting within the [Medication item] data element.",
         "exampleBoolean": false
       },
       {
@@ -261,7 +261,7 @@
           "reference": "StructureDefinition/AUPrimaryCareOverallPackYears"
         },
         "name": "AU Primary Tobacco Smoking Overall Pack Years",
-        "description": "This profile defines core information requirements for a tobacco smoking cigarette pack years attempts in an Australian practice to practice record transfer.",
+        "description": "Total number of times the individual has attempted to stop smoking the specified type of tobacco.",
         "exampleBoolean": false
       },
       {
@@ -269,7 +269,7 @@
           "reference": "StructureDefinition/AUPrimaryCareParity"
         },
         "name": "AU Primary Care Parity",
-        "description": "The number of births where the fetus is overr 24 weeks",
+        "description": "Number of times a woman has given birth to a viable baby, regardless of the pregnancy outcome.",
         "exampleBoolean": false
       },
       {
@@ -277,7 +277,7 @@
           "reference": "StructureDefinition/AUPrimaryCarePatient"
         },
         "name": "AU Primary Care Patient",
-        "description": "This profile defines a patient administration details structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "Details of a patient including identity, demographic and contacts.\n\n**Extensions**\n\n* Indigenous Status : Aboriginal or Torres Strait Islander origin status for the individual, usually self-identified.\n* Birth Place : Record of place of birth.\n* Date of Arrival : Record of date of arrival in australia.\n* Ethnicity : Use to record information about one or more cultural and ethnic identities, self described by the individual.\n* Gender Identity : Record of personal identity with respect to gender.",
         "exampleBoolean": false
       },
       {
@@ -285,7 +285,7 @@
           "reference": "StructureDefinition/AUPrimaryCareProcedure"
         },
         "name": "AU Primary Care Procedure",
-        "description": "This profile defines a procedure structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+        "description": "A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.\n\n**Usage** \n\nUse to record information about procedures that have been carried out for an individual.\n\nThe scope of this item encompasses activities for a broad range of clinical procedures performed for evaluative, investigative, screening, diagnostic, curative, therapeutic or palliative purposes. Examples range from the relatively simple activities, such as insertion of an intravenous cannula, through to complex surgical operations.",
         "exampleBoolean": false
       },
       {
@@ -293,7 +293,7 @@
           "reference": "StructureDefinition/AUPrimaryCareSmokingStatus"
         },
         "name": "AU Primary Care Smoking Status",
-        "description": "This profile defines core information requirements for smoking status in an Australian practice to practice record transfer.",
+        "description": "Statement about current behaviour for all types of tobacco smoking.",
         "exampleBoolean": false
       },
       {
@@ -301,7 +301,7 @@
           "reference": "StructureDefinition/AUPrimaryCareSocialSummary"
         },
         "name": "AU Primary Care Social Summary",
-        "description": "This profile defines core information requirements for a social history description in an Australian practice to practice record transfer.",
+        "description": "Narrative description about social circumstances or experiences that may have a potential impact on an individual's health.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions about social history-related information within existing or legacy clinical systems into this data element.",
         "exampleBoolean": false
       },
       {
@@ -309,7 +309,7 @@
           "reference": "StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
         },
         "name": "AU Primary Tobacco Smoking Pattern Of Use",
-        "description": "This profile defines core information requirements for a tobacco pattern of use in an Australian practice to practice record transfer.",
+        "description": "Details about smoking activity for a specified type of smoked tobacco.\n\n**Usage** \n\nRecord a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\nIncludes:\n* Type - Record a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\n* Typical Use (Units) - Estimate of number of units of the specified type of tobacco smoked.\n* Typical Use (Mass) - Estimate of the weight of loose leaf tobacco smoked.\n* Pattern - The typical pattern of smoking for the specified type of tobacco.\n* Number of Quit Attempts - Total number of times the individual has attempted to stop smoking the specified type of tobacco.",
         "exampleBoolean": false
       },
       {
@@ -317,7 +317,7 @@
           "reference": "StructureDefinition/AUPrimaryCareTobaccoSmokingdDateCeased"
         },
         "name": "AU Primary Tobacco Smoking Date Ceased",
-        "description": "This profile defines core information requirements for a tobacco smoking date ceased in an Australian practice to practice record transfer.",
+        "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
         "exampleBoolean": false
       },
       {
@@ -325,7 +325,7 @@
           "reference": "StructureDefinition/AUPrimaryCareTobaccoSmokingdDateStarted"
         },
         "name": "AU Primary Tobacco Smoking Date Started",
-        "description": "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer.",
+        "description": "The date when the individual first started regular, but usually non-daily, smoking of tobacco of any type.\n\n**Usage** \n\nUse to record when the individual started smoking on a regular basis, such as every Friday night or at parties.\n\nRecord as a single instance in a health record.\n\nPartial dates are permitted",
         "exampleBoolean": false
       },
       {
@@ -333,7 +333,7 @@
           "reference": "StructureDefinition/AUPrimaryCareTobaccoSmokingSummary"
         },
         "name": "AU Primary Tobacco Smoking Summary",
-        "description": "This profile defines core information requirements for a tobacco smoking summary in an Australian practice to practice record transfer.",
+        "description": "Narrative description about all forms of tobacco smoking.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions of tobacco smoking within existing or legacy clinical systems into this data element.",
         "exampleBoolean": false
       },
       {
@@ -341,7 +341,7 @@
           "reference": "StructureDefinition/AUPrimaryCareUltrasoundScanObstetric"
         },
         "name": "AU Primary Care Ultrasound Scan Obstetric",
-        "description": "A ultrasound scan for obstetric purposes",
+        "description": "A record ultrasound scan for obstetric purposes. Including the date scan performed.",
         "exampleBoolean": false
       },
       {

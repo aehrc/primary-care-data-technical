@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareTobaccoSmokingDateStarted",
   "title": "AU Primary Tobacco Smoking Date Started",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco smoking date started in an Australian practice to practice record transfer.",
+  "description": "The date when the individual first started regular, but usually non-daily, smoking of tobacco of any type.\n\n**Usage** \n\nUse to record when the individual started smoking on a regular basis, such as every Friday night or at parties.\n\nRecord as a single instance in a health record.\n\nPartial dates are permitted",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

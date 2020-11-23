@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareTobaccoSmokingSummary",
   "title": "AU Primary Tobacco Smoking Summary",
   "status": "active",
-  "description": "This profile defines core information requirements for a tobacco smoking summary in an Australian practice to practice record transfer.",
+  "description": "Narrative description about all forms of tobacco smoking.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions of tobacco smoking within existing or legacy clinical systems into this data element.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

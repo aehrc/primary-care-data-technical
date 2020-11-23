@@ -6,7 +6,7 @@
   "name": "AUPrimaryCareMedication",
   "title": "AU Primary Care Medication",
   "status": "active",
-  "description": "This profile defines a medication structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
+  "description": "A single medication, ingredient, or substance.\n\n**Usage** \n\nUse to record specific details about a single medication:\n- when details about the medication are not part of an authoritative knowledge base or pharmacopoeia;\n- to represent a custom compounded medication and/or it's components; and\n- to identify medications which are included in a multi-component pack.\n\nDesigned to be nested within a clinically appropriate, standalone item which requires a consistent model for recording details about a single medication - for example, to extend the 'Medication statement item' by inserting within the [Medication item] data element.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

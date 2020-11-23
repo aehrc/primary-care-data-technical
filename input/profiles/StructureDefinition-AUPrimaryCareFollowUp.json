@@ -16,7 +16,7 @@
   "name": "AUPrimaryCareFollowUp",
   "title": "AU Primary Care Follow up",
   "status": "active",
-  "description": "This profile defines a follow up structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context. It uses a CarePlan resource, but is not intended to be a fully fledged Care Plan. CarePlans may be profiled in the future to support a proper Care Plan in the Australian primary care context.",
+  "description": "Health-related service or activity to be delivered by a clinician, organisation or agency at a future time.\n\n**Usage**\n\nUse to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.\n\nThis item has been designed as a framework that can be used as the basis for:\n- a request from one clinician, organisation or agency to another clinician, organisation or agency for a health-related service. For example: a referral to a specialist clinician for treatment or a second clinical opinion; transfer of care to an emergency department; four hourly vital signs monitoring; and provision of home services from a municipal council; or\n- a request for a follow up service to be scheduled for the same clinician, organisation or agency. For example: a review appointment in outpatients in 6 weeks.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
