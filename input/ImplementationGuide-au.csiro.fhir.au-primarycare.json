@@ -456,14 +456,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/smokingcessationattemptscode"
-        },
-        "name": "Smoking Cessation Attempts Code Valueset",
-        "description": "Smoking cessation attempts count record",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/smokingpatterncode"
         },
         "name": "Smoking Pattern",
@@ -489,14 +481,6 @@
         },
         "name": "Vaccination Code Valueset",
         "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/aehrcobservableentitycodesystem"
-        },
-        "name": "AEHRC Observable Entity CodeSystem",
-        "description": "General observable entity code system",
         "exampleBoolean": false
       },
       {

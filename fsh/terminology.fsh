@@ -157,6 +157,8 @@ Title: "Smoking Type"
 * http://snomed.info/sct#65568007 "Cigarette Smoker"
 * http://snomed.info/sct#82302008 "Pipe Smoker"
 
+
+/*
 CodeSystem: Aehrc_Observable_Entity_Code_CodeSystem
 Id: aehrcobservableentitycodesystem
 Title: "AEHRC Observable Entity CodeSystem"
@@ -176,4 +178,4 @@ Description: "Smoking cessation attempts count record"
 * http://aehrc.com/fhir/observable-entity#cessation-attempts-cigarette "Cigarette cessation attempts"
 * http://aehrc.com/fhir/observable-entity#cessation-attempts-cigar "Cigar cessation attempts"
 * http://aehrc.com/fhir/observable-entity#cessation-attempts-pipe "Pipe cessation attempts"
-
+*/
