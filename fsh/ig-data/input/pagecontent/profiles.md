@@ -44,6 +44,7 @@ These Profiles have been defined for this implementation guide.
 * [AU Primary Care Alcohol Consumption Summary](StructureDefinition-AUPrimaryCareAlcoholConsumptionSummary.html) - alcohol consumption summary
 
 
+
 ### Pregnancy / Breastfeeding Profiles
 * [AU Primary Care Last Normal Menstrual Period](StructureDefinition-AUPrimaryCareLMP.html) - date of last normal menstrual period
 * [AU Primary Care Expected Date of Delivery](StructureDefinition-AUPrimaryCareEDD.html) - expected date of delivery calculated from either scan date or last normal menstrual period and cycle length
