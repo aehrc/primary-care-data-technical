@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Aehrc_Observable_Entity_Code_CodeSystem",
+  "id": "aehrcobservableentitycodesystem",
+  "title": "AEHRC Observable Entity CodeSystem",
+  "description": "General observable entity code system",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/fhir/observable-entity",
+  "concept": [
+    {
+      "code": "cessation-attempts-smoking",
+      "display": "Smoking cessation attempts"
+    },
+    {
+      "code": "cessation-attempts-cigarette",
+      "display": "Cigarette cessation attempts"
+    },
+    {
+      "code": "cessation-attempts-cigar",
+      "display": "Cigar cessation attempts"
+    },
+    {
+      "code": "cessation-attempts-pipe",
+      "display": "Pipe cessation attempts"
+    }
+  ],
+  "count": 4
+}

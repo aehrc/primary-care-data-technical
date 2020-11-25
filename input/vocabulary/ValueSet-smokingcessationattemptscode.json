@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://aehrc.com/fhir/observable-entity-temporary",
+        "system": "http://aehrc.com/fhir/observable-entity",
         "concept": [
           {
             "code": "cessation-attempts-smoking",

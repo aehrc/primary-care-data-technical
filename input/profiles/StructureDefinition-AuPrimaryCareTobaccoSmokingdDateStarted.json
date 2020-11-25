@@ -69,7 +69,7 @@
           "coding": [
             {
               "code": "smoking-date-started",
-              "system": "http://aehrc.com/fhir/observable-entity-temporary"
+              "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         },

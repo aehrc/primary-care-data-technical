@@ -493,10 +493,10 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/smokingcessationattemptscodesystem"
+          "reference": "CodeSystem/aehrcobservableentitycodesystem"
         },
-        "name": "Smoking Cessation Attempts CodeSystem",
-        "description": "Smoking cessation attempts count record",
+        "name": "AEHRC Observable Entity CodeSystem",
+        "description": "General observable entity code system",
         "exampleBoolean": false
       },
       {

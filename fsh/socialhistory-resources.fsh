@@ -80,7 +80,7 @@ Partial dates are permitted
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateStarted"
 * status 1..1 MS
-* code = http://aehrc.com/fhir/observable-entity-temporary#smoking-date-started
+* code = http://aehrc.com/fhir/observable-entity#smoking-date-started
 * code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS

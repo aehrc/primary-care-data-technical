@@ -157,11 +157,11 @@ Title: "Smoking Type"
 * http://snomed.info/sct#65568007 "Cigarette Smoker"
 * http://snomed.info/sct#82302008 "Pipe Smoker"
 
-CodeSystem: SmokingCessationAttempts_Code_CodeSystem
-Id: smokingcessationattemptscodesystem
-Title: "Smoking Cessation Attempts CodeSystem"
-Description: "Smoking cessation attempts count record"
-* ^url = "http://aehrc.com/fhir/observable-entity-temporary"
+CodeSystem: Aehrc_Observable_Entity_Code_CodeSystem
+Id: aehrcobservableentitycodesystem
+Title: "AEHRC Observable Entity CodeSystem"
+Description: "General observable entity code system"
+* ^url = "http://aehrc.com/fhir/observable-entity"
 * #cessation-attempts-smoking "Smoking cessation attempts"
 * #cessation-attempts-cigarette "Cigarette cessation attempts"
 * #cessation-attempts-cigar "Cigar cessation attempts"
@@ -172,8 +172,8 @@ ValueSet: SmokingCessationAttempts_Code_Valueset
 Id: smokingcessationattemptscode
 Title: "Smoking Cessation Attempts Code Valueset"
 Description: "Smoking cessation attempts count record"
-* http://aehrc.com/fhir/observable-entity-temporary#cessation-attempts-smoking "Smoking cessation attempts"
-* http://aehrc.com/fhir/observable-entity-temporary#cessation-attempts-cigarette "Cigarette cessation attempts"
-* http://aehrc.com/fhir/observable-entity-temporary#cessation-attempts-cigar "Cigar cessation attempts"
-* http://aehrc.com/fhir/observable-entity-temporary#cessation-attempts-pipe "Pipe cessation attempts"
+* http://aehrc.com/fhir/observable-entity#cessation-attempts-smoking "Smoking cessation attempts"
+* http://aehrc.com/fhir/observable-entity#cessation-attempts-cigarette "Cigarette cessation attempts"
+* http://aehrc.com/fhir/observable-entity#cessation-attempts-cigar "Cigar cessation attempts"
+* http://aehrc.com/fhir/observable-entity#cessation-attempts-pipe "Pipe cessation attempts"
 
