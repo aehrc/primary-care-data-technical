@@ -85,12 +85,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.additionalInstruction:snomedAdditionalInstruction",
-        "path": "MedicationStatement.dosage.additionalInstruction",
-        "sliceName": "snomedAdditionalInstruction",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationStatement.dosage.timing.code",
         "path": "MedicationStatement.dosage.timing.code",
         "mustSupport": true

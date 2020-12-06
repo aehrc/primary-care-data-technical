@@ -432,6 +432,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/gendercode"
+        },
+        "name": "Gender Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/geneticfamilymember"
         },
         "name": "Genetic Family Member ValueSet",

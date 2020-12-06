@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Gender_Code_ValueSet",
+  "id": "gendercode",
+  "title": "Gender Type",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/gendercode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "703117000",
+            "display": "Male"
+          },
+          {
+            "code": "703118005",
+            "display": "Female"
+          },
+          {
+            "code": "772004004",
+            "display": "Non-binary"
+          }
+        ]
+      }
+    ]
+  }
+}

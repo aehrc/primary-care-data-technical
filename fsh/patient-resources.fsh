@@ -21,6 +21,7 @@ Details of a patient including identity, demographic and contacts.
 * extension[http://hl7.org.au/fhir/StructureDefinition/date-of-arrival]  0..1 MS
 * extension[http://hl7.org.au/fhir/StructureDefinition/ethnicity] 0..1 MS
 * extension[http://hl7.org/fhir/StructureDefinition/patient-genderIdentity] 0..1 MS
+* extension[http://hl7.org/fhir/StructureDefinition/patient-genderIdentity].valueCodeableConcept from Gender_Code_ValueSet
 * active MS
 * name 1..1
 * name MS

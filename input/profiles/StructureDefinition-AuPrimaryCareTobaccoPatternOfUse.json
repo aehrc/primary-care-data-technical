@@ -114,7 +114,8 @@
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.component",

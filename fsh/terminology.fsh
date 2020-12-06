@@ -158,3 +158,10 @@ Title: "Smoking Type"
 * http://snomed.info/sct#82302008 "Pipe Smoker"
 
 
+ValueSet: Gender_Code_ValueSet
+Id: gendercode
+Title: "Gender Type"
+* ^url = "http://aehrc.com/valueset/gendercode"
+* http://snomed.info/sct#703117000 "Male"
+* http://snomed.info/sct#703118005 "Female"
+* http://snomed.info/sct#772004004 "Non-binary"

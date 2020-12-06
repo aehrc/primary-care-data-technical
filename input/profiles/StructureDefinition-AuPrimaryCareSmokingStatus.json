@@ -88,8 +88,9 @@
       {
         "id": "Observation.effectiveDateTime",
         "path": "Observation.effectiveDateTime",
-        "min": 0,
-        "max": "1"
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
