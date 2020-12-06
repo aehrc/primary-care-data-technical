@@ -83,7 +83,6 @@ Usage: #Example
 * section[familyHistoryList].entry = Reference(mf-familyHistoryList)
 
 
-
 //Follow up
 * section[followUp].code = http://loinc.org#69730-0 "Follow up visit item set"
 
@@ -327,6 +326,20 @@ Title: "Occupation"
 
 
 //------------ family history
+
+Instance: mf-familyHistoryList
+InstanceOf: AUPrimaryCareFamilyMemberHistoryList
+//BaseType: List 
+Title: "Family History List"
+Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Father with diabetes</div>"
+
+* mode = #snapshot
+* status = #current
+* subject = Reference(maryFictitious)
+* entry.item = Reference(mf-familyHistory1)
 
 Instance: mf-familyHistory1
 InstanceOf: AUPrimaryCareFamilyMemberHistory
