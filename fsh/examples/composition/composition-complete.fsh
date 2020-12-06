@@ -62,8 +62,8 @@ Usage: #Example
 * section[socialHistory].entry = Reference(aupc-socialHistoryList) //defined in socialhistory-examples.fsh
 
 //dh followups
-//* section[followUp].code = $LOINC#69730-0  "Follow ups"
-//* section[followUp].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Follow ups</div>"
-//* section[followUp].text.status = #generated
-//* section[followUp].entry = Reference(aupc-followUpList)
+* section[followUp].code = $LOINC#69730-0  "Follow ups"
+* section[followUp].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Follow ups</div>"
+* section[followUp].text.status = #generated
+* section[followUp].entry = Reference(aupc-followUpList)
 
