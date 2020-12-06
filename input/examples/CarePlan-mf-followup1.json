@@ -1,0 +1,36 @@
+{
+  "resourceType": "CarePlan",
+  "id": "mf-followup1",
+  "meta": {
+    "profile": [
+      "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
+    ]
+  },
+  "status": "active",
+  "intent": "proposal",
+  "title": "Follow up for Blood Pressure check",
+  "subject": {
+    "reference": "mf-patient1",
+    "display": "Mary Fictitious"
+  },
+  "note": [
+    {
+      "text": "Need to use large sized cuff..."
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "status": "scheduled",
+        "code": {
+          "text": "Blood Pressure"
+        },
+        "scheduledTiming": {
+          "event": [
+            "2020-11-01"
+          ]
+        }
+      }
+    }
+  ]
+}

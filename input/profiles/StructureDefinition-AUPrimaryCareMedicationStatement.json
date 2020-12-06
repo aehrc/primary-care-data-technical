@@ -85,11 +85,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.timing.code",
-        "path": "MedicationStatement.dosage.timing.code",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationStatement.dosage.asNeededCodeableConcept",
         "path": "MedicationStatement.dosage.asNeededCodeableConcept",
         "mustSupport": true

@@ -849,6 +849,28 @@
       },
       {
         "reference": {
+          "reference": "List/mf-familyHistoryList"
+        },
+        "name": "Family History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "List/mf-followUpList"
+        },
+        "name": "Followup list",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mf-followup1"
+        },
+        "name": "Blood Pressure review",
+        "description": "Review to check Blood Pressure",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
+      },
+      {
+        "reference": {
           "reference": "List/mf-medicalHistoryList"
         },
         "name": "Medical History List",
