@@ -47,6 +47,7 @@ Usage: #Example
 * section[familyHistoryList].text.status = #generated
 * section[familyHistoryList].entry[0] = Reference(aupc-familyHistoryList)
 
+
 //Doesn't refer to a List - multiple Observations - todo should it?
 * section[pregnancyHistory].code = $LOINC#10163-4  "History of pregnancies"
 * section[pregnancyHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>History of pregnancies</div>"
