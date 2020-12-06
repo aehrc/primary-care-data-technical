@@ -538,7 +538,7 @@
       },
       {
         "reference": {
-          "reference": "Composition/aupc-compositionComplete"
+          "reference": "Composition/aupc-compositionComplete1"
         },
         "name": "Example composition with all sections populated",
         "description": "The composition for a patient with all sections completed ",
