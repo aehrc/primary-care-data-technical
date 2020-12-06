@@ -118,26 +118,6 @@
       }
     },
     {
-      "entry": [
-        {
-          "reference": "List/aupc-familyHistoryList"
-        }
-      ],
-      "code": {
-        "coding": [
-          {
-            "code": "10157-6",
-            "system": "http://loinc.org",
-            "display": "Family history list"
-          }
-        ]
-      },
-      "text": {
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Father with diabetes</div>",
-        "status": "generated"
-      }
-    },
-    {
       "code": {
         "coding": [
           {
@@ -186,26 +166,6 @@
       "entry": [
         {
           "reference": "aupc-socialHistoryList"
-        }
-      ]
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "69730-0",
-            "system": "http://loinc.org",
-            "display": "Follow ups"
-          }
-        ]
-      },
-      "text": {
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Follow ups</div>",
-        "status": "generated"
-      },
-      "entry": [
-        {
-          "reference": "List/aupc-followUpList"
         }
       ]
     }

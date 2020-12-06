@@ -7,7 +7,6 @@ Title: "AU Primary Care Composition"
 Description: "This profile defines a composition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
 * status = #final
-
 //* type.coding ^slicing.discriminator.type = #value
 //* type.coding ^slicing.discriminator.path = "system"
 
@@ -22,8 +21,8 @@ Description: "This profile defines a composition structure that includes core lo
 * type.coding[loincMedicalRecords].system = "http://loinc.org"
 * type.coding[loincMedicalRecords].code = #11503-0 (exactly)
 * type.coding[loincMedicalRecords].display = "Medical Records"
-
 */
+
 * type = http://loinc.org#11503-0 "Medical Records"
 * subject 1..1      //there must be a subject
 * subject only Reference(AUPrimaryCarePatient)
