@@ -1,6 +1,6 @@
 Instance: aupc-compositionComplete
 InstanceOf: AUPrimaryCareComposition
-//BaseType: Composition 
+BaseType: Composition 
 Title: "Example composition with all sections populated"
 Description: """
 The composition for a patient with all sections completed 
