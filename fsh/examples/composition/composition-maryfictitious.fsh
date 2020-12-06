@@ -101,7 +101,7 @@ Usage: #Example
 
 """
 * section[followUp].text.status = #generated
-* section[followUp].entry = Reference(mf-followup1)
+* section[followUp].entry = Reference(mf-followUpList)
 
 Instance: mf-followup1
 InstanceOf: AUPrimaryCareFollowUp
