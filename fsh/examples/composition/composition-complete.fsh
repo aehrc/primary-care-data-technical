@@ -1,15 +1,13 @@
 Instance: aupc-compositionComplete
 InstanceOf: AUPrimaryCareComposition
-BaseType: Composition 
+//BaseType: Composition 
 Title: "Example composition with all sections populated"
 Description: """
 The composition for a patient with all sections completed 
 """
 Usage: #Example
-
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>A complete example  of an extract</div>"
-
 * status = #final
 * identifier.system = "http://clinfhir.com/fhir/namingSystem/test"
 * identifier.value = "testing"
@@ -18,7 +16,6 @@ Usage: #Example
 * author.display = "Marcus Welby"
 * subject = Reference(aupc-patient1)
 * subject.display = "John Doe"
-
 * date = "2020-04-21"
 
 * section[medicalHistoryList].entry = Reference(aupc-medicalHistoryList)    //defined in condition+procedure-examples
