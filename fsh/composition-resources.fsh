@@ -68,7 +68,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[adverseReactionList].mode = #snapshot
 * section[adverseReactionList].mode MS
 * section[adverseReactionList].entry only Reference(AUPrimaryCareAllergyIntoleranceList)
-* section[adverseReactionList].entry MS
+* section[adverseReactionList].entry 1..1 MS
 
 * section[medicalHistoryList].code.coding.system = "http://loinc.org"
 * section[medicalHistoryList].code.coding.code = #11348-0 (exactly)
@@ -76,7 +76,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[medicalHistoryList].mode = #snapshot
 * section[medicalHistoryList].mode MS
 * section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList)
-* section[medicalHistoryList].entry MS
+* section[medicalHistoryList].entry 1..1 MS
 
 * section[vaccinationList].code.coding.system = "http://loinc.org"
 * section[vaccinationList].code.coding.code = #41291-6 (exactly)
@@ -85,7 +85,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[vaccinationList].mode = #snapshot
 * section[vaccinationList].mode MS
 * section[vaccinationList].entry only Reference(AUPrimaryCareImmunisationList)
-* section[vaccinationList].entry MS
+* section[vaccinationList].entry 1..1 MS
 
 * section[medicineList].code.coding.system = "http://loinc.org"
 * section[medicineList].code.coding.code = #10160-0 (exactly) 
@@ -93,7 +93,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[medicineList].mode = #snapshot
 * section[medicineList].mode MS
 * section[medicineList].entry only Reference(AUPrimaryCareMedicineList)
-* section[medicineList].entry MS
+* section[medicineList].entry 1..1 MS
 
 * section[socialHistory].code.coding.system = "http://loinc.org"
 * section[socialHistory].code.coding.code = #29762-2 (exactly)
@@ -134,7 +134,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[familyHistoryList].mode = #snapshot
 * section[familyHistoryList].mode MS
 * section[familyHistoryList].entry only Reference(AUPrimaryCareFamilyMemberHistoryList)
-* section[familyHistoryList].entry MS
+* section[familyHistoryList].entry 1..1 MS
 
 * section[encounterHistory].code.coding.system = "http://loinc.org"
 * section[encounterHistory].code.coding.code = #11347-2 (exactly)
@@ -142,7 +142,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[encounterHistory].mode = #snapshot
 * section[encounterHistory].mode MS
 * section[encounterHistory].entry only Reference(AUPrimaryCareEncounterList)
-* section[encounterHistory].entry MS
+* section[encounterHistory].entry 1..1 MS
 
 * section[pregnancyHistory].code.coding.system = "http://loinc.org"
 * section[pregnancyHistory].code.coding.code = #10163-4 (exactly)
@@ -175,7 +175,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[goalList].mode = #snapshot
 * section[goalList].mode MS
 * section[goalList].entry only Reference(AUPrimaryCareGoalList)
-* section[goalList].entry MS
+* section[goalList].entry 1..1 MS
 
 * section[followUp].code.coding.system = "http://loinc.org"
 * section[followUp].code.coding.code = #69730-0 (exactly)
@@ -183,7 +183,7 @@ Description: "This profile defines a composition structure that includes core lo
 * section[followUp].mode = #snapshot
 * section[followUp].mode MS
 * section[followUp].entry only Reference(AUPrimaryCareFollowUpList)
-* section[followUp].entry MS
+* section[followUp].entry 1..1 MS
 
 * section[attachments].code.coding.system = "http://loinc.org"
 * section[attachments].code.coding.code = #52033-8 (exactly)

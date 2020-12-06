@@ -30,7 +30,7 @@ The content of this Implementation Guide has been managed by the following group
 
 ## Usage
 
-This document is a working specification that may be directly implemented by FHIR<sup>&reg;&copy;</sup> system producers. The initial aim of this document is to support record exchange of individual patient record for practice to practice transfer of care.
+This document is a working specification that may be directly implemented by FHIR<sup>&reg;&copy;</sup> system producers.
 
 Information contained in this document is aimed at providing guidance on representing Primary Health concepts 
 using FHIR. This includes code systems, extensions and profiles on base FHIR types.  The content of the IG is 
@@ -40,5 +40,9 @@ profiles that can be further constrained for a particular usage.
 FHIR<sup>&reg;&copy;</sup> connectathon events are key to the verification of the guide as being suitable for 
 implementation. This implementation guide will be used as the basis for Primary Care connectathon events.
 
+## Collaboration
+This guide is the product of collaborative work undertaken with participants from:
+
+* 
 
 
