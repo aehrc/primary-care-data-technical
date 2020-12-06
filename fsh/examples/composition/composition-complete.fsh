@@ -7,6 +7,7 @@ The composition for a patient with all sections completed
 """
 Usage: #Example
 
+
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>A complete example  of an extract</div>"
 * status = #final
