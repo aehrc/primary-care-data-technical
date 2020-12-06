@@ -101,6 +101,38 @@ Usage: #Example
 
 """
 * section[followUp].text.status = #generated
+* entry[1].item = Reference(mf-followup1)
+
+Instance: mf-followup1
+InstanceOf: AUPrimaryCareFollowUp
+//BaseType: CarePlan 
+Description: "Review to check Blood Pressure"
+Title: "Blood Pressure review"
+
+* status = #active
+* intent = #proposal
+* title = "Follow up for Blood Pressure check"
+* subject = Reference(mf-patient1)
+* subject.display = "Mary Fictitious"
+* note.text = "Need to use large sized cuff..."
+* activity.detail.status = #scheduled
+* activity.detail.code.text = "Blood Pressure"
+* activity.detail.scheduledTiming.event = "2020-11-01"
+
+//The list that references all of the followup resources 
+Instance: mf-followUpList
+InstanceOf: AUPrimaryCareFollowUpList
+//BaseType: List 
+Title: "Followup list"
+Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>3 allergies</div>"
+
+* mode = #snapshot
+* status = #current
+* subject = Reference(maryFictitious)
+* entry.item = Reference(mf-followup1)
 // ============================== end of Composition =====================
 
 // ----------------------- medications --------------
