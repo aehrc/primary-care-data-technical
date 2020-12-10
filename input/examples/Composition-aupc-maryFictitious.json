@@ -1,0 +1,176 @@
+{
+  "resourceType": "Composition",
+  "id": "aupc-maryFictitious",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "11503-0",
+        "system": "http://loinc.org",
+        "display": "Medical Records"
+      }
+    ]
+  },
+  "title": "Practice to Practice Patient Summary",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mary Fictitious example</div>"
+  },
+  "identifier": {
+    "system": "http://clinfhir.com/fhir/namingSystem/test",
+    "value": "testing"
+  },
+  "author": [
+    {
+      "reference": "Practitioner/aupc-practitioner1",
+      "display": "Marcus Welby"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/maryFictitious",
+    "display": "Mary Fictitious"
+  },
+  "date": "2020-04-21",
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "List/mf-medicalHistoryList"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "11348-0",
+            "system": "http://loinc.org",
+            "display": "Medical History"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hypertension, Rheumatoid Arthritis and bipolar disorder</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "29762-2",
+            "system": "http://loinc.org",
+            "display": "Social History Narrative"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Widowed May 2019</div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "mf-SocialHistoryList"
+        }
+      ]
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-adverseReactionEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "48765-2",
+            "system": "http://loinc.org",
+            "display": "Adverse Reactions"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-immunizationEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "41291-6",
+            "system": "http://loinc.org",
+            "display": "Immunization"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known immunizations</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "10160-0",
+            "system": "http://loinc.org",
+            "display": "Medication List"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Sevikar HCT 40/10/25</li><li>Methotrexate</li><li>lithium carbonate</li><li>Prednisolone during Rheumatoid Arthritis exascerbation</li></ul></div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "List/mf-medicineList"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "10157-6",
+            "system": "http://loinc.org",
+            "display": "Family History"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mother and Sister hypothyroid in 30s</div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "mf-familyHistoryList"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "69730-0",
+            "system": "http://loinc.org",
+            "display": "Follow up visit item set"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Discuss HRT</li><li>Due for screening mammogram age 50</li><li>Due for bowel cancer screening age 50</li><li>CST due in 3 years for now</li><li>Refer for bone mineral densitometry next visit as her use of prednisolone, her rheumatoid arthritis, her alcohol intake and her peri-menopausal status increase her risk of osteoporosis</li></ul></div>",
+        "status": "generated"
+      }
+    }
+  ]
+}

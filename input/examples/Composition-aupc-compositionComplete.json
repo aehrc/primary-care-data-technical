@@ -1,0 +1,213 @@
+{
+  "resourceType": "Composition",
+  "id": "aupc-compositionComplete",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "11503-0",
+        "system": "http://loinc.org",
+        "display": "Medical Records"
+      }
+    ]
+  },
+  "title": "Practice to Practice Patient Summary",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A complete example of an extract</div>"
+  },
+  "identifier": {
+    "system": "http://clinfhir.com/fhir/namingSystem/test",
+    "value": "testing"
+  },
+  "author": [
+    {
+      "reference": "Practitioner/aupc-practitioner1",
+      "display": "Marcus Welby"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/aupc-patient1",
+    "display": "John Doe"
+  },
+  "date": "2020-04-21",
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-medicalHistoryList"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "11348-0",
+            "system": "http://loinc.org",
+            "display": "Medical History"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Polio and asthma</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-adverseReactionList"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "48765-2",
+            "system": "http://loinc.org",
+            "display": "Adverse Reactions"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Peanuts and others</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-immunizationList"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "41291-6",
+            "system": "http://loinc.org",
+            "display": "Immunization"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Immunizations</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-medicineList"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "10160-0",
+            "system": "http://loinc.org",
+            "display": "Medicine list"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medications</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "List/aupc-familyHistoryList"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "10157-6",
+            "system": "http://loinc.org",
+            "display": "Family history list"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Father with diabetes</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "10163-4",
+            "system": "http://loinc.org",
+            "display": "History of pregnancies"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">History of pregnancies</div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "Observation/aupc-gravidity1"
+        },
+        {
+          "reference": "Observation/aupc-parity1"
+        },
+        {
+          "reference": "Observation/aupc-gestationOnScan1"
+        },
+        {
+          "reference": "Observation/aupc-edd1"
+        },
+        {
+          "reference": "Observation/aupc-lmp1"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "29762-2",
+            "system": "http://loinc.org",
+            "display": "Social History Narrative"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Social History</div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "aupc-socialHistoryList"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "69730-0",
+            "system": "http://loinc.org",
+            "display": "Follow ups"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Follow ups</div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "List/aupc-followUpList"
+        }
+      ]
+    }
+  ]
+}
