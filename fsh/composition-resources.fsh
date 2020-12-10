@@ -33,7 +33,7 @@ Description: "This profile defines a composition structure that includes core lo
     followUp 0..1 and 
     attachments 0..1 
 
-* section 1..*
+//* section 1..*
 //* section.section 0..0          //can't have sub sections
 //* section.emptyReason 0..0      //and no empty reason on the sections
 
