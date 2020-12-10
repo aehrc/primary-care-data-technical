@@ -538,22 +538,6 @@
       },
       {
         "reference": {
-          "reference": "Composition/aupc-compositionComplete1"
-        },
-        "name": "Example composition with all sections populated",
-        "description": "The composition for a patient with all sections completed ",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
-      },
-      {
-        "reference": {
-          "reference": "Composition/aupc-compositionEmpty"
-        },
-        "name": "Example composition with no data",
-        "description": "The composition for a patient with no relevant history. Required sections are present with no data.\nThis shows ONLY required elements. List resources are contained.",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
-      },
-      {
-        "reference": {
           "reference": "Condition/aupc-condition1"
         },
         "name": "Confirmed diagnosis of Polio",
@@ -670,14 +654,6 @@
       },
       {
         "reference": {
-          "reference": "Composition/aupc-maryFictitious"
-        },
-        "name": "Mary Fictitious example",
-        "description": "Rendering a supplied clincial example into a bundle",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
-      },
-      {
-        "reference": {
           "reference": "List/aupc-medicalHistoryEmpty"
         },
         "name": "No significant history",
@@ -770,195 +746,11 @@
       },
       {
         "reference": {
-          "reference": "Patient/maryFictitious"
-        },
-        "name": "Mary Fictitious",
-        "description": "Supporting patient for examples",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
-      },
-      {
-        "reference": {
           "reference": "Medication/medication1"
         },
         "name": "Simvastatin",
         "description": "Simvastatin",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mf-alcohol"
-        },
-        "name": "Cigarette smoker",
-        "description": "Alcohol intake ",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "List/mf-allergiesList"
-        },
-        "name": "Allergy List",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
-      },
-      {
-        "reference": {
-          "reference": "Condition/mf-condition1"
-        },
-        "name": "Hypertension",
-        "description": "Hypertension",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-      },
-      {
-        "reference": {
-          "reference": "Condition/mf-condition2"
-        },
-        "name": "Rheumatoid Arthritis",
-        "description": "Rheumatoid Arthritis",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-      },
-      {
-        "reference": {
-          "reference": "Condition/mf-condition3"
-        },
-        "name": "Bipolar disorder",
-        "description": "Bipolar disorder",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mf-exSmoker"
-        },
-        "name": "Cigarette smoker",
-        "description": "is a ex cigarette smoker",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "FamilyMemberHistory/mf-familyHistory1"
-        },
-        "name": "Mother hypothyroid",
-        "description": "Mother hypothyroid",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-      },
-      {
-        "reference": {
-          "reference": "FamilyMemberHistory/mf-familyHistory2"
-        },
-        "name": "Sister hypothyroid",
-        "description": "Sister hypothyroid",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-familyHistoryList"
-        },
-        "name": "Family History List",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-followUpList"
-        },
-        "name": "Followup list",
-        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
-      },
-      {
-        "reference": {
-          "reference": "CarePlan/mf-followup1"
-        },
-        "name": "Blood Pressure review",
-        "description": "Review to check Blood Pressure",
-        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-medicalHistoryList"
-        },
-        "name": "Medical History List",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/mf-medication1"
-        },
-        "name": "Sevikar HCT 40/10/25",
-        "description": "Sevikar HCT 40/10/25",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/mf-medication2"
-        },
-        "name": "SMethotrexate",
-        "description": "Methotrexate",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/mf-medication3"
-        },
-        "name": "lithium carbonate",
-        "description": "lithium carbonate",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-medicineList"
-        },
-        "name": "Medication List",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
-      },
-      {
-        "reference": {
-          "reference": "AllergyIntolerance/mf-noAllergy"
-        },
-        "name": "No allergies reported",
-        "description": "Urticaria as a result of a Peanut allergy",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mf-occupation"
-        },
-        "name": "Occupation",
-        "description": "Occupation",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Procedure/mf-procedure1"
-        },
-        "name": "UteroVaginal prolapse repair",
-        "description": "UteroVaginal prolapse repair",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mfWidowed"
-        },
-        "name": "Widowed May 2019",
-        "description": "Widowed May 2019",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Bundle/aupc-compositionComplete"
-        },
-        "name": "aupc-compositionComplete",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Bundle/aupc-compositionEmpty"
-        },
-        "name": "aupc-compositionEmpty",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Bundle/aupc-maryFictitious"
-        },
-        "name": "aupc-maryFictitious",
-        "exampleBoolean": true
       }
     ],
     "page": {

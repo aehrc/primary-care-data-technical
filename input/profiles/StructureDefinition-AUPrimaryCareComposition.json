@@ -95,17 +95,8 @@
           ],
           "rules": "open"
         },
-        "min": 4
-      },
-      {
-        "id": "Composition.section.emptyReason",
-        "path": "Composition.section.emptyReason",
-        "max": "0"
-      },
-      {
-        "id": "Composition.section.section",
-        "path": "Composition.section.section",
-        "max": "0"
+        "min": 4,
+        "mustSupport": true
       },
       {
         "id": "Composition.section:clinicalSynopsis",

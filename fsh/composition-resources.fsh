@@ -7,21 +7,6 @@ Title: "AU Primary Care Composition"
 Description: "This profile defines a composition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
 * status = #final
-//* type.coding ^slicing.discriminator.type = #value
-//* type.coding ^slicing.discriminator.path = "system"
-
-/*
-//Slice the type so that it must have the loinc code 11503-0 - but can have others
-* type.coding ^slicing.discriminator.type = #value
-* type.coding ^slicing.discriminator.path = "code"
-* type.coding ^slicing.rules = #open
-
-* type.coding contains loincMedicalRecords 1..1
-* type.coding[loincMedicalRecords] MS
-* type.coding[loincMedicalRecords].system = "http://loinc.org"
-* type.coding[loincMedicalRecords].code = #11503-0 (exactly)
-* type.coding[loincMedicalRecords].display = "Medical Records"
-*/
 
 * type = http://loinc.org#11503-0 "Medical Records"
 * subject 1..1      //there must be a subject
@@ -48,9 +33,9 @@ Description: "This profile defines a composition structure that includes core lo
     followUp 0..1 and 
     attachments 0..1 
 
-//* section 1..*
-* section.section 0..0          //can't have sub sections
-* section.emptyReason 0..0      //and no empty reason on the sections
+* section 1..*
+//* section.section 0..0          //can't have sub sections
+//* section.emptyReason 0..0      //and no empty reason on the sections
 
 * section[clinicalSynopsis].code.coding.userSelected = false
 * section[clinicalSynopsis].code.coding.system = "http://loinc.org"

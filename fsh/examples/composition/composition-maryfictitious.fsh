@@ -41,7 +41,8 @@ Usage: #Example
 * section[socialHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Widowed May 2019</div>"
 
 * section[socialHistory].text.status = #generated
-* section[socialHistory].entry = Reference(mf-SocialHistoryList) //defined in socialhistory-examples.fsh
+* section[socialHistory].entry[0] = Reference(mf-exSmoker) //defined in socialhistory-examples.fsh
+* section[socialHistory].entry[1] = Reference(mf-alcohol)
 
 
 * section[adverseReactionList].entry = Reference(aupc-adverseReactionEmpty) //defined in supporting.fsh

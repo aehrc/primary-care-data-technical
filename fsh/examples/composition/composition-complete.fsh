@@ -1,4 +1,4 @@
-Instance: aupc-compositionComplete1
+Instance: aupc-compositionComplete
 InstanceOf: AUPrimaryCareComposition
 // BaseType: Composition 
 Title: "Example composition with all sections populated"
@@ -63,7 +63,7 @@ Usage: #Example
 * section[socialHistory].code = $LOINC#29762-2  "Social History Narrative"
 * section[socialHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Social History</div>"
 * section[socialHistory].text.status = #generated
-* section[socialHistory].entry = Reference(aupc-socialHistoryList) //defined in socialhistory-examples.fsh
+* section[socialHistory].entry = Reference(aupc-smoker1) //defined in socialhistory-examples.fsh
 
 //dh followups
 * section[followUp].code = $LOINC#69730-0  "Follow ups"
