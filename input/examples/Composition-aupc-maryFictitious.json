@@ -73,7 +73,10 @@
       },
       "entry": [
         {
-          "reference": "mf-SocialHistoryList"
+          "reference": "Observation/mf-exSmoker"
+        },
+        {
+          "reference": "Observation/mf-alcohol"
         }
       ]
     },
@@ -153,7 +156,7 @@
       },
       "entry": [
         {
-          "reference": "mf-familyHistoryList"
+          "reference": "List/mf-familyHistoryList"
         }
       ]
     },
@@ -170,7 +173,12 @@
       "text": {
         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Discuss HRT</li><li>Due for screening mammogram age 50</li><li>Due for bowel cancer screening age 50</li><li>CST due in 3 years for now</li><li>Refer for bone mineral densitometry next visit as her use of prednisolone, her rheumatoid arthritis, her alcohol intake and her peri-menopausal status increase her risk of osteoporosis</li></ul></div>",
         "status": "generated"
-      }
+      },
+      "entry": [
+        {
+          "reference": "List/mf-followUpList"
+        }
+      ]
     }
   ]
 }

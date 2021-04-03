@@ -95,8 +95,7 @@
           ],
           "rules": "open"
         },
-        "min": 4,
-        "mustSupport": true
+        "min": 4
       },
       {
         "id": "Composition.section:clinicalSynopsis",

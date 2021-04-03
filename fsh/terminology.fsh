@@ -125,6 +125,14 @@ Title: "Alcohol Use Units"
 * http://unitsofmeasure.org#/wk "per week" 
 * http://unitsofmeasure.org#/au "/ year"
 
+ValueSet: AlcoholFreeDaysUnits_Code_ValueSet
+Id: alcoholfreedaysunitscode
+Title: "Alcohol Fee Days Use Units"
+* ^url = "http://aehrc.com/valueset/alcoholunitscode"
+* http://unitsofmeasure.org#d/wk "days per week"
+* http://unitsofmeasure.org#d/mo "days per month" 
+
+
 ValueSet: AlcoholPattern_Code_ValueSet
 Id: alcoholpatterncode
 Title: "Alcohol Pattern"

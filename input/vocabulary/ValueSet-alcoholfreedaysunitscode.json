@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AlcoholFreeDaysUnits_Code_ValueSet",
+  "id": "alcoholfreedaysunitscode",
+  "title": "Alcohol Fee Days Use Units",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/valueset/alcoholunitscode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "d/wk",
+            "display": "days per week"
+          },
+          {
+            "code": "d/mo",
+            "display": "days per month"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -245,7 +245,7 @@ This includes:
 * component[alcoholfreedays].valueQuantity MS
 * component contains bingedrinkingfrequency 0..1
 * component[bingedrinkingfrequency].code =  http://aehrc.com/fhir/observable-entity#alcohol-binge-drinking-frequency
-* component[bingedrinkingfrequency].valueQuantity.code from AlcoholPatternUnits_Code_ValueSet
+* component[bingedrinkingfrequency].valueQuantity.code from AlcoholFreeDaysUnits_Code_ValueSet
 * component[bingedrinkingfrequency].valueQuantity MS
 * component contains bingedringkingdescription 0..1
 * component[bingedringkingdescription].code =  http://aehrc.com/fhir/observable-entity#alcohol-binge-drinking-description
