@@ -147,6 +147,7 @@ Title: "Smoking Use Units"
 * http://unitsofmeasure.org#g/wk "(gram) / (week)"
 * http://unitsofmeasure.org#/d "per day"
 * http://unitsofmeasure.org#/wk "per week"
+* http://unitsofmeasure.org#/mo "per month"
 
 ValueSet: SmokingPattern_Code_ValueSet
 Id: smokingpatterncode
