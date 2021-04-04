@@ -127,7 +127,7 @@ Title: "Alcohol Use Units"
 ValueSet: AlcoholFreeDaysUnits_Code_ValueSet
 Id: alcoholfreedaysunitscode
 Title: "Alcohol Fee Days Use Units"
-* ^url = "http://aehrc.com/valueset/alcoholunitscode"
+* ^url = "http://aehrc.com/valueset/alcoholfreedaysunitscode"
 * http://unitsofmeasure.org#d/wk "days per week"
 * http://unitsofmeasure.org#d/mo "days per month" 
 
