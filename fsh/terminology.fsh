@@ -121,9 +121,8 @@ ValueSet: AlcoholPatternUnits_Code_ValueSet
 Id: alcoholunitscode
 Title: "Alcohol Use Units"
 * ^url = "http://aehrc.com/valueset/alcoholunitscode"
-* http://unitsofmeasure.org#/d "per day"
 * http://unitsofmeasure.org#/wk "per week" 
-* http://unitsofmeasure.org#/au "/ year"
+* http://unitsofmeasure.org#/mo "per month"
 
 ValueSet: AlcoholFreeDaysUnits_Code_ValueSet
 Id: alcoholfreedaysunitscode
