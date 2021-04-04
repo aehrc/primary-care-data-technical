@@ -59,7 +59,7 @@ This item has been designed to allow recording of information about a specific s
 * meta.lastUpdated MS
 * verificationStatus MS
 * criticality MS
-* code from  Allergy_Code_Valueset (preferred)
+* code 1..1
 * code MS
 * patient only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient)
 * recordedDate MS
