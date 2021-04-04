@@ -36,4 +36,5 @@ Details about a single identified health condition, injury, disability or any ot
 * subject only Reference(AUPrimaryCarePatient)
 * subject MS
 * onsetDateTime MS 
+* note 0..1 MS
 * note.text MS
