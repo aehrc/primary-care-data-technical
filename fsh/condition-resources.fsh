@@ -23,11 +23,11 @@ Details about a single identified health condition, injury, disability or any ot
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
 * meta.lastUpdated MS
 * extension contains http://hl7.org/fhir/StructureDefinition/bodySite named bodySiteReference 0..1 MS
-* clinicalStatus MS
+* clinicalStatus 1..1 MS
 * verificationStatus MS
 * severity MS
 * code from Condition_Code_Valueset (preferred) 
-* code MS 
+* code 1..1 MS 
 * code ^short = "Coding of a condition, may also describe abscence of condition"
 * code.coding MS
 * bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)

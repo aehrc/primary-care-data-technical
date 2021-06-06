@@ -15,7 +15,7 @@ Use to record details about a vaccination that had been administered to an indiv
 * vaccineCode MS
 * vaccineCode.coding[amtVaccineCode] from Vaccination_Code_Valueset (preferred)
 * vaccineCode.coding[amtVaccineCode] MS     //this must be a slice defined in the parent
-* occurrenceDateTime MS 
+* occurrenceDateTime 1..1 MS 
 * protocolApplied.doseNumber[x] MS 
 * protocolApplied.doseNumber[x] ^short = "Vaccination sequence number or description"
 * note.text MS

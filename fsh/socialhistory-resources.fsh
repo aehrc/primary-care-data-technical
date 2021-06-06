@@ -41,7 +41,7 @@ It is possible to incorporate the narrative descriptions of tobacco smoking with
 
 Profile: AUPrimaryCareTobaccoSmokingDateCeased
 Parent: Observation
-Id: AUPrimaryCareTobaccoSmokingdDateCeased
+Id: AUPrimaryCareTobaccoSmokingDateCeased
 Title: "AU Primary Tobacco Smoking Date Ceased"
 Description: """
 The date when the individual last ceased smoking tobacco of any type.
@@ -61,7 +61,7 @@ Partial dates are permitted.
 * subject 1..1 MS
 * effective[x] 1..1 MS
 * effectiveDateTime MS
-* valueDateTime MS
+* valueDateTime 1..1 MS
 
 Profile: AUPrimaryCareTobaccoSmokingDateStarted
 Parent: Observation
@@ -86,7 +86,7 @@ Partial dates are permitted
 * subject 1..1 MS
 * effective[x] 1..1 MS
 * effectiveDateTime MS
-* valueDateTime MS
+* valueDateTime 1..1 MS
 
 
 Profile: AUPrimaryCareTobaccoPatternOfUse
