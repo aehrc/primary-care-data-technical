@@ -166,6 +166,7 @@ Title: "Sevikar HCT 40/10/25"
 * subject = Reference(maryFictitious)
 * status = #active
 * medicationCodeableConcept.text = "Sevikar HCT 40/10/25"
+* dosage.text = "1 tablet daily"
 
 Instance: mf-medication2
 InstanceOf: AUPrimaryCareMedicationStatement
@@ -178,6 +179,7 @@ Title: "SMethotrexate"
 * subject = Reference(maryFictitious)
 * status = #active
 * medicationCodeableConcept.text = "Methotrexate"
+* dosage.text = "1 tablet daily"
 
 Instance: mf-medication3
 InstanceOf: AUPrimaryCareMedicationStatement
@@ -190,6 +192,7 @@ Title: "lithium carbonate"
 * subject = Reference(maryFictitious)
 * status = #active
 * medicationCodeableConcept.text = "lithium carbonate"
+* dosage.text = "1 tablet daily"
 
 
 // ----------------------- medical history

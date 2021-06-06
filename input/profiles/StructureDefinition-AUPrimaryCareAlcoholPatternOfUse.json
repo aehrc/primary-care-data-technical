@@ -301,7 +301,7 @@
         "path": "Observation.component.valueQuantity.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/alcoholunitscode"
+          "valueSet": "http://aehrc.com/valueset/alcoholfreedaysunitscode"
         }
       },
       {
@@ -340,7 +340,7 @@
         "path": "Observation.component.valueQuantity.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/alcoholunitscode"
+          "valueSet": "http://aehrc.com/valueset/alcoholfreedaysunitscode"
         }
       },
       {

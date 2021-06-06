@@ -33,6 +33,7 @@ Not to be used to record specific details about a medication order.
 Not to be used to record details about specific medication-related activities, such as administration or dispense.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+* medication[x] 1..1 MS
 * medication[x][medicationCodeableConcept] from Medication_Code_Valueset (preferred) 
 * medication[x][medicationCodeableConcept] MS
 * medication[x][medicationReference] only Reference(AUPrimaryCareMedication)
@@ -40,6 +41,7 @@ Not to be used to record details about specific medication-related activities, s
 * status MS
 * note.text MS
 * reasonCode MS
+* dosage 1..1 MS
 * dosage.text MS
 * dosage.doseAndRate.doseQuantity MS
 //* dosage.timing.code MS

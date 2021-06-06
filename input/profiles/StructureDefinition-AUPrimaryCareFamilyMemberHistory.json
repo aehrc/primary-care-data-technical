@@ -48,6 +48,19 @@
   "differential": {
     "element": [
       {
+        "id": "FamilyMemberHistory",
+        "path": "FamilyMemberHistory",
+        "constraint": [
+          {
+            "key": "fm-content-0",
+            "severity": "error",
+            "human": "Either condition or note should be present",
+            "expression": "condition.exists() or note.exists()",
+            "source": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+          }
+        ]
+      },
+      {
         "id": "FamilyMemberHistory.status",
         "path": "FamilyMemberHistory.status",
         "mustSupport": true

@@ -16,5 +16,10 @@
   "status": "active",
   "medicationCodeableConcept": {
     "text": "Methotrexate"
-  }
+  },
+  "dosage": [
+    {
+      "text": "1 tablet daily"
+    }
+  ]
 }

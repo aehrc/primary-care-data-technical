@@ -5,7 +5,7 @@
   "id": "alcoholfreedaysunitscode",
   "title": "Alcohol Fee Days Use Units",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/alcoholunitscode",
+  "url": "http://aehrc.com/valueset/alcoholfreedaysunitscode",
   "compose": {
     "include": [
       {

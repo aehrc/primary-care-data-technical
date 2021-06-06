@@ -71,6 +71,7 @@
       {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -87,6 +88,7 @@
         "id": "Condition.code",
         "path": "Condition.code",
         "short": "Coding of a condition, may also describe abscence of condition",
+        "min": 1,
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
@@ -127,6 +129,12 @@
             "code": "dateTime"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note",
+        "max": "1",
         "mustSupport": true
       },
       {

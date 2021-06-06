@@ -16,5 +16,10 @@
   "status": "active",
   "medicationCodeableConcept": {
     "text": "Sevikar HCT 40/10/25"
-  }
+  },
+  "dosage": [
+    {
+      "text": "1 tablet daily"
+    }
+  ]
 }

@@ -12,16 +12,12 @@
         "system": "http://unitsofmeasure.org",
         "concept": [
           {
-            "code": "/d",
-            "display": "per day"
-          },
-          {
             "code": "/wk",
             "display": "per week"
           },
           {
-            "code": "/au",
-            "display": "/ year"
+            "code": "/mo",
+            "display": "per month"
           }
         ]
       }

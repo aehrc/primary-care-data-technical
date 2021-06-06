@@ -31,7 +31,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Review Date"
+        "short": "Review Date",
+        "definition": "Date when this goal is planned to be reviewed"
       },
       {
         "id": "Extension.extension",

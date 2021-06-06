@@ -26,6 +26,10 @@
           {
             "code": "/wk",
             "display": "per week"
+          },
+          {
+            "code": "/mo",
+            "display": "per month"
           }
         ]
       }

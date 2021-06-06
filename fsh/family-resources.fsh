@@ -37,6 +37,12 @@ Record as a single instance in a health record; updated and revised over time as
 * dataAbsentReason MS 
 * patient MS
 * note MS
+* obeys fm-content-0
+
+Invariant:  fm-content-0
+Description: "Either condition or note should be present"
+Expression: "condition.exists() or note.exists()"
+Severity:   #error
 
 
 Profile: AUPrimaryCareFamilyMemberHistoryList

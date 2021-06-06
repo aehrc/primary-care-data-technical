@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareTobaccoSmokingdDateStarted",
+  "id": "AUPrimaryCareTobaccoSmokingDateCeased",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateStarted",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased",
   "version": "0.0.3",
-  "name": "AUPrimaryCareTobaccoSmokingDateStarted",
-  "title": "AU Primary Tobacco Smoking Date Started",
+  "name": "AUPrimaryCareTobaccoSmokingDateCeased",
+  "title": "AU Primary Tobacco Smoking Date Ceased",
   "status": "active",
-  "description": "The date when the individual first started regular, but usually non-daily, smoking of tobacco of any type.\n\n**Usage** \n\nUse to record when the individual started smoking on a regular basis, such as every Friday night or at parties.\n\nRecord as a single instance in a health record.\n\nPartial dates are permitted",
+  "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,8 +68,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "smoking-date-started",
-              "system": "http://aehrc.com/fhir/observable-entity"
+              "code": "160625004",
+              "system": "http://snomed.info/sct"
             }
           ]
         },

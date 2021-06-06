@@ -16,5 +16,10 @@
   "status": "active",
   "medicationCodeableConcept": {
     "text": "lithium carbonate"
-  }
+  },
+  "dosage": [
+    {
+      "text": "1 tablet daily"
+    }
+  ]
 }

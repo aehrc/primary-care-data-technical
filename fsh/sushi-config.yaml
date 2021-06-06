@@ -1,0 +1,33 @@
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
+# │                                                                                                │
+# │  This file was generated from your existing project files and will be used for SUSHI           │
+# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭─────────────────────ImplementationGuide-au.csiro.fhir.au-primarycare.json──────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: au.csiro.fhir.au-primarycare
+canonical: https://aehrc.com/fhir
+version: 0.0.3
+name: PrimaryCarePracticetoPractice
+title: Primary Care Practice-to-Practice
+status: active
+publisher: CSIRO
+contact:
+  - name: CSIRO-1
+    telecom:
+      - system: email
+        value: mailto:david.hay25@gmail.com
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.au.base: current
+parameters:
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: CI Build
+
