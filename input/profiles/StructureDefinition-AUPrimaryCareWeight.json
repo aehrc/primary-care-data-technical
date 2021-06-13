@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareBodyMassIndex",
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBodyMassIndex",
+  "id": "AUPrimaryCareWeight",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareWeight",
   "version": "0.0.3",
-  "name": "AUPrimaryCareBodyMassIndex",
-  "title": "AU Primary Care Body Mass Index",
+  "name": "AUPrimaryCareWeight",
+  "title": "AU Primary Care Weight",
   "status": "active",
-  "description": "The measurement of the circumference of the waist.",
+  "description": "Weight observation",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -43,7 +43,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bmi",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bodyweight",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -59,7 +59,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "39156-5",
+          "code": "29463-7",
           "system": "http://loinc.org"
         },
         "mustSupport": true
@@ -71,7 +71,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "60621009",
+          "code": "27113001",
           "system": "http://snomed.info/sct"
         },
         "mustSupport": true

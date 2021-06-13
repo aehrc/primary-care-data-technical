@@ -98,6 +98,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareBloodPressure"
+        },
+        "name": "AU Primary Care Blood Pressure",
+        "description": "Blood pressure observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareBodyMassIndex"
         },
         "name": "AU Primary Care Body Mass Index",
@@ -214,6 +222,14 @@
         },
         "name": "AU Primary Care Gravidity",
         "description": "Number of times a woman has been pregnant, current and past, regardless of the pregnancy outcome.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareHeight"
+        },
+        "name": "AU Primary Care Height",
+        "description": "Height observation",
         "exampleBoolean": false
       },
       {
@@ -366,6 +382,14 @@
         },
         "name": "AU Primary Care Waist Circumference",
         "description": "The measurement of the circumference of the waist.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareWeight"
+        },
+        "name": "AU Primary Care Weight",
+        "description": "Weight observation",
         "exampleBoolean": false
       },
       {
