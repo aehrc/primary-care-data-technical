@@ -1,15 +1,9 @@
 Profile: AUPrimaryCareWaistCircumference
 Parent: Observation
 Id: AUPrimaryCareWaistCircumference
-Title: "AU Primary Care"
+Title: "AU Primary Care Waist Circumference"
 Description: """
-The date when the individual last ceased smoking tobacco of any type.
-
-**Usage** 
-
-The definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.
-
-Partial dates are permitted.
+Waist circumference observation.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareWaistCircumference"
 * status 1..1 MS

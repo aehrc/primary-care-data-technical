@@ -179,7 +179,7 @@ Statement about current consumption habits for all types of alcohol.
 Profile: AUPrimaryAlcoholConsumptionSummary
 Parent: Observation
 Id: AUPrimaryCareAlcoholConsumptionSummary
-Title: "AU Primary Alcohol Consumption Summary"
+Title: "AU Primary Care Alcohol Consumption Summary"
 Description: """
 Narrative description about all forms of alcohol consumption.
 
@@ -200,7 +200,7 @@ It is possible to incorporate the narrative descriptions of alcohol consumption 
 Profile: AUPrimaryCareAlcoholPatternOfUse
 Parent: Observation
 Id: AUPrimaryCareAlcoholPatternOfUse
-Title: "AU Primary Alcohol Pattern Of Use"
+Title: "AU Primary Care Alcohol Pattern Of Use"
 Description: """
 Details about a discrete period of time with a consistent pattern of typical consumption.
 
