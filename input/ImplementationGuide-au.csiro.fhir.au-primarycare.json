@@ -226,6 +226,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareHeartRate"
+        },
+        "name": "AU Primary Care Heart Rate",
+        "description": "Heart Rate observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareHeight"
         },
         "name": "AU Primary Care Height",

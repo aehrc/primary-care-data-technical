@@ -140,3 +140,25 @@ Blood pressure observation
 * subject 1..1 MS
 * effective[x] 1..1 MS
 * effectiveDateTime MS
+
+Profile: AUPrimaryCareHeartRate
+Parent: http://hl7.org/fhir/StructureDefinition/heartrate
+Id: AUPrimaryCareHeartRate
+Title: "AU Primary Care Heart Rate"
+Description: """
+Heart Rate observation
+"""
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareHeartRate"
+* status 1..1 MS
+* code 1..1 MS
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* code.coding contains LOINC 1..1 MS and SNOMED 1..1 MS
+* code.coding[LOINC] = $LOINC#8867-4	
+* code.coding[SNOMED] = $SNOMED#364075005
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+
