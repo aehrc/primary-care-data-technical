@@ -6,7 +6,7 @@
   "title": "Expected Date Of Delivery Types",
   "description": "Expected Date of Delivery observables, e.g. calculated from either scan date or last normal menstrual period and cycle length.",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/expecteddateofdeliverytypes",
+  "url": "http://aehrc.com/ValueSet/expecteddateofdeliverytypes",
   "compose": {
     "include": [
       {

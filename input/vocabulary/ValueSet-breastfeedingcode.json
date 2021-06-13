@@ -6,7 +6,7 @@
   "title": "Breastfeeding Code Valueset",
   "description": "Breastfeeding status record",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/breastfeedingcode",
+  "url": "http://aehrc.com/ValueSet/breastfeedingcode",
   "compose": {
     "include": [
       {

@@ -53,7 +53,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://aehrc.com/valueset/medicationcode"
+          "valueSet": "http://aehrc.com/ValueSet/medicationcode"
         }
       },
       {

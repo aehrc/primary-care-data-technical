@@ -14,9 +14,9 @@
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareWaistCircumference",
   "version": "0.0.3",
   "name": "AUPrimaryCareWaistCircumference",
-  "title": "AU Primary Care",
+  "title": "AU Primary Care Waist Circumference",
   "status": "active",
-  "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
+  "description": "The measurement of the circumference of the waist.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -90,7 +90,8 @@
         "patternCoding": {
           "code": "8280-0",
           "system": "http://loinc.org"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:SNOMED",
@@ -183,6 +184,7 @@
         "id": "Observation.valueQuantity.unit",
         "path": "Observation.valueQuantity.unit",
         "min": 1,
+        "patternString": "cm",
         "mustSupport": true
       },
       {

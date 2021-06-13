@@ -5,7 +5,7 @@
   "id": "alcoholunitscode",
   "title": "Alcohol Use Units",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/alcoholunitscode",
+  "url": "http://aehrc.com/ValueSet/alcoholunitscode",
   "compose": {
     "include": [
       {

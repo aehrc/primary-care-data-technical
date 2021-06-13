@@ -54,7 +54,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://aehrc.com/valueset/allergycode"
+          "valueSet": "http://aehrc.com/ValueSet/allergycode"
         }
       },
       {

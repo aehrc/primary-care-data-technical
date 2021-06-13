@@ -5,7 +5,7 @@
   "id": "smokingtypecode",
   "title": "Smoking Type",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/smokingtypecode",
+  "url": "http://aehrc.com/ValueSet/smokingtypecode",
   "compose": {
     "include": [
       {

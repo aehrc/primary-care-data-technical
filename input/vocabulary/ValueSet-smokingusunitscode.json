@@ -5,7 +5,7 @@
   "id": "smokingusunitscode",
   "title": "Smoking Use Units",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/smokingunitscode",
+  "url": "http://aehrc.com/ValueSet/smokingunitscode",
   "compose": {
     "include": [
       {

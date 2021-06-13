@@ -69,7 +69,7 @@ Record as a single instance per observation in a health record.
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAbsoluteCVDRisk"
 * status 1..1 MS
 * code 1..1 MS
-* code.coding 1..1 MD
+* code.coding 1..1 MS
 * code.coding = ObservationCode#absolutecvdrisk
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS

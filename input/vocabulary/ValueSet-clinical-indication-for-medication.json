@@ -6,7 +6,7 @@
   "title": "Clinical Indication For Medication ValueSet",
   "description": "Clinical Indication For Medication ValueSet",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/clinical-indication-for-medication",
+  "url": "http://aehrc.com/ValueSet/clinical-indication-for-medication",
   "compose": {
     "include": [
       {

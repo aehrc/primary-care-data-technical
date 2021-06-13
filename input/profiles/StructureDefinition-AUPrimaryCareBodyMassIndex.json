@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareAlcoholConsumptionSummary",
+  "id": "AUPrimaryCareBodyMassIndex",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionSummary",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBodyMassIndex",
   "version": "0.0.3",
-  "name": "AUPrimaryAlcoholConsumptionSummary",
-  "title": "AU Primary Care Alcohol Consumption Summary",
+  "name": "AUPrimaryCareBodyMassIndex",
+  "title": "AU Primary Care Body Mass Index",
   "status": "active",
-  "description": "Narrative description about all forms of alcohol consumption.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions of alcohol consumption within existing or legacy clinical systems into this data element.",
+  "description": "The measurement of the circumference of the waist.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -65,13 +65,43 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "patternCodeableConcept": {
-          "coding": [
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
             {
-              "code": "160573003",
-              "system": "http://snomed.info/sct"
+              "type": "value",
+              "path": "code"
             }
-          ]
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Observation.code.coding:LOINC",
+        "path": "Observation.code.coding",
+        "sliceName": "LOINC",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "39156-5",
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:SNOMED",
+        "path": "Observation.code.coding",
+        "sliceName": "SNOMED",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "60621009",
+          "system": "http://snomed.info/sct"
         },
         "mustSupport": true
       },
@@ -118,15 +148,50 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.valueString",
-        "path": "Observation.valueString",
-        "min": 0,
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.unit",
+        "path": "Observation.valueQuantity.unit",
+        "min": 1,
+        "patternString": "kg/m^2",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "min": 1,
+        "patternCode": "kg/m^2",
         "mustSupport": true
       }
     ]

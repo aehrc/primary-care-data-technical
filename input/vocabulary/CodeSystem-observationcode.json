@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ObservationCode",
+  "id": "observationcode",
+  "title": "Observation Code",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/CodeSystem/observationcode",
+  "concept": [
+    {
+      "code": "absolutecvdrisk",
+      "display": "Absolute CVD Risk",
+      "definition": "Australian absolute CVD calculated risk score"
+    }
+  ],
+  "count": 1
+}

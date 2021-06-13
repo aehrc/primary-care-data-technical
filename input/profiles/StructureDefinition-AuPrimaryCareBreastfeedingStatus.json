@@ -129,7 +129,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/breastfeedingcode"
+          "valueSet": "http://aehrc.com/ValueSet/breastfeedingcode"
         }
       },
       {

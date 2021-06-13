@@ -6,7 +6,7 @@
   "title": "Course ValueSet",
   "description": "The valueset of options to represent clincial course of a condition",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/course",
+  "url": "http://aehrc.com/ValueSet/course",
   "compose": {
     "include": [
       {

@@ -6,7 +6,7 @@
   "title": "Condition Code Valueset",
   "description": "Condition coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/conditoncode",
+  "url": "http://aehrc.com/ValueSet/conditoncode",
   "compose": {
     "include": [
       {

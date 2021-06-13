@@ -5,7 +5,7 @@
   "id": "alcoholpatterncode",
   "title": "Alcohol Pattern",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/alcoholpatterncode",
+  "url": "http://aehrc.com/ValueSet/alcoholpatterncode",
   "compose": {
     "include": [
       {

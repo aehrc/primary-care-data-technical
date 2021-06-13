@@ -6,7 +6,7 @@
   "title": "Family History Absent Code Valueset",
   "description": "Family History coding for absence and exclusion; references relevant NCTS Assertion of Absence codes.",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/familyhistoryabsentcode",
+  "url": "http://aehrc.com/ValueSet/familyhistoryabsentcode",
   "compose": {
     "include": [
       {

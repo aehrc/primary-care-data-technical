@@ -161,7 +161,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/smokingtypecode"
+          "valueSet": "http://aehrc.com/ValueSet/smokingtypecode"
         }
       },
       {
@@ -200,7 +200,7 @@
         "path": "Observation.component.valueQuantity.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/smokingunitscode"
+          "valueSet": "http://aehrc.com/ValueSet/smokingunitscode"
         }
       },
       {
@@ -235,7 +235,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/valueset/smokingpatterncode"
+          "valueSet": "http://aehrc.com/ValueSet/smokingpatterncode"
         }
       },
       {

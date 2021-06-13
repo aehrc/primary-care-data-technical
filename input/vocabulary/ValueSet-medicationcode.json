@@ -6,7 +6,7 @@
   "title": "Medication Code Valueset",
   "description": "Medication coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/medicationcode",
+  "url": "http://aehrc.com/ValueSet/medicationcode",
   "compose": {
     "include": [
       {

@@ -36,8 +36,16 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholConsumptionSummary"
         },
-        "name": "AU Primary Alcohol Consumption Summary",
+        "name": "AU Primary Care Alcohol Consumption Summary",
         "description": "Narrative description about all forms of alcohol consumption.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions of alcohol consumption within existing or legacy clinical systems into this data element.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareAbsoluteCVDRisk"
+        },
+        "name": "AU Primary Care Absolute CVD Risk",
+        "description": "Calculatd risk score using an assessment tool used to calculate the absolute cardiovascular disease risk (CVD) in the next 5 years.\n\n**Usage** \n\nUse to record the results for each component parameter and the CVD risk assessment total score.\n\nRecord as a single instance per observation in a health record.",
         "exampleBoolean": false
       },
       {
@@ -52,7 +60,7 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholPatternOfUse"
         },
-        "name": "AU Primary Alcohol Pattern Of Use",
+        "name": "AU Primary Care Alcohol Pattern Of Use",
         "description": "Details about a discrete period of time with a consistent pattern of typical consumption.\n\n**Usage** \nThis includes:\n* Episode Label - Identification of an episode of alcohol consumption.\n* Episode Period - Date when this episode ocurred.\n* Pattern - The typical pattern of consumption of alcohol.\n* Typical Consumption - Estimate of number of standard alcohol units consumed in the specified time period\n* Alcohol Free Days - The number of days where no alcohol was consumed during the specified interval.\n* Binge Drinking Frequency - The individual's typical frequency of heavy drinking over a short period of time with the intent of becoming intoxicated.\n* Binge Drinking Description - Narrative description about the individual's typical pattern of binge drinking.\n* Number Quit Attempts - Total number of times the individual has attempted to stop consuming alcohol within this episode.",
         "exampleBoolean": false
       },
@@ -86,6 +94,14 @@
         },
         "name": "AU Primary Care Attachment",
         "description": "Document content as an attachment. This includes the binary content of the document as part of the entry.\n\n**Usage**\n\nUsed to attach any relevant documents to the summary including their full content.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareBodyMassIndex"
+        },
+        "name": "AU Primary Care Body Mass Index",
+        "description": "The measurement of the circumference of the waist.",
         "exampleBoolean": false
       },
       {
@@ -348,8 +364,8 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareWaistCircumference"
         },
-        "name": "AU Primary Care",
-        "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
+        "name": "AU Primary Care Waist Circumference",
+        "description": "The measurement of the circumference of the waist.",
         "exampleBoolean": false
       },
       {
@@ -503,6 +519,13 @@
         },
         "name": "Vaccination Code Valueset",
         "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/observationcode"
+        },
+        "name": "Observation Code",
         "exampleBoolean": false
       },
       {

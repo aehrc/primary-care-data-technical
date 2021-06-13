@@ -5,7 +5,7 @@
   "id": "smokingpatterncode",
   "title": "Smoking Pattern",
   "version": "0.0.3",
-  "url": "http://aehrc.com/valueset/smokingpatterncode",
+  "url": "http://aehrc.com/ValueSet/smokingpatterncode",
   "compose": {
     "include": [
       {

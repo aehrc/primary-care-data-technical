@@ -92,7 +92,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://aehrc.com/valueset/conditoncode"
+          "valueSet": "http://aehrc.com/ValueSet/conditoncode"
         }
       },
       {
