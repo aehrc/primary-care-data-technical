@@ -39,8 +39,7 @@ The measurement of the circumference of the waist.
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding contains LOINC 1..1 MS and SNOMED 1..1 MS
-* code.coding[LOINC] = $LOINC#39156-5
+* code.coding contains SNOMED 1..1 MS
 * code.coding[SNOMED] = $SNOMED#60621009
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
@@ -91,8 +90,7 @@ Height observation
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding contains LOINC 1..1 MS and SNOMED 1..1 MS
-* code.coding[LOINC] = $LOINC#8302-2
+* code.coding contains SNOMED 1..1 MS
 * code.coding[SNOMED] = $SNOMED#50373000
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
@@ -112,8 +110,7 @@ Weight observation
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding contains LOINC 1..1 MS and SNOMED 1..1 MS
-* code.coding[LOINC] = $LOINC#29463-7
+* code.coding contains SNOMED 1..1 MS
 * code.coding[SNOMED] = $SNOMED#27113001
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
