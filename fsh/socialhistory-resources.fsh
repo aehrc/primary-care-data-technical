@@ -42,7 +42,7 @@ It is possible to incorporate the narrative descriptions of tobacco smoking with
 Profile: AUPrimaryCareTobaccoSmokingDateCeased
 Parent: Observation
 Id: AUPrimaryCareTobaccoSmokingDateCeased
-Title: "AU Primary Tobacco Smoking Date Ceased"
+Title: "AU Primary Care Tobacco Smoking Date Ceased"
 Description: """
 The date when the individual last ceased smoking tobacco of any type.
 

@@ -316,7 +316,7 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased"
         },
-        "name": "AU Primary Tobacco Smoking Date Ceased",
+        "name": "AU Primary Care Tobacco Smoking Date Ceased",
         "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
         "exampleBoolean": false
       },
@@ -342,6 +342,14 @@
         },
         "name": "AU Primary Care Ultrasound Scan Obstetric",
         "description": "A record ultrasound scan for obstetric purposes. Including the date scan performed.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareWaistCircumference"
+        },
+        "name": "AU Primary Care",
+        "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
         "exampleBoolean": false
       },
       {

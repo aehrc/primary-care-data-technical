@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareTobaccoSmokingDateCeased",
+  "id": "AUPrimaryCareWaistCircumference",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,10 +11,10 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareWaistCircumference",
   "version": "0.0.3",
-  "name": "AUPrimaryCareTobaccoSmokingDateCeased",
-  "title": "AU Primary Care Tobacco Smoking Date Ceased",
+  "name": "AUPrimaryCareWaistCircumference",
+  "title": "AU Primary Care",
   "status": "active",
   "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
   "fhirVersion": "4.0.1",
@@ -65,13 +65,42 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "patternCodeableConcept": {
-          "coding": [
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
             {
-              "code": "160625004",
-              "system": "http://snomed.info/sct"
+              "type": "value",
+              "path": "code"
             }
-          ]
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Observation.code.coding:LOINC",
+        "path": "Observation.code.coding",
+        "sliceName": "LOINC",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "8280-0",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding:SNOMED",
+        "path": "Observation.code.coding",
+        "sliceName": "SNOMED",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "160625004",
+          "system": "http://snomed.info/sct"
         },
         "mustSupport": true
       },
@@ -133,15 +162,34 @@
         "min": 1
       },
       {
-        "id": "Observation.valueDateTime",
-        "path": "Observation.valueDateTime",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "dateTime"
+            "code": "Quantity"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.value",
+        "path": "Observation.valueQuantity.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.unit",
+        "path": "Observation.valueQuantity.unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "min": 1,
+        "patternCode": "cm",
         "mustSupport": true
       }
     ]
