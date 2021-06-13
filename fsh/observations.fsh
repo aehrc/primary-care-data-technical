@@ -133,8 +133,7 @@ Blood pressure observation
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding contains LOINC 1..1 MS and SNOMED 1..1 MS
-* code.coding[LOINC] = $LOINC#8480-6
+* code.coding contains SNOMED 1..1 MS
 * code.coding[SNOMED] = $SNOMED#75367002
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
@@ -154,8 +153,7 @@ Heart Rate observation
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding contains LOINC 1..1 MS and SNOMED 1..1 MS
-* code.coding[LOINC] = $LOINC#8867-4	
+* code.coding contains SNOMED 1..1 MS
 * code.coding[SNOMED] = $SNOMED#364075005
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
