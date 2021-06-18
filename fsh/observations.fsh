@@ -26,6 +26,7 @@ The measurement of the circumference of the waist.
 * valueQuantity.value 1..1 MS
 
 
+
 Profile: AUPrimaryCareBodyMassIndex
 Parent: http://hl7.org/fhir/StructureDefinition/bmi
 Id: AUPrimaryCareBodyMassIndex
