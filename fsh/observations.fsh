@@ -65,7 +65,7 @@ Record as a single instance per observation in a health record.
 * status 1..1 MS
 * code 1..1 MS
 * code.coding 1..1 MS
-* code.coding = ObservationCode#absolutecvdrisk
+* code.coding = ObservationCode#absolute-cvd-risk
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
 * effective[x] 1..1 MS

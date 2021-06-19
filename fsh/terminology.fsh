@@ -178,5 +178,6 @@ Title: "Gender Type"
 CodeSystem: ObservationCode
 Id: observationcode
 Title: "Observation Code"
-* ^url = "http://aehrc.com/CodeSystem/observationcode"
-* #absolutecvdrisk "Absolute CVD Risk" "Australian absolute CVD calculated risk score"
+* ^url = "http://aehrc.com/fhir/observable-entity"
+* #absolute-cvd-risk "Absolute CVD Risk" "Australian absolute CVD calculated risk score"
+* #smoking-date-started "Date started smoking" "Date that smoking was started"
