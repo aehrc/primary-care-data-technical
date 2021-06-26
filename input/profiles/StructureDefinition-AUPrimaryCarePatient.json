@@ -55,6 +55,12 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.extension:closingTheGapRegistration",
+        "path": "Patient.extension",
+        "sliceName": "closingTheGapRegistration",
+        "mustSupport": true
+      },
+      {
         "id": "Patient.extension:dateOfArrival",
         "path": "Patient.extension",
         "sliceName": "dateOfArrival",

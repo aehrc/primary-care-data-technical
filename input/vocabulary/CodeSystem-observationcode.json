@@ -6,13 +6,18 @@
   "id": "observationcode",
   "title": "Observation Code",
   "version": "0.0.3",
-  "url": "http://aehrc.com/CodeSystem/observationcode",
+  "url": "http://aehrc.com/fhir/observable-entity",
   "concept": [
     {
-      "code": "absolutecvdrisk",
+      "code": "absolute-cvd-risk",
       "display": "Absolute CVD Risk",
       "definition": "Australian absolute CVD calculated risk score"
+    },
+    {
+      "code": "smoking-date-started",
+      "display": "Date started smoking",
+      "definition": "Date that smoking was started"
     }
   ],
-  "count": 1
+  "count": 2
 }

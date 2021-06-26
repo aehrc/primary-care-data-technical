@@ -22,6 +22,7 @@ Details of a patient including identity, demographic and contacts.
 * extension[http://hl7.org.au/fhir/StructureDefinition/ethnicity] 0..1 MS
 * extension[http://hl7.org/fhir/StructureDefinition/patient-genderIdentity] 0..1 MS
 * extension[http://hl7.org/fhir/StructureDefinition/patient-genderIdentity].valueCodeableConcept from Gender_Code_ValueSet
+* extension[http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration] 0..1 MS
 * active MS
 * name 1..1
 * name MS

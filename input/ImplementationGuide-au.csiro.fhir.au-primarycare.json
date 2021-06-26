@@ -138,6 +138,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareDiagnosticReport"
+        },
+        "name": "Primary Care Diagnostic Report",
+        "description": "Basic diagnostic report ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareEDD"
         },
         "name": "AU Primary Care Estimated Date of Delivery",
