@@ -279,7 +279,7 @@ It is possible to incorporate the narrative descriptions about social history-re
 Profile: AUPrimaryCareAlcoholConsumptionDateCeased
 Parent: Observation
 Id: AUPrimaryCareAlcoholConsumptionDateCeased
-Title: "AU Primary Alcohol Consumption Date Ceased"
+Title: "AU Primary Care Alcohol Consumption Date Ceased"
 Description: """
 The date when the individual last ceased consuming alcohol of any type.
 
@@ -298,6 +298,56 @@ Partial dates are permitted.
 * effective[x] 1..1 MS
 * effectiveDateTime MS
 * valueDateTime MS
+
+
+Profile: AUPrimaryCareSubstanceUseSummary
+Parent: Observation
+Id: AUPrimaryCareSubstanceUseSummary
+Title: "AU Primary Care Substance Use Summary"
+Description: """
+Summary or persistent information about the typical use of a non-prescribed substance or misuse of a prescribed substance by an individual.
+
+**Usage**
+
+Use to record summary information about the individual's typical pattern of substance use.
+
+The scope of a substance in the context of this model is includes the administration or consumption of any psychoactive or biologically active substance (with the exception of tobacco and alcohol) used without a prescription or beyond its medical scope, intended purpose or dosage other than prescribed. The scope of this model does not differentiate between legal and illegal substances.
+
+Record a single instance per substance, or class of substance, in a health record; updated over time as a new version.
+
+**Misuse**
+Not to be used to represent tobacco smoking or alcohol consumption - use specific Tobacco smoking and Alcohol consumption models for this purpose.
+
+Not to be used to record event- or period-based information about substance use, such as actual daily use or the average use over a specified period of time, as required for a diary or questionnaire.
+
+Not to be used to record prescribed substances such as medical marijuana. This should be recorded using Medication-related models.
+
+For example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Benzodiazepine abuse
+"""
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSubstanceUseSummary"
+* status 1..1 MS
+* code = ObservationCode#substance-use-summary
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* valueDateTime MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component contains substancename 0..1
+* component[substancename].code =  http://aehrc.com/fhir/observable-entity#substance-name
+* component[substancename].valueCodeableConcept MS
+* component contains status 0..1
+* component[status].code =  http://aehrc.com/fhir/observable-entity#substance-use-status
+* component[status].valueCodeableConcept MS
+* component contains description 0..1
+* component[description].code =  http://aehrc.com/fhir/observable-entity#substance-use-description
+* component[description].valueString MS
+* component contains lastquitdate 0..1
+* component[lastquitdate].code =  http://aehrc.com/fhir/observable-entity#substance-use-last-quit-date
+* component[lastquitdate].valueDateTime MS
+
 
 
 

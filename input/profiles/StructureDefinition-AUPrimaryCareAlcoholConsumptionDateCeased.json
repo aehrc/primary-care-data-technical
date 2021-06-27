@@ -14,7 +14,7 @@
   "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased",
   "version": "0.0.3",
   "name": "AUPrimaryCareAlcoholConsumptionDateCeased",
-  "title": "AU Primary Alcohol Consumption Date Ceased",
+  "title": "AU Primary Care Alcohol Consumption Date Ceased",
   "status": "active",
   "description": "The date when the individual last ceased consuming alcohol of any type.\n\n**Usage** \n\nThe definition of alcohol cessation is not universally clear, obviously involving abstinence from alcohol consumption for a period of time. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
   "fhirVersion": "4.0.1",

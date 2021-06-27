@@ -17,7 +17,12 @@
       "code": "smoking-date-started",
       "display": "Date started smoking",
       "definition": "Date that smoking was started"
+    },
+    {
+      "code": "substance-use-summary",
+      "display": "Substance use summary",
+      "definition": "Details of substance use"
     }
   ],
-  "count": 2
+  "count": 3
 }

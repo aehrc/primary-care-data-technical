@@ -52,7 +52,7 @@
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased"
         },
-        "name": "AU Primary Alcohol Consumption Date Ceased",
+        "name": "AU Primary Care Alcohol Consumption Date Ceased",
         "description": "The date when the individual last ceased consuming alcohol of any type.\n\n**Usage** \n\nThe definition of alcohol cessation is not universally clear, obviously involving abstinence from alcohol consumption for a period of time. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
         "exampleBoolean": false
       },
@@ -350,6 +350,14 @@
         },
         "name": "AU Primary Care Social Summary",
         "description": "Narrative description about social circumstances or experiences that may have a potential impact on an individual's health.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions about social history-related information within existing or legacy clinical systems into this data element.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AUPrimaryCareSubstanceUseSummary"
+        },
+        "name": "AU Primary Care Substance Use Summary",
+        "description": "Summary or persistent information about the typical use of a non-prescribed substance or misuse of a prescribed substance by an individual.\n\n**Usage**\n\nUse to record summary information about the individual's typical pattern of substance use.\n\nThe scope of a substance in the context of this model is includes the administration or consumption of any psychoactive or biologically active substance (with the exception of tobacco and alcohol) used without a prescription or beyond its medical scope, intended purpose or dosage other than prescribed. The scope of this model does not differentiate between legal and illegal substances.\n\nRecord a single instance per substance, or class of substance, in a health record; updated over time as a new version.\n\n**Misuse**\nNot to be used to represent tobacco smoking or alcohol consumption - use specific Tobacco smoking and Alcohol consumption models for this purpose.\n\nNot to be used to record event- or period-based information about substance use, such as actual daily use or the average use over a specified period of time, as required for a diary or questionnaire.\n\nNot to be used to record prescribed substances such as medical marijuana. This should be recorded using Medication-related models.\n\nFor example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Benzodiazepine abuse",
         "exampleBoolean": false
       },
       {

@@ -1,0 +1,270 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AUPrimaryCareSubstanceUseSummary",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSubstanceUseSummary",
+  "version": "0.0.3",
+  "name": "AUPrimaryCareSubstanceUseSummary",
+  "title": "AU Primary Care Substance Use Summary",
+  "status": "active",
+  "description": "Summary or persistent information about the typical use of a non-prescribed substance or misuse of a prescribed substance by an individual.\n\n**Usage**\n\nUse to record summary information about the individual's typical pattern of substance use.\n\nThe scope of a substance in the context of this model is includes the administration or consumption of any psychoactive or biologically active substance (with the exception of tobacco and alcohol) used without a prescription or beyond its medical scope, intended purpose or dosage other than prescribed. The scope of this model does not differentiate between legal and illegal substances.\n\nRecord a single instance per substance, or class of substance, in a health record; updated over time as a new version.\n\n**Misuse**\nNot to be used to represent tobacco smoking or alcohol consumption - use specific Tobacco smoking and Alcohol consumption models for this purpose.\n\nNot to be used to record event- or period-based information about substance use, such as actual daily use or the average use over a specified period of time, as required for a diary or questionnaire.\n\nNot to be used to record prescribed substances such as medical marijuana. This should be recorded using Medication-related models.\n\nFor example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Benzodiazepine abuse",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "substance-use-summary",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueDateTime",
+        "path": "Observation.valueDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:substancename",
+        "path": "Observation.component",
+        "sliceName": "substancename",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:substancename.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "substance-name",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:substancename.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:status",
+        "path": "Observation.component",
+        "sliceName": "status",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:status.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "substance-use-status",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:status.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:description",
+        "path": "Observation.component",
+        "sliceName": "description",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:description.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "substance-use-description",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:description.valueString",
+        "path": "Observation.component.valueString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:lastquitdate",
+        "path": "Observation.component",
+        "sliceName": "lastquitdate",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:lastquitdate.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "substance-use-last-quit-date",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:lastquitdate.valueDateTime",
+        "path": "Observation.component.valueDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
