@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Substance_Use_Status_Code_ValueSet",
+  "id": "substanceusestatuscode",
+  "title": "Substance Use Status",
+  "version": "0.0.3",
+  "url": "http://aehrc.com/ValueSet/substanceusestatuscode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "417284009",
+            "display": "Current drug user"
+          },
+          {
+            "code": "44870007",
+            "display": "Former drug user"
+          }
+        ]
+      }
+    ]
+  }
+}

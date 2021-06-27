@@ -315,7 +315,9 @@ The scope of a substance in the context of this model is includes the administra
 
 Record a single instance per substance, or class of substance, in a health record; updated over time as a new version.
 
+
 **Misuse**
+
 Not to be used to represent tobacco smoking or alcohol consumption - use specific Tobacco smoking and Alcohol consumption models for this purpose.
 
 Not to be used to record event- or period-based information about substance use, such as actual daily use or the average use over a specified period of time, as required for a diary or questionnaire.
@@ -332,7 +334,6 @@ For example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Ben
 * subject 1..1 MS
 * effective[x] 1..1 MS
 * effectiveDateTime MS
-* valueDateTime MS
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component contains substancename 0..1
@@ -340,6 +341,7 @@ For example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Ben
 * component[substancename].valueCodeableConcept MS
 * component contains status 0..1
 * component[status].code =  http://aehrc.com/fhir/observable-entity#substance-use-status
+* component[status].valueCodeableConcept from Substance_Use_Status_Code_ValueSet
 * component[status].valueCodeableConcept MS
 * component contains description 0..1
 * component[description].code =  http://aehrc.com/fhir/observable-entity#substance-use-description
@@ -348,6 +350,71 @@ For example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Ben
 * component[lastquitdate].code =  http://aehrc.com/fhir/observable-entity#substance-use-last-quit-date
 * component[lastquitdate].valueDateTime MS
 
+Profile: AUPrimaryCarePhysicalActivitySummary
+Parent: Observation
+Id: AUPrimaryCarePhysicalActivitySummary
+Title: "AU Primary Care Physical Activity Summary"
+Description: """
+Summary or persistent record of the typical level of physical activity undertaken by the individual.
+
+**Usage**
+
+Use to record a summary of the typical exercise habits of an individual.
+
+Record as a single instance in a health record; updated and revised over time as a new version.
+
+
+**Misuse**
+
+Not to be used to record a physical activity diary of specific activities.
+"""
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePhysicalActivitySummary"
+* status 1..1 MS
+* code = ObservationCode#physical-activity-summary
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* valueString MS
+
+
+
+Profile: AUPrimaryCareFoodNutritionSummary
+Parent: Observation
+Id: AUPrimaryCareFoodNutritionSummary
+Title: "AU Primary Care Food Nutrition Summary"
+Description: """
+Summary or persistent record of the dietary habits, nutritional intake and eating patterns of the individual.
+
+**Usage**
+
+Summary or persistent record of the dietary habits, nutritional intake and eating patterns of the individual.
+
+
+**Misuse**
+
+Not to be used to record a food diary.
+"""
+* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFoodNutritionSummary"
+* status 1..1 MS
+* code = ObservationCode#food-nutrition-summary
+* code 1..1 MS
+* subject only Reference(AUPrimaryCarePatient)
+* subject 1..1 MS
+* effective[x] 1..1 MS
+* effectiveDateTime MS
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component contains substancename 0..1
+* component[substancename].code =  http://aehrc.com/fhir/observable-entity#food-nutrition-description
+* component[substancename].valueString MS
+* component contains status 0..1
+* component[status].code =  http://aehrc.com/fhir/observable-entity#food-security-status
+* component[status].valueCodeableConcept MS
+* component contains description 0..1
+* component[description].code =  http://aehrc.com/fhir/observable-entity#food-security-description
+* component[description].valueString MS
 
 
 

@@ -10,7 +10,7 @@
   "concept": [
     {
       "code": "absolute-cvd-risk",
-      "display": "Absolute CVD Risk",
+      "display": "Absolute CVD risk",
       "definition": "Australian absolute CVD calculated risk score"
     },
     {
@@ -21,8 +21,33 @@
     {
       "code": "substance-use-summary",
       "display": "Substance use summary",
-      "definition": "Details of substance use"
+      "definition": "Details of substance use levels and types"
+    },
+    {
+      "code": "physical-activity-summary",
+      "display": "Physical activity summary",
+      "definition": "Details of physical activity levels and types"
+    },
+    {
+      "code": "food-nutrition-summary",
+      "display": "Food nurition summary",
+      "definition": "Food nutrition details including food security"
+    },
+    {
+      "code": "food-nutrition-description",
+      "display": "Food nutrition description",
+      "definition": "Food nutrition description"
+    },
+    {
+      "code": "food-security=status",
+      "display": "Food security status",
+      "definition": "Food security status"
+    },
+    {
+      "code": "food-security-description",
+      "display": "Food security description",
+      "definition": "Food security description"
     }
   ],
-  "count": 3
+  "count": 8
 }

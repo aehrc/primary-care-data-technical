@@ -175,10 +175,23 @@ Title: "Gender Type"
 * http://snomed.info/sct#772004004 "Non-binary"
 
 
+ValueSet: Substance_Use_Status_Code_ValueSet
+Id: substanceusestatuscode
+Title: "Substance Use Status"
+* ^url = "http://aehrc.com/ValueSet/substanceusestatuscode"
+* http://snomed.info/sct#417284009 "Current drug user"
+* http://snomed.info/sct#44870007 "Former drug user"
+
+
 CodeSystem: ObservationCode
 Id: observationcode
 Title: "Observation Code"
 * ^url = "http://aehrc.com/fhir/observable-entity"
-* #absolute-cvd-risk "Absolute CVD Risk" "Australian absolute CVD calculated risk score"
+* #absolute-cvd-risk "Absolute CVD risk" "Australian absolute CVD calculated risk score"
 * #smoking-date-started "Date started smoking" "Date that smoking was started"
-* #substance-use-summary "Substance use summary" "Details of substance use"
+* #substance-use-summary "Substance use summary" "Details of substance use levels and types"
+* #physical-activity-summary "Physical activity summary" "Details of physical activity levels and types"
+* #food-nutrition-summary "Food nurition summary" "Food nutrition details including food security"
+* #food-nutrition-description "Food nutrition description" "Food nutrition description"
+* #food-security=status "Food security status" "Food security status"
+* #food-security-description "Food security description" "Food security description"
