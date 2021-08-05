@@ -96,7 +96,7 @@ Height observation
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
 * effective[x] 1..1 MS
-* effectiveDateTime MS
+* effectiveDateTime 1..1 MS
 
 Profile: AUPrimaryCareWeight
 Parent: http://hl7.org/fhir/StructureDefinition/bodyweight
