@@ -79,7 +79,7 @@
       {
         "id": "Observation.effectiveDateTime",
         "path": "Observation.effectiveDateTime",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
