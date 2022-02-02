@@ -1,222 +1,25 @@
 info  path-to-fsh-defs defaulted to current working directory
-info  Running SUSHI v2.2.0 (implements FHIR Shorthand specification v1.2.0)
+info  Running SUSHI v2.2.6 (implements FHIR Shorthand specification v1.2.0)
 info  Arguments:
 info    C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working
 info  No output path specified. Output to .
 info  Using configuration file: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\sushi-config.yaml
 info  Importing FSH text...
 info  Preprocessed 32 documents with 4 aliases.
-info  Imported 75 definitions and 58 instances.
+info  Imported 72 definitions and 58 instances.
 info  Checking local cache for hl7.fhir.au.base#current...
 info  Found hl7.fhir.au.base#current in local cache.
 info  Checking local cache for hl7.fhir.r4.core#4.0.1...
-info  Did not find hl7.fhir.r4.core#4.0.1 in local cache.
-info  Downloading hl7.fhir.r4.core#4.0.1...
-info  Loaded package hl7.fhir.au.base#current
-info  Downloaded hl7.fhir.r4.core#4.0.1
+info  Found hl7.fhir.r4.core#4.0.1 in local cache.
 info  Loaded package hl7.fhir.r4.core#4.0.1
+info  Loaded package hl7.fhir.au.base#current
 info  Converting FSH to FHIR resources...
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure is missing snapshot. Snapshot is required for import.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\procedure-resources.fsh
-  Line: 3 - 17
-error Code "smoking-type" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 120
-error Code "smoking-units-of-use" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 124
-error Code "smoking-pattern-of-daily-use" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 128
-error Code "smoking-cessation-attempts" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 132
-error Observation.component ^slicing.rules: Missing required value
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 92 - 134
-error Code "alcohol-episode-name" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 229
-error Code "alcohol-period-of-use" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 232
-error Code "alcohol-pattern-of-use" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 235
-error Code "alcohol-units-of-use" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 239
-error Code "alcohol-free-days" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 243
-error Code "alcohol-binge-drinking-frequency" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 247
-error Code "alcohol-binge-drinking-description" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 251
-error Code "alcohol-cessation-attempts" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 254
-error Observation.component ^slicing.rules: Missing required value
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 200 - 256
-error Code "substance-name" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 340
-error Code "substance-use-status" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 343
-error Code "substance-use-description" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 347
-error Code "substance-use-last-quit-date" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 350
-error Observation.component ^slicing.rules: Missing required value
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 303 - 351
-error Code "food-security-status" is not defined for system ObservationCode.
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 413
-error Observation.component ^slicing.rules: Missing required value
-  File: C:\Users\Administrator\Documents\GitHub\primary-care-data-technical-working\input\fsh\socialhistory-resources.fsh
-  Line: 383 - 417
-info  Converted 54 FHIR StructureDefinitions.
+info  Converted 51 FHIR StructureDefinitions.
 info  Converted 1 FHIR CodeSystems.
 info  Converted 20 FHIR ValueSets.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition is missing snapshot. Snapshot is required for import.
-error Structure Definition http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp is missing snapshot. Snapshot is required for import.
-error Structure Definition http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList is missing snapshot. Snapshot is required for import.
-error Structure Definition http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp is missing snapshot. Snapshot is required for import.
-error Structure Definition http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservationGravidity is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList is missing snapshot. Snapshot is required for import.
-error Structure Definition https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList is missing snapshot. Snapshot is required for import.
 info  Converted 58 FHIR instances.
 info  Exporting FHIR resources as JSON...
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAttachment since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareDiagnosticReport since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounter since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounterList since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGoal since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGoalList since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareWaistCircumference since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBodyMassIndex since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAbsoluteCVDRisk since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareHeight since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareWeight since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBloodPressure since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareHeartRate since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareBreastfeedingStatus since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingSummary since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateStarted since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareOverallPackYears since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholStatus since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionSummary since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholPatternOfUse since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialSummary since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSubstanceUseSummary since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePhysicalActivitySummary since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFoodNutritionSummary since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareReviewDate since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/course since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/expecteddateofdeliverytypes since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/geneticfamilymember since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/conditoncode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/procedurecode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/medicationcode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/allergycode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/allergycode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/familyhistoryabsentcode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/clinical-indication-for-medication since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/alcoholintakecode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/breastfeedingcode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/alcoholunitscode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/alcoholfreedaysunitscode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/alcoholpatterncode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/smokingunitscode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/smokingpatterncode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/smokingtypecode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/gendercode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/ValueSet/substanceusestatuscode since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for http://aehrc.com/fhir/observable-entity since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for Observation/mfWidowed since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for Observation/mf-exSmoker since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for Observation/mf-alcohol since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for Observation/mf-occupation since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for Immunization/aupc-immunization3 since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for Procedure/aupc-procedureUltraSound since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for Observation/aupc-smoker1 since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-error Ignoring FSH definition for Practitioner/aupc-practitioner1 since it duplicates existing pre-defined resource. To use the FSH definition, remove the conflicting file from "input". If you do want the FSH definition to be ignored, please comment the definition out to remove this error.
-info  Exported 3 FHIR resources as JSON.
+info  Exported 130 FHIR resources as JSON.
 info  Assembling Implementation Guide sources...
 info  Generated ImplementationGuide-au.csiro.fhir.au-primarycare.json
 info  Assembled Implementation Guide sources; ready for IG Publisher.
@@ -225,14 +28,14 @@ info  Assembled Implementation Guide sources; ready for IG Publisher.
 |  -------------------------------------------------------------  |
 | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
 | |-------------------------------------------------------------| |
-| |      52       |      1       |      0       |       0       | |
+| |      50       |      1       |      0       |       0       | |
 |  -------------------------------------------------------------  |
 |  -------------------------------------------------------------  |
 | |      ValueSets     |    CodeSystems    |     Instances      | |
 | |-------------------------------------------------------------| |
-| |         20         |         1         |         8          | |
+| |         20         |         1         |         58         | |
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| Unfor-tuna-tely, there are errors.    151 Errors     0 Warnings |
+| You are dolphinitely doing great!      0 Errors      0 Warnings |
 ===================================================================

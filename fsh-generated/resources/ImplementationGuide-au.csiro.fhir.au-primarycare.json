@@ -34,1167 +34,1019 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/au-bloodpressure"
-        },
-        "name": "AU Blood Pressure",
-        "description": "Blood pressure observation with extended coding",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/au-height"
-        },
-        "name": "AU Height",
-        "description": "Height observation with extended coding",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/au-weight"
-        },
-        "name": "AU Weight",
-        "description": "Weight observation with extended coding",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholConsumptionSummary"
         },
+        "name": "AU Primary Care Alcohol Consumption Summary",
         "description": "Narrative description about all forms of alcohol consumption.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions of alcohol consumption within existing or legacy clinical systems into this data element.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Alcohol Consumption Summary"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAbsoluteCVDRisk"
         },
+        "name": "AU Primary Care Absolute CVD Risk",
         "description": "Calculatd risk score using an assessment tool used to calculate the absolute cardiovascular disease risk (CVD) in the next 5 years.\n\n**Usage** \n\nUse to record the results for each component parameter and the CVD risk assessment total score.\n\nRecord as a single instance per observation in a health record.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Absolute CVD Risk"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholConsumptionDateCeased"
         },
+        "name": "AU Primary Care Alcohol Consumption Date Ceased",
         "description": "The date when the individual last ceased consuming alcohol of any type.\n\n**Usage** \n\nThe definition of alcohol cessation is not universally clear, obviously involving abstinence from alcohol consumption for a period of time. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Alcohol Consumption Date Ceased"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholPatternOfUse"
         },
+        "name": "AU Primary Care Alcohol Pattern Of Use",
         "description": "Details about a discrete period of time with a consistent pattern of typical consumption.\n\n**Usage** \nThis includes:\n* Episode Label - Identification of an episode of alcohol consumption.\n* Episode Period - Date when this episode ocurred.\n* Pattern - The typical pattern of consumption of alcohol.\n* Typical Consumption - Estimate of number of standard alcohol units consumed in the specified time period\n* Alcohol Free Days - The number of days where no alcohol was consumed during the specified interval.\n* Binge Drinking Frequency - The individual's typical frequency of heavy drinking over a short period of time with the intent of becoming intoxicated.\n* Binge Drinking Description - Narrative description about the individual's typical pattern of binge drinking.\n* Number Quit Attempts - Total number of times the individual has attempted to stop consuming alcohol within this episode.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Alcohol Pattern Of Use"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAlcoholStatus"
         },
+        "name": "AU Primary Care Alcohol Status",
         "description": "Statement about current consumption habits for all types of alcohol.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Alcohol Status"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAllergyIntolerance"
         },
+        "name": "AU Primary Care Allergy Intolerance",
         "description": "Risk of harmful or undesirable physiological response which is unique to the individual and associated with exposure to a known substance.\n\n**Usage**\n\nUse to provide a single place within the health record to document a range of clinical statements about adverse reactions, including:\n- record a clinical assessment of the individual’s propensity for a potential future reaction upon re-exposure; and\n- record cumulative information about the reaction to each exposure.\n\nUse to record information about the positive presence of the risk of an adverse reaction:\n- to support direct clinical care of an individual;\n- as part of a managed adverse reaction or allergy/intolerance list;\n- to support exchange of information about the propensity and events related to adverse reactions;\n- to inform adverse reaction reporting; and\n- to assist computerised knowledge-based activities such as clinical decision support and alerts.\n\nUse to record information about the risk of adverse reactions to a broad range of substances, including: incipients and excipients in medicinal preparations; biological products; metal salts; and organic chemical compounds.\n\nAdverse reaction may be:\n- an immune mediated reaction - Types I-IV (including allergic reactions and hypersensitivities); or\n- a non-immune mediated reaction - including pseudo-allergic reactions, side effects, intolerances, drug toxicities (eg to Gentamicin).\nIn clinical practice distinguishing between immune-mediated and non-immune mediated reactions is difficult and often not practical. Identification of the type of reaction is not a proxy for seriousness or risk of harm to the patient, which is better expressed by the manifestation in clinical practice.\n\nThe risk of an adverse reaction event or manifestation should not be recorded without identifying a proposed causative substance or class of substance. If there is uncertainty that a specific substance is the cause, this uncertainty can be recorded using the ‘Verification status’ data element. If there are multiple possible substances that may have caused a reaction/manifestation, each substance should be recorded using a separate instance of this adverse reaction archetype with the ‘Status’ set to an initial state of ‘Unconfirmed’ so that adverse reaction checking can be activated in clinical systems. Once the substance, agent or class is later proven not to be the cause for a given reaction then the ‘Status’ can be modified to ‘Refuted’.\n\nThis item has been designed to allow recording of information about a specific substance (amoxycillin, oysters, or bee sting venom) or, alternatively, a class of substance (eg Penicillins). If a class of substance is recorded then identification of the exact substance can be recorded on a per exposure basis.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Allergy Intolerance"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
         },
+        "name": "AU Primary Care Allergy Intolerance List",
         "description": "This profile defines an allergy intolerance list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Allergy Intolerance List"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareAttachment"
         },
+        "name": "AU Primary Care Attachment",
         "description": "Document content as an attachment. This includes the binary content of the document as part of the entry.\n\n**Usage**\n\nUsed to attach any relevant documents to the summary including their full content.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Attachment"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareBloodPressure"
         },
+        "name": "AU Primary Care Blood Pressure",
         "description": "Blood pressure observation",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Blood Pressure"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareBodyMassIndex"
         },
+        "name": "AU Primary Care Body Mass Index",
         "description": "The measurement of the circumference of the waist.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Body Mass Index"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareBreastfeedingStatus"
         },
+        "name": "AU Primary Care Breastfeeding Status",
         "description": "Summary or persistent information about current or past breastfeeding activity by an individual.\n\n**Usage** \n\nUse to record details about the current breastfeeding status and current and/or past breastfeeding activity.\nRecord as a single instance in a health record; updated and revised over time as a new version.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Breastfeeding Status"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareComposition"
         },
+        "name": "AU Primary Care Composition",
         "description": "This profile defines a composition structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Composition"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareCondition"
         },
-        "description": "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.\n\n**Usage**\n\n* Use to record details about a single, identified health problem or diagnosis.\n* Clear delineation between the scope of a problem versus a diagnosis is often not easy to achieve in practice. For the purposes of clinical documentation using this item, problem and diagnosis are regarded as a continuum, with increasing information and reaching or exceeding diagnostic criteria supporting formalisation of the label of 'diagnosis'. It is not necessary to classify the condition as a 'problem' or 'diagnosis', especially as a problem may evolve into a formal diagnosis as evidence is gathered. The data requirements to support documentation of either are identical, with additional data structure required to support inclusion of the evidence if and when it becomes available. In practice, most problems or diagnoses do not sit at either end of the problem-diagnosis spectrum, but somewhere in between.\n\n**Misuse**\n\n* Not to be used to describe reasons for encounter - use the 'Reason for encounter' item.\n* Not to be used to describe procedures - use the 'Procedure' item.\n* Not to be used to describe adverse reactions - use the 'Adverse reaction' item.\n* Not to be used to describe symptoms, examination findings, diagnostic test results or health risk assessments.\n* Not to be used to describe differential diagnoses.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Condition"
+        "name": "AU Primary Care Condition",
+        "description": "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.\n\n**Usage**\n\n\n* Use to record details about a single, identified health problem or diagnosis.\n* Clear delineation between the scope of a problem versus a diagnosis is often not easy to achieve in practice. For the purposes of clinical documentation using this item, problem and diagnosis are regarded as a continuum, with increasing information and reaching or exceeding diagnostic criteria supporting formalisation of the label of 'diagnosis'. It is not necessary to classify the condition as a 'problem' or 'diagnosis', especially as a problem may evolve into a formal diagnosis as evidence is gathered. The data requirements to support documentation of either are identical, with additional data structure required to support inclusion of the evidence if and when it becomes available. In practice, most problems or diagnoses do not sit at either end of the problem-diagnosis spectrum, but somewhere in between.\n\n**Misuse**\n\n* Not to be used to describe reasons for encounter - use the 'Reason for encounter' item.\n* Not to be used to describe procedures - use the 'Procedure' item.\n* Not to be used to describe adverse reactions - use the 'Adverse reaction' item.\n* Not to be used to describe symptoms, examination findings, diagnostic test results or health risk assessments.\n* Not to be used to describe differential diagnoses.",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareDiagnosticReport"
         },
+        "name": "Primary Care Diagnostic Report",
         "description": "Basic diagnostic report ",
-        "exampleBoolean": false,
-        "name": "Primary Care Diagnostic Report"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareEDD"
         },
+        "name": "AU Primary Care Estimated Date of Delivery",
         "description": "\"\nEstimated date of delivery for a pregnancy, calculated or estimated by a variety of methods.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Estimated Date of Delivery"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareEncounter"
         },
+        "name": "AU Primary Care Encounter",
         "description": "Record of a patient encounter including timing, reason, type and participating practitoner.\n\n**Usage**\n\nReason for Encounter - Use to record the reason, or reasons, for initiation of any type of healthcare encounter or contact between a healthcare provider and an individual who is the subject of care. The reason may be for clinical, social or administrative purposes.\n",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Encounter"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareEncounterList"
         },
+        "name": "AU Primary Care Encounter List",
         "description": "This profile defines a encounter list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Encounter List"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistory"
         },
+        "name": "AU Primary Care Family Member History",
         "description": "Summary or persistent information about significant health and related issues in family members.\n\n**Usage**\n\nUse to record a summary of information about problems or diagnoses found in family members. This information may be used to contribute to the identification of a current health problem, assessment of future risk from familial problems or conditions, or to initiate preventive health activities.\n\nTraditionally the scope of family history has been focused on genetic factors or biomarkers as indicators of risk or potential risk. The scope of this item includes both recording of problems or diagnoses that have an inheritable origin as well as those that are not directly inheritable but influenced by the domestic setting, including psycho-social or environmental factors. Examples include exposure to toxins in the family environment, domestic violence, sexual abuse, alcoholism and other addictions.\n\nNon-genetic family members can include adopted or long term fostered children, those related by marriage, or other unrelated individuals who participate in the regular life and influence of the family.\n\nIt may be necessary to identify each family member specifically and not just by the relationship to the individual. For example, while there will be only one maternal grandmother, there may be many female maternal cousins. This may be required to ensure that a pedigree chart is accurate. It will also enable accurate amendments to the record for each identified family member. If the record is private and will not be shared, for reasons of clarity it may be preferable to record the relative's actual name. If the record, or part of the record, is to be shared, it may be more appropriate for the family member to be identified by a unique label or alias.\n\nRecord as a single instance in a health record; updated and revised over time as a new version.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Family Member History"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
         },
+        "name": "AU Primary Care Family Member History List",
         "description": "This profile defines a family member history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Family Member History List"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFollowUp"
         },
+        "name": "AU Primary Care Follow up",
         "description": "Health-related service or activity to be delivered by a clinician, organisation or agency at a future time.\n\n**Usage**\n\nUse to record a request for a health-related service or activity to be delivered by a clinician, organisation or agency.\n\nThis item has been designed as a framework that can be used as the basis for:\n- a request from one clinician, organisation or agency to another clinician, organisation or agency for a health-related service. For example: a referral to a specialist clinician for treatment or a second clinical opinion; transfer of care to an emergency department; four hourly vital signs monitoring; and provision of home services from a municipal council; or\n- a request for a follow up service to be scheduled for the same clinician, organisation or agency. For example: a review appointment in outpatients in 6 weeks.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Follow up"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFollowUpList"
         },
+        "name": "AU Primary Care Follow Up List",
         "description": "This profile defines a follow up list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Follow Up List"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareFoodNutritionSummary"
         },
+        "name": "AU Primary Care Food Nutrition Summary",
         "description": "Summary or persistent record of the dietary habits, nutritional intake and eating patterns of the individual.\n\n**Usage**\n\nSummary or persistent record of the dietary habits, nutritional intake and eating patterns of the individual.\n\n\n**Misuse**\n\nNot to be used to record a food diary.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Food Nutrition Summary"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareGestationalAge"
         },
+        "name": "AU Primary Care Gestational Age",
         "description": "Estimated gestational age by variable methods.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Gestational Age"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareGoal"
         },
+        "name": "AU Primary Care Goal",
         "description": "Data group for the recording of goals",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Goal"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareGoalList"
         },
+        "name": "AU Primary Care Goal List",
         "description": "This profile defines an goal list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Goal List"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareGravidity"
         },
+        "name": "AU Primary Care Gravidity",
         "description": "Number of times a woman has been pregnant, current and past, regardless of the pregnancy outcome.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Gravidity"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareHeartRate"
         },
+        "name": "AU Primary Care Heart Rate",
         "description": "Heart Rate observation",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Heart Rate"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareHeight"
         },
+        "name": "AU Primary Care Height",
         "description": "Height observation",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Height"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareImmunisation"
         },
+        "name": "AU Primary Care Immunisation",
         "description": "A vaccine that has been administered to an individual.\n\n**Usage**\n\nUse to record details about a vaccination that had been administered to an individual.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Immunisation"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareImmunisationList"
         },
+        "name": "AU Primary Care Immunisation List",
         "description": "This profile defines an immunisation list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Immunisation List"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareLMP"
         },
+        "name": "AU Primary Care Last Menstrual Period",
         "description": "First day of menstrual bleeding in the most recent typical menstrual cycle experienced by the individual.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Last Menstrual Period"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareMedicalHistoryList"
         },
+        "name": "AU Primary Care Medical History List",
         "description": "This profile defines a medical history list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Medical History List"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareMedication"
         },
+        "name": "AU Primary Care Medication",
         "description": "A single medication, ingredient, or substance.\n\n**Usage** \n\nUse to record specific details about a single medication:\n- when details about the medication are not part of an authoritative knowledge base or pharmacopoeia;\n- to represent a custom compounded medication and/or it's components; and\n- to identify medications which are included in a multi-component pack.\n\nDesigned to be nested within a clinically appropriate, standalone item which requires a consistent model for recording details about a single medication - for example, to extend the 'Medication statement item' by inserting within the [Medication item] data element.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Medication"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareMedicationStatement"
         },
+        "name": "AU Primary Care Medication Statement",
         "description": "A snapshot view about the use of a specified medication by an individual.\n\n**Usage** \n\nUse to store or exchange a snapshot view about the use of a specified medication, including current use, past use or planned use.\nA Medication statement can only be considered correct and accurate at the time it was asserted.\n\n**Misuse**\n\nNot to be used to record specific details about a medication order.\nNot to be used to record details about specific medication-related activities, such as administration or dispense.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Medication Statement"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareMedicineList"
         },
+        "name": "AU Primary Care Medicine List",
         "description": "This profile defines a medicine list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Medicine List"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareOverallPackYears"
         },
+        "name": "AU Primary Tobacco Smoking Overall Pack Years",
         "description": "Total number of times the individual has attempted to stop smoking the specified type of tobacco.",
-        "exampleBoolean": false,
-        "name": "AU Primary Tobacco Smoking Overall Pack Years"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareParity"
         },
+        "name": "AU Primary Care Parity",
         "description": "Number of times a woman has given birth to a viable baby, regardless of the pregnancy outcome.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Parity"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCarePatient"
         },
+        "name": "AU Primary Care Patient",
         "description": "Details of a patient including identity, demographic and contacts.\n\n**Extensions**\n\n* Indigenous Status : Aboriginal or Torres Strait Islander origin status for the individual, usually self-identified.\n* Birth Place : Record of place of birth.\n* Date of Arrival : Record of date of arrival in australia.\n* Ethnicity : Use to record information about one or more cultural and ethnic identities, self described by the individual.\n* Gender Identity : Record of personal identity with respect to gender.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Patient"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCarePhysicalActivitySummary"
         },
+        "name": "AU Primary Care Physical Activity Summary",
         "description": "Summary or persistent record of the typical level of physical activity undertaken by the individual.\n\n**Usage**\n\nUse to record a summary of the typical exercise habits of an individual.\n\nRecord as a single instance in a health record; updated and revised over time as a new version.\n\n\n**Misuse**\n\nNot to be used to record a physical activity diary of specific activities.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Physical Activity Summary"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareProcedure"
         },
+        "name": "AU Primary Care Procedure",
         "description": "A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.\n\n**Usage** \n\nUse to record information about procedures that have been carried out for an individual.\n\nThe scope of this item encompasses activities for a broad range of clinical procedures performed for evaluative, investigative, screening, diagnostic, curative, therapeutic or palliative purposes. Examples range from the relatively simple activities, such as insertion of an intravenous cannula, through to complex surgical operations.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Procedure"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareSmokingStatus"
         },
+        "name": "AU Primary Care Smoking Status",
         "description": "Statement about current behaviour for all types of tobacco smoking.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Smoking Status"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareSocialSummary"
         },
+        "name": "AU Primary Care Social Summary",
         "description": "Narrative description about social circumstances or experiences that may have a potential impact on an individual's health.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions about social history-related information within existing or legacy clinical systems into this data element.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Social Summary"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareSubstanceUseSummary"
         },
+        "name": "AU Primary Care Substance Use Summary",
         "description": "Summary or persistent information about the typical use of a non-prescribed substance or misuse of a prescribed substance by an individual.\n\n**Usage**\n\nUse to record summary information about the individual's typical pattern of substance use.\n\nThe scope of a substance in the context of this model is includes the administration or consumption of any psychoactive or biologically active substance (with the exception of tobacco and alcohol) used without a prescription or beyond its medical scope, intended purpose or dosage other than prescribed. The scope of this model does not differentiate between legal and illegal substances.\n\nRecord a single instance per substance, or class of substance, in a health record; updated over time as a new version.\n\n\n**Misuse**\n\nNot to be used to represent tobacco smoking or alcohol consumption - use specific Tobacco smoking and Alcohol consumption models for this purpose.\n\nNot to be used to record event- or period-based information about substance use, such as actual daily use or the average use over a specified period of time, as required for a diary or questionnaire.\n\nNot to be used to record prescribed substances such as medical marijuana. This should be recorded using Medication-related models.\n\nFor example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Benzodiazepine abuse",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Substance Use Summary"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareTobaccoPatternOfUse"
         },
+        "name": "AU Primary Tobacco Smoking Pattern Of Use",
         "description": "Details about smoking activity for a specified type of smoked tobacco.\n\n**Usage** \n\nRecord a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\nIncludes:\n* Type - Record a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\n* Typical Use (Units) - Estimate of number of units of the specified type of tobacco smoked.\n* Typical Use (Mass) - Estimate of the weight of loose leaf tobacco smoked.\n* Pattern - The typical pattern of smoking for the specified type of tobacco.\n* Number of Quit Attempts - Total number of times the individual has attempted to stop smoking the specified type of tobacco.",
-        "exampleBoolean": false,
-        "name": "AU Primary Tobacco Smoking Pattern Of Use"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased"
         },
+        "name": "AU Primary Care Tobacco Smoking Date Ceased",
         "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Tobacco Smoking Date Ceased"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareTobaccoSmokingdDateStarted"
         },
+        "name": "AU Primary Tobacco Smoking Date Started",
         "description": "The date when the individual first started regular, but usually non-daily, smoking of tobacco of any type.\n\n**Usage** \n\nUse to record when the individual started smoking on a regular basis, such as every Friday night or at parties.\n\nRecord as a single instance in a health record.\n\nPartial dates are permitted",
-        "exampleBoolean": false,
-        "name": "AU Primary Tobacco Smoking Date Started"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareTobaccoSmokingSummary"
         },
+        "name": "AU Primary Tobacco Smoking Summary",
         "description": "Narrative description about all forms of tobacco smoking.\n\n**Usage** \n\nIt is possible to incorporate the narrative descriptions of tobacco smoking within existing or legacy clinical systems into this data element.",
-        "exampleBoolean": false,
-        "name": "AU Primary Tobacco Smoking Summary"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareWaistCircumference"
-        },
-        "description": "The measurement of the circumference of the waist.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Waist Circumference"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareWeight"
-        },
-        "description": "Weight observation",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Weight"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareReviewDate"
-        },
-        "description": "Date when this goal is planned to be reviewed",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Review Date"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/alcoholfreedaysunitscode"
-        },
-        "exampleBoolean": false,
-        "name": "Alcohol Fee Days Use Units"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/alcoholintakecode"
-        },
-        "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false,
-        "name": "Alcohol Intake Code Valueset"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/alcoholunitscode"
-        },
-        "exampleBoolean": false,
-        "name": "Alcohol Use Units"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/alcoholpatterncode"
-        },
-        "exampleBoolean": false,
-        "name": "Alcohol Pattern"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/allergycode"
-        },
-        "description": "Allergy coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false,
-        "name": "Allergy Code Valueset"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/breastfeedingcode"
-        },
-        "description": "Breastfeeding status record",
-        "exampleBoolean": false,
-        "name": "Breastfeeding Code Valueset"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/clinical-indication-for-medication"
-        },
-        "description": "Clinical Indication For Medication ValueSet",
-        "exampleBoolean": false,
-        "name": "Clinical Indication For Medication ValueSet"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/conditioncode"
-        },
-        "description": "Condition coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false,
-        "name": "Condition Code Valueset"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/course"
-        },
-        "description": "The valueset of options to represent clincial course of a condition",
-        "exampleBoolean": false,
-        "name": "Course ValueSet"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/expecteddateofdeliverytypes"
-        },
-        "description": "Expected Date of Delivery observables, e.g. calculated from either scan date or last normal menstrual period and cycle length.",
-        "exampleBoolean": false,
-        "name": "Expected Date Of Delivery Types"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/familyhistoryabsentcode"
-        },
-        "description": "Family History coding for absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false,
-        "name": "Family History Absent Code Valueset"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/gendercode"
-        },
-        "exampleBoolean": false,
-        "name": "Gender Type"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/geneticfamilymember"
-        },
-        "description": "Members of a family from a genetic perspective",
-        "exampleBoolean": false,
-        "name": "Genetic Family Member ValueSet"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/medicationcode"
-        },
-        "description": "Medication coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false,
-        "name": "Medication Code Valueset"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/procedurecode"
-        },
-        "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false,
-        "name": "Procedure Code Valueset"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/smokingpatterncode"
-        },
-        "exampleBoolean": false,
-        "name": "Smoking Pattern"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/smokingtypecode"
-        },
-        "exampleBoolean": false,
-        "name": "Smoking Type"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/smokingusunitscode"
-        },
-        "exampleBoolean": false,
-        "name": "Smoking Use Units"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/substanceusestatuscode"
-        },
-        "exampleBoolean": false,
-        "name": "Substance Use Status"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/vaccinationcode"
-        },
-        "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false,
-        "name": "Vaccination Code Valueset"
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/observationcode"
-        },
-        "exampleBoolean": false,
-        "name": "Observation Code"
-      },
-      {
-        "reference": {
-          "reference": "Immunization/aupc-immunization3"
-        },
-        "description": "Hepatitis ",
-        "name": "Hepatitis",
-        "exampleCanonical": "http://hl7.org.au/fhir/StructureDefinition/au-immunization"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/aupc-practitioner1"
-        },
-        "description": "Supporting practitioner for examples",
-        "name": "Practitioner",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Procedure/aupc-procedureUltraSound"
-        },
-        "description": "Obstetric Ultrasound",
-        "name": "Obstetric Ultrasound",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/aupc-smoker1"
-        },
-        "description": "is a cigarette smoker",
-        "name": "Cigarette smoker",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mf-alcohol"
-        },
-        "description": "Alcohol intake ",
-        "name": "Cigarette smoker",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mf-exSmoker"
-        },
-        "description": "is a ex cigarette smoker",
-        "name": "Cigarette smoker",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mf-occupation"
-        },
-        "description": "Occupation",
-        "name": "Occupation",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mfWidowed"
-        },
-        "description": "Widowed May 2019",
-        "name": "Widowed May 2019",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/condition-course"
-        },
-        "description": "The clinical course of a condition",
-        "exampleBoolean": false,
-        "name": "Course of the Condition"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/medical-history-laterality"
-        },
-        "description": "Laterality qualifying a diagnosis or procedure",
-        "exampleBoolean": false,
-        "name": "Medical History Laterality"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareFamilyMemberHistoryR2"
-        },
-        "description": "This profile defines a family member history structure for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Family Member History R2"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
-        },
-        "description": "The gestational age from an ultrasound scan",
-        "exampleBoolean": false,
-        "name": "Gestation On Scan"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationEDD"
-        },
-        "description": "The date that delivery is due.",
-        "exampleBoolean": false,
-        "name": "Estimated Date of Delivery"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationGestationalAge"
-        },
-        "description": "Gestational age of a fetus.",
-        "exampleBoolean": false,
-        "name": "Gestational Age"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationGravidity"
-        },
-        "description": "Represents the gravidity (number of pregnancies) of a female patient",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Gravidity"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationLMP"
-        },
-        "description": "The date of the last normal menstrual period",
-        "exampleBoolean": false,
-        "name": "Last Menstrual Period"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareObservationParity"
-        },
-        "description": "The number of births where the fetus is overr 24 weeks",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Parity"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareProblemList"
-        },
-        "description": "This profile defines a problem list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Problem List"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric"
-        },
-        "description": "A ultrasound scan for obstetric purposes",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Ultrasound Scan Obstetric"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareProcedureList"
-        },
-        "description": "This profile defines a procedure list structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Procedure List"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareProcedureUltrasoundScanObstetric"
-        },
-        "description": "A ultrasound scan for obstetric purposes",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Ultrasound Scan Obstetric"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareSmokingCessationAttempts"
-        },
-        "description": "This profile defines core information requirements for a tobacco smoking cessation attempts count in an Australian practice to practice record transfer.",
-        "exampleBoolean": false,
-        "name": "AU Primary Tobacco Smoking Cessation Attempts"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/AUPrimaryCareTobaccoSmokingdDateCeased"
-        },
-        "description": "The date when the individual last ceased smoking tobacco of any type.\n\n**Usage** \n\nThe definition of smoking cessation is not universally clear, obviously involving abstinence from tobacco smoking for various periods of time, often varying between 28 days and 12 months. At any time, especially within the first 12 months, there is a possibility of relapse and the quit date will need to be removed and the item updated.\n\nPartial dates are permitted.",
-        "exampleBoolean": false,
-        "name": "AU Primary Tobacco Smoking Date Ceased"
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/AUPrimaryCareUltrasoundScanObstetric"
         },
+        "name": "AU Primary Care Ultrasound Scan Obstetric",
         "description": "A record ultrasound scan for obstetric purposes. Including the date scan performed.",
-        "exampleBoolean": false,
-        "name": "AU Primary Care Ultrasound Scan Obstetric"
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/aehrcobservableentitycodesystem"
+          "reference": "StructureDefinition/AUPrimaryCareWaistCircumference"
         },
-        "description": "General observable entity code system",
-        "exampleBoolean": false,
-        "name": "AEHRC Observable Entity CodeSystem"
+        "name": "AU Primary Care Waist Circumference",
+        "description": "The measurement of the circumference of the waist.",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/smokingcessationattemptscodesystem"
+          "reference": "StructureDefinition/AUPrimaryCareWeight"
         },
-        "description": "Smoking cessation attempts count record",
-        "exampleBoolean": false,
-        "name": "Smoking Cessation Attempts CodeSystem"
+        "name": "AU Primary Care Weight",
+        "description": "Weight observation",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/smokingcessationattemptscode"
+          "reference": "StructureDefinition/AUPrimaryCareReviewDate"
         },
-        "description": "Smoking cessation attempts count record",
-        "exampleBoolean": false,
-        "name": "Smoking Cessation Attempts Code Valueset"
+        "name": "AU Primary Care Review Date",
+        "description": "Date when this goal is planned to be reviewed",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/tobaccopatternofuse"
+          "reference": "ValueSet/alcoholfreedaysunitscode"
         },
+        "name": "Alcohol Fee Days Use Units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/alcoholintakecode"
+        },
+        "name": "Alcohol Intake Code Valueset",
+        "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/alcoholunitscode"
+        },
+        "name": "Alcohol Use Units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/alcoholpatterncode"
+        },
+        "name": "Alcohol Pattern",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/allergycode"
+        },
+        "name": "Allergy Code Valueset",
+        "description": "Allergy coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/breastfeedingcode"
+        },
+        "name": "Breastfeeding Code Valueset",
+        "description": "Breastfeeding status record",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/clinical-indication-for-medication"
+        },
+        "name": "Clinical Indication For Medication ValueSet",
+        "description": "Clinical Indication For Medication ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/conditioncode"
+        },
+        "name": "Condition Code Valueset",
+        "description": "Condition coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/course"
+        },
+        "name": "Course ValueSet",
+        "description": "The valueset of options to represent clincial course of a condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/expecteddateofdeliverytypes"
+        },
+        "name": "Expected Date Of Delivery Types",
+        "description": "Expected Date of Delivery observables, e.g. calculated from either scan date or last normal menstrual period and cycle length.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/familyhistoryabsentcode"
+        },
+        "name": "Family History Absent Code Valueset",
+        "description": "Family History coding for absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/gendercode"
+        },
+        "name": "Gender Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/geneticfamilymember"
+        },
+        "name": "Genetic Family Member ValueSet",
+        "description": "Members of a family from a genetic perspective",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/medicationcode"
+        },
+        "name": "Medication Code Valueset",
+        "description": "Medication coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/procedurecode"
+        },
+        "name": "Procedure Code Valueset",
+        "description": "Procedure coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/smokingpatterncode"
+        },
+        "name": "Smoking Pattern",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/smokingtypecode"
+        },
+        "name": "Smoking Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/smokingusunitscode"
+        },
+        "name": "Smoking Use Units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/substanceusestatuscode"
+        },
+        "name": "Substance Use Status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vaccinationcode"
+        },
+        "name": "Vaccination Code Valueset",
         "description": "Vaccination coding including absence and exclusion; references relevant NCTS Assertion of Absence codes.",
-        "exampleBoolean": false,
-        "name": "Tobacco Pattern Of Use Code Valueset"
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "AllergyIntolerance/aupc-allergy1"
+          "reference": "CodeSystem/observationcode"
         },
-        "name": "aupc-allergy1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
-      },
-      {
-        "reference": {
-          "reference": "AllergyIntolerance/aupc-allergy2"
-        },
-        "name": "aupc-allergy2",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
-      },
-      {
-        "reference": {
-          "reference": "AllergyIntolerance/aupc-allergy3"
-        },
-        "name": "aupc-allergy3",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
-      },
-      {
-        "reference": {
-          "reference": "AllergyIntolerance/aupc-allergy4"
-        },
-        "name": "aupc-allergy4",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
-      },
-      {
-        "reference": {
-          "reference": "AllergyIntolerance/mf-noAllergy"
-        },
-        "name": "mf-noAllergy",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/aupc-compositionComplete"
-        },
-        "name": "aupc-compositionComplete",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "CarePlan/aupc-followup1"
-        },
-        "name": "aupc-followup1",
-        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
-      },
-      {
-        "reference": {
-          "reference": "CarePlan/mf-followup1"
-        },
-        "name": "mf-followup1",
-        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
-      },
-      {
-        "reference": {
-          "reference": "Composition/aupc-compositionComplete"
-        },
-        "name": "aupc-compositionComplete",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
-      },
-      {
-        "reference": {
-          "reference": "Composition/aupc-compositionEmpty"
-        },
-        "name": "aupc-compositionEmpty",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
-      },
-      {
-        "reference": {
-          "reference": "Composition/aupc-maryFictitious"
-        },
-        "name": "aupc-maryFictitious",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
-      },
-      {
-        "reference": {
-          "reference": "Condition/aupc-condition1"
-        },
-        "name": "aupc-condition1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-      },
-      {
-        "reference": {
-          "reference": "Condition/aupc-condition2"
-        },
-        "name": "aupc-condition2",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-      },
-      {
-        "reference": {
-          "reference": "Condition/mf-condition1"
-        },
-        "name": "mf-condition1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-      },
-      {
-        "reference": {
-          "reference": "Condition/mf-condition2"
-        },
-        "name": "mf-condition2",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-      },
-      {
-        "reference": {
-          "reference": "Condition/mf-condition3"
-        },
-        "name": "mf-condition3",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-      },
-      {
-        "reference": {
-          "reference": "FamilyMemberHistory/aupc-familyHistory1"
-        },
-        "name": "aupc-familyHistory1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-      },
-      {
-        "reference": {
-          "reference": "FamilyMemberHistory/mf-familyHistory1"
-        },
-        "name": "mf-familyHistory1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-      },
-      {
-        "reference": {
-          "reference": "FamilyMemberHistory/mf-familyHistory2"
-        },
-        "name": "mf-familyHistory2",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-      },
-      {
-        "reference": {
-          "reference": "Immunization/aupc-immunization1"
-        },
-        "name": "aupc-immunization1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
-      },
-      {
-        "reference": {
-          "reference": "Immunization/aupc-immunization2"
-        },
-        "name": "aupc-immunization2",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+        "name": "Observation Code",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "List/aupc-adverseReactionEmpty"
         },
-        "name": "aupc-adverseReactionEmpty",
+        "name": "No significant history",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
       },
       {
         "reference": {
           "reference": "List/aupc-adverseReactionList"
         },
-        "name": "aupc-adverseReactionList",
+        "name": "Allergy List",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy1"
+        },
+        "name": "Oesophagitis caused by dairy food",
+        "description": "Oesophagitis caused by dairy food",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy2"
+        },
+        "name": "Peanut allergy",
+        "description": "Urticaria as a result of a Peanut allergy",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy3"
+        },
+        "name": "Penicillin anaphylaxis",
+        "description": "Penicillin anaphylaxis",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/aupc-allergy4"
+        },
+        "name": "Alpha blocker rash",
+        "description": "A rash as a consequence to Alpha adrenergic blockers",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "Composition/aupc-compositionComplete"
+        },
+        "name": "Example composition with all sections populated",
+        "description": "The composition for a patient with all sections completed ",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
+          "reference": "Composition/aupc-compositionEmpty"
+        },
+        "name": "Example composition with no data",
+        "description": "The composition for a patient with no relevant history. Required sections are present with no data.\nThis shows ONLY required elements. List resources are contained.",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/aupc-condition1"
+        },
+        "name": "Confirmed diagnosis of Polio",
+        "description": "Polio",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/aupc-condition2"
+        },
+        "name": "Confirmed diagnosis of Asthma",
+        "description": "Asthma",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-edd1"
+        },
+        "name": "Estimated Date of Delivery",
+        "description": "Estimated Date of Delivery",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/aupc-familyHistory1"
+        },
+        "name": "Father with diabetes",
+        "description": "Father with diabetes",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
       },
       {
         "reference": {
           "reference": "List/aupc-familyHistoryList"
         },
-        "name": "aupc-familyHistoryList",
+        "name": "Family History List",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
       },
       {
         "reference": {
           "reference": "List/aupc-followUpList"
         },
-        "name": "aupc-followUpList",
+        "name": "Followup list",
         "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
       },
       {
         "reference": {
-          "reference": "List/aupc-immunizationEmpty"
+          "reference": "CarePlan/aupc-followup1"
         },
-        "name": "aupc-immunizationEmpty",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
-      },
-      {
-        "reference": {
-          "reference": "List/aupc-immunizationList"
-        },
-        "name": "aupc-immunizationList",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
-      },
-      {
-        "reference": {
-          "reference": "List/aupc-medicalHistoryEmpty"
-        },
-        "name": "aupc-medicalHistoryEmpty",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
-      },
-      {
-        "reference": {
-          "reference": "List/aupc-medicalHistoryList"
-        },
-        "name": "aupc-medicalHistoryList",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
-      },
-      {
-        "reference": {
-          "reference": "List/aupc-medicineList"
-        },
-        "name": "aupc-medicineList",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
-      },
-      {
-        "reference": {
-          "reference": "List/aupc-medicineListEmpty"
-        },
-        "name": "aupc-medicineListEmpty",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-allergiesList"
-        },
-        "name": "mf-allergiesList",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-familyHistoryList"
-        },
-        "name": "mf-familyHistoryList",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-followUpList"
-        },
-        "name": "mf-followUpList",
-        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-medicalHistoryList"
-        },
-        "name": "mf-medicalHistoryList",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
-      },
-      {
-        "reference": {
-          "reference": "List/mf-medicineList"
-        },
-        "name": "mf-medicineList",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
-      },
-      {
-        "reference": {
-          "reference": "Medication/medication1"
-        },
-        "name": "medication1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/aupc-medicationstatement1"
-        },
-        "name": "aupc-medicationstatement1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/mf-medication1"
-        },
-        "name": "mf-medication1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/mf-medication2"
-        },
-        "name": "mf-medication2",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/mf-medication3"
-        },
-        "name": "mf-medication3",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
-      },
-      {
-        "reference": {
-          "reference": "Observation/aupc-edd1"
-        },
-        "name": "aupc-edd1",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
+        "name": "Blood Pressure review",
+        "description": "Review to check Blood Pressure",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
       },
       {
         "reference": {
           "reference": "Observation/aupc-gestationOnScan1"
         },
-        "name": "aupc-gestationOnScan1",
+        "name": "Gestation on scan ",
+        "description": "Gestation on scan",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge"
       },
       {
         "reference": {
           "reference": "Observation/aupc-gravidity1"
         },
-        "name": "aupc-gravidity1",
+        "name": "Gravidity",
+        "description": "Gravidity",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGravidity"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization1"
+        },
+        "name": "MMR Vaccination",
+        "description": "MMR",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization2"
+        },
+        "name": "MMR Vaccination",
+        "description": "MMR",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization3"
+        },
+        "name": "Hepatitis",
+        "description": "Hepatitis ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-immunizationEmpty"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-immunizationList"
+        },
+        "name": "Immunizations list",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
       },
       {
         "reference": {
           "reference": "Observation/aupc-lmp1"
         },
-        "name": "aupc-lmp1",
+        "name": "Last Menstrual Period",
+        "description": "Last Menstrual Period",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareLMP"
+      },
+      {
+        "reference": {
+          "reference": "Composition/aupc-maryFictitious"
+        },
+        "name": "Mary Fictitious example",
+        "description": "Rendering a supplied clincial example into a bundle",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicalHistoryEmpty"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicalHistoryList"
+        },
+        "name": "Medical History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/aupc-medicationstatement1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicineList"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicineListEmpty"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
       },
       {
         "reference": {
           "reference": "Observation/aupc-parity1"
         },
-        "name": "aupc-parity1",
+        "name": "Parity",
+        "description": "Parity",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareParity"
       },
       {
         "reference": {
           "reference": "Patient/aupc-patient1"
         },
-        "name": "aupc-patient1",
+        "name": "Patient",
+        "description": "Supporting patient for examples",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
       },
       {
         "reference": {
-          "reference": "Patient/maryFictitious"
+          "reference": "Practitioner/aupc-practitioner1"
         },
-        "name": "maryFictitious",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+        "name": "Practitioner",
+        "description": "Supporting practitioner for examples",
+        "exampleBoolean": true
       },
       {
         "reference": {
           "reference": "Procedure/aupc-procedure1"
         },
-        "name": "aupc-procedure1",
+        "name": "Stent, coronary artery",
+        "description": "Stent, coronary artery",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
       },
       {
         "reference": {
           "reference": "Procedure/aupc-procedure2"
         },
-        "name": "aupc-procedure2",
+        "name": "Plantar wart excision",
+        "description": "Plantar wart excision",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/aupc-procedureUltraSound"
+        },
+        "name": "Obstetric Ultrasound",
+        "description": "Obstetric Ultrasound",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-smoker1"
+        },
+        "name": "Cigarette smoker",
+        "description": "is a cigarette smoker",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/maryFictitious"
+        },
+        "name": "Mary Fictitious",
+        "description": "Supporting patient for examples",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+      },
+      {
+        "reference": {
+          "reference": "Medication/medication1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mf-alcohol"
+        },
+        "name": "Cigarette smoker",
+        "description": "Alcohol intake ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mf-allergiesList"
+        },
+        "name": "Allergy List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+      },
+      {
+        "reference": {
+          "reference": "Condition/mf-condition1"
+        },
+        "name": "Hypertension",
+        "description": "Hypertension",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/mf-condition2"
+        },
+        "name": "Rheumatoid Arthritis",
+        "description": "Rheumatoid Arthritis",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Condition/mf-condition3"
+        },
+        "name": "Bipolar disorder",
+        "description": "Bipolar disorder",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mf-exSmoker"
+        },
+        "name": "Cigarette smoker",
+        "description": "is a ex cigarette smoker",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mf-familyHistory1"
+        },
+        "name": "Mother hypothyroid",
+        "description": "Mother hypothyroid",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mf-familyHistory2"
+        },
+        "name": "Sister hypothyroid",
+        "description": "Sister hypothyroid",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+      },
+      {
+        "reference": {
+          "reference": "List/mf-familyHistoryList"
+        },
+        "name": "Family History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "List/mf-followUpList"
+        },
+        "name": "Followup list",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mf-followup1"
+        },
+        "name": "Blood Pressure review",
+        "description": "Review to check Blood Pressure",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
+      },
+      {
+        "reference": {
+          "reference": "List/mf-medicalHistoryList"
+        },
+        "name": "Medical History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mf-medication1"
+        },
+        "name": "Sevikar HCT 40/10/25",
+        "description": "Sevikar HCT 40/10/25",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mf-medication2"
+        },
+        "name": "SMethotrexate",
+        "description": "Methotrexate",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mf-medication3"
+        },
+        "name": "lithium carbonate",
+        "description": "lithium carbonate",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "List/mf-medicineList"
+        },
+        "name": "Medication List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/mf-noAllergy"
+        },
+        "name": "No allergies reported",
+        "description": "Urticaria as a result of a Peanut allergy",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mf-occupation"
+        },
+        "name": "Occupation",
+        "description": "Occupation",
+        "exampleBoolean": true
       },
       {
         "reference": {
           "reference": "Procedure/mf-procedure1"
         },
-        "name": "mf-procedure1",
+        "name": "UteroVaginal prolapse repair",
+        "description": "UteroVaginal prolapse repair",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mfWidowed"
+        },
+        "name": "Widowed May 2019",
+        "description": "Widowed May 2019",
+        "exampleBoolean": true
       }
     ],
     "page": {

@@ -77,6 +77,13 @@
       {
         "id": "Medication.ingredient.itemCodeableConcept",
         "path": "Medication.ingredient.itemCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true
       },
       {

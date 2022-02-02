@@ -126,7 +126,8 @@
               "type": "value",
               "path": "code"
             }
-          ]
+          ],
+          "rules": "open"
         }
       },
       {

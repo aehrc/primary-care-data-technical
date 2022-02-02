@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareSubstanceUseSummary",
+  "id": "AUPrimaryCareTobaccoPatternOfUse",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSubstanceUseSummary",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse",
   "version": "0.0.3",
-  "name": "AUPrimaryCareSubstanceUseSummary",
-  "title": "AU Primary Care Substance Use Summary",
+  "name": "AUPrimaryCareTobaccoPatternOfUse",
+  "title": "AU Primary Tobacco Smoking Pattern Of Use",
   "status": "active",
-  "description": "Summary or persistent information about the typical use of a non-prescribed substance or misuse of a prescribed substance by an individual.\n\n**Usage**\n\nUse to record summary information about the individual's typical pattern of substance use.\n\nThe scope of a substance in the context of this model is includes the administration or consumption of any psychoactive or biologically active substance (with the exception of tobacco and alcohol) used without a prescription or beyond its medical scope, intended purpose or dosage other than prescribed. The scope of this model does not differentiate between legal and illegal substances.\n\nRecord a single instance per substance, or class of substance, in a health record; updated over time as a new version.\n\n\n**Misuse**\n\nNot to be used to represent tobacco smoking or alcohol consumption - use specific Tobacco smoking and Alcohol consumption models for this purpose.\n\nNot to be used to record event- or period-based information about substance use, such as actual daily use or the average use over a specified period of time, as required for a diary or questionnaire.\n\nNot to be used to record prescribed substances such as medical marijuana. This should be recorded using Medication-related models.\n\nFor example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Benzodiazepine abuse",
+  "description": "Details about smoking activity for a specified type of smoked tobacco.\n\n**Usage** \n\nRecord a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\nIncludes:\n* Type - Record a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\n* Typical Use (Units) - Estimate of number of units of the specified type of tobacco smoked.\n* Typical Use (Mass) - Estimate of the weight of loose leaf tobacco smoked.\n* Pattern - The typical pattern of smoking for the specified type of tobacco.\n* Number of Quit Attempts - Total number of times the individual has attempted to stop smoking the specified type of tobacco.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,8 +68,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "substance-use-summary",
-              "system": "http://aehrc.com/fhir/observable-entity"
+              "code": "266918002",
+              "system": "http://snomed.info/sct"
             }
           ]
         },
@@ -126,61 +126,31 @@
               "type": "value",
               "path": "code"
             }
-          ]
+          ],
+          "rules": "open"
         }
       },
       {
-        "id": "Observation.component:substancename",
+        "id": "Observation.component:smokingtype",
         "path": "Observation.component",
-        "sliceName": "substancename",
+        "sliceName": "smokingtype",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation.component:substancename.code",
+        "id": "Observation.component:smokingtype.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "substance-name",
+              "code": "smoking-type",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:substancename.valueCodeableConcept",
-        "path": "Observation.component.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:status",
-        "path": "Observation.component",
-        "sliceName": "status",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:status.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "substance-use-status",
-              "system": "http://aehrc.com/fhir/observable-entity"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:status.valueCodeableConcept",
+        "id": "Observation.component:smokingtype.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "min": 0,
         "max": "1",
@@ -192,70 +162,118 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://aehrc.com/ValueSet/substanceusestatuscode"
+          "valueSet": "http://aehrc.com/ValueSet/smokingtypecode"
         }
       },
       {
-        "id": "Observation.component:description",
+        "id": "Observation.component:unitofuse",
         "path": "Observation.component",
-        "sliceName": "description",
+        "sliceName": "unitofuse",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation.component:description.code",
+        "id": "Observation.component:unitofuse.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "substance-use-description",
+              "code": "smoking-units-of-use",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:description.valueString",
-        "path": "Observation.component.valueString",
+        "id": "Observation.component:unitofuse.valueQuantity",
+        "path": "Observation.component.valueQuantity",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "Quantity"
           }
         ],
         "mustSupport": true
       },
       {
-        "id": "Observation.component:lastquitdate",
+        "id": "Observation.component:unitofuse.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aehrc.com/ValueSet/smokingunitscode"
+        }
+      },
+      {
+        "id": "Observation.component:dailyuse",
         "path": "Observation.component",
-        "sliceName": "lastquitdate",
+        "sliceName": "dailyuse",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation.component:lastquitdate.code",
+        "id": "Observation.component:dailyuse.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "substance-use-last-quit-date",
+              "code": "smoking-pattern-of-daily-use",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:lastquitdate.valueDateTime",
-        "path": "Observation.component.valueDateTime",
+        "id": "Observation.component:dailyuse.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "dateTime"
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aehrc.com/ValueSet/smokingpatterncode"
+        }
+      },
+      {
+        "id": "Observation.component:cessationattempts",
+        "path": "Observation.component",
+        "sliceName": "cessationattempts",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cessationattempts.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "smoking-cessation-attempts",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:cessationattempts.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cessationattempts.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "patternCode": "1"
       }
     ]
   }

@@ -116,6 +116,7 @@ Includes:
 * effectiveDateTime MS
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
 * component contains smokingtype 0..1
 * component[smokingtype].code =  http://aehrc.com/fhir/observable-entity#smoking-type
 * component[smokingtype].valueCodeableConcept from SmokingType_Code_ValueSet
@@ -225,6 +226,7 @@ This includes:
 * effectiveDateTime MS
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
 * component contains episodename 0..1
 * component[episodename].code =  http://aehrc.com/fhir/observable-entity#alcohol-episode-name
 * component[episodename].valueCodeableConcept MS
@@ -336,6 +338,7 @@ For example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Ben
 * effectiveDateTime MS
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
 * component contains substancename 0..1
 * component[substancename].code =  http://aehrc.com/fhir/observable-entity#substance-name
 * component[substancename].valueCodeableConcept MS
@@ -406,6 +409,7 @@ Not to be used to record a food diary.
 * effectiveDateTime MS
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
 * component contains substancename 0..1
 * component[substancename].code =  http://aehrc.com/fhir/observable-entity#food-nutrition-description
 * component[substancename].valueString MS

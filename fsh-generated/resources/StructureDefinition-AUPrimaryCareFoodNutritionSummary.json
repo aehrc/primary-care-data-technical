@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareTobaccoPatternOfUse",
+  "id": "AUPrimaryCareFoodNutritionSummary",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoPatternOfUse",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFoodNutritionSummary",
   "version": "0.0.3",
-  "name": "AUPrimaryCareTobaccoPatternOfUse",
-  "title": "AU Primary Tobacco Smoking Pattern Of Use",
+  "name": "AUPrimaryCareFoodNutritionSummary",
+  "title": "AU Primary Care Food Nutrition Summary",
   "status": "active",
-  "description": "Details about smoking activity for a specified type of smoked tobacco.\n\n**Usage** \n\nRecord a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\nIncludes:\n* Type - Record a single instance per type of tobacco smoked in a health record; updated over time as a new version of the entire summary\n* Typical Use (Units) - Estimate of number of units of the specified type of tobacco smoked.\n* Typical Use (Mass) - Estimate of the weight of loose leaf tobacco smoked.\n* Pattern - The typical pattern of smoking for the specified type of tobacco.\n* Number of Quit Attempts - Total number of times the individual has attempted to stop smoking the specified type of tobacco.",
+  "description": "Summary or persistent record of the dietary habits, nutritional intake and eating patterns of the individual.\n\n**Usage**\n\nSummary or persistent record of the dietary habits, nutritional intake and eating patterns of the individual.\n\n\n**Misuse**\n\nNot to be used to record a food diary.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,8 +68,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "266918002",
-              "system": "http://snomed.info/sct"
+              "code": "food-nutrition-summary",
+              "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         },
@@ -126,30 +126,62 @@
               "type": "value",
               "path": "code"
             }
-          ]
+          ],
+          "rules": "open"
         }
       },
       {
-        "id": "Observation.component:smokingtype",
+        "id": "Observation.component:substancename",
         "path": "Observation.component",
-        "sliceName": "smokingtype",
+        "sliceName": "substancename",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation.component:smokingtype.code",
+        "id": "Observation.component:substancename.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "smoking-type",
+              "code": "food-nutrition-description",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:smokingtype.valueCodeableConcept",
+        "id": "Observation.component:substancename.valueString",
+        "path": "Observation.component.valueString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:status",
+        "path": "Observation.component",
+        "sliceName": "status",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:status.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "food-security-status",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:status.valueCodeableConcept",
         "path": "Observation.component.valueCodeableConcept",
         "min": 0,
         "max": "1",
@@ -158,121 +190,38 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://aehrc.com/ValueSet/smokingtypecode"
-        }
-      },
-      {
-        "id": "Observation.component:unitofuse",
-        "path": "Observation.component",
-        "sliceName": "unitofuse",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:unitofuse.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "smoking-units-of-use",
-              "system": "http://aehrc.com/fhir/observable-entity"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:unitofuse.valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ],
         "mustSupport": true
       },
       {
-        "id": "Observation.component:unitofuse.valueQuantity.code",
-        "path": "Observation.component.valueQuantity.code",
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://aehrc.com/ValueSet/smokingunitscode"
-        }
-      },
-      {
-        "id": "Observation.component:dailyuse",
+        "id": "Observation.component:description",
         "path": "Observation.component",
-        "sliceName": "dailyuse",
+        "sliceName": "description",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation.component:dailyuse.code",
+        "id": "Observation.component:description.code",
         "path": "Observation.component.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "smoking-pattern-of-daily-use",
+              "code": "food-security-description",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:dailyuse.valueCodeableConcept",
-        "path": "Observation.component.valueCodeableConcept",
+        "id": "Observation.component:description.valueString",
+        "path": "Observation.component.valueString",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://aehrc.com/ValueSet/smokingpatterncode"
-        }
-      },
-      {
-        "id": "Observation.component:cessationattempts",
-        "path": "Observation.component",
-        "sliceName": "cessationattempts",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:cessationattempts.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "smoking-cessation-attempts",
-              "system": "http://aehrc.com/fhir/observable-entity"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:cessationattempts.valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity"
+            "code": "string"
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Observation.component:cessationattempts.valueQuantity.code",
-        "path": "Observation.component.valueQuantity.code",
-        "patternCode": "1"
       }
     ]
   }

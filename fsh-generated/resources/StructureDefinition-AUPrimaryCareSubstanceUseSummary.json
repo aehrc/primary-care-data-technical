@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AUPrimaryCareFoodNutritionSummary",
+  "id": "AUPrimaryCareSubstanceUseSummary",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFoodNutritionSummary",
+  "url": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSubstanceUseSummary",
   "version": "0.0.3",
-  "name": "AUPrimaryCareFoodNutritionSummary",
-  "title": "AU Primary Care Food Nutrition Summary",
+  "name": "AUPrimaryCareSubstanceUseSummary",
+  "title": "AU Primary Care Substance Use Summary",
   "status": "active",
-  "description": "Summary or persistent record of the dietary habits, nutritional intake and eating patterns of the individual.\n\n**Usage**\n\nSummary or persistent record of the dietary habits, nutritional intake and eating patterns of the individual.\n\n\n**Misuse**\n\nNot to be used to record a food diary.",
+  "description": "Summary or persistent information about the typical use of a non-prescribed substance or misuse of a prescribed substance by an individual.\n\n**Usage**\n\nUse to record summary information about the individual's typical pattern of substance use.\n\nThe scope of a substance in the context of this model is includes the administration or consumption of any psychoactive or biologically active substance (with the exception of tobacco and alcohol) used without a prescription or beyond its medical scope, intended purpose or dosage other than prescribed. The scope of this model does not differentiate between legal and illegal substances.\n\nRecord a single instance per substance, or class of substance, in a health record; updated over time as a new version.\n\n\n**Misuse**\n\nNot to be used to represent tobacco smoking or alcohol consumption - use specific Tobacco smoking and Alcohol consumption models for this purpose.\n\nNot to be used to record event- or period-based information about substance use, such as actual daily use or the average use over a specified period of time, as required for a diary or questionnaire.\n\nNot to be used to record prescribed substances such as medical marijuana. This should be recorded using Medication-related models.\n\nFor example: Recreational drugs, Solvents, Anabolic steroids, Opioid abuse,  Benzodiazepine abuse",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -68,7 +68,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "food-nutrition-summary",
+              "code": "substance-use-summary",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
@@ -126,7 +126,8 @@
               "type": "value",
               "path": "code"
             }
-          ]
+          ],
+          "rules": "open"
         }
       },
       {
@@ -142,20 +143,20 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "food-nutrition-description",
+              "code": "substance-name",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
         }
       },
       {
-        "id": "Observation.component:substancename.valueString",
-        "path": "Observation.component.valueString",
+        "id": "Observation.component:substancename.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ],
         "mustSupport": true
@@ -173,7 +174,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "food-security-status",
+              "code": "substance-use-status",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
@@ -189,7 +190,11 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://aehrc.com/ValueSet/substanceusestatuscode"
+        }
       },
       {
         "id": "Observation.component:description",
@@ -204,7 +209,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "food-security-description",
+              "code": "substance-use-description",
               "system": "http://aehrc.com/fhir/observable-entity"
             }
           ]
@@ -218,6 +223,37 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:lastquitdate",
+        "path": "Observation.component",
+        "sliceName": "lastquitdate",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:lastquitdate.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "substance-use-last-quit-date",
+              "system": "http://aehrc.com/fhir/observable-entity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:lastquitdate.valueDateTime",
+        "path": "Observation.component.valueDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
           }
         ],
         "mustSupport": true
