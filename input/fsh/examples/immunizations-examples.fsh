@@ -45,7 +45,8 @@ Title: "Hepatitis"
 * primarySource = true
 * lotNumber = "EE3F243E"
 
-* performer[administeredBy].function = http://terminology.hl7.org/CodeSystem/v2-0443#AP "Administering Provider"* performer[administeredBy].function.text = "Administering Provider" 
+* performer[administeredBy].function = http://terminology.hl7.org/CodeSystem/v2-0443#AP "Administering Provider"
+* performer[administeredBy].function.text = "Administering Provider" 
 * performer[administeredBy].actor = Reference(aupc-practitioner1)
 
 

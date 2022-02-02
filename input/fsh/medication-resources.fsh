@@ -46,8 +46,7 @@ Not to be used to record details about specific medication-related activities, s
 * dosage.doseAndRate.doseQuantity MS
 //* dosage.timing.code MS
 * dosage.additionalInstruction MS
-* dosage.asNeeded[x][asNeededCodeableConcept] MS
-* dosage.asNeeded[x][asNeededBoolean] MS
+* dosage.asNeeded[x] MS
 * dosage.route MS
 
 

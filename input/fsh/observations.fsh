@@ -78,6 +78,7 @@ Record as a single instance per observation in a health record.
 * valueQuantity.value 1..1 MS
 
 
+
 Profile: AUPrimaryCareHeight
 Parent: http://hl7.org/fhir/StructureDefinition/bodyheight
 Id: AUPrimaryCareHeight

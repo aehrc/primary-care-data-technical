@@ -43,7 +43,7 @@ Use to record information about procedures that have been carried out for an ind
 
 The scope of this item encompasses activities for a broad range of clinical procedures performed for evaluative, investigative, screening, diagnostic, curative, therapeutic or palliative purposes. Examples range from the relatively simple activities, such as insertion of an intravenous cannula, through to complex surgical operations.
 """
-* ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+// * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
 * meta.lastUpdated MS
 * extension contains http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure named targetBodyStructureReference 0..1 MS
 * code from Procedure_Code_Valueset (preferred)
