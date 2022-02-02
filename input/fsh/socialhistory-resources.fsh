@@ -257,6 +257,7 @@ This includes:
 * component[cessationattempts].valueQuantity MS
 * component[cessationattempts].valueQuantity.code = #1
 
+
 Profile: AUPrimaryCareSocialSummary
 Parent: Observation
 Id: AUPrimaryCareSocialSummary
