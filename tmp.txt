@@ -24,7 +24,6 @@ info  Assembling Implementation Guide sources...
 info  Generated ImplementationGuide-au.csiro.fhir.au-primarycare.json
 info  Assembled Implementation Guide sources; ready for IG Publisher.
 
-
 ========================= SUSHI RESULTS ===========================
 |  -------------------------------------------------------------  |
 | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
