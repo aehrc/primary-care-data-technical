@@ -4,6 +4,7 @@ Specifies the structure of a FHIR document to exchange a clinical summary for a 
 
 ## Build process
 
+
 ### Prerequisites
 * FHIR shirtand compiler (sushi) and the IG publisher installed locally as described in the [FSH spec](http://hl7.org/fhir/uv/shorthand/2020May/sushi.html#new-ig-publisher-integration-autobuild-configuration)
 * This repository cloned locally
