@@ -28,6 +28,12 @@
       "version": "current",
       "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
       "id": "hl7_fhir_au_base"
+    },
+    {
+      "packageId": "hl7.fhir.au.core",
+      "version": "current",
+      "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.core",
+      "id": "hl7_fhir_au_core"
     }
   ],
   "definition": {
