@@ -1,7 +1,7 @@
 // PROFILES 
 
 Profile: AUPrimaryCareGravidity
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-gravidity
+Parent: http://hl7.org.au/fhir/StructureDefinition/au-core-gravidity
 Id: AUPrimaryCareGravidity
 Title: "AU Primary Care Gravidity"
 Description: """
@@ -17,7 +17,7 @@ Number of times a woman has been pregnant, current and past, regardless of the p
 * value[x] 1..1 MS
 
 Profile: AUPrimaryCareParity
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-parity
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-parity
 Id: AUPrimaryCareParity
 Title: "AU Primary Care Parity"
 Description: """
@@ -34,7 +34,7 @@ Number of times a woman has given birth to a viable baby, regardless of the preg
 * value[x] 1..1 MS
 
 Profile: AUPrimaryCareLMP
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-lastmenstrualperiod
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-lastmenstrualperiod
 Id: AUPrimaryCareLMP
 Title: "AU Primary Care Last Menstrual Period"
 Description: """
@@ -51,7 +51,7 @@ First day of menstrual bleeding in the most recent typical menstrual cycle exper
 
 
 Profile: AUPrimaryCareEDD
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-estimateddateofdelivery
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-estimateddateofdelivery
 Id: AUPrimaryCareEDD
 Title: "AU Primary Care Estimated Date of Delivery"
 Description: """"
