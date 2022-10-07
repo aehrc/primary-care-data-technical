@@ -1,5 +1,4 @@
 // PROFILES 
-
 Profile: AUPrimaryCareGravidity
 Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-gravidity
 Id: AUPrimaryCareGravidity
