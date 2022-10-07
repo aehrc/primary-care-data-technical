@@ -1,7 +1,7 @@
 // PROFILES 
 
 Profile: AUPrimaryCareSmokingStatus
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-smokingstatus
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-smokingstatus
 Id: AUPrimaryCareSmokingStatus
 Title: "AU Primary Care Smoking Status"
 Description: """
@@ -40,7 +40,7 @@ It is possible to incorporate the narrative descriptions of tobacco smoking with
 
 
 Profile: AUPrimaryCareTobaccoSmokingDateCeased
-Parent: Observation
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-smokingceasedate
 Id: AUPrimaryCareTobaccoSmokingDateCeased
 Title: "AU Primary Care Tobacco Smoking Date Ceased"
 Description: """
@@ -54,7 +54,7 @@ Partial dates are permitted.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased"
 * status 1..1 MS
-* code = $SNOMED#160625004
+//* code = $SNOMED#160625004
 // $LOINC#74010-0
 * code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
@@ -64,7 +64,7 @@ Partial dates are permitted.
 * valueDateTime 1..1 MS
 
 Profile: AUPrimaryCareTobaccoSmokingDateStarted
-Parent: Observation
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-smokingstartdate
 Id: AUPrimaryCareTobaccoSmokingdDateStarted
 Title: "AU Primary Tobacco Smoking Date Started"
 Description: """
