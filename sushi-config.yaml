@@ -26,6 +26,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.au.base: current
+  hl7.fhir.au.core: current
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
