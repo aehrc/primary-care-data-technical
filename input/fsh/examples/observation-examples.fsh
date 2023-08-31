@@ -10,6 +10,8 @@ Title: "Gravidity"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gravidity</div>"
 
 * status = #final
+* category.coding.code = #survey
+* category.coding.system = http://terminology.hl7.org/CodeSystem/observation-category
 * code.coding.system = $SNOMED
 * code.coding.code = #161732006
 * subject = Reference(aupc-patient1)
@@ -26,6 +28,8 @@ Title: "Parity"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Parity </div>"
 
 * status = #final
+* category.coding.code = #survey
+* category.coding.system = http://terminology.hl7.org/CodeSystem/observation-category
 * code.coding.system = $SNOMED
 * code.coding.code = #364325004 
 * code.coding.display = "Parity"
@@ -41,6 +45,8 @@ Title: "Gestation on scan "
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gestation on scan </div>"
 * subject = Reference(aupc-patient1)
+* category.coding.code = #exam
+* category.coding.system = http://terminology.hl7.org/CodeSystem/observation-category
 * code.coding.system = $SNOMED
 * code.coding.code = #57036006 
 * code.coding.display = "Gestation on scan"
@@ -62,6 +68,8 @@ Title: "Estimated Date of Delivery"
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Estimated Date of Delivery</div>"
 * subject = Reference(aupc-patient1)
+* category.coding.code = #exam
+* category.coding.system = http://terminology.hl7.org/CodeSystem/observation-category
 * code.coding = $SNOMED#161714006 "Estimated date of delivery"
 * subject = Reference(aupc-patient1)
 * valueDateTime = "2020-10-01"
@@ -77,6 +85,8 @@ Title: "Last Menstrual Period"
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Last Menstrual Period</div>"
 * subject = Reference(aupc-patient1)
+* category.coding.code = #survey
+* category.coding.system = http://terminology.hl7.org/CodeSystem/observation-category
 * code.coding = $SNOMED#248993009
 * subject = Reference(aupc-patient1)
 * valueDateTime = "2019-10-01"
