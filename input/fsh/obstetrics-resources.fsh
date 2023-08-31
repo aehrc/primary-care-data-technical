@@ -57,8 +57,8 @@ Description: """"
 Estimated date of delivery for a pregnancy, calculated or estimated by a variety of methods.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEDD"
-* status = #final
-* status MS
+//* status = #final
+//* status MS
 * code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
@@ -75,8 +75,8 @@ Description: """
 Estimated gestational age by variable methods.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareGestationalAge"
-* status = #final
-* status MS
+//* status = #final
+//* status MS
 * code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
 * subject 1..1 MS
