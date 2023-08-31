@@ -25,6 +25,8 @@ Title: "Patient"
 * name.text = "Jenny Doe"
 * birthDate = "1989-01-02"
 * gender = #female
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "12345678"
 
 // * address.text = "23 Thule st"
 * telecom.system = #email

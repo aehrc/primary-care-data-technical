@@ -431,6 +431,8 @@ Title: "Mary Fictitious"
 * name.text = "Mary Fictitious"
 * birthDate = "1971"
 * gender = #female
+* identifier.system = "http://example.org/mrn"
+* identifier.value = "12345679"
 // * address.text = "23 Thule st"
 
 //============= Allergies
