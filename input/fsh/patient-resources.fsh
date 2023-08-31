@@ -1,7 +1,7 @@
 // PROFILES 
 
 Profile: AUPrimaryCarePatient
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-patient
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
 Id: AUPrimaryCarePatient
 Title: "AU Primary Care Patient"
 Description: """

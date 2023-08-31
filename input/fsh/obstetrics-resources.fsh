@@ -68,7 +68,7 @@ Estimated date of delivery for a pregnancy, calculated or estimated by a variety
 * partOf MS
 
 Profile: AUPrimaryCareGestationalAge
-Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-gestationalage
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-gestationalage
 Id: AUPrimaryCareGestationalAge
 Title: "AU Primary Care Gestational Age"
 Description: """
