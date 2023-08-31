@@ -5,7 +5,8 @@
   "title": "Primary Care Practice-to-Practice",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
-    "hl7.fhir.au.base": "current"
+    "hl7.fhir.au.base": "current",
+    "hl7.fhir.au.core": "current"
   },
   "keywords": [
     "Primary Care",
