@@ -272,6 +272,7 @@ Title: "UteroVaginal prolapse repair"
 * status = #completed
 * subject = Reference(maryFictitious)
 * code.coding = $SNOMED#238034001 "Repair of vaginal wall prolapse (procedure)"
+* performedDateTime = "2020-01-01"
 
 
 
