@@ -1,7 +1,7 @@
 // PROFILES 
 
 Profile: AUPrimaryCareEncounter
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-encounter
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter
 Id: AUPrimaryCareEncounter
 Title: "AU Primary Care Encounter"
 Description: """
@@ -16,7 +16,6 @@ Reason for Encounter - Use to record the reason, or reasons, for initiation of a
 * status = #finished
 * class MS
 * subject only Reference(AUPrimaryCarePatient)
-* subject 1..1 MS
 * participant ^slicing.discriminator.type = #value
 * participant ^slicing.discriminator.path = "type.code"
 * participant ^slicing.rules = #open
@@ -27,10 +26,6 @@ Reason for Encounter - Use to record the reason, or reasons, for initiation of a
 * participant[primaryperformer].individual.type = "Practitioner"
 * participant[primaryperformer].individual.type 1..1 MS
 * participant[primaryperformer].individual.display 1..1 MS
-* period MS
-* reasonCode MS
-* serviceProvider MS
-* serviceProvider.display MS
 
 
 Profile: AUPrimaryCareEncounterList
