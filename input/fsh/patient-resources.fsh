@@ -18,6 +18,12 @@ Details of a patient including identity, demographic and contacts.
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
 * extension[http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration] 0..1 MS
 * active MS
+* telecom ^slicing.discriminator.type = #value
+* telecom ^slicing.discriminator.path = "system"
+* telecom ^slicing.rules = #open
+* telecom contains 
+    phone 0..1 and 
+    email 0..1
 * telecom[phone].system = #phone (exactly)
 * telecom[phone].system MS
 * telecom[phone].value MS
