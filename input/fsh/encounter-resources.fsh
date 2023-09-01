@@ -14,7 +14,6 @@ Reason for Encounter - Use to record the reason, or reasons, for initiation of a
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounter"
 * status = #finished
-* class MS
 * subject only Reference(AUPrimaryCarePatient)
 * participant ^slicing.discriminator.type = #value
 * participant ^slicing.discriminator.path = "type.code"

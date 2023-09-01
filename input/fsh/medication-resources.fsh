@@ -16,7 +16,7 @@ Description: "This profile defines a medicine list structure that includes core 
 * emptyReason MS
 
 Profile: AUPrimaryCareMedicationStatement
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-medicationstatement
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-medicationstatement
 Id: AUPrimaryCareMedicationStatement
 Title: "AU Primary Care Medication Statement"
 Description: """
@@ -34,14 +34,9 @@ Not to be used to record details about specific medication-related activities, s
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
 * medication[x] 1..1 MS
-* medication[x][medicationCodeableConcept] from Medication_Code_Valueset (preferred) 
-* medication[x][medicationCodeableConcept] MS
+// missing empty/absent coding in AU Core
 * medication[x][medicationReference] only Reference(AUPrimaryCareMedication)
-* medication[x][medicationReference] MS
-* status MS
-* note.text MS
-* reasonCode MS
-* dosage 1..1 MS
+// AU core does not have dosage resource defined
 * dosage.text MS
 * dosage.doseAndRate.doseQuantity MS
 //* dosage.timing.code MS
@@ -51,7 +46,7 @@ Not to be used to record details about specific medication-related activities, s
 
 
 Profile: AUPrimaryCareMedication
-Parent: http://hl7.org.au/fhir/StructureDefinition/au-medication
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-medication
 Id: AUPrimaryCareMedication
 Title: "AU Primary Care Medication"
 Description: """
@@ -68,10 +63,8 @@ Designed to be nested within a clinically appropriate, standalone item which req
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
 * extension contains http://hl7.org.au/fhir/StructureDefinition/medication-strength named medication-strength 0..1  MS
-* code MS
 * code.coding[amt] MS
-* form MS
-* form.coding MS
+// only codeable is must support? core allows reference
 * ingredient.itemCodeableConcept[itemCodeableConcept] MS
 * ingredient.strength MS
 
