@@ -31,7 +31,7 @@ Description: "This profile defines a procedure list structure that includes core
 */
 
 Profile: AUPrimaryCareProcedure
-Parent: Procedure
+Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-procedure
 Id: AUPrimaryCareProcedure
 Title: "AU Primary Care Procedure"
 Description: """
@@ -46,13 +46,5 @@ The scope of this item encompasses activities for a broad range of clinical proc
 // * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
 * meta.lastUpdated MS
 * extension contains http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure named targetBodyStructureReference 0..1 MS
-* code from Procedure_Code_Valueset (preferred)
-* code MS
-* code.coding MS
-* subject only Reference(AUPrimaryCarePatient)
-* subject MS
-* performedDateTime MS
-* bodySite from https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 (preferred)
-* bodySite MS
-* note.text MS
+// * performedDateTime MS
 

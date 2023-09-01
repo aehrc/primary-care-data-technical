@@ -8,13 +8,7 @@ Description: """
 Statement about current behaviour for all types of tobacco smoking.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus"
-* status 1..1 MS
-* code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
-* subject 1..1 MS
-* effective[x] 1..1 MS
-* effectiveDateTime MS
-* value[x] 1..1 MS
 
 
 Profile: AUPrimaryCareTobaccoSmokingSummary
@@ -53,15 +47,7 @@ The definition of smoking cessation is not universally clear, obviously involvin
 Partial dates are permitted.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased"
-* status 1..1 MS
-//* code = $SNOMED#160625004
-// $LOINC#74010-0
-* code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
-* subject 1..1 MS
-* effective[x] 1..1 MS
-* effectiveDateTime MS
-* valueDateTime 1..1 MS
 
 Profile: AUPrimaryCareTobaccoSmokingDateStarted
 Parent: http://hl7.org.au/fhir/core/StructureDefinition/au-core-smokingstartdate
@@ -79,14 +65,7 @@ Record as a single instance in a health record.
 Partial dates are permitted
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateStarted"
-* status 1..1 MS
-//* code = ObservationCode#smoking-date-started
-//* code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
-* subject 1..1 MS
-* effective[x] 1..1 MS
-* effectiveDateTime MS
-* valueDateTime 1..1 MS
 
 
 Profile: AUPrimaryCareTobaccoPatternOfUse
@@ -166,16 +145,8 @@ Description: """
 Statement about current consumption habits for all types of alcohol.
 """
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAlcoholStatus"
-* status 1..1 MS
-* code = $SNOMED#160573003
-* code 1..1 MS
 * subject only Reference(AUPrimaryCarePatient)
-* subject 1..1 MS
-* effective[x] 1..1 MS
-* effectiveDateTime MS
-* value[x] only CodeableConcept
-* value[x] from AlcoholIntake_Code_Valueset
-* value[x] 1..1 MS
+
 
 Profile: AUPrimaryAlcoholConsumptionSummary
 Parent: Observation
