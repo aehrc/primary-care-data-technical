@@ -23,6 +23,7 @@ Extension: AUPrimaryCareReviewDate
 Id: AUPrimaryCareReviewDate
 Title: "AU Primary Care Review Date"
 Description: "Date when this goal is planned to be reviewed"
+Context: Goal
 * . ^short = "Review Date"
 * value[x] only date
 
